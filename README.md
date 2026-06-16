@@ -26,6 +26,7 @@ Design and document technologies that:
 | [Ocean Current Turbine](./ocean-current-turbine/) | Concept | Renewable Energy |
 | [Photosynthetic Biofuel Reactor](./photosynthetic-biofuel-reactor/) | Concept | Energy & Agriculture |
 | [Gravity Battery Storage](./gravity-battery-storage/) | Concept | Energy Storage |
+| [Nitrogen-Fixing Bioreactor](./nitrogen-fixing-bioreactor/) | Concept | Agriculture & Clean Energy |
 
 ## Structure
 

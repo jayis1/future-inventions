@@ -73,3 +73,10 @@ This file tracks all inventions in the repository with key metadata.
 - **Impact Potential:** Cheapest storage ever
 - **Key Material:** Mine tailings composite blocks
 - **Created:** 2026-06-15
+
+### 011 — Nitrogen-Fixing Bioreactor
+- **Category:** Agriculture & Clean Energy
+- **TRL:** 2 (Concept)
+- **Impact Potential:** 500M+ smallholder farmers, 450+ Mt CO₂/year eliminated
+- **Key Material:** Engineered nitrogenase enzyme, synthetic protein-polymer compartments
+- **Created:** 2026-06-16

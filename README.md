@@ -28,7 +28,7 @@ Design and document technologies that:
 | [Gravity Battery Storage](./gravity-battery-storage/) | Concept | Energy Storage |
 | [Nitrogen-Fixing Bioreactor](./nitrogen-fixing-bioreactor/) | Concept | Agriculture & Clean Energy |
 | [Mycoremediation Living Filter](./mycoremediation-living-filter/) | Concept (Enhanced) | Clean Water & Environmental Restoration |
-| [Thermoregulatory Metamaterial Habitation](./thermoregulatory-metamaterial-habitation/) | Concept | Disaster Resilience & Sustainable Habitation |
+| [Thermoregulatory Metamaterial Habitation](./thermoregulatory-metamaterial-habitation/) | Concept (Enhanced) | Disaster Resilience & Sustainable Habitation |
 
 ## Structure
 

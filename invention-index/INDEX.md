@@ -84,6 +84,9 @@ This file tracks all inventions in the repository with key metadata.
 ### 012 — Mycoremediation Living Filter
 - **Category:** Clean Water & Environmental Restoration
 - **TRL:** 2 (Concept)
-- **Impact Potential:** 2B+ people with PFAS-contaminated water
-- **Key Material:** Evolved perfluoroalkyl defluorinase enzymes, mycelial sponge matrix
+- **Impact Potential:** 2B+ people with PFAS-contaminated water; 50,000+ tons PFAS destroyed/year by 2045
+- **Key Material:** Evolved perfluoroalkyl defluorinase enzymes, self-regenerating mycelial sponge matrix, bioelectrochemical enhancement
+- **Key Innovation:** Enzymatic destruction of forever chemicals (PFAS → F⁻ + CO₂ + H₂O) via engineered fungal-bacterial consortium with 10–50× bioelectrochemical rate enhancement
+- **Target Cost:** <$0.50/m³ (vs. $3–10/m³ current best); household units $200–500
 - **Created:** 2026-06-16
+- **Enhanced:** 2026-06-16

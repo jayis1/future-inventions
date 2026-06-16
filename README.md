@@ -27,7 +27,7 @@ Design and document technologies that:
 | [Photosynthetic Biofuel Reactor](./photosynthetic-biofuel-reactor/) | Concept | Energy & Agriculture |
 | [Gravity Battery Storage](./gravity-battery-storage/) | Concept | Energy Storage |
 | [Nitrogen-Fixing Bioreactor](./nitrogen-fixing-bioreactor/) | Concept | Agriculture & Clean Energy |
-| [Mycoremediation Living Filter](./mycoremediation-living-filter/) | Concept | Clean Water & Environmental Restoration |
+| [Mycoremediation Living Filter](./mycoremediation-living-filter/) | Concept (Enhanced) | Clean Water & Environmental Restoration |
 
 ## Structure
 

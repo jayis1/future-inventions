@@ -90,3 +90,12 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** <$0.50/m³ (vs. $3–10/m³ current best); household units $200–500
 - **Created:** 2026-06-16
 - **Enhanced:** 2026-06-16
+
+### 013 — Thermoregulatory Metamaterial Habitation
+- **Category:** Disaster Resilience & Sustainable Habitation
+- **TRL:** 2 (Concept)
+- **Impact Potential:** 1.6B+ people in inadequate housing; 350 Mt CO₂/yr from displaced HVAC
+- **Key Material:** Gallium-alloy thermally-switchable insulation, TiO₂/SiO₂ radiative cooling surface, n-eicosane/n-octadecane phase-change microcapsules
+- **Key Innovation:** Passively maintains 18–26°C interior across -40°C to +55°C exterior using zero external energy, via gallium-alloy micro-bridges that switch thermal conductivity by 10× at a phase-transition threshold
+- **Target Cost:** $35–60/m² panel; $1,700–2,900 for 4-person emergency shelter
+- **Created:** 2026-06-16

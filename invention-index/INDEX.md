@@ -80,3 +80,10 @@ This file tracks all inventions in the repository with key metadata.
 - **Impact Potential:** 500M+ smallholder farmers, 450+ Mt CO₂/year eliminated
 - **Key Material:** Engineered nitrogenase enzyme, synthetic protein-polymer compartments
 - **Created:** 2026-06-16
+
+### 012 — Mycoremediation Living Filter
+- **Category:** Clean Water & Environmental Restoration
+- **TRL:** 2 (Concept)
+- **Impact Potential:** 2B+ people with PFAS-contaminated water
+- **Key Material:** Evolved perfluoroalkyl defluorinase enzymes, mycelial sponge matrix
+- **Created:** 2026-06-16

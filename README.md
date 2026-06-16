@@ -29,7 +29,7 @@ Design and document technologies that:
 | [Nitrogen-Fixing Bioreactor](./nitrogen-fixing-bioreactor/) | Concept | Agriculture & Clean Energy |
 | [Mycoremediation Living Filter](./mycoremediation-living-filter/) | Concept (Enhanced) | Clean Water & Environmental Restoration |
 | [Thermoregulatory Metamaterial Habitation](./thermoregulatory-metamaterial-habitation/) | Concept (Enhanced) | Disaster Resilience & Sustainable Habitation |
-| [Autonomous Kelp Forest Cultivator](./autonomous-kelp-cultivator/) | Concept | Ocean Restoration & Carbon Sequestration |
+| [Autonomous Kelp Forest Cultivator](./autonomous-kelp-cultivator/) | Concept (Enhanced) | Ocean Restoration & Carbon Sequestration |
 
 ## Structure
 

@@ -103,9 +103,11 @@ This file tracks all inventions in the repository with key metadata.
 
 ### 014 — Autonomous Kelp Forest Cultivator
 - **Category:** Ocean Restoration & Carbon Sequestration
-- **TRL:** 2 (Concept)
-- **Impact Potential:** 500M+ tonnes CO₂/year sequestered at full scale; 50M ha restorable coastline; billions of marine organisms supported
-- **Key Material:** Mussel foot protein (MFP-5) bioadhesive, calcified coralline algae composite anchors, neuromorphic AI (Loihi 2 SNN)
-- **Key Innovation:** Autonomous submersible fleet that cultivates, plants, and monitors kelp sporophytes using biodegradable underwater-curing anchors (MFP-5 + coralline algae matrix) achieving >85% retention vs. <30% manual — at $500–800/ha vs. $50,000–500,000/ha
-- **Target Cost:** $500–800/hectare restored (vs. $50,000–500,000 manual); SCU unit $8,000–12,000 at scale
+- **TRL:** 2 (Concept — Enhanced)
+- **Impact Potential:** 500M–1B tonnes CO₂/year sequestered at full scale; 50M ha restorable coastline; billions of marine organisms supported; $2.5–10T/yr ecosystem services at scale; 396K+ jobs created; 1,000+ species/ha biodiversity recovery
+- **Key Material:** Mussel foot protein (MFP-5) bioadhesive, calcified coralline algae composite anchors, neuromorphic AI (Loihi 2 SNN), CuNi alloy hull, soft pneumatic manipulator
+- **Key Innovation:** Autonomous submersible fleet that cultivates, plants, and monitors kelp sporophytes using biodegradable underwater-curing anchors (MFP-5 + coralline algae matrix) achieving >85% retention vs. <30% manual — at $500–800/ha vs. $50,000–500,000/ha. Swarm-coordinated AI site selection (AUC ≥0.85), 200-chamber onboard nursery bioreactor, and 30/60/90-day automated monitoring cycle.
+- **Target Cost:** $500–800/hectare restored (vs. $50,000–500,000 manual); SCU unit $8,000–12,000 at scale; $0.043/anchor; carbon credit breakeven in 1.5–4 years
+- **Enhanced Sections:** Detailed How It Works (5 phases), Technical Architecture (system diagrams, subsystems, data flow), Materials & Manufacturing (BOM, MFP-5 production, anchor fabrication), Performance Benchmarks (10× comparison table), Deployment Scenarios (3 real-world use cases), Environmental & Social Impact (SDGs, jobs, biodiversity), Risks & Mitigations (10-risk matrix), Comparison to Alternatives (6-method table), Research Frontiers (5 areas), Vision for 2050, References (18 sources)
 - **Created:** 2026-06-16
+- **Enhanced:** 2026-06-16

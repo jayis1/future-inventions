@@ -100,3 +100,12 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** $35–60/m² panel; $1,728 for 4-person emergency shelter at global scale
 - **Created:** 2026-06-16
 - **Enhanced:** 2026-06-16
+
+### 014 — Autonomous Kelp Forest Cultivator
+- **Category:** Ocean Restoration & Carbon Sequestration
+- **TRL:** 2 (Concept)
+- **Impact Potential:** 500M+ tonnes CO₂/year sequestered at full scale; 50M ha restorable coastline; billions of marine organisms supported
+- **Key Material:** Mussel foot protein (MFP-5) bioadhesive, calcified coralline algae composite anchors, neuromorphic AI (Loihi 2 SNN)
+- **Key Innovation:** Autonomous submersible fleet that cultivates, plants, and monitors kelp sporophytes using biodegradable underwater-curing anchors (MFP-5 + coralline algae matrix) achieving >85% retention vs. <30% manual — at $500–800/ha vs. $50,000–500,000/ha
+- **Target Cost:** $500–800/hectare restored (vs. $50,000–500,000 manual); SCU unit $8,000–12,000 at scale
+- **Created:** 2026-06-16

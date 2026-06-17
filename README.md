@@ -33,6 +33,7 @@ Design and document technologies that:
 || [Solar-Polymer Upcycler](./solar-polymer-upcycler/) | Concept (Enhanced) | Waste Elimination & Circular Economy |
 || [Adaptive Phage Therapeutics Platform](./adaptive-phage-therapeutics-platform/) | Concept (Enhanced) | Health & Antibiotic Resistance |
 || [Coral Calcification Acceleration Platform](./coral-calcification-acceleration-platform/) | Concept | Ocean Restoration & Climate Adaptation |
+|| [Atmospheric Methane Oxidation Array](./atmospheric-methane-oxidation-array/) | Concept | Climate & Atmospheric Restoration |
 
 ## Structure
 

@@ -142,3 +142,12 @@ This file tracks all inventions in the repository with key metadata.
 - **Key Innovation:** Integrated autonomous platform combining (1) electrochemical alkalinity enhancement via BMED (restoring pre-industrial Ω_aragonite), (2) engineered coral probiotic dispersal (4-strain consortium for thermal stress resistance and pathogen exclusion), and (3) bio-printed aragonite settlement lattices (3–5× faster coral recruitment) — addressing ocean chemistry, coral biology, and habitat simultaneously at $300–500/ha/year
 - **Target Cost:** $300–500/ha/year at scale; $6,200–9,100 per CCAP unit
 - **Created:** 2026-06-17
+
+### 018 — Atmospheric Methane Oxidation Array
+- **Category:** Climate & Atmospheric Restoration
+- **TRL:** 2 (Concept)
+- **Impact Potential:** 5–60 Mt methane/year removed at full scale; 0.15–1.8 Gt CO₂-eq/year avoided (20-yr GWP); 0.2–0.4°C avoided warming by 2050; targets the ~30% of current warming caused by methane, for which no removal technology currently exists at any scale
+- **Key Material:** FeCl₃ on porous silica-clay photocatalytic layer (Fe-Cl radical chain, active at 1.9 ppm via UV-A/blue 390–455 nm), high-affinity sMMO methanotroph consortium (*Methylocystis* sp. SC2, *Methylosinus trichosporium* OB3b, *Methylomonas* LW-21, *Hyphomicrobium*, *Bradyrhizobium*) on zeolite-dolomite biofilm support, PVDF protective mesh
+- **Key Innovation:** Photocatalytic-biological radical-enzyme hybrid — the only demonstrated-class pathway for ambient methane oxidation at 1.9 ppm. The Fe-Cl photocatalytic chain generates C1 intermediates (CH₃OH, HCHO) at the biofilm interface, where high-affinity sMMO methanotrophs (K_m ≈ 0.8 µM, active below 1 ppm) consume them, producing a 10–25× synergistic rate over either layer alone. Deployed as passive coatings/panels on built surfaces (rooftops, facades, fencing, noise walls) — using wind for mass transfer and sunlight for radical generation, with zero operating energy.
+- **Target Cost:** $5–8/m² (coating route), $9–12/m² (panel route); $18–30/t CO₂-eq avoided (100-yr GWP); 15-yr service life with self-renewing biofilm
+- **Created:** 2026-06-17

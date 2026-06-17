@@ -32,6 +32,7 @@ Design and document technologies that:
 || [Autonomous Kelp Forest Cultivator](./autonomous-kelp-cultivator/) | Concept (Enhanced) | Ocean Restoration & Carbon Sequestration |
 || [Solar-Polymer Upcycler](./solar-polymer-upcycler/) | Concept (Enhanced) | Waste Elimination & Circular Economy |
 || [Adaptive Phage Therapeutics Platform](./adaptive-phage-therapeutics-platform/) | Concept (Enhanced) | Health & Antibiotic Resistance |
+|| [Coral Calcification Acceleration Platform](./coral-calcification-acceleration-platform/) | Concept | Ocean Restoration & Climate Adaptation |
 
 ## Structure
 

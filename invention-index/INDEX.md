@@ -133,3 +133,12 @@ This file tracks all inventions in the repository with key metadata.
 - **Enhanced Sections:** Detailed How It Works (hour-by-hour walkthrough), Technical Architecture (system diagram, subsystem data flow table), Materials & Manufacturing (BOM, supply chain, manufacturing path), Performance Benchmarks (10-metric comparison), Target Cost Breakdown (itemized BOM + scale cost curve), Deployment Scenarios (3 real-world: Mumbai TB, Ukraine wounds, Kenya neonatal sepsis), Environmental & Social Impact (SDGs, carbon, jobs, equity), Risks & Mitigations (10-risk matrix), Comparison to Alternatives (7-method table), Research Frontiers (5 areas), Vision for 2050, References (16 sources), Engineering Specification (13 sections, 100+ parameters), Roadmap (5 phases 2026–2045), Impact Analysis (8 sections with quantitative projections)
 - **Created:** 2026-06-17
 - **Enhanced:** 2026-06-17
+
+### 017 — Coral Calcification Acceleration Platform
+- **Category:** Ocean Restoration & Climate Adaptation
+- **TRL:** 2 (Concept)
+- **Impact Potential:** 1.5B people dependent on reef ecosystems; 500K+ ha restorable; 2.5–5.0 Mt CO₂/year captured; $150–375B/year preserved ecosystem services
+- **Key Material:** Bipolar membrane electrodialysis (BMED) stack, engineered Endozoicomonas probiotic consortia, bio-printed Mg-calcite/aragonite settlement lattice, olivine (Mg₁.₈Fe₀.₂SiO₄) acid neutralization cartridges
+- **Key Innovation:** Integrated autonomous platform combining (1) electrochemical alkalinity enhancement via BMED (restoring pre-industrial Ω_aragonite), (2) engineered coral probiotic dispersal (4-strain consortium for thermal stress resistance and pathogen exclusion), and (3) bio-printed aragonite settlement lattices (3–5× faster coral recruitment) — addressing ocean chemistry, coral biology, and habitat simultaneously at $300–500/ha/year
+- **Target Cost:** $300–500/ha/year at scale; $6,200–9,100 per CCAP unit
+- **Created:** 2026-06-17

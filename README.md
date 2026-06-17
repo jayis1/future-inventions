@@ -30,7 +30,7 @@ Design and document technologies that:
 | [Mycoremediation Living Filter](./mycoremediation-living-filter/) | Concept (Enhanced) | Clean Water & Environmental Restoration |
 | [Thermoregulatory Metamaterial Habitation](./thermoregulatory-metamaterial-habitation/) | Concept (Enhanced) | Disaster Resilience & Sustainable Habitation |
 || [Autonomous Kelp Forest Cultivator](./autonomous-kelp-cultivator/) | Concept (Enhanced) | Ocean Restoration & Carbon Sequestration |
-|| [Solar-Polymer Upcycler](./solar-polymer-upcycler/) | Concept | Waste Elimination & Circular Economy |
+|| [Solar-Polymer Upcycler](./solar-polymer-upcycler/) | Concept (Enhanced) | Waste Elimination & Circular Economy |
 
 ## Structure
 

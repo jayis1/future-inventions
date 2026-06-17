@@ -114,9 +114,11 @@ This file tracks all inventions in the repository with key metadata.
 
 ### 015 — Solar-Polymer Upcycler
 - **Category:** Waste Elimination & Circular Economy
-- **TRL:** 2 (Concept)
-- **Impact Potential:** 380M+ tonnes/year plastic waste; 750M–1.25B tonnes CO₂/year avoided; 2–3M jobs at scale
-- **Key Material:** Zr₆-MOF-808 derivative (photothermal + Lewis-acid catalyst), engineered PHL7 depolymerase immobilized on MOF mesopores, compound parabolic concentrators
-- **Key Innovation:** Photothermal MOF dual-catalysis — broadband solar-absorbing MOF serves as heat source, Lewis-acid catalyst, and enzyme host simultaneously, depolymerizing mixed/contaminated plastic at 150–250 °C into virgin-quality monomers with >90% selectivity, zero fossil-fuel input
-- **Target Cost:** $80K–120K per community unit (500 kg/day); $0.30–0.60/kg monomer; 2–3 year payback
+- **TRL:** 2 (Concept — Enhanced)
+- **Impact Potential:** 380M+ tonnes/year plastic waste; 750M–1.25B tonnes CO₂/year avoided; >80% ocean plastic input reduction; 2–3M direct jobs (10M+ total); $131–215B/year total economic value at 1M-unit scale; 4.3/5.0 SDG impact score
+- **Key Material:** Zr₆-MOF-808-DP derivative (photothermal absorber + Lewis-acid catalyst + enzyme host), engineered PHL7 depolymerase immobilized on MOF mesopores, compound parabolic concentrators (20×, 50 m²), NaNO₃-KNO₃ PCM thermal storage
+- **Key Innovation:** Photothermal MOF triple-duty catalysis — single Zr₆-MOF-808-DP architecture serves as broadband solar absorber (>92%, 300–2500 nm), Lewis-acid catalyst (C–C/C–O cleavage at 180–250 °C), and enzyme host (immobilized PHL7 for PET/PLA at 60–150 °C). Depolymerizes mixed/contaminated/multi-layer plastic at half the temperature of pyrolysis into virgin-quality monomers (>99% purity) with >80% selectivity, zero fossil-fuel input, and 500+ regeneration cycles.
+- **Target Cost:** $80K–120K per community unit (500 kg/day); $0.30–0.60/kg monomer; 1.1–1.6 year payback; $75K/year net operating income per unit
+- **Enhanced Sections:** Detailed How It Works (6 steps with flow), Technical Architecture (system diagram, 6 subsystems, data flow), Materials & Manufacturing (MOF synthesis, enzyme engineering, supply chain analysis), Performance Benchmarks (11-metric comparison vs. 5 alternatives), Target Cost Breakdown (itemized BOM + scale cost curve), Deployment Scenarios (3 real-world: Manila, Maldives, Amsterdam), Environmental & Social Impact (CO₂, ocean, microplastic, jobs, health, equity, SDGs), Risks & Mitigations (10-risk matrix), Comparison to Alternatives (8-method table), Research Frontiers (5 areas), Vision for 2050, References (15 sources), Engineering Specification (8 sections), Roadmap (5 phases), Impact Analysis (8 sections with quantitative projections)
 - **Created:** 2026-06-17
+- **Enhanced:** 2026-06-17

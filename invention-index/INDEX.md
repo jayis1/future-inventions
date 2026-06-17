@@ -111,3 +111,12 @@ This file tracks all inventions in the repository with key metadata.
 - **Enhanced Sections:** Detailed How It Works (5 phases), Technical Architecture (system diagrams, subsystems, data flow), Materials & Manufacturing (BOM, MFP-5 production, anchor fabrication), Performance Benchmarks (10× comparison table), Deployment Scenarios (3 real-world use cases), Environmental & Social Impact (SDGs, jobs, biodiversity), Risks & Mitigations (10-risk matrix), Comparison to Alternatives (6-method table), Research Frontiers (5 areas), Vision for 2050, References (18 sources)
 - **Created:** 2026-06-16
 - **Enhanced:** 2026-06-16
+
+### 015 — Solar-Polymer Upcycler
+- **Category:** Waste Elimination & Circular Economy
+- **TRL:** 2 (Concept)
+- **Impact Potential:** 380M+ tonnes/year plastic waste; 750M–1.25B tonnes CO₂/year avoided; 2–3M jobs at scale
+- **Key Material:** Zr₆-MOF-808 derivative (photothermal + Lewis-acid catalyst), engineered PHL7 depolymerase immobilized on MOF mesopores, compound parabolic concentrators
+- **Key Innovation:** Photothermal MOF dual-catalysis — broadband solar-absorbing MOF serves as heat source, Lewis-acid catalyst, and enzyme host simultaneously, depolymerizing mixed/contaminated plastic at 150–250 °C into virgin-quality monomers with >90% selectivity, zero fossil-fuel input
+- **Target Cost:** $80K–120K per community unit (500 kg/day); $0.30–0.60/kg monomer; 2–3 year payback
+- **Created:** 2026-06-17

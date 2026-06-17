@@ -125,9 +125,11 @@ This file tracks all inventions in the repository with key metadata.
 
 ### 016 — Adaptive Phage Therapeutics Platform
 - **Category:** Health & Antibiotic Resistance
-- **TRL:** 2 (Concept)
-- **Impact Potential:** 10M+ lives/year saved from drug-resistant infections by 2050; 1B+ people gain access to phage therapy
-- **Key Material:** Cell-free transcription-translation lysate, microfluidic phage screening chip, Oxford Nanopore Flongle
-- **Key Innovation:** Automated end-to-end phage therapy pipeline — from environmental sample to patient-ready, sterile, personalized phage cocktail in ≤48 hours — using cell-free phage synthesis (CFPS) to bypass traditional bacterial culturing, AI-guided phage selection (PhageFormer transformer), and microfluidic high-throughput plaque screening (10,000 wells, 30 min)
-- **Target Cost:** $50–150 per treated infection course; $15K–25K per APTP unit
+- **TRL:** 2 (Concept — Enhanced)
+- **Impact Potential:** 10M+ lives/year saved from drug-resistant infections by 2050; 1B+ people gain access to phage therapy; 7M lives/year saved by 2050 (risk-adjusted); $105B/year healthcare savings; 50,000+ units deployed by 2040
+- **Key Material:** Cell-free transcription-translation lysate, microfluidic 10K-well plaque screening chip, Oxford Nanopore Flongle + MinION, NVIDIA Jetson Orin (PhageFormer AI), inkjet DNA synthesis chip, PDMS microfluidic cartridges
+- **Key Innovation:** Automated end-to-end phage therapy pipeline — from environmental sample to patient-ready, sterile, personalized phage cocktail in ≤48 hours — using cell-free phage synthesis (CFPS) to bypass traditional bacterial culturing (10⁸–10¹⁰ PFU/mL target), AI-guided phage selection (PhageFormer transformer, AUC >0.85), microfluidic high-throughput plaque screening (10,000 wells, 30 min), and on-chip inkjet DNA synthesis (genomes up to 250 kb)
+- **Target Cost:** $50–150 per treated infection course; $15K–25K per APTP unit; $5–15/DALY saved
+- **Enhanced Sections:** Detailed How It Works (hour-by-hour walkthrough), Technical Architecture (system diagram, subsystem data flow table), Materials & Manufacturing (BOM, supply chain, manufacturing path), Performance Benchmarks (10-metric comparison), Target Cost Breakdown (itemized BOM + scale cost curve), Deployment Scenarios (3 real-world: Mumbai TB, Ukraine wounds, Kenya neonatal sepsis), Environmental & Social Impact (SDGs, carbon, jobs, equity), Risks & Mitigations (10-risk matrix), Comparison to Alternatives (7-method table), Research Frontiers (5 areas), Vision for 2050, References (16 sources), Engineering Specification (13 sections, 100+ parameters), Roadmap (5 phases 2026–2045), Impact Analysis (8 sections with quantitative projections)
 - **Created:** 2026-06-17
+- **Enhanced:** 2026-06-17

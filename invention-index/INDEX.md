@@ -122,3 +122,12 @@ This file tracks all inventions in the repository with key metadata.
 - **Enhanced Sections:** Detailed How It Works (6 steps with flow), Technical Architecture (system diagram, 6 subsystems, data flow), Materials & Manufacturing (MOF synthesis, enzyme engineering, supply chain analysis), Performance Benchmarks (11-metric comparison vs. 5 alternatives), Target Cost Breakdown (itemized BOM + scale cost curve), Deployment Scenarios (3 real-world: Manila, Maldives, Amsterdam), Environmental & Social Impact (CO₂, ocean, microplastic, jobs, health, equity, SDGs), Risks & Mitigations (10-risk matrix), Comparison to Alternatives (8-method table), Research Frontiers (5 areas), Vision for 2050, References (15 sources), Engineering Specification (8 sections), Roadmap (5 phases), Impact Analysis (8 sections with quantitative projections)
 - **Created:** 2026-06-17
 - **Enhanced:** 2026-06-17
+
+### 016 — Adaptive Phage Therapeutics Platform
+- **Category:** Health & Antibiotic Resistance
+- **TRL:** 2 (Concept)
+- **Impact Potential:** 10M+ lives/year saved from drug-resistant infections by 2050; 1B+ people gain access to phage therapy
+- **Key Material:** Cell-free transcription-translation lysate, microfluidic phage screening chip, Oxford Nanopore Flongle
+- **Key Innovation:** Automated end-to-end phage therapy pipeline — from environmental sample to patient-ready, sterile, personalized phage cocktail in ≤48 hours — using cell-free phage synthesis (CFPS) to bypass traditional bacterial culturing, AI-guided phage selection (PhageFormer transformer), and microfluidic high-throughput plaque screening (10,000 wells, 30 min)
+- **Target Cost:** $50–150 per treated infection course; $15K–25K per APTP unit
+- **Created:** 2026-06-17

@@ -34,6 +34,7 @@ Design and document technologies that:
 || [Adaptive Phage Therapeutics Platform](./adaptive-phage-therapeutics-platform/) | Concept (Enhanced) | Health & Antibiotic Resistance |
 || [Coral Calcification Acceleration Platform](./coral-calcification-acceleration-platform/) | Concept | Ocean Restoration & Climate Adaptation |
 || [Atmospheric Methane Oxidation Array](./atmospheric-methane-oxidation-array/) | Concept | Climate & Atmospheric Restoration |
+| [Phosphorus Recovery Network](./phosphorus-recovery-network/) | Concept | Sustainable Materials & Circular Economy |
 
 ## Structure
 

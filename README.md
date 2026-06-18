@@ -37,6 +37,7 @@ Design and document technologies that:
 || [Phosphorus Recovery Network](./phosphorus-recovery-network/) | Concept | Sustainable Materials & Circular Economy |
 || [Lithium Brine Bioscavenger](./lithium-brine-bioscavenger/) | Concept | Critical Minerals & Circular Economy |
 || [Arctic Sea Ice Restoration Array](./arctic-sea-ice-restoration-array/) | Concept | Climate & Arctic Restoration |
+|| [Electrokinetic Soil Revival Array](./electrokinetic-soil-revival-array/) | Concept | Sustainable Agriculture & Land Restoration |
 
 ## Structure
 

@@ -178,3 +178,12 @@ This file tracks all inventions in the repository with key metadata.
 - **Key Innovation:** Bioselective lithium carbonate precipitation — three-stage biological-chemical selectivity cascade (LiATPase active transport 50:1 → intracellular carboxysome Li₂CO₃ precipitation 70:1 → thermal wash re-carbonation 30,000×) achieving effective Li:Na selectivity >10⁷:1, enabling extraction from brines as dilute as 10 mg/L Li. First biological lithium extraction technology; uses sunlight as sole energy (3–8 kWh/kg vs. 30–100 for conventional), 5–10 L water/kg (vs. 500,000 for evaporation ponds), and 0.3–1.0 m²/kg/yr land (vs. 200–500).
 - **Target Cost:** $45,000–65,000 per module (20-ft container, 5–20 kg Li₂CO₃/week); $3,000–5,000/t annual capacity CapEx; $3–6/kg Li₂CO₃ OpEx at scale; 1.5–3 year payback
 - **Created:** 2026-06-18
+
+### 022 — Electrokinetic Soil Revival Array
+- **Category:** Sustainable Agriculture & Land Restoration
+- **TRL:** 2 (Concept)
+- **Impact Potential:** 1.5B+ people in salinity-affected regions; 100–500M ha of degraded land reclaimable; $500–2,000/ha/year restored productivity; 50–150 Gt fresh water saved over 20 years; 2–8 t CO₂/ha/yr sequestered via biochar
+- **Key Material:** Biochar-graphite composite electrodes (55% ag-waste biochar + 30% graphite + 15% alginate/biochar leachate), halotolerant PGPR consortium (*Bacillus halotolerans*, *Pseudomonas stutzeri*, *Halobacillus trueperi*) + AMF (*Funneliformis mosseae*, *Rhizophagus irregularis*), reverse-electrodialysis salt battery (salinity-gradient storage from extracted brine), 600 W_p PV
+- **Key Innovation:** First integrated water-sparing in-situ soil desalination — solar-powered electrokinetic ion transport (1.5–5 V/m) moves 80–95% of root-zone salts to collection wells in 90–180 days using <2 m³/ha water (vs. 5,000–15,000 for leaching). Triple synergy: (1) electrokinetic salt extraction, (2) bioelectric microbiome stimulation (0.05–0.5 A/m² enriches electroactive bacteria + halotolerant PGPR + mycorrhizae), (3) biodegradable biochar-graphite electrodes that become the soil amendment (10 t/ha biochar, 2–8 t CO₂/yr sequestration, 20–40% irrigation reduction). Adaptive multi-zone field control via Wenner-array resistivity mapping. The extracted salts themselves power nighttime operation via reverse-electrodialysis battery.
+- **Target Cost:** $680–1,200/ha (CapEx); $700–1,250/ha per treatment cycle; <$500/ha at 1M-unit scale; 1–2 crop-cycle payback
+- **Created:** 2026-06-18

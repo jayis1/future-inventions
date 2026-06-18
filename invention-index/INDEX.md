@@ -161,6 +161,15 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** $14,300 per PRN module (200 m² pond, 50–200 m³/day capacity); $3–8/kg P recovered (amortized 5-year); $1,200/year OPEX; 500–2,000 kg struvite/year per module
 - **Created:** 2026-06-18
 
+### 021 — Arctic Sea Ice Restoration Array
+- **Category:** Climate & Arctic Restoration
+- **TRL:** 2 (Concept)
+- **Impact Potential:** 2–5M km² seasonal sea ice restored; 0.5–1.5 Gt CO₂-eq/year radiative forcing offset; 15–30 years bought for decarbonization; 25+ species preserved; 4M+ Indigenous people protected; $50–200B/year avoided climate damages
+- **Key Material:** PDMS/TiO₂/SiO₂ radiative sky cooling metamaterial (ε>0.96 @ 8–13 µm), immobilized InaZ ice-nucleating protein from *Pseudomonas syringae* (nucleates ice at −2°C), freeze-cast cellulose-bamboo nanofibril biodegradable foam substrate, chitosan-alginate hydrogel/tethers, Al nanoflake reflector
+- **Key Innovation:** Synergistic passive radiative sky cooling + biological ice nucleation on a biodegradable floating substrate — radiative metamaterial cools Arctic surface water 3–6 weeks below natural freeze-up date by dumping heat to deep space through the 8–13 µm atmospheric window (Arctic dry air enhances cooling 30–60%); immobilized InaZ nucleates ice at −2°C (vs. −10 to −20°C natural seawater freezing); high-albedo top surface (R>0.92) then slows summer melt by 15–25%. Entirely biodegradable in 4–7 seasons, self-limiting, localized, reversible — the only direct intervention targeting the Arctic ice-albedo feedback loop without global geoengineering side effects.
+- **Target Cost:** $0.40–0.80/m²; $0.80–1.60/panel (2 m²); $3–6B total program over 10 years; $3–12/tCO₂-eq avoided
+- **Created:** 2026-06-18
+
 ### 020 — Lithium Brine Bioscavenger
 - **Category:** Critical Minerals & Circular Economy
 - **TRL:** 2 (Concept)

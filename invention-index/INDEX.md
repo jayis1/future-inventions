@@ -160,3 +160,12 @@ This file tracks all inventions in the repository with key metadata.
 - **Key Innovation:** Photosynthetically-powered polyphosphate hyperaccumulation — the first zero-energy phosphorus recovery technology. Engineered cyanobacteria accumulate 15–20% polyphosphate (3–5× wild-type) using sunlight as sole energy, achieving 90–95% P recovery from 0.1–50 mg/L influent in simple open ponds with zero aeration. Auto-flocculation harvest via c-di-GMP circuit (no centrifuge), biological Mg sourcing from dolomite (10–30× cheaper than MgCl₂), on-site struvite precipitation at natural pH 8.0–8.5. Produces organic-approved struvite fertilizer (28% P₂O₅) at $3–8/kg P — competitive with commercial struvite at 100× less capital.
 - **Target Cost:** $14,300 per PRN module (200 m² pond, 50–200 m³/day capacity); $3–8/kg P recovered (amortized 5-year); $1,200/year OPEX; 500–2,000 kg struvite/year per module
 - **Created:** 2026-06-18
+
+### 020 — Lithium Brine Bioscavenger
+- **Category:** Critical Minerals & Circular Economy
+- **TRL:** 2 (Concept)
+- **Impact Potential:** 500K–1M t Li₂CO₃/year at full scale (25–50% of 2050 demand); 500B+ L water/year saved vs. evaporation; 6–10 Mt CO₂/year avoided; 500K–1M jobs; enables 50–100M EV batteries/year; unlocks stranded lithium in geothermal brines, oilfield produced water, and eventually seawater
+- **Key Material:** Engineered *Rhodobacter sphaeroides* (LiATPase from *Halomonas* sp., carboxysome microcompartment from *Halothiobacillus neapolitanus*, c-di-GMP auto-flocculation circuit), NIR-transparent ETFE photobioreactor, compound parabolic solar-thermal calciner
+- **Key Innovation:** Bioselective lithium carbonate precipitation — three-stage biological-chemical selectivity cascade (LiATPase active transport 50:1 → intracellular carboxysome Li₂CO₃ precipitation 70:1 → thermal wash re-carbonation 30,000×) achieving effective Li:Na selectivity >10⁷:1, enabling extraction from brines as dilute as 10 mg/L Li. First biological lithium extraction technology; uses sunlight as sole energy (3–8 kWh/kg vs. 30–100 for conventional), 5–10 L water/kg (vs. 500,000 for evaporation ponds), and 0.3–1.0 m²/kg/yr land (vs. 200–500).
+- **Target Cost:** $45,000–65,000 per module (20-ft container, 5–20 kg Li₂CO₃/week); $3,000–5,000/t annual capacity CapEx; $3–6/kg Li₂CO₃ OpEx at scale; 1.5–3 year payback
+- **Created:** 2026-06-18

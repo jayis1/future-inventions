@@ -196,3 +196,12 @@ This file tracks all inventions in the repository with key metadata.
 - **Key Innovation:** First scalable, species-specific, chemical-free acoustic mating-disruption mesh for disease-vector mosquitoes. Exploits the conserved harmonic-convergence mating behavior (Cator et al. 2009, *Science*): a phase-jittered spread-spectrum jamming waveform in the mosquito wingbeat band (350–1300 Hz) prevents male Johnston's-organ harmonic lock-on, collapsing local R₀ below 1 within 3–6 generations. Edge-AI wingbeat classifier (15-class, 184K params) auto-tunes jamming to local vector species. Biomechanical constraint on wingbeat frequency makes the system effectively evolution-proof. Zero recurring cost — one-time capital investment, solar-powered, no consumables.
 - **Target Cost:** ~$16 BOM / ~$25–30 landed per node; ~$500–900/household one-time; ~$4–7/person/year amortized (5-year life); $0 operating cost
 - **Created:** 2026-06-19
+
+### 024 — Atmospheric Protein Synthesizer
+- **Category:** Food Security & Sustainable Agriculture
+- **TRL:** 2 (Concept)
+- **Impact Potential:** 800M+ undernourished; 2.4B food-insecure; 2M ha land freed; 1.5 trillion L/yr water saved; ~60 Mt CO₂-eq/yr avoided+removed at 1M-unit scale; climate-independent, land-free protein anywhere
+- **Key Material:** Engineered *Cupriavidus necator* (B12 cob operon, soy leghemoglobin + heme boost, methionine-rich storage protein, chaperone robustness, synthetic auxotrophy), silicone hollow-fiber membrane gas delivery (sub-LEL H₂/O₂), PEM electrolyzer, amine-functionalized porous silica DAC
+- **Key Innovation:** First integrated, intrinsically-safe, community-scale air-to-complete-protein system — membrane-delivered gas fermentation below the explosive limit (5–8× productivity vs. sparged), nutritionally complete single-organism protein (B12 + heme iron + balanced EAA), and decentralized climate-independent land-free food from a 20-ft container
+- **Target Cost:** $80–120K per community unit (100 kg/day); $3–6/kg protein (vs. $15–25 beef); 15–25 kWh/kg; −1.5 to −2.0 kg CO₂-eq/kg; 2–4 year payback
+- **Created:** 2026-06-19

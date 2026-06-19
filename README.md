@@ -39,6 +39,7 @@ Design and document technologies that:
 || [Arctic Sea Ice Restoration Array](./arctic-sea-ice-restoration-array/) | Concept | Climate & Arctic Restoration |
 || [Electrokinetic Soil Revival Array](./electrokinetic-soil-revival-array/) | Concept | Sustainable Agriculture & Land Restoration |
 || [Acoustic Vector Disruption Array](./acoustic-vector-disruption-array/) | Concept | Health & Public Health / Vector Control |
+| [Atmospheric Protein Synthesizer](./atmospheric-protein-synthesizer/) | Concept | Food Security & Sustainable Agriculture |
 
 ## Structure
 

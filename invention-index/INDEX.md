@@ -187,3 +187,12 @@ This file tracks all inventions in the repository with key metadata.
 - **Key Innovation:** First integrated water-sparing in-situ soil desalination — solar-powered electrokinetic ion transport (1.5–5 V/m) moves 80–95% of root-zone salts to collection wells in 90–180 days using <2 m³/ha water (vs. 5,000–15,000 for leaching). Triple synergy: (1) electrokinetic salt extraction, (2) bioelectric microbiome stimulation (0.05–0.5 A/m² enriches electroactive bacteria + halotolerant PGPR + mycorrhizae), (3) biodegradable biochar-graphite electrodes that become the soil amendment (10 t/ha biochar, 2–8 t CO₂/yr sequestration, 20–40% irrigation reduction). Adaptive multi-zone field control via Wenner-array resistivity mapping. The extracted salts themselves power nighttime operation via reverse-electrodialysis battery.
 - **Target Cost:** $680–1,200/ha (CapEx); $700–1,250/ha per treatment cycle; <$500/ha at 1M-unit scale; 1–2 crop-cycle payback
 - **Created:** 2026-06-18
+
+### 023 — Acoustic Vector Disruption Array
+- **Category:** Health & Public Health / Vector Control
+- **TRL:** 2 (Concept)
+- **Impact Potential:** 700M+ people/yr infected with mosquito-borne disease; 30–60M infections and 80,000–150,000 deaths/yr avertable at full scale; >90% local mating disruption; 60–85% clinical incidence reduction in protected communities within 12 months; zero pollinator harm; 2–3 jobs per 10,000 people protected
+- **Key Material:** PVDF bimorph piezoelectric emitter (400–1300 Hz), Ambiq Apollo4 ultra-low-power edge-AI MCU (INT8 CNN, <0.5 mW), 4× MEMS microphone array, Semtech SX1262 sub-GHz LoRa mesh, 0.5 Wp flexible CIGS solar + LiFePO₄ 18650
+- **Key Innovation:** First scalable, species-specific, chemical-free acoustic mating-disruption mesh for disease-vector mosquitoes. Exploits the conserved harmonic-convergence mating behavior (Cator et al. 2009, *Science*): a phase-jittered spread-spectrum jamming waveform in the mosquito wingbeat band (350–1300 Hz) prevents male Johnston's-organ harmonic lock-on, collapsing local R₀ below 1 within 3–6 generations. Edge-AI wingbeat classifier (15-class, 184K params) auto-tunes jamming to local vector species. Biomechanical constraint on wingbeat frequency makes the system effectively evolution-proof. Zero recurring cost — one-time capital investment, solar-powered, no consumables.
+- **Target Cost:** ~$16 BOM / ~$25–30 landed per node; ~$500–900/household one-time; ~$4–7/person/year amortized (5-year life); $0 operating cost
+- **Created:** 2026-06-19

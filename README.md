@@ -41,6 +41,7 @@ Design and document technologies that:
 || [Acoustic Vector Disruption Array](./acoustic-vector-disruption-array/) | Concept | Health & Public Health / Vector Control |
 || [Atmospheric Protein Synthesizer](./atmospheric-protein-synthesizer/) | Concept | Food Security & Sustainable Agriculture |
 || [Electrochemical Blackwater Refinery](./electrochemical-blackwater-refinery/) | Concept | Sanitation & Public Health / Circular Economy |
+|| [Pollinator Resilience Network](./pollinator-resilience-network/) | Concept | Food Security & Biodiversity / Pollinator Restoration |
 
 ## Structure
 

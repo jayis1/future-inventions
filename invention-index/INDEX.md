@@ -207,3 +207,12 @@ This file tracks all inventions in the repository with key metadata.
 - **Enhanced Sections:** How It Works (6-step mechanism walkthrough), Technical Architecture (system block diagram, subsystem data flow, control architecture), Performance Benchmarks (13-metric comparison vs. 6 alternatives, productivity validation basis), Deployment Scenarios (3 real-world: Dadaab refugee camp, Reykjavík geothermal, Dubai desert), Risks & Mitigations (10-risk matrix), Vision for 2050, Roadmap (5 phases 2026–2045), Impact Analysis (10 sections with quantitative projections)
 - **Created:** 2026-06-19
 - **Enhanced:** 2026-06-19
+
+### 025 — Electrochemical Blackwater Refinery
+- **Category:** Sanitation & Public Health / Circular Economy
+- **TRL:** 2 (Concept)
+- **Impact Potential:** 3.6B people without safely-managed sanitation; 493M practicing open defecation; 50,000–150,000 child deaths/yr avertable at 100M-unit scale; ~20% of mined phosphate demand replaceable from recovered struvite; 10–70 billion m³/yr flush-water saved; 30–80 Mt CH₄/yr avoided from anaerobic on-site sanitation; 10–50 Mt CO₂/yr sequestered via biochar cartridges at scale
+- **Key Material:** Boron-doped diamond (BDD) electrode stack (EAOP •OH + active chlorine), sacrificial Mg (AZ31) electrocoagulation anode (struvite precipitation), biochar-ceramic polishing cartridge (pharma/microplastic/ARG removal), 30 W₝ flexible CIGS PV + 2× Bi₂Te₃ TEG + 100 Wh LiFePO₄ (self-powered, no grid)
+- **Key Innovation:** First complete, consumable-free, self-powered, appliance-scale toilet that is a full treatment plant — integrates (1) electrocoagulation struvite recovery (≥85% P), (2) electrochemical advanced oxidation (≥6-log pathogen kill incl. *Cryptosporidium* & helminth eggs, >90% COD mineralization, oxidants generated in-situ from waste — no delivered chemicals), (3) biochar-ceramic polishing (pharma/microplastics/metal removal; spent cartridge becomes carbon-sequestering soil amendment — zero waste stream), (4) thermoelectric + PV self-power from reaction heat + sunlight. Sealed, odorless, ≤0.2 L/cycle water. Outputs: struvite P-fertilizer, pathogen-free N+K liquid fertilizer, disinfected irrigation water. Net revenue-positive for households via fertilizer value.
+- **Target Cost:** $180–350 CapEx/household (6–10 persons); ≈$0 annual operating (no consumables, no fuel); $3–7/person/yr amortized (10-yr life); biochar cartridge $2–6/yr locally produced; fertilizer value recovered $40–90/household/yr; revenue-neutral within 2–4 years
+- **Created:** 2026-06-19

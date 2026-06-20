@@ -42,6 +42,7 @@ Design and document technologies that:
 || [Atmospheric Protein Synthesizer](./atmospheric-protein-synthesizer/) | Concept | Food Security & Sustainable Agriculture |
 || [Electrochemical Blackwater Refinery](./electrochemical-blackwater-refinery/) | Concept | Sanitation & Public Health / Circular Economy |
 || [Pollinator Resilience Network](./pollinator-resilience-network/) | Concept | Food Security & Biodiversity / Pollinator Restoration |
+| [Particulate Depuration Metamaterial Facade](./particulate-depuration-metamaterial-facade/) | Concept | Public Health & Clean Air / Climate (Black Carbon) |
 
 ## Structure
 

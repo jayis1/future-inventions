@@ -222,3 +222,192 @@ State 4 → 1: EVAPORATION + ADSORPTION (night)
 | Cycle COP | 0.5–0.7 (with radiative-cooled condenser) |
 | Service life | 15–20 years (adsorbent recharge every 5–8 years) |
 | Operating cost | $0/year |
+
+---
+
+## Technical Architecture
+
+### System Block Diagram
+
+```
+                    ┌─────────────────────────────────┐
+                    │       SOLAR THERMAL COLLECTOR     │
+                    │   (1.5 m² flat-plate, non-tracking)│
+                    │   Selective black chrome on Al    │
+                    │   Single-pane low-iron glass     │
+                    └──────────────┬──────────────────┘
+                                   │ radiant heat
+                                   ▼
+                    ┌─────────────────────────────────┐
+                    │       ADSORBENT BED               │
+                    │  5 kg CaCl₂-biochar composite    │
+                    │  Finned Cu tube HX + graphite     │
+                    │  Bed thickness: 20–30 mm          │
+                    │                                   │
+                    │  DAY: 60–85°C → desorbs H₂O vapor │
+                    │  NIGHT: 25°C → adsorbs H₂O vapor  │
+                    └──────┬──────────────┬────────────┘
+                           │ V1 (day)     │ V2 (night)
+                           ▼              ▼
+          ┌────────────────────┐   ┌──────────────────────────┐
+          │  RADIATIVE CONDENSER │   │     EVAPORATOR + ICE STORE │
+          │  Cu coil, 2 m² rad. │   │  304 SS finned vessel     │
+          │  cooling coating    │   │  10–15 kg water charge     │
+          │  SiO₂/PDMS or       │   │  Evap @ 2–8°C, 0.8 kPa    │
+          │  BaSO₄ paint        │   │  Ice: 8–12 kg PCM battery  │
+          │  T_cond: 15–25°C    │   │  Thermostatic valve @ 0°C  │
+          │  (5–15°C sub-amb)   │   │  Bimetallic vent damper    │
+          └────────┬───────────┘   └──────────┬───────────────┘
+                   │ liquid H₂O                │ cold
+                   ▼ (gravity)                 ▼
+          ┌────────────────────────────────────────────────┐
+          │              COLD BOX (100 L)                    │
+          │  HDPE inner liner + 40 mm VIP insulation         │
+          │  λ < 0.004 W/m·K  │  Heat leak: 8–12 W @ 30°C   │
+          │  Interior: 2–8°C, 24/7                          │
+          │  Lid: radiative cooling supplement (optional)    │
+          └────────────────────────────────────────────────┘
+```
+
+### Subsystem Data Flow
+
+The RAR has no electronic data flow — it is a **thermodynamic state machine** driven by diurnal solar cycling. The "data" are pressure and temperature differentials that passively actuate valves:
+
+| State | Trigger | Active Subsystems | Passive Valve States | Mass Flow |
+|-------|---------|-------------------|---------------------|-----------|
+| **Desorption** (day) | Solar irradiance > 200 W/m² heats adsorbent > 40°C | Collector → Adsorbent → Condenser | V1 open, V2 closed | H₂O vapor: adsorbent → condenser → liquid to evaporator |
+| **Condensation** (day) | Vapor reaches radiatively-cooled condenser | Condenser (radiative cooling) | V1 open | Vapor → liquid (15–25°C) |
+| **Ice melt / holdover** (day) | Interior warms above 0°C | Ice PCM in evaporator | Both valves closed | Heat absorbed by ice melting (334 kJ/kg) |
+| **Adsorption** (night) | Adsorbent cools < 35°C, solar input ends | Adsorbent → Evaporator | V1 closed, V2 open | H₂O vapor: evaporator → adsorbent |
+| **Evaporation / active cooling** (night) | Low pressure in evaporator (0.8 kPa) | Evaporator | V2 open | Liquid H₂O evaporates at 2–8°C, absorbs 2,501 kJ/kg |
+| **Ice freezing** (night) | Excess cooling capacity | Evaporator / ice vessel | V2 open | Water → ice (surplus cold stored) |
+
+### Control Architecture
+
+The RAR uses **three passive control elements** — no microcontroller, no sensors, no software:
+
+1. **PTFE umbrella check valves (V1, V2)**: Pressure-actuated. Crack pressure ~50 Pa. The thermodynamic cycle itself creates the pressure differentials that open/close valves at the correct phase. Day: desorption raises P_adsorb > P_cond → V1 opens. Night: adsorption lowers P_adsorb < P_evap → V2 opens. No external timing needed.
+
+2. **Wax-pellet thermostatic valve**: On the condenser-to-evaporator liquid line. Closes at 0°C to prevent vaccine freezing (WHO PQS requirement). Opens above 2°C. Mechanical, drift-free, 15-year life.
+
+3. **Bimetallic vent damper**: Opens at 8°C to increase convective heat transfer to evaporator (boost cooling). Closes at 4°C to prevent over-cooling. Passive temperature regulation within 2–8°C band.
+
+### Material Flow Summary
+
+| Material | Form | Location | Cycle Role |
+|----------|------|----------|------------|
+| CaCl₂-biochar | 5 kg solid granular | Adsorbent bed | Water vapor sponge — releases by day, reabsorbs by night |
+| Water (refrigerant) | 10–15 kg liquid/vapor/ice | Evaporator + condenser | Working fluid — evaporates to cool, condenses to reset |
+| SiO₂/PDMS or BaSO₄ | 2 m² coating on condenser | External surface | Radiates heat to deep space, keeps condenser sub-ambient |
+| VIP panels | 1.4 m², 40 mm | Cold box walls | Insulates interior (λ < 0.004 W/m·K) |
+| CaCl₂ (salt) | 1.5–2 kg in composite | Within biochar pores | Hydrate cycling (CaCl₂·nH₂O, n=1–6) |
+
+---
+
+## Performance Benchmarks
+
+### vs. Current State-of-the-Art Off-Grid Refrigeration
+
+| Metric | RAR (this work) | Solar PV + Compressor + Battery | Kerosene Absorption | Zeolite Adsorption (existing) | Zeer Pot (evaporative) |
+|--------|-----------------|---------------------------------|---------------------|-------------------------------|------------------------|
+| **Capital cost (100 L)** | $80–215 | $2,000–7,000 | $200–500 | $1,500–3,000 | $5–20 |
+| **Annual operating cost** | $0 | $50–200 (battery replacement) | $50–150 (fuel) | $0 | $0 |
+| **Temperature maintained** | 2–8°C | 2–8°C (±1°C) | 2–8°C (±2°C) | 2–8°C (±3°C) | 10–15°C below ambient only |
+| **Works above 35°C ambient** | Yes (marginal at 42°C) | Yes | Yes | Marginal | No (useless) |
+| **Holdover (no energy input)** | 24–48 h (ice) | 4–12 h (battery) | 0 (needs fuel) | 12–24 h | 0 |
+| **Moving parts** | 0 | Compressor + fan + electronics | Minimal (pump) | Minimal (valves) | 0 |
+| **Refrigerant GWP** | 0 (water) | 1,400–4,000 (HFC) | 0 (NH₃, but toxic) | 0 (water) | 0 (water) |
+| **Maintenance interval** | 5–8 yr (adsorbent) | 3–5 yr (battery) | Frequent (fuel, cleaning) | 5–8 yr | Daily (water refill) |
+| **CO₂ payback** | 1.5–3 months | 2–4 years | Never (continuous fuel) | 3–6 months | N/A |
+| **Local manufacturability** | 70–90% | 10–20% | 30–50% | 40–60% | 100% |
+| **Cost per liter cold storage** | $0.80–2.15 | $20–70 | $2–5 | $15–30 | $0.05–0.20 |
+| **WHO PQS eligible** | Yes (target) | Yes (certified) | No (phasing out) | Possible | No |
+
+### Quantitative Performance Targets (100 L Standard Unit)
+
+| Performance Metric | Target Value | Basis |
+|--------------------|-------------|-------|
+| COP (cooling / solar heat input) | 0.50–0.70 | Radiative condenser lowers T_cond by 10–15°C vs. air-cooled |
+| Daily net cooling output | 1.5–3.0 kW·h | 5–10× margin over 0.2–0.3 kW·h daily heat leak |
+| Interior temperature stability | 2–8°C, 24/7 | Ice PCM buffers at 0°C; thermostatic valve prevents freezing |
+| Cloudy-day autonomy | 1–2 days | 10–15 kg ice × 334 kJ/kg = 3.3–5.0 MJ cold storage |
+| Adsorbent cycle life | >1,000 cycles (>90% capacity) | CaCl₂ hydrate cycling is reversible; biochar is chemically inert |
+| Radiative coating durability | 7–10 years (film), 5–7 years (paint) | PDMS/SiO₂ outdoor weathering data; BaSO₄ acrylic recoatable |
+| VIP service life | 15 years | Metallized envelope integrity under sealed conditions |
+| Carbon payback | 1.5–3 months | 15–31 kg CO₂ lifecycle vs. 100–400 kg CO₂/yr offset |
+| Unit mass | 45 kg (100 L) | Portable by 2 people; deployable without forklift |
+
+### Validated Basis for Key Claims
+
+| Claim | Supporting Evidence |
+|-------|-------------------|
+| Radiative cooling 5–15°C sub-ambient in daytime | Raman et al., *Nature* 2014 (5°C); Zhai et al., *Science* 2017 (6°C film, scalable); Tao et al. 2022 (BaSO₄ paint, 4.5°C) |
+| CaCl₂-biochar 0.4–0.5 g/g water uptake at 25–80°C | Tso et al., *Int. J. Refrigeration* 2012 (CaCl₂/bamboo charcoal); Poguku et al., *Solar Energy* 2020; Gordeeva et al. 2019 |
+| Adsorption COP improvement with lower T_cond | Aristov, *Appl. Thermal Eng.* 2014; Palomba et al., *Renew. Sustain. Energy Rev.* 2017 |
+| Flat-plate solar thermal 60–85°C at 45–55% efficiency | Standard solar thermal engineering (Duffie & Beckman) |
+| VIP λ < 0.004 W/m·K | Commercially available (e.g., va-Q-tec, Knauf Insulation) |
+
+---
+
+## Deployment Scenarios
+
+### Scenario 1: Rural Health Post Vaccine Cold Chain — Northern Kenya
+
+**Context**: A dispensary in Marsabit County serves 8,000 pastoralist people across a 50 km radius. The nearest grid connection is 120 km away. Currently, vaccines arrive by motorcycle cold box weekly; 30–40% are discarded due to temperature excursions during transport and storage. The clinic has no refrigerator.
+
+**Deployment**: A 200 L WHO PQS-targeted RAR health-post unit is installed ($1,000–1,500). It is placed on a simple concrete pad with the collector facing equator (north-facing, tilt 0–5° at Marsabit's 2°N latitude). The radiative condenser faces north (shaded side). No electrical work, no plumbing, no battery.
+
+**Operation**: Vaccines (BCG, OPV, pentavalent, measles, HPV) stored at 2–8°C. The thermostatic valve prevents freezing (critical for OPV which is freeze-sensitive). Ice buffer provides 24–48 h holdover during overcast periods — the "long rains" (April–June) reduce solar input but the ice battery carries through. Adsorbent recharged once every 5–8 years ($10–20).
+
+**Impact**: Vaccine wastage drops from 30–40% to <5%. The clinic can now store a 2-month supply instead of 1-week. Cold-chain breaks during transport eliminated for the last-mile segment. Estimated 50–100 additional children fully vaccinated per year per clinic. At 100,000 health posts: 5–10M additional children vaccinated, 20,000–50,000 lives saved yearly.
+
+### Scenario 2: Smallholder Dairy Cooperative — Bangladesh
+
+**Context**: A dairy cooperative in Sirajganj district collects milk from 200 smallholder farmers (2–5 cows each). Farmers must deliver milk within 2 hours of milking or it spoils (ambient 30–38°C). Those too far from the collection center lose their milk — and their day's income. The cooperative has a diesel generator running a compressor chiller 4 hours/day, costing $3,000/year in fuel and maintenance.
+
+**Deployment**: A 500 L community RAR cold store ($400–800) is installed at the cooperative collection center. Farmers deliver milk in the morning; it is cooled to 4°C and held for up to 48 hours — allowing the cooperative to negotiate better prices with processors (who pay 15–30% more for chilled vs. warm milk). The diesel generator is retired.
+
+**Impact**: 200 farmers × 5L/day × 365 days × $0.10/L premium = $36,500/year additional income for the cooperative. Diesel fuel savings: 1,500 L/year × $0.80 = $1,200/year. CO₂ avoided: 4 t/year (diesel) + HFC refrigerant eliminated. Milk spoilage losses reduced from 15–25% to <5%. Women (who handle 60–70% of dairy labor in Bangladesh) gain 2–3 hours/day previously spent rushing milk to market.
+
+### Scenario 3: Small-Scale Fishing Village — Senegal
+
+**Context**: Artisanal fishers in Saint-Louis land their catch at dawn on an open beach with no cold storage. By 10 AM, fish that didn't sell are spoiling in 32°C heat. Middlemen pay rock-bottom prices for "panic sales"; 30–40% of the catch is lost to spoilage daily. 50 million people worldwide depend on small-scale fishing.
+
+**Deployment**: A 200 L RAR cold box ($300–500) is placed at the landing site — under a simple shade structure, collector facing south (Saint-Louis is at 16°N). Fish are packed in the cold box immediately after landing, maintained at 2–4°C. The radiative condenser benefits from the dry Sahelian air (low atmospheric emissivity → enhanced radiative cooling).
+
+**Impact**: Fish hold for 3–5 days instead of 2–3 hours. Fishers can sell to higher-value markets (restaurants, processors, distant markets via ice transport) instead of dumping at local prices. Income increase: 40–80% for 20–50 fishers per landing site. Post-harvest fish losses cut from 30–40% to <10%. Protein nutrition improved for the fishing community. No fuel, no electricity, no maintenance — the cold box runs on sunlight and the cold of space.
+
+---
+
+## Risks & Mitigations
+
+| # | Risk | Severity | Likelihood | Mitigation |
+|---|------|----------|-----------|------------|
+| 1 | **CaCl₂ deliquescence** — salt liquefies at high RH, leaking from biochar matrix | High | Medium | Impregnation into biochar with 35–45 wt% loading physically confines brine in pores; hydrophobic carbon surface reduces wetting; additive (5–10 wt% expanded graphite) improves structural integrity; sealed adsorbent container prevents any leakage from reaching food |
+| 2 | **Radiative cooling degraded by humidity/clouds** — atmospheric water vapor absorbs 8–13 µm radiation, reducing sub-ambient cooling | Medium | High (tropics) | RAR designed to work even with reduced radiative cooling — COP drops from 0.5–0.7 to 0.35–0.45 but still maintains 2–8°C. Ice buffer carries through cloudy/humid periods. BaSO₄ paint option has broadband emissivity (works outside the atmospheric window too) |
+| 3 | **VIP envelope failure / vacuum loss** — puncture or permeation degrades insulation to 0.02 W/m·K (5× worse) | High | Low | VIP protected between HDPE inner liner and outer shell (not user-accessible). Backup: 80 mm aerogel blanket variant (λ = 0.014, no vacuum to lose) for harsh environments. VIP envelope: multi-layer aluminum-polymer film, tested 15-year helium leak rate |
+| 4 | **Adsorbent degradation over cycling** — CaCl₂ may migrate, agglomerate, or lose capacity after 1,000+ cycles | Medium | Medium | Biochar pore structure (800–1,200 m²/g) physically constrains salt. Graphite additive prevents agglomeration. Designed for 5–8 year recharge ($10–20, 30 min process). Research target: 10,000 cycles with encapsulated salt (Phase 5) |
+| 5 | **Hot climate marginality (>40°C ambient)** — at 42°C Sahel conditions, COP drops to ~0.35 and ice autonomy is reduced to 18–24 h | Medium | Medium (Sahel, Persian Gulf) | Oversized collector (2.0 m²) + extra adsorbent (7 kg) for hot-climate variant. Auxiliary ice top-up from community cold store during extreme heat waves. Nighttime radiative cooling still strong in dry climates (10–15°C sub-ambient) |
+| 6 | **Valve reliability** — PTFE umbrella valves could stick, fatigue, or leak | Medium | Low | PTFE umbrella valves are proven in 100M+ automotive PCV systems (15-year life). Two valves are independent — single failure degrades performance but doesn't cause unsafe temperature. Field-replaceable ($2–5). Designed for vapor service at low ΔP |
+| 7 | **Freezing of vaccines** — ice at 0°C could freeze vaccines if thermal contact is too direct | High | Low | Wax-pellet thermostatic valve on liquid line closes at 0°C, blocking condensate flow. Vaccine compartment is physically separated from ice vessel by an air gap + HDPE wall. WHO PQS testing protocol specifically tests freeze protection |
+| 8 | **User behavior / door openings** — frequent opening adds heat load | Low | High | VIP + ice buffer designed with 5–10× cooling margin over heat leak. Each door opening adds ~50 kJ (warm air exchange); 10 openings/day = 500 kJ, still <30% of daily cooling capacity. User training: "open twice a day, not 20 times" |
+| 9 | **Manufacturing quality variance** — local assembly may produce leaky units | Medium | Medium | Leak test (vacuum/pressure decay) at end of every assembly line. Modular design: collector, condenser, cold box are independent sealed units — a leak in one doesn't compromise all. Quality training + simple test protocol for local workshops |
+| 10 | **Regulatory / WHO PQS certification timeline** — vaccine refrigerators require rigorous pre-qualification, which can take 3–5 years | Medium | Medium | PQS testing initiated in Phase 2 (2028–2030). Food and fisheries applications do NOT require PQS — can deploy immediately while vaccine certification proceeds in parallel. Non-vaccine markets (dairy, fish, produce) are 10× larger by unit volume |
+
+---
+
+## Vision for 2050
+
+By 2050, the RAR is as common in off-grid communities as the mobile phone is today — a $60–80 appliance found in every rural household, every village market, every health post, every fishing landing site across the tropics and subtropics.
+
+**500 million units** are deployed globally. The last-mile cold chain gap — the single biggest barrier to food security and vaccine equity for the poorest 1.6 billion people — is closed. Post-harvest food losses in developing regions have dropped from 30–40% to under 10%, feeding 800 million more people from the same land and water already under cultivation. Vaccine coverage in remote areas matches urban levels; vaccine-preventable child deaths have fallen 80% from 2020 levels.
+
+The global refrigeration sector has been transformed. HFC refrigerants — once the fastest-growing greenhouse gas source — are in terminal decline, replaced by water-based adsorption cycles for off-grid use and advanced caloric cooling (elastocaloric, magnetocaloric) for grid-connected use. Refrigeration's share of global electricity has peaked and begun declining for the first time in history.
+
+The RAR's manufacturing ecosystem employs 2–3 million people across 30+ countries — mostly women, mostly in rural assembly workshops turning local agricultural waste into biochar adsorbent, local plastic into cold box shells, and local labor into durable appliances. The adsorbent recharge industry (replacing CaCl₂-biochar every 5–8 years) alone employs 500,000 technicians — a recurring service economy built around a zero-operating-cost device.
+
+The RAR has made refrigeration a **universal basic service** — not a luxury of the electrified world, but a thermodynamic right available to anyone with sunlight and a view of the sky. Which is everyone.
+
+The technology that was once the climate paradox — the cold chain that warmed the planet — has become a climate solution. Every RAR unit sequesters 7 kg of carbon in its biochar adsorbent, offsets 100–400 kg CO₂/year from displaced fossil-fuel refrigeration, and saves 1–5 tonnes of food-waste CO₂-equivalent annually. At 500M units: 0.5–2.0 Gt CO₂-eq/year avoided — a meaningful fraction of the 3.3 Gt CO₂-eq currently emitted by global food waste.
+
+This is the future where the cold chain serves everyone — powered by sunlight, cooled by the void of space, built from agricultural waste and salt, costing nothing to run, and lasting 20 years.

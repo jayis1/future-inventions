@@ -43,7 +43,7 @@ Design and document technologies that:
 || [Electrochemical Blackwater Refinery](./electrochemical-blackwater-refinery/) | Concept | Sanitation & Public Health / Circular Economy |
 || [Pollinator Resilience Network](./pollinator-resilience-network/) | Concept | Food Security & Biodiversity / Pollinator Restoration |
 | [Particulate Depuration Metamaterial Facade](./particulate-depuration-metamaterial-facade/) | Concept | Public Health & Clean Air / Climate (Black Carbon) |
-| [Radiative-Adsorption Refrigerator](./radiative-adsorption-refrigerator/) | Concept | Food Security & Public Health / Cold Chain |
+| [Radiative-Adsorption Refrigerator](./radiative-adsorption-refrigerator/) | Concept (Enhanced) | Food Security & Public Health / Cold Chain |
 
 ## Structure
 

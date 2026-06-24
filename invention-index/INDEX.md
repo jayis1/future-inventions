@@ -253,3 +253,12 @@ This file tracks all inventions in the repository with key metadata.
 - **Key Innovation:** First integrated passive seismic cloaking system combining three complementary wave-control mechanisms — phononic bandgap reflection (60–85% energy redirect), gradient-index wave bending (70–90% scattering reduction), and auxetic energy absorption (4–30× better than rubber) — into a zero-maintenance, zero-energy foundation achieving 80–95% ground motion reduction at $40–80/m² (10–25× cheaper than conventional base isolation). Paradigm shift from "resist the shaking" to "don't be shaken" — reshapes the seismic wave field itself so buildings never receive destructive energy.
 - **Target Cost:** $40–80/m² building footprint ($4,000–8,000 for 100 m² house); $25–40/m² at 1M-unit scale; zero maintenance, zero operating cost; 50+ year design life; all materials from waste streams (scrap steel, fly ash/slag, recycled tires, recycled HDPE)
 - **Created:** 2026-06-23
+
+### 030 — Photothermal Forward-Osmosis Desalinator
+- **Category:** Clean Water & Climate Adaptation
+- **TRL:** 2 (Concept)
+- **Impact Potential:** 2.2B+ people lacking safely managed drinking water; 395K+ child deaths/yr from waterborne disease avertable; 55–550 Mt CO₂/yr avoided by displacing SWRO; enables climate-independent water for SIDS, arid coasts, and brackish-aquifer regions; 500M+ direct beneficiaries
+- **Key Material:** Poly(NIPAm-co-sodium acrylate) thermo-responsive hydrogel with embedded carbon-black/polydopamine photothermal nanoparticles (LCST 32–36°C, osmotic drive 40–80 bar); TFC polyamide FO membrane; SiO₂/PDMS radiative sky cooling surface; silica aerogel insulation
+- **Key Innovation:** First zero-electricity desalination cycle using a regenerable photothermal hydrogel draw agent — solar heat triggers an LCST phase transition that releases absorbed water as a *liquid* (avoiding the 2,260 kJ/L latent-heat penalty of distillation), while radiative sky cooling passively resets the gel below LCST. Osmotic pressure (40–80 bar, matching SWRO) drives separation at zero hydraulic pressure. Energy requirement: 2–5 kWhₜₕ/m³ (free solar) vs. 3–5.5 kWhₑ/m³ for RO.
+- **Target Cost:** $1,100–2,100 per community module (5 m³/day); $200–400 household unit (0.2 m³/day); $0.08–0.40/m³ levelized water cost (vs. $0.50–2.00 SWRO); zero operating energy; hydrogel replacement $0.05–0.10/m³
+- **Created:** 2026-06-24

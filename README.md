@@ -45,6 +45,7 @@ Design and document technologies that:
 | [Particulate Depuration Metamaterial Facade](./particulate-depuration-metamaterial-facade/) | Concept | Public Health & Clean Air / Climate (Black Carbon) |
 | [Radiative-Adsorption Refrigerator](./radiative-adsorption-refrigerator/) | Concept (Enhanced) | Food Security & Public Health / Cold Chain |
 | [Seismic Metamaterial Isolation Foundation](./seismic-metamaterial-isolation-foundation/) | Concept | Disaster Resilience & Structural Engineering |
+| [Photothermal Forward-Osmosis Desalinator](./photothermal-forward-osmosis-desalinator/) | Concept | Clean Water & Climate Adaptation |
 
 ## Structure
 

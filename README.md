@@ -46,6 +46,7 @@ Design and document technologies that:
 | [Radiative-Adsorption Refrigerator](./radiative-adsorption-refrigerator/) | Concept (Enhanced) | Food Security & Public Health / Cold Chain |
 | [Seismic Metamaterial Isolation Foundation](./seismic-metamaterial-isolation-foundation/) | Concept | Disaster Resilience & Structural Engineering |
 | [Photothermal Forward-Osmosis Desalinator](./photothermal-forward-osmosis-desalinator/) | Concept | Clean Water & Climate Adaptation |
+| [Permafrost Thermal Stabilization Array](./permafrost-thermal-stabilization-array/) | Concept | Climate & Arctic Restoration |
 
 ## Structure
 

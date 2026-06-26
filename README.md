@@ -47,6 +47,7 @@ Design and document technologies that:
 | [Seismic Metamaterial Isolation Foundation](./seismic-metamaterial-isolation-foundation/) | Concept | Disaster Resilience & Structural Engineering |
 | [Photothermal Forward-Osmosis Desalinator](./photothermal-forward-osmosis-desalinator/) | Concept | Clean Water & Climate Adaptation |
 | [Permafrost Thermal Stabilization Array](./permafrost-thermal-stabilization-array/) | Concept | Climate & Arctic Restoration |
+| [Acid Mine Drainage Electro-Biorefinery](./acid-mine-drainage-electrobiorefinery/) | Concept | Environmental Restoration & Critical Mineral Recovery |
 
 ## Structure
 

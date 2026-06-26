@@ -429,6 +429,35 @@ Fe³⁺-depleted AMD (now pH 3–3.5, still containing Cu²⁺, Ni²⁺, Co²⁺
 
 ---
 
+## Competitive Landscape
+
+### Current AMD Treatment Technologies
+
+| Technology | Maturity | OPEX | Metal Recovery | REE Recovery | Carbon Impact | Key Limitation |
+|------------|----------|------|----------------|--------------|---------------|----------------|
+| **Active lime neutralization** | Commercial (TRL 9) | $0.50–5.00/m³ | 0% (lost in sludge) | 0% | +0.05–0.15 t CO₂/m³ | Perpetual cost, toxic sludge, no revenue |
+| **Passive wetland treatment** | Commercial (TRL 8) | $0.01–0.10/m³ | 0% (in sediment) | 0% | Neutral | Large footprint, cold-climate failure, slow (5–30 day residence) |
+| **Reverse osmosis** | Commercial (TRL 9) | $0.30–1.00/m³ | Concentrate only | Concentrate only | +0.05–0.20 t CO₂/m³ | Brine disposal problem, energy-intensive, no metal value |
+| **Constructed limestone beds** | Commercial (TRL 8) | $0.02–0.10/m³ | 0% | 0% | Neutral | Aluminum toxicity, limited to low-flow, short media life |
+| **Electrocoagulation** | Pilot (TRL 5–6) | $0.10–0.50/m³ | 0% (mixed sludge) | 0% | +0.01–0.05 t CO₂/m³ | High energy use, no selectivity, sludge disposal |
+| **Bioelectrochemical (MFC-only)** | Pilot (TRL 4–5) | $0.01–0.05/m³ | Partial (Fe) | 0% | Neutral | Only iron recovery, no base metals or REE; not integrated |
+| **AMDEB (this work)** | **Concept (TRL 2)** | **$0.02–0.08/m³** | **85–99% (separate metals)** | **70–95%** | **−0.15 to −0.45 t CO₂/m³** | **Early-stage; requires integrated validation** |
+
+### Key Differentiators
+
+The AMDEB is **not** an incremental improvement to AMD treatment — it is a category shift from *treatment* to *refining*. No existing technology:
+
+1. **Recovers revenue from AMD** — all current approaches are pure cost centers
+2. **Powers itself from the pollution** — all others require external energy
+3. **Recovers REEs** — no commercial AMD technology targets rare earth elements
+4. **Produces multiple saleable products** — REE oxide, base metals, battery-grade acid, and construction aggregate simultaneously
+5. **Is carbon-negative** — conventional approaches emit CO₂ (lime production); AMDEB sequesters it
+6. **Is modular and transportable** — most alternatives require permanent civil infrastructure
+
+The closest analog is the **MFC-only** approach, which demonstrates self-powering but stops at iron oxidation. The AMDEB's innovation is the **integration** of four stages into a single revenue-positive, self-powered system — turning a cost burden into a resource refinery.
+
+---
+
 ## Impact
 
 ### Environmental Remediation

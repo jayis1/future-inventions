@@ -48,6 +48,7 @@ Design and document technologies that:
 | [Photothermal Forward-Osmosis Desalinator](./photothermal-forward-osmosis-desalinator/) | Concept | Clean Water & Climate Adaptation |
 | [Permafrost Thermal Stabilization Array](./permafrost-thermal-stabilization-array/) | Concept | Climate & Arctic Restoration |
 | [Acid Mine Drainage Electro-Biorefinery](./acid-mine-drainage-electrobiorefinery/) | Concept | Environmental Restoration & Critical Mineral Recovery |
+| [Magnetotactic Microplastic Scavenger](./magnetotactic-microplastic-scavenger/) | Concept | Clean Water & Environmental Restoration / Circular Economy |
 
 ## Structure
 

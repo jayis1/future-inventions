@@ -50,6 +50,7 @@ Design and document technologies that:
 | [Acid Mine Drainage Electro-Biorefinery](./acid-mine-drainage-electrobiorefinery/) | Concept | Environmental Restoration & Critical Mineral Recovery |
 | [Magnetotactic Microplastic Scavenger](./magnetotactic-microplastic-scavenger/) | Concept | Clean Water & Environmental Restoration / Circular Economy |
 | [Autonomous Biocrust Revival Swarm](./autonomous-biocrust-revival-swarm/) | Concept (Enhanced) | Land Restoration & Climate / Desertification Reversal |
+| [Phononic Thermoelectric Harvester](./phononic-thermoelectric-harvester/) | Concept | Energy Efficiency & Waste Heat Recovery |
 
 ## Structure
 

@@ -300,3 +300,12 @@ This file tracks all inventions in the repository with key metadata.
 - **Enhanced Sections:** How It Works (3-act mechanism walkthrough: manufacturing → deployment → biological establishment, 14-step sequence), Technical Architecture (system block diagram with 4 layers — cloud/dock/drone/field, subsystem data flow table, control architecture), Performance Benchmarks (12-metric comparison vs. current state-of-art, validation basis with references), Deployment Scenarios (3 real-world: Sahel Green Wall 10M ha, Gobi Desert 5M ha, post-wildfire Western US 500K ha/yr), Risks & Mitigations (10-risk matrix with likelihood/severity/mitigation), Vision for 2050, Roadmap (5 phases 2026–2050), Impact Analysis (10 sections: problem scale, carbon impact, dust & health, N displacement, agricultural recovery, economic value, job creation, SDG alignment, scaling projections, risk to impact)
 - **Created:** 2026-06-28
 - **Enhanced:** 2026-06-28
+
+### 035 — Phononic Thermoelectric Harvester
+- **Category:** Energy Efficiency & Waste Heat Recovery
+- **TRL:** 2 (Concept)
+- **Impact Potential:** 60–70% of all energy produced is lost as waste heat (~420 EJ/year); 1–2 Gt CO₂/year avoided at 20% recovery; 770M people gain electricity access via $10 cookstove modules; $200–500B/year industrial energy savings; 500K–2M jobs; 15–25% conversion efficiency at $0.50–2.00/W (vs. 5–8% at $10–50/W current TEGs)
+- **Key Material:** Nanostructured SnSe (tin selenide, ZT = 2.0–2.5 polycrystalline), SnSe/Mo phononic crystal thermal filter (10–50 nm alternating layers, bandgap 0.5–5 THz), Sb₂Se₃ grain-boundary passivation, Na/Bi doping, SiO₂/PDMS radiative cold-side cooler
+- **Key Innovation:** Phononic crystal thermal filter that decouples phonon from electron transport — breaks the Wiedemann-Franz law limit that has constrained thermoelectrics for 200 years. Periodic nanolayers with mismatched acoustic impedance create a phonon bandgap blocking 70–90% of lattice heat phonons while remaining transparent to electrons, reducing thermal conductivity 5–10× without degrading electrical conductivity, multiplying ZT to 3.0–4.5 using only earth-abundant Sn/Se/Mo.
+- **Target Cost:** $0.50–2.00/W (vs. $10–50/W current TEGs); $10 cookstove module (5W); 1.3–4 year industrial payback; 20–30 year module life, zero maintenance
+- **Created:** 2026-06-29

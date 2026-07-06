@@ -51,7 +51,7 @@ Design and document technologies that:
 | [Magnetotactic Microplastic Scavenger](./magnetotactic-microplastic-scavenger/) | Concept | Clean Water & Environmental Restoration / Circular Economy |
 | [Autonomous Biocrust Revival Swarm](./autonomous-biocrust-revival-swarm/) | Concept (Enhanced) | Land Restoration & Climate / Desertification Reversal |
 | [Phononic Thermoelectric Harvester](./phononic-thermoelectric-harvester/) | Concept | Energy Efficiency & Waste Heat Recovery |
-| [Millimeter-Wave Deep Geothermal](./millimeter-wave-deep-geothermal/) | Concept | Clean Baseload Energy / Geothermal |
+| [Millimeter-Wave Deep Geothermal](./millimeter-wave-deep-geothermal/) | Concept (Enhanced) | Clean Baseload Energy / Geothermal |
 
 ## Structure
 

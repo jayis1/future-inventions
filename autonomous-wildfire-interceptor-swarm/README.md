@@ -169,3 +169,257 @@ The result: a fire that today grows to 5 ha before the first crew arrives is sup
 ---
 
 *The AWIS does not replace fire crews, prescribed burning, or forest management — it adds the critical first-response layer that has never existed: permanent, autonomous, zero-latency fire suppression that catches every ignition in the minutes that matter.*
+
+---
+
+## How It Works
+
+### The 8-Minute Kill Chain
+
+Every wildfire follows an exponential growth curve. In dry, windy conditions, a single-tree ignition becomes a 0.1 ha fire in 5 minutes, a 1 ha fire in 15 minutes, and a 100 ha fire in 45 minutes. **The AWIS compresses the detection-to-suppression timeline into the first flat part of that curve — before exponential growth begins.**
+
+Here is the minute-by-minute anatomy of an AWIS engagement:
+
+**T+0:00 — Ignition.** A lightning strike hits a dead Douglas fir on a ridge in the Sierra Nevada. The tree crown ignites. No human sees it. No satellite will detect it for 30–90 minutes (requires a MODIS/VIIRS overpass and a thermal signature of 0.1+ ha).
+
+**T+0:10 — Thermal anomaly detected.** A stratospheric loitering glider (SLG) orbiting at 20 km altitude catches a SWIR (1.6–2.5 µm) hot pixel on its InGaAs camera — a 0.1 m² thermal source at 20 km slant range, distinguishable from background because SWIR penetrates smoke and is insensitive to reflected solar heat. The glider's edge AI (NVIDIA Jetson Orin Nano, 40 TOPS) flags it as a temporal anomaly in <2 seconds.
+
+**T+0:15 — Multi-modal confirmation.** The AI cross-references three independent channels before declaring a fire:
+1. **SWIR temporal growth** — is the hot pixel growing frame-over-frame? (Yes: 0.1 → 0.3 m² in 5 seconds)
+2. **LWIR microbolometer** — does the long-wave IR (8–14 µm) show a broader thermal halo consistent with a vegetation fire? (Yes: 50 mK NETD anomaly)
+3. **VOC chemiresistor array** — do the 8 chemical sensors detect combustion pyrolysis products (formaldehyde, acrolein, furan, benzene, CO) at ppb levels? (Yes: formaldehyde spike at 12 ppb, acrolein at 3 ppb)
+
+This three-way correlation rejects sun glints, hot rooftops, industrial exhaust, and reflections — achieving a false-positive rate of <1%, compared to 5–15% for satellite-only detection.
+
+**T+0:20 — Geolocation.** A second SLG, 40 km away, independently detects the same anomaly. Triangulation from two gliders at known positions yields a fire coordinate accurate to ±2–5 m. The confirmed geolocation is broadcast over the encrypted LoRa mesh to all interceptor docks within 50 km.
+
+**T+0:45 — Interceptor launch.** The nearest solar charging dock (7 km away) receives the alert. Its swarm coordinator estimates fire size (0.01 ha, growing) and allocates 3 interceptor drones. Each VTOL quad-plane launches in <15 seconds — vertical takeoff, then transition to fixed-wing cruise at 100 km/h.
+
+**T+2:00 — On-scene.** The three interceptors arrive over the fire in ~4 minutes (7 km at 100 km/h). Each carries a thermal camera for final approach guidance. The swarm automatically segments the fire perimeter: Interceptor 1 takes the north flank, Interceptor 2 the south, Interceptor 3 the upwind edge.
+
+**T+2:15 — Modality A: Acoustic extinction.** Interceptor 1 descends to 3 m above the north flank — a 0.3 m flame front — and activates its PVDF bimorph piezoelectric transducer array at 65 Hz, 145 dB. The acoustic pressure oscillations disrupt the flame's heat-release/flow coupling (the thermo-acoustic instability that sustains combustion). Within 8 seconds, the flame detaches from the fuel bed and extinguishes. **Zero chemical payload deployed. Zero residue.** This is the DARPA IFE effect, scaled to meter-class flames.
+
+**T+3:00 — Modality B: Metamaterial blanket.** The south flank has grown to 1 m flames — too large for acoustic extinction. Interceptor 2 deploys a rolled 2×3 m blanket from 4 m altitude. The blanket unrolls in 3.5 seconds (gravity + aerodynamic stabilizer fins) and blankets the burning area. Four mechanisms activate simultaneously:
+- **Silica aerogel** (κ < 0.015 W/m·K) blocks 95% of radiant heat transfer to surrounding fuel → lateral spread halts instantly
+- **Intumescent layer** (APP + pentaerythritol + melamine) expands 50–100× on contact with flame, forming a 3–5 cm multicellular char that excludes oxygen
+- **Na₂SO₄·10H₂O PCM microcapsules** undergo endothermic dehydration, absorbing 254 kJ/kg and cooling the fuel below its 250–300°C pyrolysis temperature
+- **Cellulose acetate backing** holds it all together and will biodegrade into soil-improving silica + carbon within 6–12 months
+
+**T+4:00 — Modality C: Ember-quenching mist.** Interceptor 3 detects wind-carried embers 50 m downwind — the mechanism responsible for 50–90% of WUI structure ignitions. It sprays a 50–100 µm nano-mist (CMC + APP + montmorillonite clay) from 5 m altitude, coating embers, vegetation, and ground fuel in a 10 m radius. The CMC thickener makes droplets adhere 10–50× longer than water; the APP forms a phosphoric-acid char on coated surfaces. **Embers are quenched on contact; downwind fuel is pre-protected.**
+
+**T+5:00 — Verification.** Interceptor thermal cameras confirm no remaining heat signature above 80°C. The fire is out. Total elapsed time: 5 minutes. Fire size at suppression: 0.02 ha. No human was involved. No toxic chemical was deployed. The blanket will decompose into fertilizer.
+
+**T+6:00 — Return & reload.** Interceptors return to the dock, recharge in 30 minutes (solar-powered), and are ready for the next engagement. The incident is logged and a human crew is dispatched for mop-up (non-urgent — a 0.02 ha cold spot, not a 500 ha inferno).
+
+### Why this works when nothing else does
+
+The key insight is **latency physics**: wildfire growth is exponential, and the exponent is set by wind, fuel moisture, and terrain — none of which AWIS can change. What AWIS changes is the **intercept point on the growth curve**. Current systems intercept at 0.5–10 ha, where the fire is already in exponential growth and no amount of resources can catch up. AWIS intercepts at 0.001–0.1 ha, where the fire is still in its linear/incipient phase and a 6 m² blanket or a 15-second acoustic burst is sufficient. **The suppression energy required scales with fire area, so catching fires 100–1000× smaller means suppression is 100–1000× easier.**
+
+---
+
+## Technical Architecture
+
+### System Topology
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                     STRATOSPHERIC LAYER (18–22 km)                   │
+│                                                                      │
+│   ┌─────────┐     ┌─────────┐     ┌─────────┐     ┌─────────┐      │
+│   │  SLG-1  │◄───►│  SLG-2  │◄───►│  SLG-3  │◄───►│  SLG-N  │      │
+│   │ SWIR +  │     │ SWIR +  │     │ SWIR +  │     │ SWIR +  │      │
+│   │ LWIR +  │     │ LWIR +  │     │ LWIR +  │     │ LWIR +  │      │
+│   │ VOC +   │     │ VOC +   │     │ VOC +   │     │ VOC +   │      │
+│   │ Edge AI │     │ Edge AI │     │ Edge AI │     │ Edge AI │      │
+│   └────┬────┘     └────┬────┘     └────┬────┘     └────┬────┘      │
+│        │               │               │               │            │
+│        └───────────────┴──── LoRa Mesh ─┴───────────────┘            │
+│                                │                                     │
+│              Triangulated fire geolocation (±2–5 m)                  │
+└────────────────────────────────┼─────────────────────────────────────┘
+                                 │ Encrypted fire alert (915 MHz LoRa)
+                                 ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│                    GROUND LAYER (0–4 km AGL)                         │
+│                                                                      │
+│   ┌──────────┐   ┌──────────┐   ┌──────────┐   ┌──────────┐        │
+│   │  Dock-1  │   │  Dock-2  │   │  Dock-3  │   │  Dock-N  │        │
+│   │ 5 kW ☀  │   │ 5 kW ☀  │   │ 5 kW ☀  │   │ 5 kW ☀  │        │
+│   │ 10 kWh   │   │ 10 kWh   │   │ 10 kWh   │   │ 10 kWh   │        │
+│   │ 8 IDs    │   │ 8 IDs    │   │ 8 IDs    │   │ 8 IDs    │        │
+│   └────┬─────┘   └────┬─────┘   └────┬─────┘   └────┬─────┘        │
+│        │              │              │              │               │
+│   ┌────▼─────┐   ┌────▼─────┐   ┌────▼─────┐   ┌────▼─────┐        │
+│   │ ID swarm │   │ ID swarm │   │ ID swarm │   │ ID swarm │        │
+│   │ 2–12 ×   │   │ 2–12 ×   │   │ 2–12 ×   │   │ 2–12 ×   │        │
+│   │ VTOL     │   │ VTOL     │   │ VTOL     │   │ VTOL     │        │
+│   │ 80–120   │   │ 80–120   │   │ 80–120   │   │ 80–120   │        │
+│   │ km/h     │   │ km/h     │   │ km/h     │   │ km/h     │        │
+│   └──────────┘   └──────────┘   └──────────┘   └──────────┘        │
+│                                                                      │
+│   ┌──────────────────────────────────────────────────────┐          │
+│   │  Ground Sensor Pods (optional, WUI/utility corridors) │          │
+│   │  VOC + thermopile + PM2.5 → LoRa mesh → nearest dock  │          │
+│   │  $20–40 each, 5–10 km spacing, solar-powered           │          │
+│   └──────────────────────────────────────────────────────┘          │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+### Data Flow & Decision Pipeline
+
+| Stage | Input | Processing | Output | Latency |
+|---|---|---|---|---|
+| 1. Sensing | SWIR + LWIR + VOC raw streams | Per-frame capture at 30 fps | Raw sensor frames | 33 ms |
+| 2. Anomaly detection | Temporal frame stack (3–5 frames) | 3D-CNN thermal growth detector | Binary anomaly flag | <2 s |
+| 3. Classification | SWIR + LWIR + VOC correlation | Multi-modal fusion (3-channel AND) | 3-class: fire / non-fire / structure | <1 s |
+| 4. Geolocation | 2+ SLG bearings + GNSS positions | Triangulation (least-squares) | Lat/lon ±2–5 m | <2 s |
+| 5. Alert broadcast | Confirmed fire coord + size estimate | Encrypted LoRa mesh relay | Alert to all docks in range | 5–15 s |
+| 6. Swarm allocation | Fire coord + size + wind + dock inventory | Greedy task allocation algorithm | Launch order + assignment | 5–10 s |
+| 7. Flight & approach | Fire coord + thermal camera feed | Autonomous navigation + swarm deconfliction | On-scene arrival | 60–240 s |
+| 8. Suppression | Fire size + flame height + wind | Adaptive modality selection (A→B→C) | Fire extinguished | 15–120 s |
+| 9. Verification | Post-suppression thermal scan | Residual heat detection | Confirmed-out or re-engage | 30–60 s |
+
+**Total pipeline: T+0 (ignition) → T+2–8 min (suppressed).** The entire chain is autonomous — no human in the loop during engagement. Human crews are notified for mop-up only.
+
+### Subsystem Summary
+
+| Subsystem | Role | Key Components | Mass/Power |
+|---|---|---|---|
+| Stratospheric Glider (SLG) | Persistent detection & targeting | Perovskite-Si solar (400–600 W), Li-S battery (1.5–2.5 kWh), SWIR + LWIR + VOC sensors, Jetson Orin Nano | 10–12 kg / 350 W |
+| Interceptor Drone (ID) | Rapid suppression delivery | VTOL quad-plane, NMC battery (400–600 Wh), thermal camera, 3 suppression modalities | 2.0–2.5 kg / 200–1200 W |
+| Solar Charging Dock | ID housing & energy | 5 kWp solar, 10 kWh LiFePO₄, 8-bay charging (2.5 kW/bay), LoRa + cellular comms | 2×1.5×1.8 m / self-powered |
+| Ground Sensor Pod (optional) | Complementary detection | VOC chemiresistor + thermopile + PM2.5, LoRa mesh, solar 2 Wp | 15×8×5 cm / 2 W |
+| Ground Station | Fleet management | SLG data link (X-band), fleet health monitoring, incident logging, human interface | Fixed installation |
+
+> **Full technical specifications** for every subsystem — airframe parameters, sensor specs, materials, power budgets, and manufacturing supply chains — are in [`SPECIFICATION.md`](./SPECIFICATION.md).
+
+---
+
+## Performance Benchmarks
+
+### Detection: AWIS vs. Current State of the Art
+
+| Metric | Satellite (MODIS/VIIRS) | Manned Lookout | AWIS (Stratospheric Glider) |
+|---|---|---|---|
+| Detection latency | 15–120 min | 5–30 min (day only) | **10–30 sec** |
+| Min. detectable fire size | 0.1–1 ha (1,000–10,000 m²) | 0.5–5 ha (visible smoke) | **0.0001 ha (1 m²)** |
+| Night detection | Limited (no visible-band) | No | **Yes (SWIR + LWIR)** |
+| Smoke penetration | Poor (visible-band) | Poor (visibility-limited) | **Excellent (SWIR)** |
+| Revisit interval | 6–12 hours (polar orbit) | Continuous (fixed post) | **Continuous (permanent station)** |
+| False-positive rate | 5–15% | 10–30% (human error) | **<1% (3-modal fusion)** |
+| Coverage per sensor | 1,000 km swath | 20 km visual horizon | 50 km station radius |
+
+### Suppression: AWIS vs. Current State of the Art
+
+| Metric | Large Air Tanker (LAT) | Ground Crew | AWIS |
+|---|---|---|---|
+| Response time (dispatch → on-scene) | 20–60 min | 30–240 min | **1–4 min** |
+| Fire size at arrival | 0.5–10+ ha | 0.5–50+ ha | **0.001–0.1 ha** |
+| Night operation | No | Limited | **Yes** |
+| High-wind operation (>50 km/h) | No (grounded) | Limited | **Yes (up to 60 km/h)** |
+| Cost per suppression event | $10,000–50,000 | $5,000–30,000 | **$50–300** |
+| Retardant toxicity | Moderate–high (ammonia, metals) | Moderate | **None (biodegradable)** |
+| Ember interception | None | None (manual only) | **Active nano-mist quenching** |
+| Availability | On-call (crews dispatched) | On-call | **24/7/365 permanent station** |
+| Payload exhaustion | Must return to base for reload | Must return for refilling | **Unlimited acoustic + reloadable blanket/mist** |
+
+### The Latency Advantage in Context
+
+The most important metric is not cost or capability — it is **time-to-suppression**, because fire growth is exponential:
+
+| Time Since Ignition | Fire Size (dry, 30 km/h wind) | Current System Status | AWIS Status |
+|---|---|---|---|
+| 0 min | 1 m² (single ignition) | Undetected | Detected (SWIR anomaly) |
+| 1 min | 5–10 m² | Undetected | Confirmed (3-modal) + geolocated |
+| 3 min | 50–100 m² | Undetected | Interceptors on-scene |
+| 5 min | 200–500 m² (0.02–0.05 ha) | Maybe detected by satellite | **Fire suppressed** |
+| 15 min | 0.5–1 ha | First satellite alert | (AWIS already done — monitoring for re-ignition) |
+| 30 min | 2–5 ha | First air tanker dispatched | (Human crew doing mop-up) |
+| 60 min | 10–30 ha | Multiple tankers on-scene | (Catastrophe would already be in progress without AWIS) |
+
+> Detailed benchmark methodology and comparison-to-alternatives tables are in [`SPECIFICATION.md`](./SPECIFICATION.md) §9 and §14.
+
+---
+
+## Deployment Scenarios
+
+### Scenario 1: California Megafire Prevention
+
+**The problem:** California's 2025 fire season caused $250B+ in damages in a single event. 15 Mha of high-risk fire area, 2M+ homes in the WUI, insurer withdrawal from entire counties. Annual suppression costs: $2–4B. The system is capacity-constrained — during Red Flag warnings, all resources are committed and new ignitions go unanswered.
+
+**AWIS deployment:** 75 regional installations covering the Sierra Nevada, coastal ranges, and WUI zones. 3,750 stratospheric gliders, 15,000–37,500 interceptor drones, 1,875 docks. Annual cost: $75–500M — **less than 25% of current suppression spending**.
+
+**Expected outcome:** 80–95% of ignitions suppressed at <0.1 ha. The 2025 LA-scale event becomes near-impossible within the coverage zone. Structure loss reduced 70–90%. Smoke events reduced 60–80%. Insurers return to the market. The 2M WUI homes ($1–3T in asset value) are protected by a system that costs less than a single catastrophic event's damages.
+
+### Scenario 2: Mediterranean Basin
+
+**The problem:** Greece, Spain, Portugal, Italy, and France face increasingly severe fire seasons. The 2023 Greek wildfires burned 130K ha, killed 20 people, and displaced thousands. The 2024 Portuguese fires set records. Tourism economies are disrupted. Fire resources are shared across borders but coordination is slow.
+
+**AWIS deployment:** 25 regional installations covering 5 Mha, shared across 5 nations via an EU-coordinated fund. 1,250 gliders, 5,000–12,500 interceptors, 625 docks. Annual cost: $25–170M (split 5 ways = $5–34M/nation).
+
+**Expected outcome:** Cross-border ignitions detected and suppressed before they spread. Tourist-season fire risk drops to negligible. The 2023 Greek event — ignited by a single power line fault — would have been suppressed at 0.01 ha. Mediterranean forests and olive groves preserved. Carbon sink protected.
+
+### Scenario 3: Indonesian Peatland & Transboundary Haze
+
+**The problem:** Indonesian peat fires burn underground (smoldering), are extremely difficult to extinguish, and emit 10× more smoke per hectare than surface fires. The 2015 haze crisis burned 2.6 Mha, caused 500,000+ respiratory cases across SE Asia, cost $16B, and exposed 100M+ people to toxic PM2.5 for months. Peat fires can smolder for weeks and re-ignite.
+
+**AWIS adaptation:** The standard AWIS catches surface ignitions (slash-and-burn agriculture, dry lightning) *before* they reach peat layers. Ground sensor pods are upgraded with CO/CH₄ subsurface sensors to detect peat smoldering. Blankets are deployed at higher density to smoldering surface patches before peat penetration. 100 regional installations covering 20 Mha.
+
+**Expected outcome:** The 2015-scale crisis is prevented. Surface fires are caught at ignition before they reach peat. 100M+ people in SE Asia protected from transboundary haze. ASEAN shared-fund cost: $100–660M/year — a fraction of the $16B+ economic loss from a single bad year.
+
+> Full deployment scenarios with regional sizing, cost breakdowns, and expected outcomes are in [`SPECIFICATION.md`](./SPECIFICATION.md) §10.
+
+---
+
+## Risks & Mitigations
+
+| Risk | Likelihood | Impact | Mitigation |
+|---|---|---|---|
+| **Stratospheric glider endurance** — battery degradation, stratospheric weather | Medium | Medium | Redundant fleet (50+ per region); 3–5 day battery buffer; seasonal swap; L/D 35–42 for efficient glide |
+| **Acoustic extinction limited to small flames** (<1 m) | High (expected) | Low | By design — AWIS targets fires in first 1–5 min. Acoustic is Modality A for smallest fires; blanket + mist for larger. System is layered, not single-modal. |
+| **Blanket deployment accuracy in wind** | Medium | Medium | Aerodynamic stabilizer fins + GPS-guided drop; wind compensation algorithm; overlapping deployment for redundancy |
+| **Drone airframe fire/heat damage** | Medium | High | Kevlar/Nomex airframe + aluminized heat-reflective coating; 3–5 m standoff altitude; rapid egress after deployment |
+| **Regulatory airspace integration** (BVLOS UAVs) | High | High | FAA Part 108 / EASA U-space compliance; ADS-B Lite transponders; gliders operate above Class A; interceptors in low-density WUI/forest (mostly uncontrolled airspace); coordinate with ATC |
+| **Large fire overwhelm** — a fire front exceeds AWIS capacity | Medium | Medium | By design: AWIS suppresses *ignitions*, not fire fronts. If fire exceeds 1 ha, AWIS transitions to ember interception + structure pre-coating while conventional resources attack the front. AWIS reduces load on manned resources by 80–95%. |
+| **Public trust / privacy** — cameras on persistent drones | Medium | Medium | Thermal + SWIR only (no high-res visible surveillance); data retained 72 hours then deleted; transparent privacy policy; civilian oversight board; open-source detection algorithms |
+| **Cybersecurity** — false alerts, drone hijacking | Medium | High | End-to-end AES-256 encryption; signed firmware; intrusion detection on dock networks; manual override at ground station; physically isolated command channel |
+| **Wildlife disturbance** | Low | Low | Interceptors deploy only on fire alert (no patrolling); gliders are silent/invisible from ground; acoustic module runs 5–15 sec only during fire |
+| **Ecological fire suppression** — preventing all fire disrupts ecosystems | Low | Medium | AWIS targets anthropogenic + extreme-weather ignitions. Prescribed/cultural burning continues where ecologically appropriate. Fire managers can designate "allow-burn" zones where AWIS stands down. |
+
+> Full risk matrix with likelihood/impact ratings and detailed mitigations is in [`SPECIFICATION.md`](./SPECIFICATION.md) §11.
+
+---
+
+## Vision for 2050
+
+### The End of the Wildfire Catastrophe
+
+By 2050, the Autonomous Wildfire Interceptor Swarm has been deployed across 200+ fire-prone regions worldwide — from California to the Mediterranean, from the Australian bush to the Siberian taiga, from the Amazon frontier to the Indonesian archipelago. The system that once cost $1–6.6M per region now costs <$500K thanks to mass manufacturing and Moore's-law-driven sensor miniaturization.
+
+**The wildfire catastrophe as we knew it is over.**
+
+The annual statistics that defined the 2020s — 400–500 Mha burned, 5–8 Gt CO₂ emitted, 100,000 dead, $250B in damages — have been reduced by 80–95%. Megafires are no longer a seasonal inevitability but a rare anomaly, studied in the same way we study the pre-suppression-era logging fires of the 19th century. The 2023 Canadian fire (15 Mha, 480 Mt CO₂), the 2025 LA fire ($250B), the 2015 Indonesian haze (500K respiratory cases) — these are historical references, not recurring events.
+
+### A World With Permanent Fire Immunity
+
+**Forests are carbon sinks again.** The 30–40% of post-fire soil carbon that used to be lost to erosion and decomposition stays in the ground. Forests that were becoming net carbon sources due to repeated burning are net sinks again. The fire-climate feedback loop — more CO₂ → hotter/drier → more fires → more CO₂ — is broken.
+
+**The WUI is livable.** 100M+ homes in fire-prone areas are protected by a system that costs less than $200/ha/year. Insurance has returned to every market. Home values in fire-prone areas have recovered. People no longer evacuate at 2 AM with 15 minutes' notice. The "fire weather" anxiety that defined life in California, Australia, and the Mediterranean has dissolved.
+
+**Smoke is no longer a public health crisis.** The 200,000–600,000 annual premature deaths from wildfire smoke PM2.5 have been cut by 80%. The apocalyptic orange skies over New York, Seattle, and Sydney — visible reminders of distant destruction — are memories, not annual events. Air quality indices no longer spike to "hazardous" for weeks at a time.
+
+**Fire ecology is restored.** With catastrophic megafires suppressed, prescribed and cultural burning — the low-severity fire that ecosystems evolved with — has been reintroduced safely. Indigenous fire management practices, displaced by a century of total fire suppression, are integrated with AWIS: the system stands down in designated cultural-burn zones and protects surrounding areas from escaped fire. The result is healthier forests, more biodiversity, and less fuel accumulation.
+
+**The technology has spread equitably.** AWIS is not just for wealthy nations. At $200–800/ha/year — dropping below $100/ha/year at full scale — it is affordable for middle-income countries. Indonesia, Brazil, Chile, South Africa, and Mediterranean North Africa all have coverage. The fire burden that fell disproportionately on subsistence farmers, informal settlements, and Indigenous communities is lifted. Local manufacturing of docks and blankets creates 200K–1M jobs globally.
+
+**The system has evolved.** By 2050, AWIS is not just reactive — it is predictive. AI models integrate lightning forecasts, grid-fault monitoring, vegetation moisture indices, and even arson pattern detection to pre-position interceptors before ignitions occur. The system works with forest managers to identify and mitigate fuel loads. It interfaces with power utilities to de-energize lines before fault-induced ignitions. The kill chain has been shortened from 2–8 minutes to 30–60 seconds.
+
+**And in the end, the most profound change is cultural.** In the 2020s, fire season meant fear — fear of evacuation, fear of loss, fear of the orange sky. By 2050, fire season is a managed event, like a thunderstorm or a winter snowfall. The AWIS did not eliminate fire — it eliminated the catastrophe. Fire returned to being what it was for 400 million years before humans disrupted the cycle: a natural, necessary, manageable part of the landscape.
+
+---
+
+> **Full technical specification:** [`SPECIFICATION.md`](./SPECIFICATION.md) — 14 sections covering airframe, sensors, suppression physics, materials supply chain, benchmarks, deployment, risks, and research frontiers.
+>
+> **Development roadmap:** [`ROADMAP.md`](./ROADMAP.md) — 5-phase path from concept to ubiquity (2026–2045).
+>
+> **Impact analysis:** [`IMPACT_ANALYSIS.md`](./IMPACT_ANALYSIS.md) — Quantitative projections for climate, lives, economics, and ecology.

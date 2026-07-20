@@ -53,6 +53,7 @@ Design and document technologies that:
 | [Phononic Thermoelectric Harvester](./phononic-thermoelectric-harvester/) | Concept | Energy Efficiency & Waste Heat Recovery |
 || [Millimeter-Wave Deep Geothermal](./millimeter-wave-deep-geothermal/) | Concept (Enhanced) | Clean Baseload Energy / Geothermal |
 || [Autonomous Wildfire Interceptor Swarm](./autonomous-wildfire-interceptor-swarm/) | Concept | Disaster Resilience & Climate / Wildfire Prevention |
+|| [Peatland Carbon-Lock Rewetting Array](./peatland-carbon-lock-rewetting-array/) | Concept | Climate & Environmental Restoration / Peatland Rewetting |
 
 ## Structure
 

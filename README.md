@@ -54,6 +54,7 @@ Design and document technologies that:
 || [Millimeter-Wave Deep Geothermal](./millimeter-wave-deep-geothermal/) | Concept (Enhanced) | Clean Baseload Energy / Geothermal |
 || [Autonomous Wildfire Interceptor Swarm](./autonomous-wildfire-interceptor-swarm/) | Concept | Disaster Resilience & Climate / Wildfire Prevention |
 || [Peatland Carbon-Lock Rewetting Array](./peatland-carbon-lock-rewetting-array/) | Concept | Climate & Environmental Restoration / Peatland Rewetting |
+| [Plasma-Catalytic PFAS Mineralization Reactor](./plasma-catalytic-pfas-mineralization-reactor/) | Concept | Clean Water & Environmental Restoration / PFAS Remediation |
 
 ## Structure
 

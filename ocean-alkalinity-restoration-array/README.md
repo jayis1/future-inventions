@@ -390,6 +390,35 @@ The deeper lesson: **ocean acidification was never irreversible**. The ocean's c
 
 And the "double alkalinity" insight — that the acid byproduct of electrochemical splitting can be transformed into a second alkalinity source via rock weathering — becomes a paradigm for circular industrial chemistry: **there are no waste streams, only undiscovered resource streams.**
 
+## Regulatory & Governance Pathway
+
+Ocean alkalinity enhancement at scale is an emerging area of international marine governance. The OARA is designed to navigate this proactively:
+
+- **London Convention/Protocol (LC/LP):** The international framework governing ocean dumping and marine geoengineering. OAE is under active discussion; the LP's 2013 amendment established a permitting framework for marine geoengineering research. OARA pilot deployments align with the LC/LP "assessment framework" for legitimate scientific research. Full-scale deployment will require a revised OAE-specific protocol — the OARA's per-platform MRV and zero-chemical-input design (only seawater, electricity, and basalt) are specifically engineered to meet emerging LC/LP criteria.
+
+- **National EEZ permits:** Initial pilot deployments (Phase 3) occur within Exclusive Economic Zones of willing nations (Australia, USA, Spain, Japan) under national environmental permitting. Target zones are selected for existing regulatory pathways (e.g., US EPA Ocean Dumping Permit, Australian EPBC Act).
+
+- **Carbon credit certification:** OARA's MRV approach — in-situ pH + alkalinity measurement on every platform, paired upstream/downstream pCO₂ transects, and ocean circulation modeling for attribution — is designed to meet the highest-tier verification standards. A methodology document for OAE-based carbon credits is under development with Verra and Gold Standard. The permanence advantage (>10,000 yr dissolved bicarbonate) and per-unit verifiability position OARA credits as premium durable CDR.
+
+- **Scientific oversight:** An independent International OAE Science Advisory Board (modelled on the IPCC/GEA approach) reviews deployment data, ecological impact monitoring, and recommends adaptive management. All MRV data is open-access via a public dashboard.
+
+- **Equity & the global commons:** The ocean is a global commons. OARA deployment benefits all nations, especially climate-vulnerable coastal and island states. Governance ensures that deployment decisions involve affected nations, that reef rescue zones prioritize the most vulnerable ecosystems, and that technology transfer enables any coastal nation to manufacture and operate its own fleet.
+
+## Comparison with Complementary Inventions
+
+The OARA addresses ocean acidification — a distinct problem from atmospheric CO₂ capture or local coral restoration. It is complementary to other inventions in this repository:
+
+| Invention | Addresses | Complementarity with OARA |
+|-----------|-----------|--------------------------|
+| **Coral Calcification Acceleration Platform (#014)** | Local reef calcification enhancement | OARA addresses the *underlying chemistry* (pH, Ω_arag); coral platforms address biological calcification rate. Together: OARA restores the water chemistry, coral platforms boost the biology — synergistic. |
+| **Atmospheric Methane Oxidation Array** | Atmospheric methane removal | Methane and CO₂ are the two dominant greenhouse gases; these inventions tackle different atmospheric drivers in parallel. |
+| **Autonomous Kelp Cultivator (#010)** | Coastal carbon sequestration via kelp forests | Kelp forests benefit from restored pH; OARA's alkalinity discharge creates favorable conditions for kelp aquaculture expansion. |
+| **Magnetotactic Microplastic Scavenger (#018)** | Ocean microplastic cleanup | Both are autonomous marine fleets; shared service vessel infrastructure, satellite comms, and governance frameworks. |
+| **Atmospheric Protein Synthesizer** | Food security via air-derived protein | Complementary food security approaches: OARA protects marine protein, atmospheric synthesizer provides land-based alternative. |
+| **Ocean Current Turbine (#024)** | Clean energy from ocean currents | Shared autonomous marine platform technology; potential for combined energy + alkalinity platforms. |
+
+**Key distinction:** OARA is the only invention in this catalog that directly reverses ocean acidification at the chemical level. While atmospheric CO₂ removal (DAC, methane oxidation) indirectly slows future acidification, only OAE actively *restores* the alkalinity that has already been depleted — making it essential for reef and shellfish survival in the 2030–2050 window before atmospheric CO₂ can be stabilized.
+
 ## Categories
 
 Carbon Dioxide Removal / Ocean Acidification Reversal / Ocean Alkalinity Enhancement / Climate Restoration / Marine Ecosystem Recovery / Green Hydrogen Co-Production / Autonomous Marine Systems

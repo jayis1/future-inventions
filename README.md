@@ -55,7 +55,8 @@ Design and document technologies that:
 || [Autonomous Wildfire Interceptor Swarm](./autonomous-wildfire-interceptor-swarm/) | Concept | Disaster Resilience & Climate / Wildfire Prevention |
 || [Peatland Carbon-Lock Rewetting Array](./peatland-carbon-lock-rewetting-array/) | Concept | Climate & Environmental Restoration / Peatland Rewetting |
 | [Plasma-Catalytic PFAS Mineralization Reactor](./plasma-catalytic-pfas-mineralization-reactor/) | Concept | Clean Water & Environmental Restoration / PFAS Remediation |
-| [Thermoacoustic Metamaterial Heat Pump](./thermoacoustic-metamaterial-heat-pump/) | Concept | Energy Efficiency / Refrigerant Elimination / Solid-State HVAC |
+|| [Thermoacoustic Metamaterial Heat Pump](./thermoacoustic-metamaterial-heat-pump/) | Concept | Energy Efficiency / Refrigerant Elimination / Solid-State HVAC |
+|| [Ocean Alkalinity Restoration Array](./ocean-alkalinity-restoration-array/) | Concept | Carbon Dioxide Removal / Ocean Acidification Reversal / Marine Ecosystem Recovery |
 
 ## Structure
 

@@ -57,6 +57,7 @@ Design and document technologies that:
 | [Plasma-Catalytic PFAS Mineralization Reactor](./plasma-catalytic-pfas-mineralization-reactor/) | Concept | Clean Water & Environmental Restoration / PFAS Remediation |
 || [Thermoacoustic Metamaterial Heat Pump](./thermoacoustic-metamaterial-heat-pump/) | Concept | Energy Efficiency / Refrigerant Elimination / Solid-State HVAC |
 || [Ocean Alkalinity Restoration Array](./ocean-alkalinity-restoration-array/) | Concept | Carbon Dioxide Removal / Ocean Acidification Reversal / Marine Ecosystem Recovery |
+| [Electrogenic Denitrification Drainage Array](./electrogenic-denitrification-drainage-array/) | Concept | Environmental Restoration / Clean Water / Climate (N₂O Mitigation) / Ocean Restoration |
 
 ## Structure
 

@@ -377,9 +377,11 @@ This file tracks all inventions in the repository with key metadata.
 
 ### 043 — Electroferrate Arsenic Remediation Network
 - **Category:** Clean Water & Public Health / Toxic Metal Remediation
-- **TRL:** 2 (Concept)
+- **TRL:** 2 (Concept — Enhanced)
 - **Impact Potential:** 140M+ people exposed to arsenic-contaminated groundwater; reduces 50–1000 µg/L influent arsenic to <5 µg/L drinking water; addresses one of the world's largest chronic poisoning crises across South Asia, Southeast Asia, Latin America, and underserved rural North America; sharply lowers lifetime cancer, cardiovascular, pregnancy, and developmental harms; avoids recurring toxic-sludge dumping from exhausted filters; enables village-scale safe water independence with solar-powered treatment
 - **Key Material:** NiFeOx ferrate-generating anode on nickel foam; sacrificial low-carbon iron stage; magnetite-laterite composite granules with electro-regenerated ferrihydrite coating; Fe-phosphate/clay ceramic immobilization matrix; mono-Si PV + LiFePO₄ battery; optional gold-microelectrode arsenic sensor
 - **Key Innovation:** First integration of on-demand electroferrate oxidation, regenerable magnetic iron sorbents, and decentralized arsenic ceramic immobilization in one point-of-use / point-of-collection platform. Ferrate(VI) solves the hardest low-cost arsenic-treatment problem — oxidation of neutral As(III) to capturable As(V) — while electro-regeneration rebuilds fresh FeOOH capture surfaces in place and a village-safe kiln locks the concentrate into low-leach Fe-As-P glass-ceramic pellets instead of dumpable sludge.
 - **Target Cost:** $120–220 household unit (20–40 L/day); $600–1,800 shared-well / school / clinic unit (0.5–2 m³/day); $0.02–0.10/m³ treated; 0.05–0.20 kWh/m³ powered by 30–150 W solar; service interval 6–12 months with 5+ year sorbent-core life
 - **Created:** 2026-08-24
+- **Enhanced Sections:** Technical Architecture (8-stage system flow, subsystem and data-flow logic), Performance Benchmarks (comparison table vs. low-cost media and centralized treatment), Deployment Scenarios (3 real-world use cases), Risks & Mitigations (7-risk matrix), Vision for 2050, Roadmap (5 phases from bench validation to public infrastructure), Impact Analysis (deployment, health, cost, waste, jobs, sensitivity)
+- **Enhanced:** 2026-08-24

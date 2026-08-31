@@ -385,3 +385,12 @@ This file tracks all inventions in the repository with key metadata.
 - **Created:** 2026-08-24
 - **Enhanced Sections:** Technical Architecture (8-stage system flow, subsystem and data-flow logic), Performance Benchmarks (comparison table vs. low-cost media and centralized treatment), Deployment Scenarios (3 real-world use cases), Risks & Mitigations (7-risk matrix), Vision for 2050, Roadmap (5 phases from bench validation to public infrastructure), Impact Analysis (deployment, health, cost, waste, jobs, sensitivity)
 - **Enhanced:** 2026-08-24
+
+### 044 — Electromineral Pipe Regenerator
+- **Category:** Public Health & Water Infrastructure / Lead Remediation
+- **TRL:** 2 (Concept)
+- **Impact Potential:** 100M+ people served by aging lead-risk plumbing or corrosive distribution chemistry; cuts dissolved lead 90–99.5% after one rehabilitation visit; protects children in older homes, schools, clinics, and apartment buildings while replacement programs catch up; reduces dependence on disposable faucet filters and emergency bottled water during corrosion-control failures
+- **Key Material:** Hydroxyapatite / chloropyromorphite-forming calcium-phosphate chemistry, sodium silicate densification layer, birnessite-type MnO2 on carbon felt polishing electrodes, ferric microfloc capture stage, bismuth-film anodic stripping voltammetry sensor, 24–48 V portable recirculation skid
+- **Key Innovation:** First building-scale system to electrochemically grow a dense mineral barrier directly on lead-bearing pipe walls, then verify tap safety with inline trace-lead sensing and retain a regenerable polishing backstop. Turns lead control from continuous chemical defense into targeted structural rehabilitation of the pipe-water interface.
+- **Target Cost:** $800–2,500 single-family / small-clinic retrofit; $8,000–40,000 school or apartment system; $180–500 home maintenance module; 0.05–0.25 kWh/m³ during rehabilitation, <0.02 kWh/m³ in maintenance mode
+- **Created:** 2026-08-31

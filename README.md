@@ -59,6 +59,7 @@ Design and document technologies that:
 || [Ocean Alkalinity Restoration Array](./ocean-alkalinity-restoration-array/) | Concept | Carbon Dioxide Removal / Ocean Acidification Reversal / Marine Ecosystem Recovery |
 | [Electrogenic Denitrification Drainage Array](./electrogenic-denitrification-drainage-array/) | Concept | Environmental Restoration / Clean Water / Climate (N₂O Mitigation) / Ocean Restoration |
 | [Electroferrate Arsenic Remediation Network](./electroferrate-arsenic-remediation-network/) | Concept (Enhanced) | Clean Water & Public Health / Toxic Metal Remediation |
+| [Electromineral Pipe Regenerator](./electromineral-pipe-regenerator/) | Concept | Public Health & Water Infrastructure / Lead Remediation |
 
 ## Structure
 

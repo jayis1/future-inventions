@@ -76,3 +76,98 @@ That combination — **repair, capture, verify, and refresh** — is what makes 
 - **Scalability:** Uses known materials — calcium salts, sodium silicate, phosphate, manganese oxide, conductive carbon, stainless manifolds, and low-voltage power electronics — that can be regionally manufactured.
 
 If deployed at scale, EPR could shrink the dangerous waiting period between identifying lead-risk plumbing and finally replacing it.
+
+## Technical Architecture
+
+EPR is designed as a modular building-service appliance with five tightly coupled subsystems:
+
+### 1. Hydraulic service skid
+- Food-grade PEX or stainless recirculation loop with quick-connect adapters for meter inlet, utility room manifolds, or isolated zone branches
+- Variable-speed pump sized for **5–80 L/min** depending on building class
+- Solenoid valve manifold that alternates between mineralization, rinse, verification, and bypass paths
+- Inline pressure, turbidity, conductivity, temperature, and pH sensors for chemistry control and blockage detection
+
+### 2. Electro-mineralization module
+- Low-voltage DC power stage, typically **12–48 V**, driving pulsed current through removable conductive inserts and temporary contact probes
+- Flow-through precursor dosing cartridges supplying calcium salt, sodium silicate, phosphate, and buffering chemistry at ppm-to-low-mM levels
+- Pulse control software that tunes duty cycle, current density, and residence time to favor near-wall nucleation instead of bulk precipitation
+
+### 3. Capture and polishing module
+- **MnO2-coated carbon felt** electrodes for dissolved lead uptake during transients
+- Ferric microfloc or iron-oxide guard bed for particulate lead and detached corrosion fragments
+- Regeneration canister that strips captured metals into a compact hazardous-material cartridge for centralized recycling
+
+### 4. Verification and analytics module
+- Onboard **bismuth-film anodic stripping voltammetry** cell for trace lead measurement in the **1–100 ppb** band
+- Automated stagnation-test routine with timestamped samples from first-draw, 30-second flush, and post-treatment verification states
+- Edge controller that classifies passivation quality, flags outlier fixtures, and stores compliance logs for building owners or utilities
+
+### 5. Permanent maintenance node
+- Optional compact point-of-entry box left behind after treatment
+- Runs low-flow polishing, monthly self-checks, and event-triggered micro-refresh cycles after plumbing work or major water-chemistry changes
+- Can communicate via local gateway, LoRaWAN, or wired BACnet/Modbus in institutional buildings
+
+### Data flow
+1. Sensors establish baseline corrosion behavior and hydraulic segmentation.
+2. Control software selects a treatment recipe by pipe material, age, and water chemistry.
+3. Dosing and electrochemical modules execute mineral growth in pulses.
+4. Polishing cell captures released lead while inline sensing checks trend improvement.
+5. Verification tests generate a signed treatment record and either clear the building or schedule another cycle.
+
+## Performance Benchmarks
+
+EPR is intended to outperform today's stopgaps on both lead suppression and verification speed.
+
+| Metric | Current common practice | EPR target |
+|---|---:|---:|
+| First-draw lead after intervention | Faucet filters vary by maintenance; orthophosphate alone may still allow double-digit ppb spikes in problem buildings | **<5 ppb** in >90% of treated fixtures after commissioning |
+| Worst-case transient after disturbance | Can remain elevated for days to months after plumbing work or chemistry upset | **<10 ppb within 24 hours** with refresh cycle and polishing engaged |
+| Barrier formation time | Utility-scale passivation may require weeks to months | **4–18 hours** per building treatment cycle |
+| Dissolved lead capture during rehab | Often unmanaged, flushed to drain, or trapped in disposable cartridges | **>95%** of released dissolved lead captured into service canister |
+| Verification sensitivity | Lab sampling turnaround often 1–14 days | **1–2 ppb detection limit** onsite in **<15 minutes** per sample |
+| Energy intensity | Filters are passive but consumable-heavy; pipe replacement is energy- and labor-intensive | **0.05–0.25 kWh/m3** during treatment |
+| Service interruption | Pipe replacement can disrupt occupants for days | **Same-day or overnight** treatment for many homes |
+
+Bench targets assume moderately scaled lead service lines, lead solder networks, or mixed-metal legacy plumbing under pH **6.8–8.5** and alkalinity **30–150 mg/L as CaCO3**.
+
+## Deployment Scenarios
+
+### 1. Public-school lead response
+A school district identifies repeated first-draw lead exceedances across fountains and kitchen fixtures, but full replacement is unfunded for three years. EPR is deployed campus by campus over summer break, treating each building loop, isolating bad branches, and leaving behind compact verification modules. Students return to a system that is actively monitored rather than dependent on manual cartridge replacement at dozens of endpoints.
+
+### 2. Older apartment retrofits
+A landlord with 1960s-era plumbing needs a lower-cost safety upgrade without opening walls in occupied units. EPR treats risers and apartment clusters from basement manifolds, reducing exposure risk fast while creating a data-backed record for tenants, insurers, and local regulators. The permanent node also helps catch future corrosion shifts caused by changes in municipal blending or tenant vacancy.
+
+### 3. Post-crisis municipal triage
+After a treatment upset, wildfire ash contamination event, or emergency source-water switch, a utility faces elevated lead risk in thousands of vulnerable buildings. Mobile EPR crews prioritize daycares, clinics, elder housing, and homes with infants, using repeatable treatment recipes and direct onsite sensing to stabilize interior plumbing while long-term infrastructure work proceeds.
+
+## Risks & Mitigations
+
+### Heterogeneous pipe chemistry
+Real buildings contain mixtures of lead, copper, galvanized steel, brass, and unknown repairs. A single chemistry recipe may underperform in some branches.
+
+**Mitigation:** use pre-treatment mapping, branch isolation, and recipe libraries keyed to conductivity, chloride:sulfate ratio, alkalinity, and fixture type. Require verification at the most failure-prone taps, not just at the inlet.
+
+### Over-precipitation or flow restriction
+Poorly controlled mineralization could create loose scale or narrow small-diameter fixtures.
+
+**Mitigation:** keep precursor concentrations low, drive deposition with localized electrochemistry rather than bulk saturation, and terminate cycles when differential pressure or turbidity signals indicate instability.
+
+### Sensor drift and false confidence
+Inline electrochemical lead sensors can foul or drift in complex water matrices.
+
+**Mitigation:** pair onboard sensing with periodic standard additions, disposable calibration checks, and scheduled confirmatory lab samples for regulated deployments.
+
+### Residual dependence on legacy infrastructure
+EPR reduces risk but does not make a century-old pipe immortal.
+
+**Mitigation:** position EPR as a bridge and force multiplier for replacement programs, with digital records that help utilities prioritize the worst assets for excavation later.
+
+### Hazardous concentrate handling
+Captured lead must not be released during servicing.
+
+**Mitigation:** lock captured metals into sealed swap-canisters with barcode chain-of-custody and regional recovery partnerships already used for industrial hazardous materials.
+
+## Vision for 2050
+
+By 2050, lead-safe water should not depend on whether a family lives in a wealthy suburb or an underinvested apartment block. In a mature EPR world, every building with legacy plumbing has either been replaced or electro-mineralized, and every school, clinic, and home can verify its own water quality in minutes instead of waiting on distant labs. Utilities treat corrosion control as an active, measurable service delivered to the last meter of plumbing, not just a chemical assumption at the plant. The result is a quiet public-health victory: fewer children with irreversible neurotoxic exposure, fewer emergency bottled-water crises, lower filter waste, and a faster path from hazard discovery to real protection.

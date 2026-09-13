@@ -394,3 +394,12 @@ This file tracks all inventions in the repository with key metadata.
 - **Key Innovation:** First building-scale system to electrochemically grow a dense mineral barrier directly on lead-bearing pipe walls, then verify tap safety with inline trace-lead sensing and retain a regenerable polishing backstop. Turns lead control from continuous chemical defense into targeted structural rehabilitation of the pipe-water interface.
 - **Target Cost:** $800–2,500 single-family / small-clinic retrofit; $8,000–40,000 school or apartment system; $180–500 home maintenance module; 0.05–0.25 kWh/m³ during rehabilitation, <0.02 kWh/m³ in maintenance mode
 - **Created:** 2026-08-31
+
+### 045 — Circular PCB Electrorefinery
+- **Category:** Waste Elimination & Circular Economy / E-Waste Recovery / Sustainable Materials
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Addresses the 60M+ tonnes/year global e-waste stream and the millions of workers and residents exposed to unsafe informal recycling; targets >97% copper, >95% tin/gold/silver, and >90% palladium recovery from PCBs; preserves reusable components before materials processing; avoids open burning, aqua regia, cyanide, and routine liquid discharge; cuts lifecycle greenhouse emissions for recovered metals by a targeted 60–85% versus primary production
+- **Key Material:** Glycine, citrate, and thiosulfate closed-loop leachants; electrohydraulic delamination chamber; flow-through carbon-felt and 316L electrowinning cathodes; cation/anion/bipolar membrane regeneration stack; induction desoldering bed; sealed 350–450°C resin solvolysis reactor with alkaline bromide capture
+- **Key Innovation:** Interface-first PCB deconstruction couples warm flexure and underwater electrohydraulic pulses to separate components, copper foil, and glass-epoxy before chemistry, then uses potential-stepped electrowinning to recover discrete metals while regenerating the mild leachants. The integrated batch mass balance locks discharge when outputs do not reconcile, enabling a distributed microrefinery without smelting or uncontrolled wastewater.
+- **Target Cost:** $35,000–70,000 cooperative module (20 kg/day); $140,000–260,000 community module (100 kg/day); $0.80–1.80/kg operating cost before material revenue; 1.5–3.5 kWh/kg PCB and <0.5 L/kg fresh-water makeup at 100 kg/day scale
+- **Created:** 2026-09-13

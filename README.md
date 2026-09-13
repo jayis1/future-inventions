@@ -60,6 +60,7 @@ Design and document technologies that:
 | [Electrogenic Denitrification Drainage Array](./electrogenic-denitrification-drainage-array/) | Concept | Environmental Restoration / Clean Water / Climate (N₂O Mitigation) / Ocean Restoration |
 | [Electroferrate Arsenic Remediation Network](./electroferrate-arsenic-remediation-network/) | Concept (Enhanced) | Clean Water & Public Health / Toxic Metal Remediation |
 | [Electromineral Pipe Regenerator](./electromineral-pipe-regenerator/) | Concept | Public Health & Water Infrastructure / Lead Remediation |
+| [Circular PCB Electrorefinery](./circular-pcb-electrorefinery/) | Concept | Waste Elimination & Circular Economy / E-Waste Recovery |
 
 ## Structure
 

@@ -56,6 +56,37 @@ The dissolved streams pass through a cascade of electrowinning cells. Cathode po
 
 Every batch must reconcile feed mass against reusable components, plated metals, mineral filler, recovered organics, salts, filters, and retained process inventory. A sealed residue cassette captures the small non-recoverable fraction for licensed disposal.
 
+## Technical Architecture
+
+### Physical plant
+
+The 100 kg/day refinery occupies a 12 m high-cube process container and a covered receiving bay. Fire-rated partitions divide it into a dry feed cell, a wet high-voltage liberation cell, three chemically isolated leach/electrowinning loops, and a negative-pressure residue-finishing cell. A secondary-containment floor holds at least **110% of the largest tank plus 10 minutes of fire-water input**. Wetted parts use HDPE, PVDF, titanium, 316L stainless steel, or compatible elastomers selected for each loop.
+
+The modular hardware consists of:
+
+- **Feed and assay module:** guarded depowering station, residual-voltage tester, interlocked XRF, machine vision, scales, and hazard quarantine.
+- **Component-recovery module:** nitrogen-recirculating induction chamber, flexure bed, condensate train, HEPA filtration, alkaline scrubber, and component tester.
+- **Liberation module:** pulsed-power cabinet, submerged spark vessel, hydrocyclone, screens, eddy-current separator, and ceramic water filter.
+- **Three wet-process skids:** independently bunded glycine, citrate, and thiosulfate tanks with pumps, heat exchangers, filters, dissolved-metal sensing, and dedicated electrowinning cassettes.
+- **Finishing module:** cathode stripping, glass washing, optional sealed resin conversion, bromide capture, and serialized residue cassettes.
+- **Utility spine:** deionized-water polisher, nitrogen generator, ventilation, heat recovery, DC bus, uninterruptible controls, and optional **30–60 kWh** battery for safe shutdown rather than full production.
+
+### Material and data flow
+
+```text
+Board batch -> depower/XRF -> component recovery -> wet delamination
+                 |                 |                    |
+          process passport   tested components    Cu/Sn/PM/glass fractions
+                                                       |
+                          isolated leach loops -> electrowinning -> products
+                                                       |
+                                    regenerated ligands/water <- polishing
+```
+
+A safety PLC owns pumps, heaters, XRF shutters, pulse power, gas valves, and containment interlocks; a separate supervisory computer optimizes recipes but cannot override safe limits. Tank load cells, inline pH/ORP/conductivity, periodic XRF or ICP assays, coulomb counting, and product scales update a batch **digital material passport**. The control model predicts dissolved inventory from assay and electric charge, then compares it with direct measurements. A discrepancy outside the validated uncertainty freezes product release and liquid transfer.
+
+No cloud link is required to operate. Signed, append-only batch records can be exported to producer-responsibility auditors, while serial numbers or data from source devices are excluded. Regional service hubs receive only equipment diagnostics, certified mass flows, and sealed consumable identifiers.
+
 ## Key Innovation
 
 CPE's key innovation is **interface-first liberation coupled to electrochemically regenerated, potential-stepped recovery**.
@@ -107,6 +138,38 @@ No economic case assumes all e-waste has high-grade telecom-board value. Low-gra
 | Brominated organic destruction or capture | **>99.9%** |
 
 These are development targets, not claims of demonstrated integrated performance.
+
+## Performance Benchmarks
+
+The comparison below defines engineering gates for a future integrated pilot. Conventional performance varies with feed grade and plant configuration, so ranges are baselines—not claims that every incumbent process performs identically.
+
+| Measure | Informal burning/open leaching | Central shredding + smelting or specialist hydrometallurgy | CPE pilot target |
+|---|---:|---:|---:|
+| Cu recovery from accepted PCB feed | **30–80%** | **90–98%** | **>97%** |
+| Au/Ag recovery | **20–70%** | **90–99%** | **>95%** |
+| Pd recovery | usually uncontrolled | **80–95%** | **>90%** |
+| Reusable component preservation | typically **<5%** | typically **<5%** after shredding | **>60%** of accessible removed parts pass screening |
+| Specific process electricity | poorly measured; combustion often supplies heat | roughly **1–5 kWh/kg PCB**, excluding transport | **1.5–3.5 kWh/kg PCB** |
+| Fresh-water demand | uncontrolled and often discharged | site-dependent, often multi-pass treatment | **<0.5 L/kg** makeup |
+| Routine liquid discharge | common | treated discharge or off-site treatment | **zero** |
+| Fine fraction below 100 µm | high with aggressive milling | commonly material-dependent | **<10% of feed** |
+| Audited batch mass closure | absent | plant-level accounting | **>99% per batch** |
+
+Success is not metal recovery alone. A 12-month pilot must sustain the targets across at least **20 representative PCB classes**, close **100 consecutive batch balances**, keep occupational Pb, mist, halogen, dust, hydrogen, and noise exposures below local limits, and demonstrate **>90% availability** excluding scheduled service. Product purity gates are **>99.5% Cu**, **>98% Sn**, and a precious-metal concentrate acceptable to a certified regional refiner.
+
+## Deployment Scenarios
+
+### Repair-cooperative hub in a major city
+
+A network of repair shops sends depowered boards to one 20 kg/day cooperative module. The refinery pays separately for reusable packages and assayed material content; the shops retain repairable devices rather than being rewarded for destruction. Two operators run one shift, while a regional laboratory verifies product and exposure samples monthly. Sealed ligand, filter, and residue cassettes leave on the same vehicles that deliver replacement supplies.
+
+### Island or remote regional materials utility
+
+A 100 kg/day unit consolidates PCB waste that would otherwise be stockpiled or exported at high cost. A solar-plus-storage microgrid supplies daytime batch loads, but the unit pauses safely when power is scarce. Copper and washed mineral filler serve local manufacturers where certified; precious-metal concentrate and nonconforming residues travel in dense, tracked shipments to specialist refiners, replacing export of whole low-density boards.
+
+### Producer-owned reverse-logistics center
+
+An electronics maker installs several modules beside a returns warehouse. Machine-readable design records create model-specific removal recipes, raising intact component yield and reducing assay uncertainty. Requalified connectors, heat sinks, and chips re-enter service parts; plated copper and precious-metal concentrate return through contracted refiners. Audited batch passports support extended-producer-responsibility reporting without exposing customer data.
 
 ## Impact
 
@@ -164,3 +227,11 @@ A plausible development path is:
 5. Standardize sealed consumable logistics and certify modular plants for widespread operation.
 
 CPE is designed to complement repair, reuse, and large specialist refineries—not to justify shorter device lifetimes or unsafe treatment of every electronic product in one box.
+
+## Vision for 2050
+
+By 2050, circuit boards carry standardized material passports and release features designed for automated depopulation. Every metro region—and many remote regions—has access to a certified electrorefinery through a repair cooperative, municipal utility, or producer take-back network. Boards are routed first to repair and harvesting; only irreparable material enters chemical recovery.
+
+The distributed plants do not replace specialist smelters and precious-metal refiners. They replace unsafe first-mile processing: concentrating valuable outputs near the waste source, retaining hazardous inventory, and shipping only dense products or sealed residues. Open burning and backyard acid baths become economically obsolete because formal cooperatives can recover more value while providing safer skilled work.
+
+The larger shift is informational. Manufacturers buy verified secondary copper, tin, gold, silver, and palladium through batch passports that account for every input and residue. Design teams see which assemblies resist separation and redesign them. Electronics cease to be anonymous hazardous waste and become a traceable urban ore reserve—locally harvested, repeatedly refined, and never accepted as somebody else's pollution.

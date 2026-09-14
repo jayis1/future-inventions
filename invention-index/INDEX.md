@@ -403,3 +403,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Key Innovation:** Interface-first PCB deconstruction couples warm flexure and underwater electrohydraulic pulses to separate components, copper foil, and glass-epoxy before chemistry, then uses potential-stepped electrowinning to recover discrete metals while regenerating the mild leachants. The integrated batch mass balance locks discharge when outputs do not reconcile, enabling a distributed microrefinery without smelting or uncontrolled wastewater.
 - **Target Cost:** $35,000–70,000 cooperative module (20 kg/day); $140,000–260,000 community module (100 kg/day); $0.80–1.80/kg operating cost before material revenue; 1.5–3.5 kWh/kg PCB and <0.5 L/kg fresh-water makeup at 100 kg/day scale
 - **Created:** 2026-09-13
+
+### 046 — Bistable Tactile Learning Sheet
+- **Category:** Communication & Education / Accessibility / Universal Basic Services
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Expands access to Braille, diagrams, maps, mathematics, and other spatial information for blind and deafblind learners; targets a reusable 4,800-pixel tactile work surface for schools, libraries, vocational programs, and homes without full-page display access
+- **Key Material:** Platinum-cured silicone diaphragms, variable-stiffness TPU collars, screen-printed carbon heaters on a metal-oxide TFT/PET backplane, recycled-polycarbonate microfluidic plate, LiFePO4 battery
+- **Key Innovation:** A shared reversible pneumatic pump moves selected pixels while an active-matrix heater temporarily softens each shape-memory collar; cooling mechanically latches the page, eliminating continuous holding power and a dedicated motor or valve at every dot
+- **Target Cost:** US$180–250 ex-factory and US$250–400 delivered at 100,000 units/year; US$20–35 replaceable tactile-sheet cassette; <US$10 annual operating cost excluding optional content services
+- **Author:** jayis1
+- **Created:** 2026-09-14

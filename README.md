@@ -61,6 +61,7 @@ Design and document technologies that:
 | [Electroferrate Arsenic Remediation Network](./electroferrate-arsenic-remediation-network/) | Concept (Enhanced) | Clean Water & Public Health / Toxic Metal Remediation |
 | [Electromineral Pipe Regenerator](./electromineral-pipe-regenerator/) | Concept | Public Health & Water Infrastructure / Lead Remediation |
 | [Circular PCB Electrorefinery](./circular-pcb-electrorefinery/) | Concept | Waste Elimination & Circular Economy / E-Waste Recovery |
+| [Bistable Tactile Learning Sheet](./bistable-tactile-learning-sheet/) | Concept | Communication & Education / Accessibility / Universal Basic Services |
 
 ## Structure
 

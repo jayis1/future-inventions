@@ -117,6 +117,78 @@ Development should proceed through four falsifiable gates:
 3. **User validation:** compare Braille accuracy, diagram comprehension, fatigue, and task time against embossed pages and line displays with blind and deafblind participants.
 4. **School pilot:** operate at least 500 devices for two academic years with published failure, repair, and learning-access results before wider procurement.
 
+## How It Works
+
+BTLS treats a tactile page as a mechanically stored bitmap. The offline renderer parses BRF, Unicode Braille, SVG, tagged EPUB, or MathML; applies line wrapping, tactile line-width rules, label placement, collision avoidance, and user-selected simplification; then compiles the result into an 80 × 60 desired-state map. The controller compares that map with the cassette's last verified state so unchanged pixels consume no refresh energy.
+
+For each pressure sector, pixels that must move are heated in current-limited banks. Their carbon-black rings warm the TPU collars through the 43–50°C transition zone, reducing the force needed to deform them. The pump then applies positive pressure to raise selected domes or vacuum to flatten them. Unheated collars remain stiff enough to reject the same pressure pulse. After a 100–800 ms calibrated heat pulse, the controller waits for the collars to cool and relatch before venting the sector; this hysteretic stiffness change provides two stable mechanical states without static pneumatic pressure.
+
+Verification closes the loop. Heater resistance and distributed thermistors check electrical continuity and temperature, while each sector's pressure transient and decay reveal leaks, incomplete motion, or abnormal coupling. The controller retries once, records suspect pixels in a local fault map, and rerenders around isolated failures where the content permits. A failed thermal or pressure check blocks further refreshes but leaves the last latched page readable. Physical keys and the rotary cursor let a learner pan layers, reveal labels, or move between Braille and diagram views without a touchscreen or cloud service.
+
+## Technical Architecture
+
+```text
+Document or lesson
+  -> bounded offline parser and tactile layout compiler
+  -> desired taxel-state map and fault-aware renderer
+  -> safety scheduler and 80 x 60 active-matrix heater driver
+  -> TPU collars + silicone diaphragms
+  -> eight-sector pneumatic plate + reversible pump
+  -> thermal, continuity, and pressure feedback
+  -> verified page state, local diagnostics, and learner controls
+```
+
+- **Content subsystem:** documented importers normalize text, mathematics, and vector graphics into a device-independent tactile scene. Complex figures become selectable semantic layers rather than an unreadable dense image.
+- **Control subsystem:** a RISC-V controller stores content and calibration locally, diffs successive scenes, schedules no more than 25% of pixels for simultaneous heating, and enforces current, temperature, and refresh-rate limits.
+- **Tactile cassette:** a replaceable PET active matrix drives printed heaters beneath 4,800 variable-stiffness collars and platinum-cured silicone domes. Mechanical keying and a passive profile resistor prevent use of an incompatible heating curve.
+- **Pneumatic subsystem:** eight isolated polycarbonate plenums limit a puncture to 12.5% of the page. A 24 V brushless diaphragm pump, accumulator, isolation valves, filters, and pressure sensors provide calibrated positive and negative pulses.
+- **Feedback and safe-state subsystem:** thermistors, heater-resistance measurements, rail fusing, and pressure-decay tests detect hot spots, open circuits, and leaks. Faults fail toward “no refresh,” not uncontrolled heating; diagnostics remain available through audio and the optional tactile label strip.
+- **Service and security subsystem:** verified boot, bounded file parsing, removable storage, local-first records, replaceable modules, and openly documented calibration support long service life without required telemetry or vendor authorization.
+
+## Performance Benchmarks
+
+The BTLS figures below are **engineering targets**, not measured integrated-device results. Qualification uses a 240 × 180 mm active sheet at 20–25°C, a 60 Wh battery, logged supply energy, laser profilometry for height, an instrumented 0.2 mm probe for force, high-speed video for latency, and checkerboard/full-inversion patterns for errors.
+
+| Capability | Relevant demonstrated or incumbent baseline | BTLS target and test gate |
+|---|---|---|
+| Addressable area | The cited PolyPad prototype is 4 × 10 cells and changes patterns in 0.5 s.[2] | 80 × 60 cells; typical changed-page refresh <2 s and worst-case full inversion <8 s. |
+| Tactile displacement | The cited 4 × 4 bistable electroactive-polymer display reports 0.7 mm displacement.[4] | 0.7–1.0 mm on 99.9% of commanded raised pixels after one retry. |
+| Holding force | The same cited prototype reports more than 50 g blocking force, about 0.49 N.[4] | At least 0.2 N per raised pixel at 0.2 mm depression, prioritizing compliant reading comfort. |
+| Spatial scale | Embossed paper offers a fixed page; conventional terminals commonly expose a line rather than a reusable full diagram. | 3.0 ± 0.1 mm pitch across a 240 × 180 mm reusable surface. |
+| Hold energy | Embossed paper holds passively; active electromechanical displays generally require electronics and may require actuator power while changing. | No pneumatic hold demand; <0.02 W asleep and <0.1 W with the latched page electronics awake. |
+| Update energy | No integrated BTLS measurement exists. | 10–20 J for a typical page update, measured at the battery terminals. |
+| Reliability | The cited bistable research device exceeded 100,000 cycles.[4] | More than 2 million state changes per pixel with <10% force loss and <0.1% command error after one retry. |
+| Safety and portability | Embossed pages need no heat or battery. | User surface ≤40°C under inserted faults, mass <1.8 kg, and five school days at 150 updates/day. |
+
+The design does not claim to replace embossed originals or mature line displays on day one. Its acceptance criterion is a full-page combination of readable force and height, bounded thermal behavior, repairable failure containment, and lifecycle cost below US$400 delivered—validated with blind and deafblind users rather than inferred from actuator measurements alone.
+
+## Deployment Scenarios
+
+1. **Inclusive classroom workstation.** A teacher imports a tagged textbook chapter, draws a geometry construction, or sends an SVG graph over USB-C. Learners switch between labels and diagram layers on the same sheet, while the school replaces a punctured cassette instead of returning the whole unit. The deployment gate is two academic years across at least 500 devices with published readability, uptime, cleaning, and repair data.
+2. **Portable independent study.** A learner carries cached lessons between home, transit, and a low-connectivity school. A 60 Wh battery, near-zero page-hold energy, SD-card transfer, physical controls, and optional small solar charging support offline use; no account, radio, camera, microphone, or usage telemetry is required.
+3. **Shared library or accessibility lab.** One unit renders maps, forms, mathematics, workplace diagrams, and multiple Braille codes for many patrons. Replaceable skins and filters, 70% isopropyl-alcohol compatibility testing, automated self-test pages, local fleet diagnostics, and open file formats make sanitation and maintenance part of the operating model rather than an afterthought.
+
+## Risks & Mitigations
+
+| Risk | Mitigation and residual risk |
+|---|---|
+| Collar creep, membrane fatigue, or layer delamination | Screen candidate TPU/silicone stacks through two million thermal/mechanical cycles plus bend, drop, UV, humidity, oil, and cleaning tests; make the cassette replaceable. Long-term chemistry remains the central materials risk. |
+| Stuck, weak, or falsely latched pixels | Verify heater continuity and sector pressure, retry locally, maintain a fault map, and render around isolated defects. Dense Braille may still require cassette replacement when one critical dot fails. |
+| Heat and current peaks | Stagger banks, cap the simultaneously heated area at 25%, use distributed thermistors, current limiting, a rail fuse, and a hard 40°C surface trip. Sensor placement must still be proven under worst-case faults. |
+| Shared-plenum cross-talk or leaks | Calibrate eight independent sectors, sequence raise and flatten passes, run pressure-decay tests, and isolate punctured sectors. The architecture is rejected if it cannot reach <0.1% error after one retry. |
+| Reduced clarity through the protective skin | Tune dome geometry, texture, and line simplification through psychophysical testing with children, adults, expert and novice Braille readers, deafblind users, and people with reduced sensitivity. Automated conversion never substitutes for human review of safety-critical graphics. |
+| Manufacturing yield and affordability drift | Use automated optical/electrical sheet mapping, modular cassettes, common fasteners, and explicit five-year lifecycle-cost gates. Falling short triggers a smaller tiled product rather than hiding defects in software. |
+| Student privacy or hostile documents | Parse bounded documented formats offline, verify firmware from owner-controlled keys, disable telemetry by default, and make radios removable. Administrators control retention; core access never depends on an account. |
+| Polymer waste and unequal access | Operate cassette take-back through repair centers, publish material flows, preserve 15-year spares, and prioritize public/cooperative procurement. Recycling and equitable access remain claims to validate, not assumed benefits. |
+
+## Vision for 2050
+
+By 2050, a successful BTLS is not a premium gadget but an interoperable tactile medium: schoolbooks ship with semantic tactile layers alongside text and audio; libraries can render a local map or equation on demand; and learners can annotate spatial material without sending their work to a platform. Open rendering standards cover regional Braille codes, right-to-left workflows, mathematics, science notation, and teacher-authored graphics.
+
+Ubiquity depends on infrastructure as much as actuator physics. Regional plants fabricate standardized cassettes, local technicians replace pumps and batteries with common tools, procurement contracts require 15-year spares, and audited take-back systems recover worn modules. Independent laboratories publish thermal, failure-rate, readability, and lifecycle-impact results so low price never becomes an excuse for unsafe or ambiguous pages.
+
+The intended outcome is choice: tactile graphics become as immediate and editable as visual pixels while audio, embossed paper, line displays, and human instruction remain available. If reliability, comprehension, repair, and equitable procurement gates are met, millions of reusable sheets could make spatial literacy routine rather than scarce—without surveillance, subscriptions, or a disposable device cycle.
+
 ## Sources
 
 [1] https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment — WHO: Blindness and vision impairment

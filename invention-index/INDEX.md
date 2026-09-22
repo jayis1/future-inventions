@@ -423,3 +423,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** <US$500,000 installed for a 100 m³/day module; US$1.50–3.00/m³ before recovered-resource credits; <US$25,000 annual service target
 - **Author:** jayis1
 - **Created:** 2026-09-21
+
+### 048 — Regenerable Dialysate Kidney Belt
+- **Category:** Health & Universal Basic Services / Kidney Replacement Therapy
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Designed to extend low-water kidney-replacement therapy to one million people initially; at that scale, could avoid up to 78 billion L/year of conventional hemodialysis input-water demand while enabling longer supervised treatment beyond centralized clinics
+- **Key Material:** High-flux polyethersulfone or cellulose-triacetate dialyzer, immobilized urease, activated carbon, hydrous zirconium oxide, ePTFE hollow-fibre ammonia contactor, bipolar-membrane electrodialysis stack, zirconium-phosphate safety guard, LiFePO4 battery
+- **Key Innovation:** A pH-gated membrane ammonia shuttle transfers urease-generated ammonia into a sealed acid receiver for dock regeneration, replacing bulk daily ammonium sorbent with a small emergency guard while redundant sensing and default-closed blood clamps preserve fail-safe operation
+- **Target Cost:** US$3,000–5,000 belt; US$15,000–25,000 dock serving 20–30 belts; US$5–12/day consumables and service; <US$3,000/patient-year target excluding clinical labour and vascular-access surgery
+- **Author:** jayis1
+- **Created:** 2026-09-22

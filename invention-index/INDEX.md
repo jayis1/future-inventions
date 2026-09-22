@@ -413,3 +413,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$180–250 ex-factory and US$250–400 delivered at 100,000 units/year; US$20–35 replaceable tactile-sheet cassette; <US$10 annual operating cost excluding optional content services
 - **Author:** jayis1
 - **Created:** 2026-09-14
+
+### 047 — Closed-Loop Textile Dye Recovery System
+- **Category:** Clean Water & Circular Manufacturing / Textile Pollution Prevention
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Treats up to 100 m³/day per module; targets 90–95% water reuse, 70–85% salt recovery, and 60–80% dye recovery from compatible segregated streams; 100,000 modules at nominal capacity could treat 3.65 billion m³/year while reducing color, salinity, and toxic-organic releases affecting millions of downstream residents
+- **Key Material:** Silicon-carbide ceramic microfiltration, dye-selective loose nanofiltration, monovalent-selective electrodialysis, bipolar-membrane electrodialysis, Magnéli-phase Ti4O7 or boron-doped-diamond electro-oxidation anodes, activated carbon or biochar polish
+- **Key Innovation:** Batch-aware recover-before-destroy orchestration links dye-recipe identity and spectral fingerprints to selective dye/salt/water recovery, verified blending, and a fail-closed quality gate; only the irrecoverable fraction is electro-oxidized, with mandatory monitoring for chloride-derived byproducts and aquatic toxicity
+- **Target Cost:** <US$500,000 installed for a 100 m³/day module; US$1.50–3.00/m³ before recovered-resource credits; <US$25,000 annual service target
+- **Author:** jayis1
+- **Created:** 2026-09-21

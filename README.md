@@ -62,6 +62,7 @@ Design and document technologies that:
 | [Electromineral Pipe Regenerator](./electromineral-pipe-regenerator/) | Concept | Public Health & Water Infrastructure / Lead Remediation |
 | [Circular PCB Electrorefinery](./circular-pcb-electrorefinery/) | Concept | Waste Elimination & Circular Economy / E-Waste Recovery |
 | [Bistable Tactile Learning Sheet](./bistable-tactile-learning-sheet/) | Concept | Communication & Education / Accessibility / Universal Basic Services |
+| [Closed-Loop Textile Dye Recovery System](./closed-loop-textile-dye-recovery-system/) | Concept | Clean Water & Circular Manufacturing / Textile Pollution Prevention |
 
 ## Structure
 

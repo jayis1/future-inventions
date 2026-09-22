@@ -89,6 +89,81 @@ The device is intended to extend clinical care, not automate away clinicians. It
 
 See [SPECIFICATION.md](./SPECIFICATION.md) for the architecture, first-order mass balance, safety case, validation programme, and scale-up risks.
 
+## How It Works
+
+The RDKB separates treatment into three controlled circuits. In the blood circuit, a peristaltic pump moves 80–120 mL/min through a 0.6–1.0 m² high-flux polyethersulfone or cellulose-triacetate dialyzer. Urea, creatinine, potassium, phosphate, and water cross the membrane into counterflowing dialysate; blood never contacts a reusable pump or regeneration chemical. Independent arterial, venous, air, temperature, and blood-leak monitors supervise this life-critical path.
+
+The 2.5–3.5 L dialysate circuit then restores that fluid for reuse. Activated coconut-shell carbon captures organics, hydrous zirconium oxide removes phosphate, and immobilized urease converts up to 20 g/day of urea into approximately 11.3 g of ammonia equivalent. A pH-gated slipstream shifts ammonium toward volatile ammonia at pH 10.5–11.2. Ammonia crosses hydrophobic ePTFE hollow fibres into 250 mL of 1.5–2.0 mol/L citric acid, while the treated dialysate is neutralized and checked before returning to the dialyzer. A 150–300 g zirconium-phosphate guard catches breakthrough during detection and shutdown.
+
+A precision balancing chamber and dedicated ultrafiltration pump meter removed water into a sealed bag. At session end, the dock—not the wearer—performs 80–90 °C disinfection, integrity testing, sensor challenge, electrolyte rebalancing, battery charging, and receiver regeneration. Any unsafe ammonia, pH, conductivity, pressure, air, leak, temperature, or volume reading bypasses the dialyzer and triggers a hardware-backed stop, dual clamp, and controlled blood return.
+
+## Technical Architecture
+
+The belt is organized as five replaceable subsystems connected through explicit safety boundaries:
+
+1. **Disposable blood module:** dialyzer, PVC-free tubing, access sensors, venous air trap, spring-closed clamps, and a mechanically reserved blood-return path.
+2. **Reusable dialysate cassette:** reservoir, carbon and phosphate beds, urease reactor, 0.2 µm particle barrier, balancing chamber, ultrafiltration pump, and keyed electrolyte dosing.
+3. **Ammonia-transfer module:** bipolar-membrane electrodialysis, alkaline slipstream, ePTFE contactor, double-contained citric-acid receiver, neutralization stage, and final guard cartridge.
+4. **Power and control module:** 350–450 Wh LiFePO4 battery; therapy and safety processors; redundant pH, conductivity, ammonia, flow, pressure, level, and temperature channels; signed offline-capable firmware.
+5. **Shared dock:** sanitation, calibration, membrane pressure-decay testing, acid/base recovery, nitrogen-waste containment, battery diagnostics, and cassette lockout.
+
+During treatment, sensor data flows to both processors, but the safety processor alone controls hard relays, clamps, heater isolation, and pump power. Prescription software may request flow or dosing only inside mechanically and electronically enforced limits. Mass-balance data compare reservoir level, ultrafiltration volume, receiver gain, and pump displacement; disagreement quarantines the dialysate. After treatment, the dock receives maintenance and therapy logs through an authenticated physical link. Network loss cannot interrupt a session, and remote software cannot override hard safety limits.
+
+## Performance Benchmarks
+
+All RDKB figures below are **engineering targets, not measured clinical results**. Comparators describe established treatment classes and published wearable-artificial-kidney research; equivalence must be proven in staged trials.[3][5]
+
+| Measure | Current comparison | RDKB development target |
+|---|---|---:|
+| Treatment pattern | In-centre HD commonly ~4 h, 3 times/week | 8–12 h/day, clinician prescribed |
+| Blood flow | Conventional HD commonly operates at several hundred mL/min; wearable prototypes use lower flows | 80–120 mL/min |
+| Dialysate supply | Single-pass HD uses a large continuous supply; historical input-water demand is ~500 L/session[4] | 2.5–3.5 L recirculating inventory; <2 L/day makeup, sanitation reported separately |
+| Urea processing | Adequacy assessed by delivered clearance/Kt/V, not time alone | 20 g/day reactor load; non-inferior prescribed weekly clearance |
+| Ultrafiltration | Current machines use balancing systems with clinical supervision | <30 mL cumulative error over 12 h and <0.5% of programmed volume, subject to standards review |
+| Wearable mass | Research WAK systems demonstrate portability but remain investigational[3][5] | 5–7 kg including fluid and battery |
+| Power | Clinic machines rely on mains power and water infrastructure | <25 W average; <300 Wh per 12 h; shutdown reserve retained |
+| Safety response | Commercial machines alarm and stop under fault conditions | access disconnection to dual clamp in <1 s; independent ammonia channels |
+| Consumables | Conventional care uses dialysate concentrates, water-treatment supplies, and blood sets | <150 g/day disposable mass plus regulated liquid concentrate |
+
+The decisive benchmark is not miniaturization alone. A viable system must deliver prescribed solute and fluid removal, keep ammonia below a validated exposure limit under normal and single-fault conditions, complete at least 95% of sessions over a 12-month access trial, and show that lower water use does not shift unacceptable burden into energy, cartridges, infection risk, or hospitalization.
+
+## Deployment Scenarios
+
+### Supervised home and overnight therapy
+
+A trained patient connects with remote clinical support, wears the belt for an 8–12 hour prescribed session, and returns the cassette to a clinic-managed dock each day. Longer, slower treatment could reduce peak fluid shifts and travel compared with thrice-weekly in-centre schedules, but deployment begins only after stationary and supervised ambulatory trials demonstrate safe access management, alarm response, and treatment adequacy.
+
+### Rural community dialysis cooperative
+
+A district clinic operates one dock for 20–30 belts, maintains spare pumps and batteries, and provides vascular-access, laboratory, and prescription services. The model substitutes modular cassettes and less than 2 L/day of treatment makeup water per patient for a large reverse-osmosis plant, while sanitation water, certified concentrates, waste handling, and trained staff remain mandatory. Offline operation supports weak connectivity without weakening clinical oversight.
+
+### Disaster-continuity unit
+
+Hospitals or humanitarian teams pre-position belts, sterile blood sets, charged batteries, and a containerized dock where tanker water and clinic capacity are constrained. The system is not a self-treatment shortcut: patient selection, chemistry testing, access care, consumable traceability, and a route to conventional dialysis are required. Its advantage is logistical density—hundreds of patient-sessions supported by power and compact supplies rather than continuous delivery of treated water.
+
+## Risks & Mitigations
+
+| Risk | Engineering and clinical mitigation |
+|---|---|
+| Ammonia breakthrough or wrong electrolyte composition | Diverse ammonia sensing, finite guard capacity, pH/conductivity checks, dose accounting, dialyzer bypass, physical lockout, and dock challenge tests before every release |
+| Air embolism, access disconnection, blood leak, haemolysis, or clotting | Redundant pressure/air/blood-leak sensing, default-closed clamps, controlled return reserve, non-interchangeable disposables, clinician-set anticoagulation, and single-fault testing in every orientation |
+| Infection, biofilm, or endotoxin | Single-use blood path, validated heat/chemical sanitation, microbial and endotoxin surveillance, sealed cassette, lot traceability, and mandatory replacement intervals |
+| Membrane wetting, sorbent exhaustion, or urease loss | Differential pressure and mass-balance monitoring, retained enzyme beds, particle barriers, conservative service life, receiver-volume checks, and safe transition to conventional care |
+| Excess ultrafiltration or hypotension | Independent balancing chamber, hard hourly and cumulative limits, symptom and blood-pressure checks, clinician prescription, and no autonomous optimization from consumer wearables |
+| Battery, thermal, software, or cyber failure | LiFePO4 isolation, thermal fuses, shutdown-energy reserve, dual processors, signed firmware, rollback protection, offline therapy, encrypted service links, and immutable hardware limits |
+| Burden, falls, dermatitis, or alarm fatigue | 5–7 kg mass ceiling, load-distributing harness, skin-safe materials, human-factors trials, graded alarms, rapid disconnect training, and patient-controlled adoption |
+| False confidence or inequitable rollout | Investigational labeling, published adverse-event and uptime data, independent auditing, subsidized cooperative ownership, multilingual controls, and guaranteed conventional-care fallback |
+
+No mitigation makes this concept ready for unsupervised use. Biocompatibility, electrical safety, EMC, sterilization, software lifecycle, risk management, usability, animal testing, and staged human trials remain hard gates—not paperwork to be deferred until scale.
+
+## Vision for 2050
+
+By 2050, a mature RDKB network could make dialysis infrastructure look less like a destination and more like a utility. Community docks in pharmacies, rural clinics, apartment buildings, and mobile hospitals could service standardized cassettes, while regional centres provide nephrology, laboratory monitoring, access surgery, and emergency backup. Patients who choose wearable therapy could receive slower treatment at home or during ordinary activity without surrendering three days each week to travel and a clinic chair.
+
+At one million users, meeting the design target would replace much of the historical 500 L-per-session input-water demand—up to 78 billion L/year on the comparison assumptions already stated—while creating new obligations: reliable cartridge supply, renewable electricity, battery take-back, licensed nitrogen-waste processing, transparent algorithms, and universal reimbursement. Open interfaces and audited safety data could prevent a few vendors from turning life-support treatment into a locked subscription.
+
+Success in this world is not measured by making clinicians disappear. It is measured by more people receiving adequate therapy, fewer missed treatments during drought or conflict, and the ability to choose where life happens. Transplantation, prevention, and regenerative medicine remain preferable; the belt becomes a resilient bridge and long-term option where those paths are unavailable.
+
 ## Sources
 
 [1] https://www.who.int/news-room/fact-sheets/detail/kidney-disease — WHO: Kidney disease

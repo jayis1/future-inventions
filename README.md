@@ -64,6 +64,7 @@ Design and document technologies that:
 | [Bistable Tactile Learning Sheet](./bistable-tactile-learning-sheet/) | Concept | Communication & Education / Accessibility / Universal Basic Services |
 | [Closed-Loop Textile Dye Recovery System](./closed-loop-textile-dye-recovery-system/) | Concept | Clean Water & Circular Manufacturing / Textile Pollution Prevention |
 | [Regenerable Dialysate Kidney Belt](./regenerable-dialysate-kidney-belt/) | Concept | Health & Universal Basic Services / Kidney Replacement Therapy |
+| [Thermostable Vaccine Microarray Patch](./thermostable-vaccine-microarray-patch/) | Concept | Health & Universal Basic Services / Immunization |
 
 ## Structure
 

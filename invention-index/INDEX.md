@@ -433,3 +433,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$3,000–5,000 belt; US$15,000–25,000 dock serving 20–30 belts; US$5–12/day consumables and service; <US$3,000/patient-year target excluding clinical labour and vascular-access surgery
 - **Author:** jayis1
 - **Created:** 2026-09-22
+
+### 049 — Thermostable Vaccine Microarray Patch
+- **Category:** Health & Universal Basic Services / Immunization
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Targets the 14.3 million zero-dose children reported for 2024 and other people missed by cold-chain, injector, and outreach constraints; designed for 100 million otherwise missed or delayed vaccinations per year at scale
+- **Key Material:** Trehalose-sucrose antigen glass, PVP/Na-CMC dissolving payload tips, PVP/PVA structural backing, bistable cyclic-olefin-polymer applicator, cobalt-free humidity indicator, time-temperature indicator, AlOx-coated high-barrier pouch
+- **Key Innovation:** Integrates antigen-specific dry stabilization, tip-only dose loading, constant-force insertion, and passive temperature/humidity/application witnesses into a reader-free single-dose patch that dissolves in skin and leaves no exposed sharp
+- **Target Cost:** US$0.80–1.50 per patch at >100M doses/year; US$1.20–2.50 programme delivery cost above antigen; US$8–15M modular manufacturing line for 50–100M patches/year
+- **Author:** jayis1
+- **Created:** 2026-09-26

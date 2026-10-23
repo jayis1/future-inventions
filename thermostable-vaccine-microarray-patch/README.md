@@ -91,7 +91,50 @@ The system does not solve vaccine hesitancy, armed access constraints, weak dise
 - **No surveillance payload:** the standard patch contains no radio, camera, microphone, GPS, or unique patient identifier. Lot and expiry data can be recorded in existing immunization systems with informed, minimal data collection.
 - **Equitable manufacturing:** antigen-specific recipes may remain regulated, but mechanical drawings, verification methods, and non-proprietary material options should be licensable to qualified regional producers.
 
-See [SPECIFICATION.md](./SPECIFICATION.md) for architecture, materials, manufacturing controls, failure modes, and validation gates.
+See [SPECIFICATION.md](./SPECIFICATION.md) for architecture, materials, manufacturing controls, failure modes, and validation gates. This is a concept, not a licensed vaccine or clinical-use instruction.
+
+## How It Works
+
+The first product would be qualified for **one named antigen**, not for all vaccine platforms. In controlled manufacture, antigen is deposited in the distal 300–450 µm of each 500–700 µm microneedle, dried with trehalose/sucrose and PVP/Na-CMC, and overcast with antigen-free PVP/PVA support. A low-water-activity glass slows molecular motion; whether it actually preserves *biological potency* depends on antigen-specific assays, residual moisture, and storage history. Neither a visually intact tip nor a temperature indicator proves potency.
+
+A trained worker checks the sealed unit and its excursion witnesses, snaps the bistable dome against the labeled skin site, and waits for the mechanical dwell strip. The projections cross the outer skin barrier and dissolve in viable skin; antigen is then sampled by local immune cells. After removal, three **drug-free** sentinel tips should have disappeared. That is evidence of contact and wetting, not a measurement of delivered active dose or protective immunity. An incomplete witness triggers the validated assessment/redosing pathway, never automatic repeat dosing. See [the use sequence](./SPECIFICATION.md#7-use-sequence) for controls.
+
+## Technical Architecture
+
+The physical flow is **qualified antigen bulk → low-shear formulation → distal-tip micromolding → controlled drying → drug-free overcast → 100% optical geometry inspection → barrier seal and indicator assembly → labeled storage → application and dissolution → lot-linked record**. The applicator uses a 20–35 N snap-through design target and a passive 5–10 minute dwell witness; neither needs electronics. A coated pouch, retained molecular-sieve desiccant, cobalt-free humidity spot, and calibrated time-temperature indicator protect or flag the dry array. Lot identity and expiry can enter an existing immunization register by printed code, without patient-tracking hardware. Potency/content assays, insertion testing, microbial controls, leak testing, and retained stability samples remain mandatory batch and shelf-life gates; see [the technical specification](./SPECIFICATION.md#5-manufacturing-process).
+
+## Performance Benchmarks
+
+These are **unverified TVMP design targets**, not measurements. Published patches differ in antigen, geometry, assay and population: the Micron Biomedical measles-rubella trial in The Gambia [9] reported 93% measles and 100% rubella seroconversion in its infant patch group, but does not validate this formulation. [Vaxxas' dry-coated HD-MAP influenza study](https://pmc.ncbi.nlm.nih.gov/articles/PMC7077342/) and the [Emory/Georgia Tech dissolving influenza patch phase-1 trial](https://pmc.ncbi.nlm.nih.gov/articles/PMC5578828/) demonstrate other architectures, not head-to-head superiority. Conventional injection remains the licensed comparator for any selected antigen.
+
+| Endpoint | Current comparison | TVMP proposed gate |
+|---|---|---|
+| Storage | Routine programme equipment generally +2 to +8 °C [10]; WHO [CTC labeling](https://www.who.int/teams/immunization-vaccines-and-biologicals/essential-programme-on-immunization/supply-chain/controlled-temperature-chain-(ctc)) is product-specific and generally allows a single ≥40 °C exposure of at least three days immediately before use | For a named antigen, ≥90% release potency after 24 months at 25 °C/60% RH, plus 30 days at 40 °C, **only if** stability-indicating tests support it |
+| Dose and application | No transferable cross-product dose-sparing factor; compare to the licensed injectable dose | 90–110% label-claim content, ≥95% needle insertion in representative models, ≥90% therapeutic needle volume dissolved within 10 minutes; immune non-inferiority requires a clinical trial |
+| Reliability and economics | Published patch studies establish feasibility, not TVMP cost or applicator reliability | ≥99.5% actuation after aging; $0.80–1.50 patch/pack at >100 million/year and $1.20–2.50 programme delivery **above antigen cost**, subject to yield and procurement validation |
+
+No TVMP prototype, storage study, clinical endpoint, or costed production line is reported here; comparisons are not claims of superiority.
+
+## Deployment Scenarios
+
+- **Remote routine campaign:** A district store ships only an *approved and labeled* formulation within its tested exposure envelope. Trained community workers check pouch/indicators and lot, apply, inspect the witness, document the dose, and quarantine failures. Injection and refrigeration remain available if the named vaccine has no patch approval or an excursion fails.
+- **Outbreak reserve:** A licensed patch stockpile could move by ordinary freight only within its approved temperature/humidity limits. Batch traceability, expiry monitoring, worker training, adverse-event reporting, and a conventional-dose fallback remain part of the campaign; stockpiling does not itself prove shelf life.
+- **Clinic pediatrics:** A clinic compares time, acceptability, completion failures, immune response, and cost per *successfully immunized* child against the same licensed injectable antigen. Home use is outside the initial label and needs separate human-factors and regulatory evidence.
+
+## Risks & Mitigations
+
+| Failure | Detection and mitigation gate |
+|---|---|
+| Drying damages antigen; heat, freezing or humidity defeats the glass | Antigen-specific functional potency assays after fabrication, real-time/accelerated and transport challenges; calibrated moisture/temperature indicators and deterministic seal tests; reject failed lots or units. |
+| Incomplete insertion or dissolution varies with age, skin and operator | Validate applicator impulse, tip integrity and delivered-dose mass balance in representative skin models and clinical users; train workers, record witness failures and use a regulator-reviewed redosing algorithm. |
+| Sterility, content variability or leachables at production scale | Closed aseptic process, environmental monitoring, lot identity/potency/bioburden and content tests, 100% vision inspection, extractables studies and independent lot-release criteria. |
+| Irritation, sensitization, broken projections or unexpected immune response | Preclinical biocompatibility and fragment testing, age-appropriate controlled trials, active pharmacovigilance; stop use for a safety signal. |
+| Counterfeit units, false-pass indicators, or inappropriate disposal | Tamper seals and lot verification, independent indicator qualification, quarantine/recall procedures; manage used backing under local clinical-waste rules even without an exposed sharp. |
+| Regulatory or economic failure | Seek vaccine-specific biologic/device regulatory advice, active-controlled non-inferiority evidence and audited cost per successful immunization; retain conventional injection where clinical or cost gates fail. |
+
+## Vision for 2050
+
+**Conditional vision:** for antigens that pass product-specific stability, safety, immunogenicity, manufacturing and regulatory gates, immunization programmes can carry dry single-dose patches alongside rather than instead of refrigerated vials. A community worker could reach a remote settlement with fewer cold boxes and no exposed used needles, while failed witnesses, failed pouches and unsuitable antigens still route to a clinical fallback. The prize is a wider reliable last mile, not a promise that refrigeration, clinicians or disease surveillance disappear. See the [roadmap](./ROADMAP.md) and [scenario model](./IMPACT_ANALYSIS.md).
 
 ## Sources
 

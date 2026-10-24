@@ -473,3 +473,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$120 cooker/cassette at 100,000 units/year in 2035; US$220–260 installed with dedicated PV, excluding taxes, finance, transport and replacements
 - **Author:** jayis1
 - **Created:** 2026-10-24
+
+### 053 — Photoacoustic Anemia Screener
+- **Category:** Health Diagnostics & Universal Basic Services / Anemia Triage
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Proposed 40 million screening encounters/year at 100,000 devices and 400 uses/device/year; clinical benefit depends on validated accuracy and follow-up
+- **Key Material:** 660/850 nm LEDs, PVDF piezoelectric receiver, pressure-limited contact pad, acoustic coupling reference
+- **Key Innovation:** Tests pressure-differenced multiwavelength photoacoustics with an explicit invalid-reading gate for offline, noninvasive anemia triage; accuracy across skin tones remains unproven
+- **Target Cost:** US$100–150 per device at 100,000 units/year in 2035; modeled US$0.11/screen at 2,000 screens over five years, excluding labor and confirmatory tests
+- **Author:** jayis1
+- **Created:** 2026-10-24

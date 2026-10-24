@@ -68,6 +68,7 @@ Design and document technologies that:
 | [Regenerative Freight Ropeway](./regenerative-freight-ropeway/) | Concept | Rural Transportation & Food Access / Universal Basic Services |
 | [Regenerable Grain Guard Cassette](./regenerable-grain-guard-cassette/) | Concept | Food Security & Post-Harvest Storage / Universal Basic Services |
 | [Solar Heat Cassette Cooker](./solar-heat-cassette-cooker/) | Concept | Clean Cooking & Public Health / Universal Basic Services |
+| [Photoacoustic Anemia Screener](./photoacoustic-anemia-screener/) | Concept | Health Diagnostics & Universal Basic Services / Anemia Triage |
 
 ## Structure
 

@@ -443,3 +443,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$0.80–1.50 per patch at >100M doses/year; US$1.20–2.50 programme delivery cost above antigen; US$8–15M modular manufacturing line for 50–100M patches/year
 - **Author:** jayis1
 - **Created:** 2026-09-26
+
+### 050 — Regenerative Freight Ropeway
+- **Category:** Rural Transportation & Food Access / Universal Basic Services
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Pilot target 500 tonnes/year of freight moved per 1 km line in suitable hillside terrain; marketable produce and safety benefits require field verification
+- **Key Material:** Galvanized steel ropes and anchors, mechanical governor and independent spring-applied brakes, 48 V permanent-magnet generator, LiFePO4 buffer, reusable HDPE crates
+- **Key Innovation:** Modular goods-only counterbalanced freight exchange with mechanically gated loading, fail-safe overspeed braking independent of regenerative energy capture, and a serviceable local DC energy module
+- **Target Cost:** US$30,000 installed target per 1 km line at 100 lines/year in benign terrain; US$13/tonne at 500 tonnes/year under stated ten-year, zero-finance assumptions
+- **Author:** jayis1
+- **Created:** 2026-10-24

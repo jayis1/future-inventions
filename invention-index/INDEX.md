@@ -503,3 +503,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$0.30–0.60 per sealed strip at 1 million units/year in 2035, excluding examination, application, disposal and follow-up
 - **Author:** jayis1
 - **Created:** 2026-10-24
+
+### 056 — Passive Flood Door Sill
+- **Category:** Disaster Resilience & Universal Basic Services / Flood Adaptation
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Trial target of 100 eligible buildings; at 100,000 installations, up to 100,000 doorways could protect one entry path, subject to structural approval and field validation
+- **Key Material:** Recycled-aluminium panel and frame, replaceable EPDM gasket, stainless-steel cam anchors, mechanical pressure-relief hatch
+- **Key Innovation:** A pressure-seated removable flood panel with an independent calibrated inlet that admits water when a site-specific structural differential-pressure limit is exceeded; safe equalization remains unproven
+- **Target Cost:** US$90–140 ex-factory per 0.9 m-wide panel at 100,000 units/year in 2035, excluding structural survey, installation and seal replacement
+- **Author:** jayis1
+- **Created:** 2026-10-24

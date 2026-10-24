@@ -71,6 +71,7 @@ Design and document technologies that:
 | [Photoacoustic Anemia Screener](./photoacoustic-anemia-screener/) | Concept | Health Diagnostics & Universal Basic Services / Anemia Triage |
 | [Field-Calibrated Adjustable Spectacles](./field-calibrated-adjustable-spectacles/) | Concept | Vision Health & Universal Basic Services / Refractive Access |
 | [Staged Enamel Repair Strip](./staged-enamel-repair-strip/) | Concept | Oral Health & Universal Basic Services / Early Caries Prevention |
+| [Passive Flood Door Sill](./passive-flood-door-sill/) | Concept | Disaster Resilience & Universal Basic Services / Flood Adaptation |
 
 ## Structure
 

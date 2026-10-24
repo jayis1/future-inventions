@@ -453,3 +453,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$30,000 installed target per 1 km line at 100 lines/year in benign terrain; US$13/tonne at 500 tonnes/year under stated ten-year, zero-finance assumptions
 - **Author:** jayis1
 - **Created:** 2026-10-24
+
+### 051 — Regenerable Grain Guard Cassette
+- **Category:** Food Security & Post-Harvest Storage / Universal Basic Services
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Pilot target of 50 kg dry paddy per bin for 90 days; 100,000 bins could hold 5,000 tonnes per storage cycle, with avoided losses requiring paired field validation
+- **Key Material:** Zeolite-13X beads, particle-retaining vapor-permeable barrier, food-contact HDPE or steel bin, replaceable gasket, mechanical humidity witness
+- **Key Innovation:** A detachable, twice-contained desiccant buffer for already-dried grain with leak/saturation indication and an external keyed regeneration dock that cannot vent humid exhaust into food
+- **Target Cost:** US$18 per cassette at 100,000 units/year in 2035; US$30 compatible 50 kg bin and US$2 per regeneration target, excluding shared dock and moisture meter
+- **Author:** jayis1
+- **Created:** 2026-10-24

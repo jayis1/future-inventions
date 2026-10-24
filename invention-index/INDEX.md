@@ -463,3 +463,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$18 per cassette at 100,000 units/year in 2035; US$30 compatible 50 kg bin and US$2 per regeneration target, excluding shared dock and moisture meter
 - **Author:** jayis1
 - **Created:** 2026-10-24
+
+### 052 — Solar Heat Cassette Cooker
+- **Category:** Clean Cooking & Public Health / Universal Basic Services
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Targets a small daily smokeless cooking event for households among the 2.1 billion people WHO reports using polluting cooking fuels; fuel displacement and health benefit require field trials
+- **Key Material:** Sealed erythritol thermal cassette, stainless-steel vessel, aluminum heat spreader, mineral insulation, low-voltage resistive heater, 200 Wp photovoltaic panel
+- **Key Innovation:** A transport-safe, mechanically interlocked interchangeable thermal cartridge separates daytime solar charging from evening cooking; common dock and inspectable cartridge address serviceability rather than claiming novel phase-change physics
+- **Target Cost:** US$120 cooker/cassette at 100,000 units/year in 2035; US$220–260 installed with dedicated PV, excluding taxes, finance, transport and replacements
+- **Author:** jayis1
+- **Created:** 2026-10-24

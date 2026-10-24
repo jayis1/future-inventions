@@ -35,6 +35,49 @@ A district-health pilot could offer opportunistic anemia triage to people who ot
 
 Unlike the [thermostable vaccine microarray patch](../thermostable-vaccine-microarray-patch/), which delivers an antigen through skin, this concept measures a blood-related optical-acoustic response without penetration. Unlike the [regenerable dialysate kidney belt](../regenerable-dialysate-kidney-belt/), it is a screening tool rather than a treatment loop. No existing folder addresses anemia triage or pressure-differenced photoacoustics.
 
+## How It Works
+
+This is a proposed *risk classifier*, not a direct hemoglobin assay. On a clean fingertip, a spring stop positions the pad. Current-limited **660 nm and 850 nm pulsed LEDs** alternately illuminate shallow tissue; absorption produces a thermoelastic pressure wave, approximately `p₀ = Γ μₐ F` (expansion factor × absorption × local fluence). A PVDF film detects acoustic arrivals; an adjacent piezo pulse checks pad coupling. Neither wavelength is an oxygenation-independent shortcut to systemic Hb: local fluence, vessel volume and oxygenation remain unknown.[2]
+
+The worker captures baseline, gentle blanching and release/reperfusion phases. Time-gated arrivals and pressure-cycle differences are candidate blood-linked features; poor coupling, incomplete recovery, saturation, motion or low perfusion veto the reading. Only a *future clinically validated* classifier could return a referral flag, no flag with routine follow-up, or **invalid—use standard test**. Every flagged or symptomatic case still needs a blood test.
+
+## Technical Architecture
+
+1. **Optics and contact:** diffused 660/850 nm LED heads, current limiter, seating interlock, wipeable replaceable pad, spring stop and pressure witness. Pulse energy and applicable skin/eye exposure limits are bench-test inputs, not asserted specifications.
+2. **Acoustics:** PVDF receiver, preamplifier and digitizer capture depth-dependent signals; a separate low-amplitude piezo reference checks coupling, not Hb. Tissue phantoms must establish bandwidth and depth resolution before choosing an ADC rate.
+3. **Offline inference:** synchronize wavelength and pressure phase → reject motion, saturation, poor contact or low perfusion → extract blood-linked features → compare with a locked, audited triage threshold. Factory phantom calibration and periodic optical/acoustic checks are design gates. Hold out patients and sites during clinical validation.
+4. **Power and records:** rechargeable cell and local display; no radio, patient identity or raw patient waveform storage by default. Encrypt or discard service logs. Clinics retain referral and confirmatory CBC records within their existing consent system. Engineering gates are in [SPECIFICATION.md](./SPECIFICATION.md).
+
+## Performance Benchmarks
+
+**There are no prototype clinical results.** These are go/no-go targets, not demonstrated advantages; compare only in matched populations.
+
+| Endpoint | Proposed screener (unverified target) | Current comparator / evidence |
+| --- | --- | --- |
+| Anemia classification vs venous CBC | ≥90% sensitivity, ≥80% specificity at a prespecified population-appropriate threshold; report confidence intervals | Venous CBC is the reference; HemoCue Hb 201+ is a blood-sample point-of-care alternative, not a noninvasive reference.[4] |
+| Invalid attempts | <10%, reported separately by pigmentation, age, pregnancy and perfusion | Invalid is **not** negative; comparator invalid rates must be measured locally. |
+| Worker time | <60 s including coupling and pressure-release cycle | HemoCue Hb 201+ lists 15–60 s *measurement time*, plus sampling and handling.[4] |
+| Cost | US$100–150/unit at 100,000/year; US$20/year service; modeled US$0.11 per attempted screen at 400/year over five years | HemoCue uses blood microcuvettes; no verified local procurement or full-workflow cost comparison is claimed.[4] |
+
+Bias, limits of agreement and repeatability against CBC must also be reported if a numerical Hb estimate is ever attempted. Correlation or pooled sensitivity cannot establish accuracy or equity; photoacoustic measurements can vary with skin pigmentation.[3]
+
+## Deployment Scenarios
+
+- **Antenatal outreach:** a trained worker might triage during routine visits without a lancet for every attempt, *if* pregnancy-specific validation succeeds. Flagged, symptomatic and invalid screens go to the existing blood-test pathway; no result changes treatment alone. Track completed referrals and missed cases, not assumed anemia reduction.
+- **Child-health clinic:** supervised opportunistic screening where repeat sampling is difficult, conditional on age- and site-specific safety and accuracy studies. The fingertip design is **not** validated for neonatal heels or neonatal decisions. Report invalid rates and access to confirmatory tests by age and skin tone.
+- **Mobile district programme:** 1,000 devices at a planning rate of 400 attempts/year offer 400,000 *encounters*, not unique patients. Offline operation and replaceable pads limit infrastructure needs; an audited referral chain is still required. See [IMPACT_ANALYSIS.md](./IMPACT_ANALYSIS.md) for conditional arithmetic.
+
+## Risks & Mitigations
+
+- **Confounded signal and inequity:** melanin, scattering, blood volume, oxygenation and depth change amplitude independently of systemic Hb; photoacoustics does *not* remove pigmentation bias.[2][3] Vary these independently in phantoms, then preregister external site-held-out testing with separate skin-tone, age, pregnancy and perfusion gates; restrict use or stop if any group misses its gate.
+- **False reassurance and referral overload:** false negatives delay investigation; false positives consume CBC capacity. Faults return invalid, symptoms override no-flag, and every flag needs confirmatory testing and clinician review. Measure missed cases and referral completion prospectively.
+- **Handling and drift:** motion, pressure variation, poor coupling, LED/PVDF aging, weak battery and dirty pads can shift thresholds. Use pressure/coupling witnesses, seating and fault interlocks, annual phantom-check targets, cleaning validation and replaceable parts; reject rather than guess when checks fail.
+- **Safety, approval and privacy:** qualify optical exposure and cumulative pulses, heat, skin irritation, cleaning and electrical safety against applicable standards before human use. Clinical studies, quality management and jurisdiction-specific regulatory review precede sale; no approval route is presumed. Keep readings offline without identifiers; encrypt or discard service logs.
+
+## Vision for 2050
+
+If independent trials show that a serviceable probe meets safety and equity gates in real clinics, anemia triage could become as routine as a temperature check: outreach workers get a trustworthy referral decision without opening a disposable cuvette for every encounter. Programmes must still fund CBC confirmation, diagnose the underlying cause, publish subgroup failure rates and retire versions that miss too many cases. Widespread adoption is a conditional scenario, not a forecast or replacement for laboratory care. A practical future starts with an instrument willing to say **invalid**.
+
 ## Sources
 
 [1] WHO, “Anaemia” fact sheet: https://www.who.int/news-room/fact-sheets/detail/anaemia
@@ -42,3 +85,5 @@ Unlike the [thermostable vaccine microarray patch](../thermostable-vaccine-micro
 [2] Review of noninvasive hemoglobin sensing and optical limitations: https://pmc.ncbi.nlm.nih.gov/articles/PMC9346606/
 
 [3] Experimental study of skin-tone effects on photoacoustic imaging/oximetry: https://pmc.ncbi.nlm.nih.gov/articles/PMC10732256/
+
+[4] HemoCue Hb 201+ product specifications (measurement time and blood microcuvette): https://hemocue.com/us/products/hematology/hemocue-hb-201plus-system/

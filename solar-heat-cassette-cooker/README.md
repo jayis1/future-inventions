@@ -35,3 +35,53 @@ In a 100-household trial, compare total fuel use, kitchen PM2.5/CO, fully cooked
 [1] WHO, *Household air pollution*, updated December 2025: https://www.who.int/news-room/fact-sheets/detail/household-air-pollution-and-health — global exposure and 2021 mortality estimates, not a forecast of device benefit.
 
 [2] Osei et al., *Phase change thermal storage: Cooking with more power and versatility*, Solar Energy 220 (2021), 1065–1073: https://www.sciencedirect.com/science/article/pii/S0038092X21002280 — experimental prior art for erythritol storage, not validation of this cartridge, latch or cost.
+
+## How It Works
+
+At midday, a 200 Wp panel feeds a low-voltage, current-limited charge dock. The dock heats the welded stainless cartridge until its roughly 2.5 kg erythritol charge crosses the ~118°C melting region, then its independent thermostat and thermal fuse prevent uncontrolled heating. At dusk, a cook checks the mechanical hot/charged indicator, carries the insulated cartridge by its cool handle, and inserts it into a keyed, stable pot base. Latching opens the shutter; a spring loads a dry aluminum contact against the pot spreader. The lidded pot receives heat as the erythritol freezes. Unlatching closes the shutter before the cartridge can be removed. The cartridge cools before inspection or recharging; no hot cassette should be handled if its shell, latch or indicator is damaged.
+
+The energy ledger is a **design calculation, not a test result**. A good-sun day with four equivalent peak-sun-hours yields up to `0.2 kW × 4 h = 0.8 kWh` nominal PV energy. Allowing an illustrative 50% from nominal PV output to cartridge thermal storage gives **0.4 kWh stored**; the cited experiment's 0.4 kWh release is a separate result on a different apparatus, not proof of this budget. The latent portion alone is about `2.5 kg × 340 kJ/kg ÷ 3600 = 0.236 kWh` (340 kJ/kg is a material-property approximation); the balance would require sensible heating and must be verified over an accessible discharge range. At the six-hour serving limit, **≤0.06 kWh** standby loss and an illustrative **0.09 kWh** pot-interface/unusable-heat allowance leave the **0.25 kWh pot-delivery target**. That is at most 31% of nominal PV energy under these assumptions, and only a small boiling/simmering task; it cannot supply a full day's meals. On a cloudy day, use a separately approved clean backup, not an undercharged cartridge for food that requires sustained heat.
+
+## Technical Architecture
+
+- **Power and charge:** PV wiring, charge controller/current limit, insulated dock and resistive heater; an independent thermal fuse cuts a thermostat failure. A grid-powered dock is possible, but its emissions depend on the grid.
+- **Storage and containment:** erythritol inside a welded stainless vessel with expansion space, evaluated pressure relief directed into secondary containment, and replaceable external insulation. The pressure and relief path are engineering work, not a claim that a hermetically sealed hot vessel is safe.
+- **Cook interface:** keyed shutter, positive latch, spring contact, aluminum spreader, vented cookware lid and stable anti-tip base. Food contacts the qualified pot, never the PCM; there is no pressurized food vessel.
+- **Signals and service:** passive temperature indicator and serialized inspection record, without radio or user tracking. Energy flows panel → heater → PCM → spreader → pot; temperature and latch state govern access, not a software app.
+
+Prior-art PCM cookers already store heat. This proposal's testable distinction is an **interoperable exchangeable cartridge interface**: household docks and a shared daytime charging station should accept the same safely keyed cassette without proprietary refill lock-in. Geometry, thermal contact and inspection tolerances must be standardized before claiming interchangeability.
+
+## Performance Benchmarks
+
+All figures below refer to different devices or test conditions and **are not head-to-head trial results**. Compare the same 1 L water load (20→95°C), 25°C ambient, specified wind and irradiance, six-hour hold and measured energy at the pot in a future controlled test. The ideal water heating requirement is 0.087 kWh before vessel and food losses.
+
+| Metric | This cooker | Comparator / current evidence |
+| --- | --- | --- |
+| Thermal discharge | **Target:** 0.25 kWh to pot/full charge within 6 h | **Reported prior art:** ~0.4 kWh thermal release from 2.5 kg erythritol under different cooling conditions [2]; not pot heat or a certified benchmark |
+| Storage and solar input | **Calculated scenario:** 0.4 kWh stored from at most 0.8 kWh nominal PV/day at 200 Wp, four peak-sun-hours; 0.236 kWh is the approximate latent component | Direct solar box cooker: no off-sun storage unless storage is added; battery/PV electric cooker: electrical storage or contemporaneous power required |
+| Hold / lifetime / touch safety | **Targets, unmeasured:** ≤0.06 kWh loss in 6 h; ≥500 cycles; accessible shell <50°C during normal transport | No equivalent measured values for this cartridge; independent burn and cycle tests required |
+| Price | **Unvalidated 2035 volume goal:** $120 cooker/cassette or $220–260 with dedicated PV installed | Local LPG, grid electricity and PV+battery prices vary; obtain local lifetime-cost quotes before declaring a winner |
+
+The erythritol melting plateau cannot provide a 180–250°C frying surface. A conventional electric pressure cooker or LPG stove remains preferable for large, fast or high-temperature meals; a fixed solar cooker can be cheaper where daytime-only cooking fits the household. This is a time-shifted small-meal device, not universal fuel replacement.
+
+## Deployment Scenarios
+
+1. **Peri-urban evening meal:** a household with an exposed roof charges its cassette at midday and simmers a small pot after dark. If roofs are scarce, an inspected neighborhood dock charges interoperable cartridges and issues them like returnable bottles. The cook keeps an existing stove for frying and cloudy days; the benefit is fewer smoky small-meal events, not an implausible total stove replacement.
+2. **Emergency shelter cluster:** a supervised shared PV array and charging rack schedule cassettes for vulnerable families. Shelter staff screen damaged units and train users on the hot indicator and safe food temperatures. The payoff is a limited smoke-free evening serving when charging conditions permit, without storing combustion fuel inside shelters.
+3. **Off-grid school kitchen:** staff charge several cassettes from a sized PV array and use them for small batches of porridge or hot drinks, while a separate certified appliance cooks bulk lunches. Batch count is bounded by array output and the unmeasured 0.25 kWh/pot design target; the gain, if validated, is a modular, repairable supplementary heat source.
+
+## Risks & Mitigations
+
+| Failure or adoption risk | Design response and gate |
+| --- | --- |
+| Burn, tip-over or child access while the core exceeds 100°C | Keyed shutter, positive latch, guarded handle, anti-tip base and persistent hot indicator; validate shell <50°C target in worst-case transport, and run drop, misuse and child-access tests before distribution. A 50°C surface can still burn on prolonged contact. |
+| Hot-vessel expansion, leakage, decomposition and food contamination | Size expansion space and pressure relief from measured thermal cycles; orient relief into secondary containment away from users and food. Thermal fuse plus independent thermostat; retire cracked or leaking units; qualify food-contact pot separately. |
+| Charging faults, glare or fire | Electrically isolated low-voltage connectors, overcurrent protection, certified wiring and weatherproof mounts. This PV design has **no concentrating reflector**, hence no concentrator glare, but hot dock parts and electrical fire still need enclosure and tests. |
+| Supercooling, insulation failure and inconsistent pot heat | Instrument 500 complete charge/discharge cycles, cold starts and 6-hour holds; compare actual pot energy and temperature against the 0.25 kWh target, and replace units failing inspection. Prevent undercooked food by checking food temperature, not the indicator alone. |
+| Cloudy seasons, cost and cooking preferences | Preserve a clean backup, trial recipe coverage with local cooks, publish honest per-meal economics and price spare cassettes transparently. A shared dock only works with measured queue capacity and an open, interoperable cartridge standard. |
+
+## Vision for 2050
+
+If the safety gates, economics and adoption studies succeed, a street could have a daylight charging rack with inspected, interchangeable cartridges that families collect before dinner; homes would still keep other appliances for frying and long rainy spells. The meaningful measure would be displaced polluting cooking events and measured exposure, not the number of cassettes sold. An open interface could let local repair shops compete on service rather than locking households into one vendor. This is a conditional clean-cooking pathway, not a forecast or a claim that a prototype exists.
+
+See the five-stage [roadmap](ROADMAP.md) and the assumption-driven [impact analysis](IMPACT_ANALYSIS.md).

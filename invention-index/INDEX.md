@@ -493,3 +493,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$18–25 per pair at 100,000 pairs/year in 2035; modeled US$10/person-year at a US$21 pair and US$3/year maintenance over three years, excluding fitting and clinical care
 - **Author:** jayis1
 - **Created:** 2026-10-24
+
+### 055 — Staged Enamel Repair Strip
+- **Category:** Oral Health & Universal Basic Services / Early Caries Prevention
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Planning capacity of up to 500,000 assessed early-lesion courses/year at 1 million strips/year and two strips/course; actual prevention requires clinical validation
+- **Key Material:** P11-4-class self-assembling peptide, separated calcium and phosphate salts, hydroxypropyl-methylcellulose film, cellulose backing
+- **Key Innovation:** A physically staged, peel-activated single-site film releases peptide before a separately dry-stored ion source; superiority over existing peptide and fluoride care is unproven
+- **Target Cost:** US$0.30–0.60 per sealed strip at 1 million units/year in 2035, excluding examination, application, disposal and follow-up
+- **Author:** jayis1
+- **Created:** 2026-10-24

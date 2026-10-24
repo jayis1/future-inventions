@@ -69,6 +69,7 @@ Design and document technologies that:
 | [Regenerable Grain Guard Cassette](./regenerable-grain-guard-cassette/) | Concept | Food Security & Post-Harvest Storage / Universal Basic Services |
 | [Solar Heat Cassette Cooker](./solar-heat-cassette-cooker/) | Concept | Clean Cooking & Public Health / Universal Basic Services |
 | [Photoacoustic Anemia Screener](./photoacoustic-anemia-screener/) | Concept | Health Diagnostics & Universal Basic Services / Anemia Triage |
+| [Field-Calibrated Adjustable Spectacles](./field-calibrated-adjustable-spectacles/) | Concept | Vision Health & Universal Basic Services / Refractive Access |
 
 ## Structure
 

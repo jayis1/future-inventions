@@ -483,3 +483,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$100–150 per device at 100,000 units/year in 2035; modeled US$0.11/screen at 2,000 screens over five years, excluding labor and confirmatory tests
 - **Author:** jayis1
 - **Created:** 2026-10-24
+
+### 054 — Field-Calibrated Adjustable Spectacles
+- **Category:** Vision Health & Universal Basic Services / Refractive Access
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Planning deployment of 100,000 pairs/year could serve up to 100,000 wearers/year; corrected acuity and safe referral require independent trials
+- **Key Material:** Hard-coated optical-grade polycarbonate Alvarez lens elements, captive mechanical adjusters, replaceable scratch shields
+- **Key Innovation:** Reversible per-eye power adjustment paired with a worker-assisted two-distance acuity protocol and explicit clinical referral gate; neither adjustable lenses nor self-refraction are new
+- **Target Cost:** US$18–25 per pair at 100,000 pairs/year in 2035; modeled US$10/person-year at a US$21 pair and US$3/year maintenance over three years, excluding fitting and clinical care
+- **Author:** jayis1
+- **Created:** 2026-10-24

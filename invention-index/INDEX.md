@@ -535,3 +535,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$75 ex-factory at 100,000 units/year in 2035, excluding installation, well survey, electrical work and casing repairs
 - **Author:** jayis1
 - **Created:** 2026-10-25
+
+### 059 — Stabilized Earth Floor Sealing Kit
+- **Category:** Healthy Housing & Universal Basic Services / Repairable Floor Surfacing
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Proposed 100-room paired pilot; 100,000 installations in 12 m² rooms would cover 1.2 million m², with health outcomes requiring independent validation
+- **Key Material:** Graded local soil/sand, hydrated lime, calcined kaolinitic clay, limewash, reusable hand roller
+- **Key Innovation:** A moisture-gated, graded and measured lime–pozzolan topping kit with repeatable compaction, protected curing and local patch repair; stabilization chemistry itself is established
+- **Target Cost:** US$5–8/m² materials at 10,000 kits/year in 2035, excluding labor, drainage, transport and tests
+- **Author:** jayis1
+- **Created:** 2026-10-25

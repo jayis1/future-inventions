@@ -76,6 +76,7 @@ Design and document technologies that:
 | [Passive Flood Door Sill](./passive-flood-door-sill/) | Concept | Disaster Resilience & Universal Basic Services / Flood Adaptation |
 | [Owner-Fitted Deorbit Cassette](./owner-fitted-deorbit-cassette/) | Concept | Space Sustainability & Earth Services / Orbital Debris Prevention |
 | [Flood-Isolating Wellhead Collar](./flood-isolating-wellhead-collar/) | Concept | Drinking Water & Disaster Resilience / Private Well Flood Adaptation |
+| [Stabilized Earth Floor Sealing Kit](./stabilized-earth-floor-sealing-kit/) | Concept | Healthy Housing & Universal Basic Services / Repairable Floor Surfacing |
 
 ## Structure
 

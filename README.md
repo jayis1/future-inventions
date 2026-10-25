@@ -82,6 +82,7 @@ Design and document technologies that:
 | [Ventilation-Safe Nitrogen Scrubber](./ventilation-safe-nitrogen-scrubber/) | Concept | Clean Air & Sustainable Agriculture / Barn Exhaust Nutrient Recovery |
 | [Sealed Window Friction Cassette](./sealed-window-friction-cassette/) | Concept | Healthy Housing & Universal Basic Services / Lead-Dust Prevention |
 | [Receive-Only Disaster Bulletin](./receive-only-disaster-bulletin/) | Concept | Disaster Resilience & Universal Basic Services / Accessible Public Warning |
+| [Wet-Night Edge Delineator](./wet-night-edge-delineator/) | Concept | Road Safety & Universal Basic Services / Rural Night Visibility |
 
 ## Structure
 

@@ -595,3 +595,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$85 ex-factory tile at 100,000 units/year in 2038; US$120 installed and modeled US$0.60/person-year at 50 distinct readers per tile, excluding transmitter infrastructure and outreach
 - **Author:** jayis1
 - **Created:** 2026-10-25
+
+### 065 — Wet-Night Edge Delineator
+- **Category:** Road Safety & Universal Basic Services / Rural Night Visibility
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Planning capacity of 100,000 markers at 200/km covers at most 500 km of eligible road; crash reduction is unproven
+- **Key Material:** Recycled-aluminum shell and frangible foot, replaceable polycarbonate microprism insert, stainless fasteners
+- **Key Innovation:** Tests a draining wet-optic insert with a replaceable fouling reference and breakaway roadside mount; retroreflective markers themselves are existing art
+- **Target Cost:** US$6 ex-factory per marker at 100,000/year in 2038; modeled US$240/km-year hardware amortization over five years at 200/km, excluding installation and maintenance
+- **Author:** jayis1
+- **Created:** 2026-10-25

@@ -83,6 +83,7 @@ Design and document technologies that:
 | [Sealed Window Friction Cassette](./sealed-window-friction-cassette/) | Concept | Healthy Housing & Universal Basic Services / Lead-Dust Prevention |
 | [Receive-Only Disaster Bulletin](./receive-only-disaster-bulletin/) | Concept | Disaster Resilience & Universal Basic Services / Accessible Public Warning |
 | [Wet-Night Edge Delineator](./wet-night-edge-delineator/) | Concept | Road Safety & Universal Basic Services / Rural Night Visibility |
+| [Solar Steam Waste Quarantine](./solar-steam-waste-quarantine/) | Concept | Health-Care Waste & Universal Basic Services / Off-Grid Infection Prevention |
 
 ## Structure
 

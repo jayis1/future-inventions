@@ -605,3 +605,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$6 ex-factory per marker at 100,000/year in 2038; modeled US$240/km-year hardware amortization over five years at 200/km, excluding installation and maintenance
 - **Author:** jayis1
 - **Created:** 2026-10-25
+
+### 066 — Solar Steam Waste Quarantine
+- **Category:** Health-Care Waste & Universal Basic Services / Off-Grid Infection Prevention
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Planning capacity of 1 tonne of qualified infectious soft waste per unit-year at one 5 kg batch for 200 sunny days; treatment and health benefit unproven
+- **Key Material:** Guarded solar-thermal collector, certified stainless-steel steam vessel, mechanical pressure interlock and relief, calibrated cold-spot probe
+- **Key Innovation:** Couples existing solar steam generation to load-specific cold-spot exposure and fail-marked batch quarantine across variable sunlight; neither solar autoclaving nor steam sterilization is new
+- **Target Cost:** US$1,800 ex-factory at 10,000 units/year in 2038; US$2,500–3,500 installed target excluding validation, consumables, staff and final disposal
+- **Author:** jayis1
+- **Created:** 2026-10-25

@@ -575,3 +575,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$12,000 ex-factory per 10,000 m³/h module at 10,000 units/year in 2038; US$16,000 installed before acid, service and energy
 - **Author:** jayis1
 - **Created:** 2026-10-25
+
+### 063 — Sealed Window Friction Cassette
+- **Category:** Healthy Housing & Universal Basic Services / Lead-Dust Prevention
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Pilot target of 100 eligible windows with paired lead-dust measurements over 12 months; 100,000 installations would cover at most 100,000 windows, with health benefit unproven
+- **Key Material:** Polypropylene or recycled-HDPE liner, acetal sliding shoes, EPDM edge lips, closed debris insert
+- **Key Innovation:** Reversible paired bearing-and-edge shield separates painted sash/jamb friction surfaces and contains residual debris for qualified removal, with a post-install dust gate; liners and lead-safe renovation themselves are prior art
+- **Target Cost:** US$45 ex-factory per set at 100,000 sets/year in 2038; US$120–200 installed target for eligible windows, excluding paint repair, testing and disposal
+- **Author:** jayis1
+- **Created:** 2026-10-25

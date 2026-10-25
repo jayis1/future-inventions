@@ -80,6 +80,7 @@ Design and document technologies that:
 | [Offline Self-Fit Hearing Aid](./offline-self-fit-hearing-aid/) | Concept | Hearing Health & Universal Basic Services / Accessible Hearing Care |
 | [Paddy Water-Table Gate](./paddy-water-table-gate/) | Concept | Sustainable Agriculture & Climate / Smallholder Rice Irrigation |
 | [Ventilation-Safe Nitrogen Scrubber](./ventilation-safe-nitrogen-scrubber/) | Concept | Clean Air & Sustainable Agriculture / Barn Exhaust Nutrient Recovery |
+| [Sealed Window Friction Cassette](./sealed-window-friction-cassette/) | Concept | Healthy Housing & Universal Basic Services / Lead-Dust Prevention |
 
 ## Structure
 

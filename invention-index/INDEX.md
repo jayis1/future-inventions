@@ -555,3 +555,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$65 ex-factory per aid at 100,000 units/year in 2038; approximately US$27/aid-year over three years excluding charger, distribution, fitting and referrals
 - **Author:** jayis1
 - **Created:** 2026-10-25
+
+### 061 — Paddy Water-Table Gate
+- **Category:** Sustainable Agriculture & Climate / Smallholder Rice Irrigation
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Pilot target of 100 paired 0.1 ha plots against manual AWD; 100,000 gates could serve 10,000 eligible ha, with incremental climate and water benefits unproven
+- **Key Material:** Perforated HDPE observation tube and valve, polypropylene floats, stainless-steel linkage, replaceable EPDM seal
+- **Key Innovation:** Mechanically interlocked below-grade refill trigger and above-grade stop with manual override for gravity-fed AWD; AWD and observation tubes themselves are established practice
+- **Target Cost:** US$35 ex-factory per gate at 100,000 units/year in 2035, plus US$15 installation and US$5/year service, excluding irrigation infrastructure
+- **Author:** jayis1
+- **Created:** 2026-10-25

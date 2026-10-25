@@ -35,3 +35,50 @@ The hardest unsolved issue is retaining a useful headlamp-return angle while she
 [2] FHWA, *Synthesis of Pavement Marking Research, Chapter 5: Wet Pavement Marking Retroreflectivity*: https://highways.dot.gov/safety/other/visibility/synthesis-pavement-marking-research/chapter-5-wet-pavement-marking
 
 [3] FHWA, *Pavement Markings Regulations / Standards* (existing dry-maintenance requirements; not a certification of this device): https://highways.dot.gov/safety/other/visibility/pavement-markings-regulations-standards
+
+## How It Works
+
+At night, a low-beam headlamp illuminates the shoulder-facing insert. Polycarbonate cube-corner microprisms redirect some incident rays toward the headlamp and the nearby driver's eye; return varies sharply with entrance and observation angles. The 35 mm-high body and small canopy are intended to keep the optical face out of ordinary sheet runoff, while a downward outlet gives water a route away from the facets. This does **not** guarantee visibility in standing water, wind-driven spray, condensation or a headlamp beam that misses the unit. A 50 m closed-course detection target at 40 km/h is a proposed test condition, not a stopping-distance guarantee.
+
+The buyer is the road authority, which needs an approved installation and an acceptable lifetime cost; road users, including people walking and cycling along unlit shoulders, may benefit only if drivers correctly perceive the edge. The distinction from wet-reflective pavement tape is a **replaceable, sheltered vertical optical face on a frangible, off-carriageway mount**, not a claim that it produces a brighter continuous lane line. Raised road studs and roadside posts already solve parts of the same problem; this unit must beat the best locally compliant option in matched rain, maintenance and impact tests before procurement. Paint and protected paths remain in place.
+
+## Technical Architecture
+
+- **Optics:** white forward and jurisdiction-permitted amber reverse polycarbonate inserts, bolted into the recycled-aluminum shell. Specify each face's beam pattern, color and luminous-intensity coefficient at declared entrance/observation angles; do not use pavement-line luminance units for a discrete reflector.
+- **Water and attachment:** canopy, downward drainage, rounded shell, stainless fasteners and buried base outside the travelled path. A certified frangible foot must release without creating a dangerous projectile or sharp stub; physical prototypes must prove both retention and breakaway behavior.
+- **Service loop, not a data network:** survey and permit the location; install at authority-approved sight lines and spacing; inspect dry and wet with photometry plus physical checks; compare the exposed insert with its recessed witness; clean or swap an insert, and remove any displaced unit. The witness is only a cleaning cue. Without headlamps or with a fouled/occluded face, the device emits nothing; ordinary markings and other safety measures carry the fallback.
+
+## Performance Benchmarks
+
+**No integrated prototype has been measured.** The table is a procurement test plan, not a claim of achieved superiority. Compare the same color, headlamp spectrum, angles, rain rate, viewing height, exposure age and site geometry against approved roadside posts and raised markers. Pavement tape or profiled thermoplastic is a useful *system* comparator, but its continuous-line retroreflected luminance (mcd/m²/lx) cannot be converted directly to a discrete marker's coefficient (cd/lx). FHWA also cautions that dry marking return does not predict wet performance.[2]
+
+| Metric | Proposed target | Current comparator / measurement |
+| --- | --- | --- |
+| Wet optical return | ≥50% of **this unit's new dry** cd/lx after simulated 12-month UV/abrasion/splash/thermal aging under continuous rain | Measure approved markers/posts simultaneously at specified angles and rain rate; incumbent value not yet measured. |
+| Dry angular return | Meet the authority's applicable minimum at every specified angle; no numerical minimum asserted | Bench-measure both faces and comparators; assess EN 1463-1 only if the authority classifies this shoulder device as a road stud. |
+| Human detection | 50 m at 40 km/h on a closed course, including older drivers | Compare detection *and correct edge interpretation* with the compliant incumbent; no baseline yet. |
+| Durability and service | Five-year average life; insert swap under 5 minutes; safe breakaway | Logged loss, abrasion, plow and debris rates over a wet season; no field data yet. |
+| Economics | US$6/unit at 100,000/year; US$1,200/km hardware at 200/km | Installed and five-year lifecycle bids for compliant tape, studs and posts, in US$/km and US$/km-year; no sourced price parity asserted. |
+
+EN 1463-1:2021 covers laboratory characteristics of retroreflecting road studs, including luminous-intensity coefficient and color; applicability to this off-carriageway device must be determined by the authority, not assumed: https://webstore.ansi.org/preview-pages/BSI/preview_30463345.pdf. EN 1436 and ASTM wet-marking methods concern pavement *markings*, not an automatic certification path for this unit. ASTM E809 describes retroreflector photometry, but test geometry and local acceptance criteria still require a written protocol.
+
+## Deployment Scenarios
+
+1. **Unlit rural road:** an agency surveys a 20-km shoulder pilot (4,000 units at the planning spacing), installs only where setbacks and permits allow, and compares rainy-night edge detection, maintenance time and displaced units against its approved posts and markings. The marker does not designate a safe walking route.
+2. **Mountain curves:** a highway operator trials short segments with rain and fog, first verifying beam return on bends and checking plow clearance. Fog backscatter, snow cover or canopy icing may erase the advantage; close the trial if the markers give a false curve cue or shed debris.
+3. **Temporary detour approach:** a contractor proposes removable bases outside the travel path, subject to temporary traffic-control approval. This is a *separate mounting validation*, not a claim that the permanent buried-base unit can be moved safely; compare setup and removal time with standard approved delineators.
+
+## Risks & Mitigations
+
+| Failure mode | Gate or response |
+| --- | --- |
+| Road film, salt, algae, condensation or ice blinds the canopy | Test wet after deliberate contamination and freeze–thaw; inspect and clean, then replace obscured inserts. Never count on the witness patch as a photometer. |
+| Abrasion, UV embrittlement or bad drainage dims or yellows polycarbonate | Accelerated exposure plus real-season angular return measurements; redesign insert or outlet if the wet/dry target fails. |
+| Plow, sweeper, vehicle or pedestrian contact shears the base | Set back from the travelled path, certify breakaway load and debris containment with the authority, remove damaged units at once; reject sites with no safe setback. |
+| White/amber placement or specular glare misleads drivers or riders | Obtain color/location approval; test low and high viewing heights, bends, motorcycles and cyclists in rain. Do not replace legal markings or barriers. |
+| Installed cost, vandalism or extra cleaning defeats the value | Audit labor, replacements and five-year lifetime cost against wet-reflective tape and approved studs/posts; do not adopt solely on ex-factory price. |
+| Better edge cues encourage speed increases | Measure actual speeds and conflicts; pair with speed management and protected walking/cycling infrastructure. Brightness alone is not a crash outcome. |
+
+## Vision for 2050
+
+If independent trials establish safer interpretation, dependable breakaway behavior and affordable maintenance, a road authority could specify serviceable passive edge units for selected dark, wet shoulders alongside continuous markings, protected paths and lower-risk road geometry. Vehicles and people would read a more consistent boundary without roadside batteries or a surveillance network. This is a conditional adoption scenario, not a forecast: high-speed or plowed roads may prefer tape, flush studs or posts, and no marker can reveal a person hidden beyond the beam.

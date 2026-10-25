@@ -39,3 +39,56 @@ Within 10–20 years, bench-test bypass opening with a stopped fan and dust-load
 [1] https://www.epa.gov/agriculture/agriculture-and-air-quality — US EPA, Agriculture and Air Quality.
 [2] https://pmc.ncbi.nlm.nih.gov/articles/PMC8622955/ — Soto-Herranz et al., *Membranes* 11 (2021), 859.
 [3] https://doi.org/10.1080/09593330.2014.950346 — Full-scale spray scrubber study in poultry facilities.
+
+## How It Works
+
+The target is **NH₃ in mechanically exhausted barn air**, not atmospheric N₂, NOₓ or indoor breathing-air oxygen. The unit sits downstream of the barn exhaust fan, in a parallel treatment leg with a mechanically opening, full-flow bypass. A screened inlet intercepts coarse dust; air crosses an open spray zone rather than a dust-prone packed bed. NH₃ dissolves into recirculated acidic droplets and becomes aqueous ammonium; sulfate pairs with the ammonium in the contained liquor. A polypropylene demister returns entrained droplets to the loop before air exits outdoors. The liquid is not a dry, ready-to-spread fertilizer: it needs batch analysis, lawful handling and possibly off-site processing.
+
+Operators reconcile inlet/outlet NH₃ mass flux with tank nitrogen and purchased acid; a concentration reading alone cannot establish recovery when airflow changes. Pump, liquid-flow, pH and tank-level monitoring control dosing and flag low capture. The *mechanical* bypass and independent barn fan alarm do not depend on this controller. On high duct resistance or lost module power, capture yields to uninterrupted required ventilation. No treatment claim applies during bypass; ammonia from open yards, storage and field application remains outside the boundary. Acid transfer and inspection are trained-service activities, not homeowner maintenance.
+
+## Technical Architecture
+
+| Subsystem | Physical role | Evidence needed before release |
+| --- | --- | --- |
+| Inlet screen and PP/FRP spray cassette | Dust interception and gas–liquid contact without a packed bed | Flow distribution, fouling and clean-to-service pressure rise |
+| Recirculation loop and bunded HDPE tank | Meter acid/water and collect ammonium-sulfate solution | Liquid balance, leak containment and corrosion inspection |
+| PP demister and outdoor outlet | Limit acid-aerosol carryover | Outlet droplet/acid mist sampling through service life |
+| Differential-pressure relief and full-flow bypass | Protect barn airflow even if electronics fail | Stopped-fan, blocked-cassette and power-loss witnessed tests |
+| Local instruments and logger | Pressure, bypass position, pump flow, pH, level, paired NH₃/airflow | Calibrated reference sampling and independent ventilation audit |
+
+Data path: commissioned fan curve and independent flow check → measured inlet NH₃ and volume flow → liquid-contact stage → demister → measured outdoor outlet; in parallel, pressure and bypass position → local alarm and service log. The NH₃ mass balance and solution inventory are reconciled by a technician; telemetry may log performance but cannot override the relief path. This complements, rather than duplicates, the repository's nitrate-in-drainage capture and nitrogen-fixation concepts: it recovers already-volatilized nitrogen from a specific ducted exhaust.
+
+## Performance Benchmarks
+
+All device figures below are **unvalidated targets or calculations**, not tests of this design. Comparator results have different flow, inlet loading and duty cycles, so they are not proof of equivalence.
+
+| Metric and boundary | Published comparator / current state | This module's target or calculated design point |
+| --- | --- | --- |
+| NH₃ removal, treated stream | Full-scale poultry spray scrubber: 71–81% at 66–278 ppmv NH₃, four seasonal test campaigns.[3] | ≥70% at **20 ppmv**, 25 °C and **10,000 m³/h**, across a **30-day** service cycle; independently test at lower inlet levels. |
+| Duct pressure rise | Same spray study: <25 Pa in its installation.[3] | ≤40 Pa clean-to-service, subject to the *site-specific* certified fan allowance; full-flow mechanical bypass on excess resistance. |
+| Alternate recovery | ePTFE farm pilots: 2.3 g TAN/m²/day (pig) and 0.4 g TAN/m²/day (poultry), sensitive to seasonal dilution.[2] | Not directly comparable per membrane area; instead report measured kg N recovered per m³ treated, per kWh and per dollar. |
+| Nitrogen, acid and salt at constant design inlet | Stoichiometry, not an empirical competitor. | Calculated **0.080 kg N/h** captured, **0.281 kg/h** pure H₂SO₄ minimum, **0.378 kg/h** dry salt equivalent; only when in service at the specified inlet. |
+| Energy and capital | Site-specific conventional scrubber bid required; no credible universal price comparator. | Calculated incremental fan **0.185 kW** at 40 Pa and 60% efficiency; pump energy unmeasured. **US$12,000** ex-factory plus **US$4,000** installation is a 2038 volume-cost target, not a quote. |
+
+The comparator's low pressure drop was measured at its own test conditions, not at this module's end-of-cycle state. Acceptance requires paired fan-flow measurements, time-resolved inlet/outlet flux, mist and acid balance during dusty and humid operation; do not infer worker exposure reduction from exhaust removal alone.
+
+## Deployment Scenarios
+
+- **Ducted poultry-house exhaust:** A farm with documented NH₃ loading and a verified spare fan-pressure margin retrofits a treatment/bypass assembly outdoors. A trained contractor samples emissions and product batches across winter and summer; the farm pays installation and operating costs and receives only the nitrogen actually recovered. At the design inlet, continuous operation *could* yield 0.702 tonne N/year per module, before seasonal duty, bypass and losses.
+- **Mechanically ventilated pig housing:** A cooperative shares chemical deliveries and technician visits across eligible barns, but screens out sites with unsuitable duct geometry or no licensed product route. Its pilot compares like-for-like fan capacity and measured NH₃ mass flux against bypass operation; the ePTFE pilot's seasonal dilution warns that an apparent winter win need not persist in summer.[2]
+- **Enclosed manure-processing exhaust:** A permitted facility with concentrated, ducted emissions may offer better capture economics, but must compare an existing commercial scrubber first. The proposal wins only if the full-flow relief path, maintenance and total cost outperform that incumbent at the actual inlet concentration; it is not a general solution for uncovered lagoons.
+
+## Risks & Mitigations
+
+| Failure or uncertainty | Protective response and falsification test |
+| --- | --- |
+| Dust or scaling chokes spray/demister and steals ventilation | Passive bypass opens at a commissioned pressure limit; independently measure fan flow with deliberately fouled modules and on power loss. A jammed bypass fails the design gate. |
+| Low NH₃, humidity changes or bypass erode yield | Log flow-weighted inlet/outlet flux and bypass hours across seasons; revise the economics, never throttle required ventilation to increase concentration. |
+| Sensor drift, stale samples or pump loss masquerade as capture | Local fault/alarm and independent reference sampling; pressure relief remains mechanical. Report missing measurements as unknown, not zero emissions. |
+| Acid mist, leaks or unsuitable ammonium-sulfate liquor cause secondary harm | Demister and bunded, isolated liquid loop; test outdoor mist, inspect corrosion and assay every product batch. Stop dosing, contain spills and use approved waste routes on failure. |
+| Higher electricity, acid transport or fertilizer contamination erase net benefit | Audit total pump and fan power, acid and water inputs, labor and disposal against a conventional scrubber and source control; reject sites with negative net outcomes. |
+| 'Scrubber' mistaken for animal or worker life support | Maintain independent code-required fresh air and fan alarms. This treats *exhaust only* and neither measures nor controls occupied-zone O₂/CO₂ or other pollutants; require a site ventilation and chemical-safety review. |
+
+## Vision for 2050
+
+A conditional 2050 scenario is a service network in which eligible barn exhaust ducts have independently tested, ventilation-priority capture modules, and recovered nitrogen moves through traceable fertilizer QA rather than unverified tank-to-field transfers. The meaningful scorecard is verified tonnes N retained, avoided outdoor NH₃ flux, uninterrupted barn airflow and lifecycle cost—not installed units alone. This future depends on low-concentration field trials and comparisons with source control and incumbent scrubbers; it is not a prediction that every farm should install one.

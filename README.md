@@ -75,6 +75,7 @@ Design and document technologies that:
 | [Staged Enamel Repair Strip](./staged-enamel-repair-strip/) | Concept | Oral Health & Universal Basic Services / Early Caries Prevention |
 | [Passive Flood Door Sill](./passive-flood-door-sill/) | Concept | Disaster Resilience & Universal Basic Services / Flood Adaptation |
 | [Owner-Fitted Deorbit Cassette](./owner-fitted-deorbit-cassette/) | Concept | Space Sustainability & Earth Services / Orbital Debris Prevention |
+| [Flood-Isolating Wellhead Collar](./flood-isolating-wellhead-collar/) | Concept | Drinking Water & Disaster Resilience / Private Well Flood Adaptation |
 
 ## Structure
 

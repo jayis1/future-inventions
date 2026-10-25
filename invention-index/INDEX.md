@@ -525,3 +525,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$250 ex-factory at 100,000 units/year in 2035, excluding integration, launch mass, tracking, insurance, and licensing
 - **Author:** jayis1
 - **Created:** 2026-10-25
+
+### 058 — Flood-Isolating Wellhead Collar
+- **Category:** Drinking Water & Disaster Resilience / Private Well Flood Adaptation
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Pilot target of 100 eligible wells against matched compliant cap-and-vent controls; 100,000 installations would cover at most 100,000 wellheads, with prevented contamination events unproven
+- **Key Material:** Glass-filled polypropylene split sleeve, EPDM compression gasket, 316 stainless-steel band and bulkheads, raised screened vent, captive mechanical flood witness
+- **Key Innovation:** A serviceable multi-penetration wellhead boundary with an independent, resettable flood-exposure witness and site-elevated vent; conventional sealed caps and raised vents are prior art, and no potable-water claim follows from an untripped indicator
+- **Target Cost:** US$75 ex-factory at 100,000 units/year in 2035, excluding installation, well survey, electrical work and casing repairs
+- **Author:** jayis1
+- **Created:** 2026-10-25

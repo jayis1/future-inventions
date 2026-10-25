@@ -1,5 +1,7 @@
 # Invention Index
 
+**Author: jayis1**
+
 This file tracks all inventions in the repository with key metadata.
 
 ## Active Inventions
@@ -513,3 +515,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$90–140 ex-factory per 0.9 m-wide panel at 100,000 units/year in 2035, excluding structural survey, installation and seal replacement
 - **Author:** jayis1
 - **Created:** 2026-10-24
+
+### 057 — Owner-Fitted Deorbit Cassette
+- **Category:** Space Sustainability & Earth Services / Orbital Debris Prevention
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Planning scenario of up to 10,000 consenting owner-equipped satellites over ten years; disposal lifetime and collision-risk reductions require paired flight validation
+- **Key Material:** Aluminum-coated polyimide conductive tape, polyimide drag sail, captive end mass, redundant release electronics
+- **Key Innovation:** Sequential, independently released electrodynamic tether and low-altitude drag sail with operator-gated deployment and mission-specific debris-risk verification; both braking mechanisms already have prior art
+- **Target Cost:** US$250 ex-factory at 100,000 units/year in 2035, excluding integration, launch mass, tracking, insurance, and licensing
+- **Author:** jayis1
+- **Created:** 2026-10-25

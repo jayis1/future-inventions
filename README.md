@@ -1,5 +1,7 @@
 # Future Inventions Lab
 
+**Author: jayis1**
+
 > "The best way to predict the future is to invent it." — Alan Kay
 
 This repository is a living lab of invention concepts — speculative devices, systems, and technologies designed for the **betterment of all Earthlings and human-kind**. Every subfolder contains a complete invention blueprint with problem statement, technical specification, impact analysis, and development roadmap.
@@ -72,6 +74,7 @@ Design and document technologies that:
 | [Field-Calibrated Adjustable Spectacles](./field-calibrated-adjustable-spectacles/) | Concept | Vision Health & Universal Basic Services / Refractive Access |
 | [Staged Enamel Repair Strip](./staged-enamel-repair-strip/) | Concept | Oral Health & Universal Basic Services / Early Caries Prevention |
 | [Passive Flood Door Sill](./passive-flood-door-sill/) | Concept | Disaster Resilience & Universal Basic Services / Flood Adaptation |
+| [Owner-Fitted Deorbit Cassette](./owner-fitted-deorbit-cassette/) | Concept | Space Sustainability & Earth Services / Orbital Debris Prevention |
 
 ## Structure
 

@@ -77,6 +77,7 @@ Design and document technologies that:
 | [Owner-Fitted Deorbit Cassette](./owner-fitted-deorbit-cassette/) | Concept | Space Sustainability & Earth Services / Orbital Debris Prevention |
 | [Flood-Isolating Wellhead Collar](./flood-isolating-wellhead-collar/) | Concept | Drinking Water & Disaster Resilience / Private Well Flood Adaptation |
 | [Stabilized Earth Floor Sealing Kit](./stabilized-earth-floor-sealing-kit/) | Concept | Healthy Housing & Universal Basic Services / Repairable Floor Surfacing |
+| [Offline Self-Fit Hearing Aid](./offline-self-fit-hearing-aid/) | Concept | Hearing Health & Universal Basic Services / Accessible Hearing Care |
 
 ## Structure
 

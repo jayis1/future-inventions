@@ -545,3 +545,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$5–8/m² materials at 10,000 kits/year in 2035, excluding labor, drainage, transport and tests
 - **Author:** jayis1
 - **Created:** 2026-10-25
+
+### 060 — Offline Self-Fit Hearing Aid
+- **Category:** Hearing Health & Universal Basic Services / Accessible Hearing Care
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Planning deployment of 100,000 aids/year could equip at most 100,000 ears/year; sustained benefit and safety require independent trials
+- **Key Material:** MEMS microphone, low-power DSP and receiver, vented silicone ear coupling, replaceable LiFePO4 cell
+- **Key Innovation:** Phone-free, invalid-condition-gated self-fitting integrated with replaceable power and ear interfaces plus local acoustic service checks; self-fitting aids and DSP amplification already exist
+- **Target Cost:** US$65 ex-factory per aid at 100,000 units/year in 2038; approximately US$27/aid-year over three years excluding charger, distribution, fitting and referrals
+- **Author:** jayis1
+- **Created:** 2026-10-25

@@ -79,6 +79,7 @@ Design and document technologies that:
 | [Stabilized Earth Floor Sealing Kit](./stabilized-earth-floor-sealing-kit/) | Concept | Healthy Housing & Universal Basic Services / Repairable Floor Surfacing |
 | [Offline Self-Fit Hearing Aid](./offline-self-fit-hearing-aid/) | Concept | Hearing Health & Universal Basic Services / Accessible Hearing Care |
 | [Paddy Water-Table Gate](./paddy-water-table-gate/) | Concept | Sustainable Agriculture & Climate / Smallholder Rice Irrigation |
+| [Ventilation-Safe Nitrogen Scrubber](./ventilation-safe-nitrogen-scrubber/) | Concept | Clean Air & Sustainable Agriculture / Barn Exhaust Nutrient Recovery |
 
 ## Structure
 

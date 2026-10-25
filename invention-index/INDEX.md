@@ -565,3 +565,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$35 ex-factory per gate at 100,000 units/year in 2035, plus US$15 installation and US$5/year service, excluding irrigation infrastructure
 - **Author:** jayis1
 - **Created:** 2026-10-25
+
+### 062 — Ventilation-Safe Nitrogen Scrubber
+- **Category:** Clean Air & Sustainable Agriculture / Barn Exhaust Nutrient Recovery
+- **TRL:** 2 (Concept)
+- **Impact Potential:** At a hypothetical 10,000 units continuously treating 10,000 m³/h each at 20 ppmv NH₃ and 70% capture, up to about 7,020 tonnes N/year recovered; real benefit requires seasonal trials
+- **Key Material:** PP/FRP spray duct and demister, mechanically opening bypass, HDPE bunded acid/product tank
+- **Key Innovation:** Ventilation-priority retrofit combines an established acid scrubber with a power-independent full-flow pressure bypass and measured nutrient inventory; removal and economics at dilute exhaust remain unproven
+- **Target Cost:** US$12,000 ex-factory per 10,000 m³/h module at 10,000 units/year in 2038; US$16,000 installed before acid, service and energy
+- **Author:** jayis1
+- **Created:** 2026-10-25

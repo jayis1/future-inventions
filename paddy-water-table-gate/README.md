@@ -32,6 +32,57 @@ Silt, algae, rodents, debris, gasket wear, floats binding to the tube, storms an
 
 Within 10–20 years: bench-test float hysteresis, pressure and silt resistance; conduct farmer-controlled paired trials against a plain tube; revise for local fabrication only if the gate beats that baseline; then assess multi-season repair costs and independent climate/yield results. If gravity head or maintenance is inadequate, abandon the gate rather than advertise automatic AWD.
 
+## How It Works
+
+This is a refill-only controller for a level **0.1 ha** plot with an elevated, isolatable inlet. The farmer installs the perforated tube in representative soil, checks its reading against a ruler, sets the lower linkage to **−15 cm** and verifies the independent ponded-water float at **+3–5 cm**. The farmer must also confirm that upstream water will be available when the trigger trips; the gate cannot summon canal water. IRRI's ordinary AWD tube and threshold are prior art.[1] The proposed addition is automatic, mechanically latched refill and shutoff, not a new rice-growing method.
+
+After ponding recedes through evapotranspiration and percolation, the subsurface float descends; only at the lower threshold does it release the spring-loaded latch. Canal head pushes the HDPE flap open, and the separate surface float closes and latches it at the upper stop. That mechanical hysteresis prevents oscillation around a single water level. The flow flag indicates inlet motion, not proof that the soil reached the threshold or that water reached every corner. During flowering, the farmer uses the manual isolation/override and ordinary observation to maintain appropriate water; before harvest, isolate supply and drain through the field's existing drainage practice. A broken linkage closes the inlet, but a stuck-open seat can still flood the plot: both require inspection and an upstream shutoff.
+
+## Technical Architecture
+
+| Subsystem | Physical input → output | Service check |
+| --- | --- | --- |
+| Screened 100 mm HDPE tube and guided polypropylene float | Local below-grade water level → displacement | Remove silt and compare to a ruler reading. |
+| Stainless linkage, spring and two-position latch | Displacement at −15 cm → inlet release | Exercise by hand; inspect corrosion and binding. |
+| Low-head HDPE flap, replaceable EPDM seat and surface float | Available canal head → flow; +3–5 cm ponding → closure | Check seat leakage and upper-stop travel. |
+| Isolation handle, inlet-flow flag and bund seal | Manual shutoff, visible flow indication and controlled penetration | Inspect erosion/overflow and compacted soil around fitting. |
+
+The physical data path is **field-tube level → linkage/latch → flap → ponded-water float → latched stop**. No battery, telemetry, autonomous drain, or authenticated event log exists in this concept. The flag cannot substantiate carbon credits; any future measurement, reporting and verification (MRV) claim needs independent level/flow records, gas sampling, tamper controls and an accepted method. Site sizing must account for the existing **40 m³ per 4 cm** geometric refill and the **~11.1 h at 1 L/s net** calculation above; infiltration and insufficient canal head lengthen it. Installation duration, valve flow at a defined head and seal leakage remain bench-test questions.
+
+## Performance Benchmarks
+
+The literature comparator is **continuous flooding versus correctly practiced manual AWD**, not this untested gate versus manual AWD. IRRI reports approximately **30% irrigation-water reduction** and **30–70% methane reduction** for AWD under suitable conditions; these are not gate-specific measurements.[1] Soil, season, nitrogen practice and water access alter outcomes.
+
+| Metric and comparator | Published/manual reference | Gate design target or current state |
+| --- | --- | --- |
+| Water-table re-flood trigger | IRRI tube: about −15 cm below soil.[1] | ±2 cm repeatability at calibrated local head; untested. |
+| Refill shutoff | Manual operator observes field. | +3–5 cm ponding; untested. |
+| Refill reliability | Site-specific manual AWD baseline to measure. | Fewer than 1 missed/uncommanded event per 100 eligible cycles; untested. |
+| Irrigation-water and CH₄ savings vs continuous flooding | AWD: ~30% water, 30–70% CH₄ per IRRI.[1] | No incremental gate saving established; paired trial required. |
+| Yield and net greenhouse gases vs manual AWD | Site-specific control required; N₂O can offset CH₄. | At most 5% yield loss as trial exit gate; measure CH₄ and N₂O. |
+| Installed cost and energy | Manual tube cheaper; labor/site costs unknown. | US$50 installation including US$35 gate at volume; 0 electrical Wh, unvalidated. |
+
+## Deployment Scenarios
+
+1. **Gravity-fed smallholder cooperative:** An eligible, level 0.1 ha plot with a reliable elevated canal inlet uses one gate, upstream shutoff and overflow route. At the modeled 1 L/s net flow, a 4 cm geometric refill alone takes ~11 hours; a canal rotation shorter than that is a no-go until a larger inlet is tested.
+2. **Pump-fed district with elevated header:** A shared tank or canal provides sufficient gravity head *after pumping*; the gate itself uses no electricity but does not eliminate pump energy. Compare metered irrigation volume, pump costs and repair visits against plain-tube AWD before claiming savings.
+3. **Cooperative climate pilot:** Matched manual-AWD and gate plots are sampled for seasonal CH₄, N₂O, yield and water delivery. A visible flag helps spot faults but cannot certify avoided emissions; independently auditable measurements and safeguards against double counting are required before any credit revenue is projected.
+
+## Risks & Mitigations
+
+| Failure / consequence | Detection and mitigation; residual uncertainty |
+| --- | --- |
+| Mud, algae, crabs or rodents bind the float or seat; dry-out or overflow follows. | Daily ruler/flag check, removable screen and scheduled cleaning; measure fault frequency over wet and dry seasons. |
+| Canal head disappears, or spring closes a damaged linkage; crop dries. | Inspect source and water table daily, isolate/bypass and irrigate normally; fail-closed protects against uncontrolled inlet flow but not drought. |
+| Seat leaks, bund erodes or storm water overtops; adjacent plots flood. | Upstream shutoff, compacted collar, site-specific spillway and neighbor-agreed schedule; reject sites without safe overflow. |
+| Soil permeability, uneven grading or flowering-stage drying reduces yield. | Screen soil and field level; pause AWD during sensitive stages, compare matched yields and stop trial if agronomic thresholds fail. |
+| Oxic periods increase N₂O, weeds or cadmium uptake on vulnerable soils. | Measure both gases and grain contaminants where relevant, manage nitrogen/weed timing and exclude high-risk soils; effects remain site-specific. |
+| Claimed climate benefit exceeds evidence or displaces manual AWD with no added benefit. | Use manual AWD as the incremental comparator; audit paired controls and never treat a flow flag as an emission meter. |
+
+## Vision for 2050
+
+If multi-season trials show that the latch survives mud, saves farmer time and does not sacrifice yield, a standardized, owner-serviceable gate could become a fitting on *eligible gravity-fed bunds*, not a universal paddy accessory. Farmer groups would buy repairable parts locally and coordinate supply windows rather than depend on connectivity. The value proposition would be dependable AWD where manual visits are missed; climate gains would be counted only against the practice a gate actually replaces. The conditional scale cases and their limits are in [IMPACT_ANALYSIS.md](IMPACT_ANALYSIS.md); development gates are in [ROADMAP.md](ROADMAP.md).
+
 ## Sources
 
 [1] https://ghgmitigation.irri.org/mitigation-technologies/alternate-wetting-and-drying — IRRI Alternate Wetting and Drying

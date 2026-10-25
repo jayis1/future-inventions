@@ -81,6 +81,7 @@ Design and document technologies that:
 | [Paddy Water-Table Gate](./paddy-water-table-gate/) | Concept | Sustainable Agriculture & Climate / Smallholder Rice Irrigation |
 | [Ventilation-Safe Nitrogen Scrubber](./ventilation-safe-nitrogen-scrubber/) | Concept | Clean Air & Sustainable Agriculture / Barn Exhaust Nutrient Recovery |
 | [Sealed Window Friction Cassette](./sealed-window-friction-cassette/) | Concept | Healthy Housing & Universal Basic Services / Lead-Dust Prevention |
+| [Receive-Only Disaster Bulletin](./receive-only-disaster-bulletin/) | Concept | Disaster Resilience & Universal Basic Services / Accessible Public Warning |
 
 ## Structure
 

@@ -585,3 +585,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$45 ex-factory per set at 100,000 sets/year in 2038; US$120–200 installed target for eligible windows, excluding paint repair, testing and disposal
 - **Author:** jayis1
 - **Created:** 2026-10-25
+
+### 064 — Receive-Only Disaster Bulletin
+- **Category:** Disaster Resilience & Universal Basic Services / Accessible Public Warning
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Planning capacity of 100,000 public tiles × 50 distinct readers = up to 5 million people with visible notices; timely comprehension and safety benefits require independent field trials
+- **Key Material:** Reflective e-paper, receive-only sub-GHz radio path, crystalline-silicon PV, replaceable LiFePO4 cell, repairable recycled-aluminum enclosure
+- **Key Innovation:** Physically one-way public warning endpoint that accepts signed, region- and expiry-bounded alerts and visibly downgrades stale or unverified messages; CAP and LoRa are established prior art
+- **Target Cost:** US$85 ex-factory tile at 100,000 units/year in 2038; US$120 installed and modeled US$0.60/person-year at 50 distinct readers per tile, excluding transmitter infrastructure and outreach
+- **Author:** jayis1
+- **Created:** 2026-10-25

@@ -84,6 +84,7 @@ Design and document technologies that:
 | [Receive-Only Disaster Bulletin](./receive-only-disaster-bulletin/) | Concept | Disaster Resilience & Universal Basic Services / Accessible Public Warning |
 | [Wet-Night Edge Delineator](./wet-night-edge-delineator/) | Concept | Road Safety & Universal Basic Services / Rural Night Visibility |
 | [Solar Steam Waste Quarantine](./solar-steam-waste-quarantine/) | Concept | Health-Care Waste & Universal Basic Services / Off-Grid Infection Prevention |
+| [Storm-Drain Tire-Toxin Trap](./storm-drain-tire-toxin-trap/) | Concept | Aquatic Restoration & Stormwater / Tire-Derived Pollution Prevention |
 
 ## Structure
 

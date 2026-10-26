@@ -1,0 +1,36 @@
+# Storm-Drain Tire-Toxin Trap
+
+**Author: jayis1** · Research concept (TRL 2); no field performance or ecological benefit has been demonstrated for this design.
+
+## Problem
+
+Tire wear leaves particles and the tire additive 6PPD on roads. Atmospheric oxidation forms 6PPD-quinone (6PPDQ), which rain can carry to streams; EPA reports acute toxicity to coho salmon and other susceptible fish, while effects on humans remain uncertain.[1] Road runoff also carries sediment and other pollutants. This is a watershed-scale problem for aquatic ecosystems and the communities, including Tribal communities, that depend on healthy salmon populations; it is not a claim that this device alone can prevent fish deaths.[1] Large bioretention installations need land and excavation that some existing road drains cannot accommodate. Existing filtration and bioretention already remove some 6PPDQ; the gap to test is **safe, inspectable operation in a space-constrained drain through dirty, high-flow storms**, not discovery of a new sorbent.[2]
+
+## Solution
+
+A stormwater utility fits an authority-approved removable cassette into an eligible curb inlet upstream of a receiving stream. The concept routes the first **0.25 L/s** of runoff through a coarse debris basket, a settling chamber and a contained **60 L sand/biochar bed** (approximately 30 L water-filled pore volume), then returns treated water to the original drain. A screened, gravity-only overflow preserves the inlet's required flood capacity in larger storms; it is plainly marked **untreated overflow**, never advertised as clean discharge. The design must not be installed where its geometry reduces drainage capacity or creates a roadway hazard.
+
+The bed uses washed, tested hardwood biochar and washed mineral sand in a replaceable polypropylene liner. Settling retains coarse tire-associated particles; dissolved 6PPDQ must sorb to the biochar, a hypothesis to verify with inlet/outlet sampling rather than infer from particle capture. At 0.25 L/s, the nominal pore-water residence time is **120 s** (30 L / 0.25 L/s), before short-circuiting and fouling. The utility inspects the basket after storm events, weighs or measures captured sediment, and changes the cartridge on a schedule set by actual breakthrough tests. Upstream and downstream sealed sampling ports let a laboratory assess both 6PPDQ and unintended leachate. No camera, radio, location log or person-level data are collected.
+
+## Key Innovation
+
+Biochar, sand filtration, hydrodynamic sediment removal and 6PPDQ bioretention are all prior art: King County has reported promising laboratory results for a sand/coconut-fiber/biochar mixture.[2] The proposed research contribution is a **two-path, hydraulically non-obstructing retrofit with separately serviced solids and sorbent compartments**, whose rated treatment flow, bypass fraction and pollutant breakthrough are measured together rather than hiding storm overflow behind a removal percentage. A captive overflow throat and a removable bed aim to make performance and maintenance auditable without digging a new rain garden. Whether this integration beats existing catch-basin inserts or bioretention in cost or pollutant reduction is open; no patent novelty is claimed.
+
+Unlike the repository's *Magnetotactic Microplastic Scavenger*, this does not release engineered organisms or treat general wastewater: it intercepts road runoff at its source and tests **both particles and dissolved tire-derived chemicals**. Unlike the *Wet-Night Edge Delineator*, it does not guide traffic; it handles stormwater below the road edge. Unlike the *Electrogenic Denitrification Drainage Array*, it uses no electrochemical nutrient conversion or field-drainage infrastructure.
+
+**Unvalidated acceptance targets:** at a permitted, representative inlet, treat at least **0.25 L/s** without reducing the authority's design-storm drainage capacity; achieve **≥70% event-load reduction of 6PPDQ in the treated fraction** through a specified test volume while reporting the **whole-storm load including bypass**; and show no material increase in sampled dissolved metals, nutrients or suspended solids relative to the inlet. The 70% is a proposed comparator target, not a proven removal rate or a fish-safety threshold. Test varied hydrographs, temperature, road salt and biochar batches; no visual exhaustion cue substitutes for chemical assays.
+
+## Target Cost
+
+**Unverified 2038 ex-factory target at 10,000 units/year:** **US$280** per inlet module: US$70 corrosion-resistant recycled-polypropylene frame and removable basket, US$45 flow/overflow hardware and seals, US$75 initial liner/sand/washed-biochar bed, US$40 sampling fittings, US$50 assembly and factory testing. Installation, permits, traffic control, sampling, labor and spent-media handling are excluded. Replacement bed target: **US$35** each including sealed return packaging but excluding collection and regulated disposal. If a five-year unit needed two beds/year, modeled hardware and consumables alone would be **US$126/inlet-year** (US$280 / 5 + 2 × US$35), before every excluded expense. Compare actual whole-storm benefit and installed lifetime cost with an approved catch-basin insert, upstream source control and a sized bioretention cell; the incumbent may be better.
+
+## Impact
+
+A planning deployment of **10,000 eligible inlets** would offer up to **2,500 L/s of nominal treatment-flow capacity** when all units receive sufficient runoff; it is not a claim about continuous flow or annual pollutant mass. An hour at rated flow would pass **900 L per inlet**, but storm frequency, captured fraction, pollutant concentration and bypass determine actual benefit. At watershed scale the relevant outcomes are measured 6PPDQ **mass load to receiving water**, outlet toxicity in approved aquatic bioassays, inlet flood incidents and lifecycle cost. Reduced fish mortality must be separately demonstrated in a controlled, permitted field study; the design does not replace tire reformulation or larger green infrastructure.[1][2]
+
+**Safety and validation gates:** bench-test head loss and bypass with a blocked basket, frozen media and extreme rainfall; reject designs that back water onto the road or silently divert polluted runoff. Run paired field sampling over multiple storms and seasons, including dissolved/particle-bound 6PPDQ, sediment, metals, nutrients, biochar fines, and inlet/outlet flow; compute both treated-stream and **bypass-inclusive** load changes. An independent utility must approve drainage hydraulics, traffic-safe access, and sampling before installation. Spent sediment and media remain sealed for characterization and locally compliant disposal or qualified treatment—not composting or land application by default. No biological release is proposed. This is a concept, **not deployment authorization or evidence of environmental safety**. A 10–20 year qualification path would progress from columns to monitored municipal pilots and only then conditional procurement, with rejection if the retrofit worsens flooding, leaches pollutants or fails to outperform approved alternatives.
+
+## Sources
+
+[1] https://www.epa.gov/chemical-research/6ppd-quinone
+[2] https://kingcounty.gov/en/dept/dnrp/about-king-county/about-dnrp/newsroom/2025-news-releases/03-27-treating-tire-chemicals

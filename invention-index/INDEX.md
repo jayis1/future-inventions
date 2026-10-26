@@ -615,3 +615,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$1,800 ex-factory at 10,000 units/year in 2038; US$2,500–3,500 installed target excluding validation, consumables, staff and final disposal
 - **Author:** jayis1
 - **Created:** 2026-10-25
+
+### 067 — Storm-Drain Tire-Toxin Trap
+- **Category:** Aquatic Restoration & Stormwater / Tire-Derived Pollution Prevention
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Planning capacity of 0.25 L/s per eligible inlet; 10,000 units could offer up to 2,500 L/s nominal treatment flow, with bypass-inclusive pollutant reduction and fish benefit unproven
+- **Key Material:** Washed hardwood biochar and sand in a contained polypropylene liner, separate sediment basket, captive gravity overflow and sealed sampling ports
+- **Key Innovation:** Tests a removable two-path curb-inlet retrofit that measures both treated-stream breakthrough and untreated high-flow bypass without reducing approved drainage capacity; sorption and stormwater filtration are established prior art
+- **Target Cost:** US$280 ex-factory at 10,000 units/year in 2038; US$126/inlet-year modeled hardware and two media changes before installation, labor, sampling and disposal
+- **Author:** jayis1
+- **Created:** 2026-10-26

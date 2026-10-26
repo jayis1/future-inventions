@@ -625,3 +625,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$280 ex-factory at 10,000 units/year in 2038; US$126/inlet-year modeled hardware and two media changes before installation, labor, sampling and disposal
 - **Author:** jayis1
 - **Created:** 2026-10-26
+
+### 068 — Cookware Leach Verification Station
+- **Category:** Public Health & Universal Basic Services / Lead-Safe Cookware
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Planning capacity of 100,000 cookware screening encounters/year at 100 stations; verified reduction in lead exposure requires blinded validation and replacement follow-up
+- **Key Material:** Printed-carbon bismuth-film electrode, portable potentiostat, sealed sampling and waste vessels, replaceable LiFePO4 cell
+- **Key Innovation:** Tests an offline full-vessel leach screening workflow with per-sample blank and standard-addition failure gates and an explicit non-clearance result; leach testing and anodic stripping voltammetry are prior art
+- **Target Cost:** US$280 ex-factory per station at 10,000/year in 2038, plus US$1.20/test consumables before staff, heat, laboratory referral and replacement cookware
+- **Author:** jayis1
+- **Created:** 2026-10-26

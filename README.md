@@ -86,6 +86,7 @@ Design and document technologies that:
 | [Solar Steam Waste Quarantine](./solar-steam-waste-quarantine/) | Concept | Health-Care Waste & Universal Basic Services / Off-Grid Infection Prevention |
 | [Storm-Drain Tire-Toxin Trap](./storm-drain-tire-toxin-trap/) | Concept | Aquatic Restoration & Stormwater / Tire-Derived Pollution Prevention |
 | [Cookware Leach Verification Station](./cookware-leach-verification-station/) | Concept | Public Health & Universal Basic Services / Lead-Safe Cookware |
+| [Straw Board Micropress](./straw-board-micropress/) | Concept | Clean Air & Sustainable Materials / Crop-Residue Burning Prevention |
 
 ## Structure
 

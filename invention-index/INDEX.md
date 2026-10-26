@@ -635,3 +635,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$280 ex-factory per station at 10,000/year in 2038, plus US$1.20/test consumables before staff, heat, laboratory referral and replacement cookware
 - **Author:** jayis1
 - **Created:** 2026-10-26
+
+### 069 — Straw Board Micropress
+- **Category:** Clean Air & Sustainable Materials / Crop-Residue Burning Prevention
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Planning capacity of 20 tonnes dry straw/year and 2,000 m²/year nonstructural board per full-yield cooperative unit; avoided burning and health benefit unproven
+- **Key Material:** Chopped rice/wheat straw, soy-protein/citric-acid water-based binder, reusable guarded steel press molds
+- **Key Innovation:** Tests a cooperative-scale straw board process with paired field-specific soil-residue withdrawal limits and batch-specific building-product release gates; straw board and hot pressing are established art
+- **Target Cost:** US$25,000 ex-factory per workshop at 1,000 units/year in 2038; modeled ≤US$8/m² ex-workshop at 2,000 m²/year, excluding installation and certification
+- **Author:** jayis1
+- **Created:** 2026-10-26

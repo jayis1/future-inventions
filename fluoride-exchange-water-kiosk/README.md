@@ -47,6 +47,45 @@ WHO publishes the 1.5 mg/L guideline and reports activated alumina can achieve 1
 2. **Years 4–8:** Independently audited, blinded 12-month paired community pilot against an existing maintained treatment; record every test failure, shutdown, missed service, delivered cost and waste mass. Stop if the tap ever dispenses out-of-spec water after a known failed test or if spent regenerant lacks a lawful disposition.
 3. **Years 9–15:** Seek local drinking-water approval, verify regeneration cycle life and hub effluent under permit, train paid regional service teams and publish water-quality data without personal usage logs. Scale only when independently reproduced quality, reliable backup supply and total cost meet local acceptance criteria.
 
+## How It Works
+
+1. A screened well supplies a particulate prefilter; a source-water assay first determines whether the kiosk can be used at all. The two sealed 12 kg activated-alumina beds run in series. Fluoride binds at alumina surface hydroxyl sites under suitable water chemistry; the first bed carries most of the load and the second catches early breakthrough.[2][3]
+2. Locked ports let a trained worker sample the inlet, between-bed stream and final tap. At commissioning, after each exchange and at least twice weekly during a pilot, calibrated field measurements are checked against independent laboratory splits. A volume counter and calendar stop dispensing at 2,000 L or 20 operating days, but neither substitutes for fluoride testing. A failed or overdue test, wrong cartridge ID, power loss or abnormal pH/flow keeps the tap closed.
+3. The worker seals and returns the lead cartridge to a regional hub, promotes the inspected lag bed only after a passing sample, and fits a certified replacement guard. Trained hub staff assess caustic desorption, acid reconditioning and rinse quality; they retain every fluoride-rich liquid and residual for permitted treatment and audited disposal. No regeneration chemicals go to the village.[3]
+
+## Technical Architecture
+
+`assayed well → prefilter → lead bed → intermediate sample → lag bed → final sample → protected tank → locked tap`
+
+A separate custody path runs `sealed spent bed → regional hub → tested replacement bed`; concentrated rinse never joins product plumbing. Food-contact plumbing, keyed cartridge connectors and backflow protection isolate the beds. A flow meter, pH check, sampled fluoride result and cartridge record feed a simple normally-closed outlet controller. The controller stores only volume, test timestamps, cartridge IDs and lockout events; it does not need internet or customer identity. Power, pressure drop, backflow, tamper resistance and tank sanitation are pilot acceptance tests, not solved features. If the source fails microbiological or co-contaminant screening, a separately validated treatment train or alternative safe supply is required; alumina alone is not a potable-water guarantee.
+
+## Performance Benchmarks
+
+These are **design gates, not measured kiosk results**. Comparisons are conditional: the WHO guideline is 1.5 mg/L and WHO describes activated alumina reaching 1 mg/L under suitable conditions; EPA documents substantial variability in bed life and regeneration practice.[2][3] A site-specific maintained RO system is a comparator to test, not a universal numeric baseline.
+
+| Metric and conditions | Kiosk proposed gate | Current reference / decision rule |
+| --- | --- | --- |
+| Tap fluoride, 5 mg/L feed | ≤1.0 mg/L at every release test; not yet measured | WHO guideline 1.5 mg/L; use stricter local standard where applicable.[2] |
+| Delivered water | 100 L/day, 36.5 m³/year at continuous operation; not yet measured | Compare compliant litres actually delivered by a maintained local RO unit, safe source or existing adsorption plant. |
+| Lead exchange | ≤2,000 L or 20 operating days, whichever first; 125 nominal bed volumes; not yet validated | EPA installations report chemistry-dependent bed life; prove on local seasonal water rather than importing a capacity figure.[3] |
+| Fluoride mass at nominal duty | 8 g removed per 20 days from 5 → 1 mg/L; calculated, not measured | 12 kg × assumed 1 mg/g = 12 g nominal working capacity, before safety margin; reject if tests show earlier breakthrough. |
+| Cost, five-year capital allocation | US$17.1/m³ modeled at 100% duty with fractional exchange accrual, **excluding wages and other listed costs** | Obtain installed, serviced, tested cost per compliant m³ for local alternatives; no proven price advantage. |
+| Recovery, energy and waste | Measure intake, product, rinse, pump kWh and hub effluent per compliant m³ | No kiosk recovery or energy claim until measured against same-boundary comparator. |
+
+Test across seasonal pH, alkalinity, silica/phosphate, iron fouling, high-fluoride excursions and fluctuating flow. Publish breakthrough curves, downtime, leached aluminum and waste receipts alongside any favorable headline value.
+
+## Deployment Scenarios
+
+- **Rift Valley community well:** A cooperative staffs a single point-of-collection kiosk only after source microbiology and metals screening; a regional technician replaces sealed beds, and the village keeps a documented backup supply for lockouts.
+- **Rajasthan school:** A school serves drinking and cooking water on a limited schedule; a district laboratory checks independent splits, while the operator records missed samples and prevents children using an unverified tap.
+- **Peri-urban refill station:** A water-service provider tests the sealed-cartridge loop alongside its maintained RO unit on the *same source water*. It compares compliant delivered volume, waste handling, operator time and full cost before deciding whether any retrofit is warranted.
+
+## Vision for 2050
+
+If independent trials establish safe water quality, lawful residual handling and a viable maintenance economy, a staffed refill point could become a routine utility rather than an abandoned filter. Regional hubs would track every cartridge and publish aggregate quality and downtime records; local operators would retain the right to stop service and direct households to safe backup water. The ambition is fewer unmonitored fluoride exposures—not a claim that kiosks alone eliminate fluorosis or replace broader drinking-water infrastructure.
+
+The existing **Safety and failure modes** section above serves as the requested risks-and-mitigations treatment; it is intentionally not duplicated. See [ROADMAP.md](ROADMAP.md) for phase gates and [IMPACT_ANALYSIS.md](IMPACT_ANALYSIS.md) for explicitly conditional projections.
+
 ## Sources
 
 [1] https://www.nature.com/articles/s41467-022-31940-x

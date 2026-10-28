@@ -685,3 +685,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$350–600 ex-factory at 10,000 units/year in 2038; US$900–2,000 installed target excluding diagnosis and foundation repairs, plus service, electricity and accredited tests
 - **Author:** jayis1
 - **Created:** 2026-10-28
+
+### 074 — Soil Extract Validity Kit
+- **Category:** Sustainable Agriculture & Universal Basic Services / Field Soil Diagnostics
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Planning capacity of 200,000 field encounters/year at 10,000 kits and 20 tests each; agronomic and environmental benefits unproven
+- **Key Material:** Polypropylene extraction tube, cellulose filter, nitrate color pads, matched blank and stabilized nitrate spike
+- **Key Innovation:** Tests matched blank/spike validity gating in the same field soil extract before reporting nitrate bands; soil test strips and colorimetry are prior art
+- **Target Cost:** US$12 ex-factory per reusable kit at 10,000 kits/year in 2038, plus US$0.55 per three-channel test at 1,000,000 tests/year, excluding distribution, labor and laboratory confirmation
+- **Author:** jayis1
+- **Created:** 2026-10-28

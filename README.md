@@ -91,6 +91,7 @@ Design and document technologies that:
 | [Humidity-Guarded Oxygen Hub](./humidity-guarded-oxygen-hub/) | Concept | Health & Universal Basic Services / Rural Clinical Oxygen |
 | [Fluoride Exchange Water Kiosk](./fluoride-exchange-water-kiosk/) | Concept | Drinking Water & Universal Basic Services / Fluorosis Prevention |
 | [Self-Verifying Radon Vent](./self-verifying-radon-vent/) | Concept | Healthy Housing & Universal Basic Services / Indoor Radon Mitigation |
+| [Soil Extract Validity Kit](./soil-extract-validity-kit/) | Concept | Sustainable Agriculture & Universal Basic Services / Field Soil Diagnostics |
 
 ## Structure
 

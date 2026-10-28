@@ -665,3 +665,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$2,450 installed planning allocation with optional 1 kWp PV and 2 kWh usable battery at 10,000 units/year in 2038, excluding reserve oxygen, clinical accessories, service and certification
 - **Author:** jayis1
 - **Created:** 2026-10-28
+
+### 072 — Fluoride Exchange Water Kiosk
+- **Category:** Drinking Water & Universal Basic Services / Fluorosis Prevention
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Planning capacity of 36,500 L/year of tested drinking/cooking water per fully utilized kiosk; health benefit requires validated water quality and follow-up
+- **Key Material:** Granular activated alumina in sealed lead/lag cartridges, food-contact HDPE or stainless plumbing, default-closed tap and calibrated fluoride test kit
+- **Key Innovation:** Tests a volume-limited, sampleable fluoride adsorption kiosk coupled to certified off-site cartridge regeneration and hazardous-rinse custody; activated alumina treatment itself is prior art
+- **Target Cost:** US$700 installed at 10,000 units/year in 2038; modeled US$17.1/m³ before wages, power, source pretreatment, finance or taxes at 100 L/day and a 20-day exchange interval
+- **Author:** jayis1
+- **Created:** 2026-10-28

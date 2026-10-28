@@ -89,6 +89,7 @@ Design and document technologies that:
 | [Straw Board Micropress](./straw-board-micropress/) | Concept | Clean Air & Sustainable Materials / Crop-Residue Burning Prevention |
 | [Shade-Wick Heat Vest](./shade-wick-heat-vest/) | Concept | Occupational Heat Safety & Universal Basic Services / Outdoor Worker Cooling |
 | [Humidity-Guarded Oxygen Hub](./humidity-guarded-oxygen-hub/) | Concept | Health & Universal Basic Services / Rural Clinical Oxygen |
+| [Fluoride Exchange Water Kiosk](./fluoride-exchange-water-kiosk/) | Concept | Drinking Water & Universal Basic Services / Fluorosis Prevention |
 
 ## Structure
 

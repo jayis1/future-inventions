@@ -705,3 +705,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$12 ex-factory per pair at 100,000 pairs/year in 2038, excluding fitting, clinical follow-up, footwear, distribution and regulatory testing
 - **Author:** jayis1
 - **Created:** 2026-10-28
+
+### 076 — ORS Mix-Witness Cup
+- **Category:** Child Health & Universal Basic Services / Oral Rehydration Preparation
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Planning capacity of up to 2 million preparation-screening attempts/year at 10,000 readers and 200 uses/year; treatment benefit unproven
+- **Key Material:** Food-contact polypropylene vessel, gold-plated conductivity electrodes, cyclic-olefin optical window, LED/photodiode and thermistor
+- **Key Innovation:** Tests formulation-specific, dual-observable ORS mixing-error screening with explicit invalid/uncertain results against a labeled one-litre vessel; neither conductivity nor refractive index verifies solution safety or uniquely identifies ingredients
+- **Target Cost:** US$24 ex-factory per reader at 100,000/year in 2038, excluding ORS, safe water, labor and validation
+- **Author:** jayis1
+- **Created:** 2026-10-28

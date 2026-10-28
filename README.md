@@ -94,6 +94,7 @@ Design and document technologies that:
 | [Soil Extract Validity Kit](./soil-extract-validity-kit/) | Concept | Sustainable Agriculture & Universal Basic Services / Field Soil Diagnostics |
 | [Pressure-Witness Insole](./pressure-witness-insole/) | Concept | Foot Health & Universal Basic Services / Diabetic Foot Risk |
 | [ORS Mix-Witness Cup](./ors-mix-witness-cup/) | Concept | Child Health & Universal Basic Services / Oral Rehydration Preparation |
+| [Footprint-Verified Phototherapy Cot](./footprint-verified-phototherapy-cot/) | Concept | Newborn Health & Universal Basic Services / Supervised Jaundice Care |
 
 ## Structure
 

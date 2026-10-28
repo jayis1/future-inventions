@@ -715,3 +715,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$24 ex-factory per reader at 100,000/year in 2038, excluding ORS, safe water, labor and validation
 - **Author:** jayis1
 - **Created:** 2026-10-28
+
+### 077 — Footprint-Verified Phototherapy Cot
+- **Category:** Newborn Health & Universal Basic Services / Supervised Jaundice Care
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Planning capacity of at most 2 million supervised sessions/year at 10,000 cots and 200 sessions each; clinical benefit unproven
+- **Key Material:** Blue-green LED panel, polycarbonate cradle, keyed nine-position calibration tile, shared calibrated spectral-irradiance meter
+- **Key Innovation:** Tests a fixed-geometry cot-to-meter acceptance workflow that maps the full treatment footprint and keeps an unverified state visible rather than trusting a bright center; LED phototherapy and irradiance meters are prior art
+- **Target Cost:** US$180 ex-factory per cot at 10,000/year in 2038, plus a shared calibrated meter and recurring service, excluding clinical care
+- **Author:** jayis1
+- **Created:** 2026-10-28

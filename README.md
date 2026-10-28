@@ -87,6 +87,7 @@ Design and document technologies that:
 | [Storm-Drain Tire-Toxin Trap](./storm-drain-tire-toxin-trap/) | Concept | Aquatic Restoration & Stormwater / Tire-Derived Pollution Prevention |
 | [Cookware Leach Verification Station](./cookware-leach-verification-station/) | Concept | Public Health & Universal Basic Services / Lead-Safe Cookware |
 | [Straw Board Micropress](./straw-board-micropress/) | Concept | Clean Air & Sustainable Materials / Crop-Residue Burning Prevention |
+| [Shade-Wick Heat Vest](./shade-wick-heat-vest/) | Concept | Occupational Heat Safety & Universal Basic Services / Outdoor Worker Cooling |
 
 ## Structure
 

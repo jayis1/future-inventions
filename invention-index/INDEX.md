@@ -645,3 +645,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$25,000 ex-factory per workshop at 1,000 units/year in 2038; modeled ≤US$8/m² ex-workshop at 2,000 m²/year, excluding installation and certification
 - **Author:** jayis1
 - **Created:** 2026-10-26
+
+### 070 — Shade-Wick Heat Vest
+- **Category:** Occupational Heat Safety & Universal Basic Services / Outdoor Worker Cooling
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Planning production of 100,000 vests/year could equip at most 100,000 workers/year; reduced heat strain or injury is unproven
+- **Key Material:** Replaceable cellulose-cotton wick panels, white reflective canopy fabric, recycled-polypropylene air spacer and refillable reservoir
+- **Key Innovation:** Tests a segmented low-water wick under a stand-off radiant canopy with open vapor paths against existing evaporative vests and breathable clothing; evaporative cooling itself is established
+- **Target Cost:** US$12 ex-factory per vest at 100,000 units/year in 2038, excluding water, panels, laundering and distribution
+- **Author:** jayis1
+- **Created:** 2026-10-28

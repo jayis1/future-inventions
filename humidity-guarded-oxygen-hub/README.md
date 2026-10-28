@@ -38,6 +38,52 @@ A planning scenario of **10,000 hubs × 5 L/min × 8 qualified operating hours/d
 - Run bench trials at controlled heat, humidity, altitude, inlet dust and flow; then a preregistered, site-matched clinic trial comparing **qualified oxygen-hours**, concentration and flow excursions, mean time to repair, maintenance cost, and adverse events with standard equipment. Stop if quality, safety or economic gates are missed. Device certification and local regulatory approval precede patient use.
 - **10–20-year feasibility path:** bench-test cartridge sealing and regeneration economics; conduct accelerated bed and battery ageing; validate independent gas monitoring and service procedures; seek regulatory review; then undertake comparative field trials and regional spare-parts manufacturing. This is an integration and reliability research program, not a claim of a working prototype.
 
+## How It Works
+
+Ambient air passes a replaceable particulate filter, then an oil-free compressor, aftercooler and condensate trap. A serviceable dryer lowers the water load before air reaches the two alternating zeolite PSA beds; liquid water is drained outside the clean gas path. Dry feed lets the sieve preferentially retain nitrogen while an oxygen-enriched stream fills a small regulated buffer. The other bed vents its adsorbed nitrogen before the valves reverse. The dryer is a replaceable protection stage, not an invented source of oxygen; a candidate desiccant or membrane and its purge/energy penalty must be selected by bench tests. Regeneration or replacement intervals cannot be promised yet.
+
+A bed-inlet humidity sensor trends breakthrough; an independently calibrated outlet oxygen sensor, flow measurement and pressure monitoring determine whether gas meets the validated operating envelope. A high-humidity trend requests dryer service before a compromised bed is reused. Low concentration, lost sensing or obstructed output raises a local battery-backed alarm and marks output unqualified; neither a sensor nor a software interlock can verify clinical delivery at the patient. Staff follow a rehearsed transfer protocol to an independently checked reserve source rather than assuming that a valve alone provides uninterrupted care.
+
+## Technical Architecture
+
+- **Air preparation:** washable intake housing with replaceable filter, oil-free compressor, aftercooler, liquid separator and keyed dryer cartridge; condensate never returns to the clean circuit.
+- **Separation and distribution:** dual sealed zeolite beds, timed valves, buffer vessel, relief protection, regulator and calibrated 0–5 L/min outlet. Materials, seals and cleaning methods touching enriched oxygen require oxygen-service validation.
+- **Independent quality boundary:** inlet and bed-inlet humidity, outlet concentration, pressure and flow feed a local controller and separately powered audible/visual fault indication. Sensor disconnect, stale readings and calibration disagreement are faults, not valid readings; the controller records operating hours and cartridge changes without storing patient data.
+- **Power and service:** protected DC bus, LiFePO4 battery-management system and optional PV charging; a biomedical technician replaces filters and keyed modules, checks seals and calibrates sensors using documented tools and intervals established in testing. Remote telemetry is not required for safe local operation. Shared power or controller failure must not silently disable both monitoring and alarm.
+
+## Performance Benchmarks
+
+All hub figures below are **unverified engineering gates**, not measured results or certified specifications. WHO describes PSA concentrator test requirements and a 280–600 W range for typical facility devices.[3] Published range is not a matched 5 L/min, 40 °C, 95% RH, 2,000 m comparator; a maintained certified 5 L/min unit must be tested side by side at equal outlet flow, oxygen fraction, pressure and duty cycle.
+
+| Metric and measurement | Existing reference | Hub design gate |
+| --- | --- | --- |
+| Qualified gas at outlet, continuous flow measured by calibrated analyser and flowmeter | Certified 5 L/min comparator, measured in the same chamber; no result yet | 5 L/min at 90–96% O2 by volume throughout the stated heat/humidity/altitude envelope |
+| Whole-system input at rated outlet, logged at electrical inlet | WHO facility range 280–600 W, not a matched trial[3] | ≤350 W including dryer and controls; reject if dryer overhead defeats this gate |
+| Reserve duration at rated load, timed to low-voltage cutoff | Same-backup comparator to be measured | ≥4 h from 2 kWh **usable** battery including conversion losses and ageing allowance |
+| Qualified oxygen-hours and median repair time over 12 months | Maintained certified comparator plus identical reserve, prospectively logged | Fewer unqualified hours and shorter repair time; superiority threshold to be preregistered before field trial |
+
+A 350 W load over four hours draws 1.4 kWh at the load; the remaining 0.6 kWh of the proposed usable battery is a design allowance for losses and degradation, not proof of runtime. No sieve-life, clinical-outcome or availability improvement has been demonstrated.
+
+## Deployment Scenarios
+
+1. **Staffed coastal district clinic:** a biomedical technician services a dusty, humid intake and logs qualified hours per week while clinicians keep a checked cylinder for interruptions. A single hub at its proposed rating provides at most 300 L/h of qualified gas; actual patient allocation requires clinical assessment and the validated outlet pressure/flow.
+2. **Remote clinic with unreliable grid:** the 2 kWh usable battery is intended to bridge four hours at rated load after validation; optional 1 kWp PV can offset daytime consumption but cannot guarantee overnight or storm-time supply. A site plan budgets charging, spares, cylinder refills and trained transfer staff before deployment.
+3. **Mobile response station:** a transport-qualified enclosure would protect filters, condensate handling and battery during vibration and repeated setup. Each setup requires outlet-quality checks and a separately verified reserve; transport qualification and clinical approval are future gates, not present capabilities.
+
+## Risks & Mitigations
+
+| Failure mode | Design and validation response |
+| --- | --- |
+| Dryer saturation or humidity-sensor drift damages zeolite | Trend at bed inlet, alarm on stale/disagreeing measurements, periodic calibration and accelerated humid-air breakthrough tests; no fixed cartridge lifetime assumed. |
+| Common-cause power, controller or alarm failure | Independent local fault indication, battery ride-through tests and supervised backup-source transfer drills; test simultaneous faults rather than relying on a nominal fail-closed valve. |
+| Oxygen enrichment, ignition or overpressure | Oxygen-compatible cleaned wetted parts, ventilation, ignition exclusion, relief device and leak/heat/electrical testing against applicable standards before clinical use. |
+| Dust, microbial contamination or wrong-grade replacement parts | Keyed traceable sealed modules, filter integrity and condensate controls, cleaning verification and technician training; reject unverified cartridges. |
+| Supply-chain lapse or misleading purity-only alarm | Stock service parts and a reserve cylinder; check outlet concentration **and** pressure/flow, train staff on alarms and keep a maintenance log. Qualification, device certification and local regulatory approval precede patient use. |
+
+## Vision for 2050
+
+If controlled trials show safer qualified oxygen-hours and lower lifetime cost than maintained existing devices, regional workshops could supply standardized repairable dryer/sieve modules to staffed clinics. A procurement specification would reward measured outlet quality, repair time and backup readiness rather than nominal litres per minute alone. The 2050 ambition is fewer climate-related oxygen interruptions—not a claim that a hub can replace clinical judgment, cylinders, or proven concentrators where it fails the comparison.
+
 ## Sources
 
 [1] https://www.who.int/publications/i/item/9789241549554

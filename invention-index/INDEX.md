@@ -675,3 +675,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$700 installed at 10,000 units/year in 2038; modeled US$17.1/m³ before wages, power, source pretreatment, finance or taxes at 100 L/day and a 20-day exchange interval
 - **Author:** jayis1
 - **Created:** 2026-10-28
+
+### 073 — Self-Verifying Radon Vent
+- **Category:** Healthy Housing & Universal Basic Services / Indoor Radon Mitigation
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Pilot target of 100 eligible homes against maintained active sub-slab vents; 100,000 installations could serve at most 100,000 homes, with exposure reduction and health benefit unproven
+- **Key Material:** Gas-tight PVC riser, replaceable centrifugal fan and wind cowl, differential pressure taps, independently verified indoor radon detector
+- **Key Innovation:** Tests paired pressure-field/flow fault detection and independently checked indoor radon exposure with local fail-visible warnings; active soil depressurization and radon monitoring are prior art
+- **Target Cost:** US$350–600 ex-factory at 10,000 units/year in 2038; US$900–2,000 installed target excluding diagnosis and foundation repairs, plus service, electricity and accredited tests
+- **Author:** jayis1
+- **Created:** 2026-10-28

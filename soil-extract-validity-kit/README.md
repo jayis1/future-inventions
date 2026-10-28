@@ -35,6 +35,53 @@ Paper nitrate chemistry, soil extraction and color cards are established art.[1]
 
 Nitrate pads may use a zinc-based reduction/color-coupling chemistry; reagent formulation, disposal classification and interference assessment require a qualified analytical chemist. No cadmium or mercury reagent is permitted. A known spike is a *quality-control challenge*, not calibration of crop response. Soil nitrate changes rapidly with rain and fertilization; a single valid reading may still be unrepresentative. Wet reagents, cross-contamination, poor sampling, colored extracts, nitrite, sunlight and inaccessible lab follow-up can all cause error. Never use a result as the sole basis for withholding fertilizer or services; do not retain farmer identities, GPS coordinates or camera images. Publish validation data and locally derived interpretation thresholds before giving field advice.
 
+## How It Works
+
+An extension worker combines subsamples from one defined management zone, records depth, recent fertilizer/rainfall and field moisture, then mixes **10 g field-moist soil with 50 mL clean water** (1:5 g:mL) in the marked polypropylene tube. A mechanical timer guides shaking; the worker settles and filters the slurry through cellulose. Exact shake, settle and reaction times are **to be established experimentally**, not assumed from the timer alone. A clogged filter, wrong fill mark or temperature outside the proposed 15–35 °C window stops the test.
+
+The manifold splits one filtrate into an unspiked nitrate-reaction pad, a no-color-reagent matrix blank and a pad carrying a known nitrate-N addition. The matrix blank checks native color/turbidity; lot checks using clean water separately check reagent contamination. Comparing the two reacted pads after blank correction estimates incremental spike response. The proposed **70–130% laboratory-measured recovery window** needs a visual pass/fail card validated over the entire native nitrate range: a single saturated color band cannot resolve a spike. The worker reads all channels at the validated reaction time inside the white sleeve. If controls pass, the output is only a locally calibrated low/intermediate/high band for nitrate in this water extract; otherwise it is **invalid / send to laboratory**. A spike added *after* filtration checks analytical matrix response, not recovery of nitrate from soil; extraction reproducibility needs a separate lab comparison. Neither check proves representative sampling or soil safety.
+
+## Technical Architecture
+
+- **Sample and extraction:** washable tube, marked 10 g scoop (weigh during validation to quantify scoop error), 50 mL fill mark, timer and temperature strip; document moisture because field-moist mass is not dry-soil mass.
+- **Separation and chemistry:** replaceable cellulose filter and sealed, lot-coded three-channel pad cassette; nitrate detection may use zinc reduction and color coupling, subject to chemist-led interference and waste review. Nitrite can produce a false nitrate response unless the final formulation discriminates it.
+- **Validity and readout:** matched matrix blank, known post-filter spike, timed color comparison in a white sleeve; optional offline camera reading cannot override a failed control. Store only aggregate, consented quality metrics, not location or personal records.
+
+Data flow: composite sample → measured water extraction → filtration → split channels → timed blank/spike/reagent checks → **band or invalid** → local extension interpretation or laboratory referral. Reusable surfaces require a tested rinse/blank protocol between samples; expired or heat-damaged lots are quarantined rather than silently recalibrated.
+
+## Performance Benchmarks
+
+There are **no measured kit results yet**. Laboratory reference methods and commercial field tests are comparator *categories*, not a universal accuracy or price claim: their results depend on soil preparation, extractant, analyte and calibration, and water-extract nitrate must be compared against a matched reference water extraction rather than a different soil-N assay. Portable kit limitations for site-specific fertilization are documented by IFDC.[2]
+
+| Metric and condition | Proposed gate, unvalidated | Comparator / evaluation |
+| --- | --- | --- |
+| Nitrate classification, locally defined low/intermediate/high, 15–35 °C | Blind ≥300 field samples across seasons and sand/loam/clay; reject if ≥10% of reference-high samples are shown low **without** invalid warning | Independent laboratory nitrate analysis on a matched water extract; report confusion matrix and invalid fraction separately |
+| Matrix-spike recovery | Lab-measured 70–130% added nitrate-N; visual gate must be independently calibrated | Paired laboratory spike recovery on the *same filtrate*; this does not test native nitrate extraction |
+| Sensitivity to bad procedure | Set false-valid and invalid-detection thresholds only after deliberate wrong-ratio, short-shake, colored/turbid and expired-lot challenges | Blind operators against reference protocol; publish denominator, confidence intervals and missed-failure cases |
+| Consumable and instrument economics | $0.55 per three-channel test at 1,000,000 tests/year; $12 per reusable kit at 10,000/year (2038 ex-factory targets) | No verified market comparison or vendor quote; include training, invalid repeats, disposal and lab referrals in cost per usable decision |
+| Storage | 12 months under *declared* storage conditions, target only | Real-time hot/humid aging plus independent lot challenge before release |
+
+## Deployment Scenarios
+
+1. **Cooperative extension visit:** A trained worker screens a composite from one management zone before discussing nitrogen timing with several farmers. A failed spike or mismatched fill mark triggers a repeat or lab referral; a passed band informs a conversation, never a stand-alone dose.
+2. **Agro-dealer counter:** The dealer accepts a labeled soil sample and records collection conditions; a visibly colored blank blocks a confident but misleading low reading. Locally calibrated agronomic guidance and a referral route must exist before advice is offered.
+3. **Community field laboratory:** An NGO compares paired field and lab extracts across local soils, tracking how often the validity gate catches operator errors. This is a validation deployment, not evidence of increased yield.
+
+## Risks & Mitigations
+
+| Failure mode | Practical control / unresolved test |
+| --- | --- |
+| Heterogeneous or recently fertilized soil | Composite within a defined zone, document depth and timing, repeat after weather changes; validity of an extract cannot validate the sampling plan. |
+| Wet clays, organic color, saline/calcareous matrices or nitrite | Stratified laboratory comparisons, matrix blank and spike, independent nitrite interference challenge; mark out-of-scope matrices invalid. |
+| Spike passes despite poor extraction of native nitrate | Compare repeated timed extractions with matched lab method across textures; do not represent post-filter spike recovery as extraction completeness. |
+| Heat, light, reagent lot drift and ambiguous visual bands | Sealed lot coding, real-time storage checks, controlled viewing sleeve and trained inter-reader trials; no result on ambiguous controls. |
+| Contaminated rinse water, cross-sample carryover or discarded wet pads | Clean-water and between-sample blanks, trained handling, locally approved collection and disposal; never assume reagent pads are benign. |
+| False reassurance or inaccessible confirmation | Report only a bounded band with an invalid option, publish false-valid rate, and establish affordable lab referral before deployment; no sole-source fertilizer or safety decision. |
+
+## Vision for 2050
+
+**Scenario, not forecast:** cooperative workers can make a validity check the routine first step before interpreting a field nitrate screen. Where blind validation supports it, fast triage routes failed and high-stakes samples to laboratories while a valid low/intermediate/high band supports a locally calibrated discussion. Repairable kits and consented, anonymized failure-rate summaries help identify weak reagent lots or soil classes; no network, precise-looking unsupported concentration or automatic fertilizer prescription is required.
+
 ## Sources
 
 [1] https://pmc.ncbi.nlm.nih.gov/articles/PMC10328891 — Analytical applications of smartphones for agricultural soil analysis

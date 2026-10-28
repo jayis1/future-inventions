@@ -695,3 +695,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$12 ex-factory per reusable kit at 10,000 kits/year in 2038, plus US$0.55 per three-channel test at 1,000,000 tests/year, excluding distribution, labor and laboratory confirmation
 - **Author:** jayis1
 - **Created:** 2026-10-28
+
+### 075 — Pressure-Witness Insole
+- **Category:** Foot Health & Universal Basic Services / Diabetic Foot Risk
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Planning capacity of at most 100,000 wearer-years of indicator coverage at 100,000 pairs/year; ulcer prevention unproven
+- **Key Material:** Snap-through silicone/TPU domes, PET/TPU sealed witness windows, compliant load spreaders
+- **Key Innovation:** Tests a resettable, power-free, distributed pressure-excursion record with an invalid-condition gate during routine footwear checks; pressure films and instrumented insoles are prior art
+- **Target Cost:** US$12 ex-factory per pair at 100,000 pairs/year in 2038, excluding fitting, clinical follow-up, footwear, distribution and regulatory testing
+- **Author:** jayis1
+- **Created:** 2026-10-28

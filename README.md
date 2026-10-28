@@ -92,6 +92,7 @@ Design and document technologies that:
 | [Fluoride Exchange Water Kiosk](./fluoride-exchange-water-kiosk/) | Concept | Drinking Water & Universal Basic Services / Fluorosis Prevention |
 | [Self-Verifying Radon Vent](./self-verifying-radon-vent/) | Concept | Healthy Housing & Universal Basic Services / Indoor Radon Mitigation |
 | [Soil Extract Validity Kit](./soil-extract-validity-kit/) | Concept | Sustainable Agriculture & Universal Basic Services / Field Soil Diagnostics |
+| [Pressure-Witness Insole](./pressure-witness-insole/) | Concept | Foot Health & Universal Basic Services / Diabetic Foot Risk |
 
 ## Structure
 

@@ -30,6 +30,54 @@ A 10–20-year development path is bench calorimetry and wash-cycle testing, the
 
 Unlike this repository's [Thermoregulatory Metamaterial Habitation](../thermoregulatory-metamaterial-habitation/), a proposed building envelope, this is an individual, removable water-fed garment for outdoor work; unlike the [Radiative-Adsorption Refrigerator](../radiative-adsorption-refrigerator/), it does not refrigerate stored goods. Existing personal evaporative vests are the real performance comparator, not those unrelated inventions.
 
+## How It Works
+
+The user fills the 250 mL detachable reservoir with clean water, opens the pinch valve and checks for even wetting, not dripping. Gravity feeds the cellulose-cotton strips; capillary action spreads water across the removable back and side panels. The white outer canopy intercepts some direct sunlight while the polypropylene mesh holds a gap for air to pass over the wet wicks. Water vapor must escape through the open vertical channels; otherwise a wet, insulated layer may raise rather than lower heat strain. The wick stays off the skin and the drip edge routes leaks outward. After a two-hour bout, close the valve, drain remaining water, detach and dry the panels. There is no stored cooling after the reservoir dries.
+
+Evaporation consumes approximately 2.4 MJ per kilogram of water: evaporating the proposed 200 g in two hours represents about **67 W of total latent heat transfer**, while the full 250 g charge cannot exceed about **83 W averaged over two hours**. These are calculated water-side ceilings, not measured cooling at the wearer: heat can be drawn from sun-warmed fabric or ambient air, and sweat evaporation can be displaced. In humid, still air, vapor removal slows; the garment cannot promise a core-temperature reduction or cool a wearer below the local wet-bulb limit. Compare actual physiological outcomes before claiming a benefit.
+
+## Technical Architecture
+
+| Subsystem | Proposed material and flow | Failure signal / control |
+| --- | --- | --- |
+| Supply | Detachable 250 mL reservoir → manual pinch valve → gravity-fed wick inlets | Visible fill mark and leak-visible seam; close valve if dripping |
+| Distribution | Segmented cellulose-cotton panels across upper back and sides | Remove blocked, contaminated or torn panels; replace rather than saturate clothing |
+| Radiation and ventilation | Washable white canopy → recycled-polypropylene spacer → open vertical vapor channels | Check reflectance after soiling and airflow under normal motion; remove if vents collapse |
+| Human interface | Loose open sides over breathable clothing; hydrophobic lower drip edge | PPE fit, chafing, visibility and wet clothing are stop-use criteria |
+
+This architecture has **no sensors or closed-loop thermal control**: the fill scale is a consumable indicator, not a heat-stress monitor. The shade layer reduces incident solar absorption only to the extent that its measured reflectance and geometry work; a white surface alone does not prove useful radiant protection. Calorimetry should partition solar shielding, evaporation, runoff and ambient-air heat pickup on the same manikin before a human trial.
+
+## Performance Benchmarks
+
+**No vest prototype has been tested.** The table separates calculated bounds from proposed pass/fail targets; the commercially available evaporative vest and plain breathable clothing are physical controls, not assumed inferior products. Existing wearable-cooling concepts have been studied, but published results under different conditions are not head-to-head performance claims for this device.[3][4]
+
+| Metric over a two-hour bout | Proposed vest: dry test, 35°C / 35% RH / 1 m/s | Humid stress test, 35°C / 70% RH / 0.2 m/s | Comparison / validation |
+| --- | --- | --- | --- |
+| Water and latent energy | 250 mL charge; target ≥200 g evaporated; calculated ~67 W average latent transfer at target, ≤83 W full-charge ceiling | Measure evaporation and runoff; no minimum cooling claim | Weigh supply and garments before/after against soaked commercial vest and damp cloth |
+| Worn mass | <0.6 kg dry, <0.9 kg filled: design targets | Same mass limits | Weigh each alternative with its full water/pack load |
+| Thermal outcome | Target lower measured heat strain than breathable-clothing control; superiority to commercial vest is an open question | Must show **no worse** strain than control, or exclude this operating condition | Matched radiant load, workload, hydration, work/rest and PPE; instrumented manikin then supervised crossover trial |
+| Cost and service | US$12 ex-factory at 100,000 units/year in 2038; two-year garment design life | No assumed humidity benefit | Obtain supplier quotes, measure wash durability and full delivered cost; compare actual incumbent prices locally |
+
+Record WBGT, solar irradiance, skin and core-temperature trends, heart rate, water mass balance and comfort. The core-temperature and injury endpoints have **no numeric improvement claim**; set a clinically reviewed trial protocol and stopping rules before recruiting workers. Even a 67 W latent flux is not 67 W removed from the body.
+
+## Deployment Scenarios
+
+1. **Road or construction crews in a hot, dry region:** a site with reliable drinking water, separate clean refill water, shade and scheduled breaks issues one vest per consenting worker. Supervisors log two-hour refills and compare matched shifts against normal breathable clothing and an existing evaporative vest; no extra work time is authorized by wearing it.
+2. **Seasonal farm harvest crews:** a washable panel set and bottle-compatible refill station support repeated two-hour bouts where laundering and drying can be supervised. A pilot checks bending mobility, pesticide/PPE compatibility and whether allocating water to garments competes with drinking water; stop if it does.
+3. **Urban sanitation or delivery in humid heat:** test the 70% RH, low-airflow condition before deployment. If physiological strain is no better than plain clothing, use shade, ventilation and work-rest controls instead of distributing this vest.[2]
+
+## Risks & Mitigations
+
+- **Humidity, blocked airflow or a hot wet layer:** low evaporation and displaced sweat may make matters worse. Publish a measured operating envelope, inspect channels, and fail closed by removing the garment when dampness accumulates or the wearer feels worse.
+- **Water and weight:** the filled reservoir adds about 250 g; refills must use clean non-drinking allocation without depriving workers of drinking water. Leaks, warm standing water or cracked reservoirs require immediate removal and replacement.
+- **Skin and hygiene:** friction, wet clothing, mold and odor require removable washable panels, daily complete dry-out and skin checks. Do not claim an antimicrobial coating or a wash-cycle life until tested; check hard-water fouling.
+- **Workplace compatibility:** straps, a reflective canopy or dripping water may conflict with harnesses, high-visibility or electrical PPE. Validate each PPE combination and prohibit use where it compromises required protection.
+- **Behavioral and environmental risk:** a vest could be mistaken for permission to work longer, while replacement panels and washing consume resources. Employers must retain hydration, shade, rest, acclimatization and heat monitoring; measure textile life and disposal before calling it sustainable.[2]
+
+## Vision for 2050
+
+If independent trials establish benefit within a defined climate envelope, locally repairable passive cooling could become an optional part of standard outdoor-work kits, with refill and laundering funded by employers rather than workers. Procurement would publish comparable manikin and worker-trial data, not a universal cooling badge. In humid climates or when better shade and schedule changes exist, those controls would take priority. This is a conditional vision, not a forecast of injuries prevented.
+
 ## Sources
 
 [1] ILO, *Heat at work: Implications for safety and health* (2024): https://www.ilo.org/sites/default/files/2024-07/ILO%5FOSH%5FHeatstress-R16.pdf — global occupational estimates.

@@ -655,3 +655,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$12 ex-factory per vest at 100,000 units/year in 2038, excluding water, panels, laundering and distribution
 - **Author:** jayis1
 - **Created:** 2026-10-28
+
+### 071 — Humidity-Guarded Oxygen Hub
+- **Category:** Health & Universal Basic Services / Rural Clinical Oxygen
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Planning capacity of 24 million qualified litres/day at 10,000 hubs, 5 L/min and 8 operating hours/day; fewer oxygen interruptions and clinical benefit require comparative trials
+- **Key Material:** Oil-free compressor, zeolite PSA sieve cassette, replaceable dryer, independent oxygen sensor, LiFePO4 buffer
+- **Key Innovation:** Tests keyed serviceable sieve/dryer modules with humidity trending and independent outlet-gas quality gating against maintained conventional oxygen concentrators; PSA and oxygen alarms are prior art
+- **Target Cost:** US$2,450 installed planning allocation with optional 1 kWp PV and 2 kWh usable battery at 10,000 units/year in 2038, excluding reserve oxygen, clinical accessories, service and certification
+- **Author:** jayis1
+- **Created:** 2026-10-28

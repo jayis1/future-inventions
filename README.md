@@ -88,6 +88,7 @@ Design and document technologies that:
 | [Cookware Leach Verification Station](./cookware-leach-verification-station/) | Concept | Public Health & Universal Basic Services / Lead-Safe Cookware |
 | [Straw Board Micropress](./straw-board-micropress/) | Concept | Clean Air & Sustainable Materials / Crop-Residue Burning Prevention |
 | [Shade-Wick Heat Vest](./shade-wick-heat-vest/) | Concept | Occupational Heat Safety & Universal Basic Services / Outdoor Worker Cooling |
+| [Humidity-Guarded Oxygen Hub](./humidity-guarded-oxygen-hub/) | Concept | Health & Universal Basic Services / Rural Clinical Oxygen |
 
 ## Structure
 

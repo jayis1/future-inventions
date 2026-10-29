@@ -101,6 +101,7 @@ Design and document technologies that:
 | [Silica Wetwork Recovery Bench](./silica-wetwork-recovery-bench/) | Concept | Occupational Health & Universal Basic Services / Stone-Work Dust Prevention |
 | [Sealed Pit-Emptying Shuttle](./sealed-pit-emptying-shuttle/) | Concept | Sanitation & Universal Basic Services / Safe On-Site Waste Transfer |
 | [Kiln Draft Balancing Retrofit](./kiln-draft-balancing-retrofit/) | Concept | Clean Air & Sustainable Manufacturing / Brick Kilns |
+| [Lead-Dust Capture Shroud](./lead-dust-capture-shroud/) | Concept | Healthy Housing & Occupational Health / Lead-Dust Prevention |
 
 ## Structure
 

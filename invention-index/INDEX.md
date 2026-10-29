@@ -785,3 +785,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$1,500 ex-factory per eligible kiln at 10,000/year in 2038, plus estimated US$800–2,000 survey, installation, training and testing; excludes power, transport, taxes and recurring service
 - **Author:** jayis1
 - **Created:** 2026-10-29
+
+### 084 — Lead-Dust Capture Shroud
+- **Category:** Healthy Housing & Occupational Health / Lead-Dust Prevention
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Laboratory target ≥95% less airborne lead mass outside shroud versus controlled dry-scraping baseline; pilot target of 20 qualified crews over 12 months; health benefit unproven
+- **Key Material:** Polycarbonate shroud, silicone skirt, captive stainless scraper, calibrated flow restriction, dual pressure sensing, spring-return blade, purpose-designed HEPA renovation vacuum
+- **Key Innovation:** Tests simultaneous extraction-flow and edge-pressure checks that retract a captive manual scraper blade on failed capture conditions; HEPA shrouds and lead-safe renovation are prior art
+- **Target Cost:** US$120 ex-factory per shroud at 10,000/year in 2038, excluding purpose-designed HEPA vacuum, labor, containment, testing, consumables and disposal
+- **Author:** jayis1
+- **Created:** 2026-10-29

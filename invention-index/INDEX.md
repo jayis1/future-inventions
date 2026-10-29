@@ -765,3 +765,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$650 ex-factory at 10,000 benches/year in 2038, excluding wet-rated tools, exhaust, installation, exposure sampling and slurry disposal
 - **Author:** jayis1
 - **Created:** 2026-10-29
+
+### 082 — Sealed Pit-Emptying Shuttle
+- **Category:** Sanitation & Universal Basic Services / Safe On-Site Waste Transfer
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Proposed 100-job pilot serving at most 500 distinct people under a five-person-household assumption; reduced worker exposure and safer disposal require comparative validation
+- **Key Material:** Vacuum-rated 20 L polypropylene vessel, normally closed dry-break couplings, diaphragm air pump, mechanical float and hydrophobic exhaust barrier
+- **Key Innovation:** Tests a narrow-access swappable, sealed-vessel pit-emptying workflow with independent overfill protection and receiving-facility mass reconciliation; vacuum extraction and sealed containers are prior art
+- **Target Cost:** US$600 ex-factory per shuttle including one vessel at 10,000/year in 2038, excluding labor, transport, PPE and treatment
+- **Author:** jayis1
+- **Created:** 2026-10-29

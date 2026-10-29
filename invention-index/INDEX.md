@@ -745,3 +745,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$280 ex-factory at 10,000 units/year in 2038, excluding assays, distribution, labor and disposal
 - **Author:** jayis1
 - **Created:** 2026-10-29
+
+### 080 — Snakebite Venom Triage Strip
+- **Category:** Snakebite Care & Universal Basic Services / Antivenom Selection Research
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Pilot target of 100,000 testing encounters/year; effect on antivenom selection, treatment time and health outcomes unproven
+- **Key Material:** Recombinant single-domain antibody conjugates, colored latex beads, nitrocellulose capture membrane, sealed swab/buffer vial and barrier pouch
+- **Key Innovation:** Tests a region-specific venom immunotype panel linked to locally available antivenoms, with parallel pre-dilution and indeterminate/no-clearance readouts; venom immunoassays and VHH strips are prior art
+- **Target Cost:** US$1.50–2.50 ex-factory per single-use card/vial pair at 1 million/year in 2038, plus US$0.50–1.50/test for distribution, training, quality surveillance and disposal; excluding care and regulatory validation
+- **Author:** jayis1
+- **Created:** 2026-10-29

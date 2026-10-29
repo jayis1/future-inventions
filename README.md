@@ -97,6 +97,7 @@ Design and document technologies that:
 | [Footprint-Verified Phototherapy Cot](./footprint-verified-phototherapy-cot/) | Concept | Newborn Health & Universal Basic Services / Supervised Jaundice Care |
 | [Offline Care Consent Card](./offline-care-consent-card/) | Concept | Privacy-Preserving Health & Universal Basic Services |
 | [Mill-Gate Maize Sorter](./mill-gate-maize-sorter/) | Concept | Food Safety & Universal Basic Services / Pre-Milling Aflatoxin Risk Reduction |
+| [Snakebite Venom Triage Strip](./snakebite-venom-triage-strip/) | Concept | Snakebite Care & Universal Basic Services / Antivenom Selection Research |
 
 ## Structure
 

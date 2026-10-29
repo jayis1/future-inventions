@@ -755,3 +755,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$1.50–2.50 ex-factory per single-use card/vial pair at 1 million/year in 2038, plus US$0.50–1.50/test for distribution, training, quality surveillance and disposal; excluding care and regulatory validation
 - **Author:** jayis1
 - **Created:** 2026-10-29
+
+### 081 — Silica Wetwork Recovery Bench
+- **Category:** Occupational Health & Universal Basic Services / Stone-Work Dust Prevention
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Pilot target of 20 workshops over 12 months; exposure reduction and health benefit unproven
+- **Key Material:** Stainless runoff tray, HDPE reservoir and sealed settling pail, polyurethane skirt, 12 V pump
+- **Key Innovation:** Tests single-pass sheet wetting with visible flow-failure detection and closed wet-slurry collection against existing compliant wet-tool and wet-plus-exhaust stations; wet suppression is prior art
+- **Target Cost:** US$650 ex-factory at 10,000 benches/year in 2038, excluding wet-rated tools, exhaust, installation, exposure sampling and slurry disposal
+- **Author:** jayis1
+- **Created:** 2026-10-29

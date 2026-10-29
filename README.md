@@ -98,6 +98,7 @@ Design and document technologies that:
 | [Offline Care Consent Card](./offline-care-consent-card/) | Concept | Privacy-Preserving Health & Universal Basic Services |
 | [Mill-Gate Maize Sorter](./mill-gate-maize-sorter/) | Concept | Food Safety & Universal Basic Services / Pre-Milling Aflatoxin Risk Reduction |
 | [Snakebite Venom Triage Strip](./snakebite-venom-triage-strip/) | Concept | Snakebite Care & Universal Basic Services / Antivenom Selection Research |
+| [Silica Wetwork Recovery Bench](./silica-wetwork-recovery-bench/) | Concept | Occupational Health & Universal Basic Services / Stone-Work Dust Prevention |
 
 ## Structure
 

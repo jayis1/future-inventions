@@ -735,3 +735,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$8–12 ex-factory per card at 100,000/year in the mid-2030s, excluding readers, distribution, clinical labour and certification
 - **Author:** jayis1
 - **Created:** 2026-10-29
+
+### 079 — Mill-Gate Maize Sorter
+- **Category:** Food Safety & Universal Basic Services / Pre-Milling Aflatoxin Risk Reduction
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Pilot target of 20 kg/hour dry-maize throughput; toxin reduction and health benefit unproven
+- **Key Material:** Stainless-steel feed plate, recycled-HDPE grooves, 365 nm UV-A LED, paired filtered photodiodes, CMOS camera, fail-to-hold reject gates
+- **Key Innovation:** Tests a continuously fed four-lane village-mill fluorescence sorter with gate verification and an uncertain/hold state; fluorescence sorting is prior art and is not a toxin assay
+- **Target Cost:** US$280 ex-factory at 10,000 units/year in 2038, excluding assays, distribution, labor and disposal
+- **Author:** jayis1
+- **Created:** 2026-10-29

@@ -102,6 +102,7 @@ Design and document technologies that:
 | [Sealed Pit-Emptying Shuttle](./sealed-pit-emptying-shuttle/) | Concept | Sanitation & Universal Basic Services / Safe On-Site Waste Transfer |
 | [Kiln Draft Balancing Retrofit](./kiln-draft-balancing-retrofit/) | Concept | Clean Air & Sustainable Manufacturing / Brick Kilns |
 | [Lead-Dust Capture Shroud](./lead-dust-capture-shroud/) | Concept | Healthy Housing & Occupational Health / Lead-Dust Prevention |
+| [Ghost-Net Recovery Float](./ghost-net-recovery-float/) | Concept | Ocean Restoration & Sustainable Fisheries / Lost-Gear Recovery |
 
 ## Structure
 

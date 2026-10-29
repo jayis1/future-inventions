@@ -795,3 +795,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$120 ex-factory per shroud at 10,000/year in 2038, excluding purpose-designed HEPA vacuum, labor, containment, testing, consumables and disposal
 - **Author:** jayis1
 - **Created:** 2026-10-29
+
+### 085 — Ghost-Net Recovery Float
+- **Category:** Ocean Restoration & Sustainable Fisheries / Lost-Gear Recovery
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Pilot target of 100 paired fixed nets over one fishing season; 10,000 deployed modules could mark at most 10,000 nets, with additional recovery and ecological benefit unproven
+- **Key Material:** Reusable polypropylene cage, encapsulated cork/PE float, replaceable retrieval-line spool, corrosion-resistant spring timer and latch
+- **Key Innovation:** Tests a manually reset, timed backup surface marker with a retained retrieval line for lost fixed nets whose ordinary surface marker disappears; buoys, marking and lost-gear location are prior art
+- **Target Cost:** US$45 ex-factory at 100,000/year in 2038, plus approximately US$10/year for inspection and refurbishment before vessel and recovery costs
+- **Author:** jayis1
+- **Created:** 2026-10-29

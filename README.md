@@ -95,6 +95,7 @@ Design and document technologies that:
 | [Pressure-Witness Insole](./pressure-witness-insole/) | Concept | Foot Health & Universal Basic Services / Diabetic Foot Risk |
 | [ORS Mix-Witness Cup](./ors-mix-witness-cup/) | Concept | Child Health & Universal Basic Services / Oral Rehydration Preparation |
 | [Footprint-Verified Phototherapy Cot](./footprint-verified-phototherapy-cot/) | Concept | Newborn Health & Universal Basic Services / Supervised Jaundice Care |
+| [Offline Care Consent Card](./offline-care-consent-card/) | Concept | Privacy-Preserving Health & Universal Basic Services |
 
 ## Structure
 

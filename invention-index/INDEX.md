@@ -725,3 +725,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$180 ex-factory per cot at 10,000/year in 2038, plus a shared calibrated meter and recurring service, excluding clinical care
 - **Author:** jayis1
 - **Created:** 2026-10-28
+
+### 078 — Offline Care Consent Card
+- **Category:** Privacy-Preserving Health & Universal Basic Services
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Pilot target of 10,000 voluntary cardholders across 20 clinics; clinical benefit and privacy performance unproven
+- **Key Material:** NFC secure element, bistable display, physical consent switch, recyclable electronics enclosure
+- **Key Innovation:** Tests field-scoped, single-session physical consent for offline clinician-signed summaries on a patient-held card; NFC and portable health records themselves are prior art
+- **Target Cost:** US$8–12 ex-factory per card at 100,000/year in the mid-2030s, excluding readers, distribution, clinical labour and certification
+- **Author:** jayis1
+- **Created:** 2026-10-29

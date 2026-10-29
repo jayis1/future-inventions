@@ -26,6 +26,55 @@ Fluorescence sorting itself is **prior art**: Yao and colleagues demonstrated a 
 
 A clean-looking kernel can contain toxin; mould, dust, UV aging, variety differences, and poorly sampled lots can break optical classification. Fluorescence may flag fungal by-products rather than toxin concentration.[2] Use a sealed UV enclosure with a lid interlock, an operator-visible lamp/gate test using a traceable reference tile and timed reject test at every shift, plus periodic laboratory assays of **both** bins. The tile verifies optics and actuation, **not food safety**. Clear blockages with power isolated; clean food-contact surfaces between lots; prevent dust accumulation and inhalation. Reject or quarantine suspect grain under local food rules, and do not imply that sorting treats other mycotoxins. A pilot fails if it cannot outperform manual sorting on toxin reduction across independent naturally contaminated lots at an affordable total cost, or if false reassurance rises when the device malfunctions.
 
+## How It Works
+
+The advantage is **where** the decision happens: a household's whole kernels are still separable at the mill gate, and the miller can keep the accepted and suspect streams accountable before grinding. This is a proposed risk-reduction workflow, not a toxin assay. The operator assigns a lot ID, weighs and checks that the maize is dry and whole, and records the starting mass; wet, broken, or heavily dusty lots go to hold for separate assessment rather than being forced through an unvalidated classifier.
+
+A metered gravity feed distributes kernels across four recycled-HDPE grooves on the stainless plate. In a light-tight section, 365 nm illumination excites fluorescence measured in two visible bands by paired filtered photodiodes; a CMOS reflected-light image adds a damage cue. The microcontroller compares signals against locally validated reference distributions, tracks travel time to a gate, and allows the accepted path only when sensing and actuation are valid and confidence is sufficient. The fluorescence is a *proxy* for fungal-associated features, not a measurement of aflatoxin concentration.[2] Classification thresholds must be trained and challenged with local varieties and independently assayed lots; until then they are research parameters.
+
+A spring-return gate sends suspect or uncertain kernels to a keyed hold bin. On startup and each shift, an optical reference tile, timed gate test, bin-presence check, and interlock test must pass; a fault closes the accepted path and displays a visible **HOLD—DO NOT MILL** state. The operator weighs and labels both bins, retains the paper lot record, cleans the chute between lots, and obtains representative lot-level toxin testing before claiming any food-limit compliance. Holding rejects protects against their being quietly remilled or sold as cheap food; disposition follows local rules, not an automatic feed-use shortcut.
+
+## Technical Architecture
+
+| Subsystem | Proposed interface and failure behavior |
+| --- | --- |
+| Intake and singulation | Adjustable four-lane food-contact chute meters dry whole kernels; bridges or double-fed lanes trigger hold rather than an unreliable pass. |
+| Optics | Shielded 365 nm LED, emission-band photodiodes, reflected-light camera and reference tile; ambient-light leakage, dirty windows, LED drift or failed interlock inhibit acceptance. |
+| Controller and gate | Offline microcontroller time-stamps lane events and drives four spring-return gates; a gate-position or timing mismatch diverts the lot and requires operator reset after inspection. |
+| Power and record | Shared 12 V supply with protected low-voltage cutoff; no implied battery in the US$280 factory target. Paper lot ID, input/accepted/hold masses and fault status remain usable without network access. |
+
+At the **20 kg/h design point**, the assumed 0.3 g/kernel gives about **19 kernels/s across four lanes**: the control problem is millisecond-scale gate timing, not simply average throughput. The ≤15 W target includes illumination, sensing, control and gates, but must be measured under peak reject activity; a compressor-based ejector is **not** in this design. A guarded, dust-managed enclosure needs electrical protection, accessible emergency stop and power-isolated servicing before a field pilot.
+
+## Performance Benchmarks
+
+No integrated prototype measurements exist. The published portable, fluorescence-assisted *manual* sorter reported **99.3% and 40.7%** aflatoxin reduction in two challenged lots; those are heterogeneous research outcomes, **not** a validated continuous-sorter baseline or a guaranteed effect here.[2] No like-for-like current state-of-art figure for a four-lane, low-power mill-gate unit is established; the comparison must be run rather than asserted.
+
+| Metric | Proposed target (unmeasured) | Pilot comparison and test |
+| --- | --- | --- |
+| Throughput and power | ≥20 kg/h at ≤15 W on dry whole maize; ≤0.75 kWh/t at both limits | Weigh timed feeds and meter full-device power across varieties, moisture bands and reject rates; compare with hand sorting on the same lots. |
+| Sorting effect | ≥50% less *total aflatoxin mass* in accepted grain versus incoming lot; ≤5% sound-kernel false rejection | Accredited, representative assays of matched input, accepted and hold fractions; report confidence intervals, false-acceptance lots and mass balance, not classifier accuracy alone. |
+| Reliability | No accepted-bin discharge on loss of power, sensor self-check, lid interlock or gate feedback | Inject each fault under load, record diverted mass, downtime and cleaning time; require independently witnessed pass/fail. |
+| Cost | US$280 ex-factory at 10,000/year in 2038; five-year life plus US$20/year maintenance | Supplier quotations, repair logs and total installed/assay/disposal cost alongside manual sorting; factory cost is not customer price. |
+
+A 50% reduction in **toxin mass** is not automatically a 50% reduction in concentration if grain is rejected. Even a passing pilot lot is not certified safe: representative sampling and a suitable reference assay govern decisions under applicable local standards.[1][2]
+
+## Deployment Scenarios
+
+1. **Village mill, wet harvest:** A miller receives household bags, declines wet grain, sorts qualified dry maize by owner-labelled lot, and pauses milling while a suspect lot is assessed. Households retain a documented claim to their grain, but cannot reclaim held kernels into the food hopper without an authorized disposition.
+2. **Smallholder cooperative:** A shared unit runs short scheduled sessions on dry whole maize, with a trained steward performing daily reference and gate tests. The cooperative batches samples for laboratory confirmation and budgets separately for power, maintenance, laboratory testing and managed reject disposal; a faulty unit reverts to hold/manual triage, not a green light.
+3. **School-meal procurement point:** An aggregator uses lot mass records to flag material for confirmatory testing before grinding and distribution. Procurement acceptance remains based on representative toxin assays and local requirements, not the sorter screen; no claim is made for fumonisins or other non-validated hazards.
+
+## Risks & Mitigations
+
+- **False reassurance:** Non-fluorescing contaminated kernels, variable varieties and patchy contamination can survive sorting. Validate on naturally contaminated local lots across seasons and assay accepted and hold streams; quarantine a lot that fails the applicable food test. The residual risk cannot be eliminated by a clean-looking screen.[2]
+- **Drift and physical failure:** Dust, moisture, double feeds, LED aging, mis-timed gates, bin removal and unstable power can invalidate a pass. Shift-start checks, guarded optics, mass balance and fail-to-hold faults are required; measure false acceptance and downtime under deliberately induced faults.
+- **Reject diversion and incentives:** Families may bypass a machine that takes away food; a buyer may dump suspect kernels on a poorer market. Preserve owner-labelled hold custody, fund a locally approved non-food disposal or processing route only after assessment, and audit rejected mass. Never divert suspect grain automatically to animal feed.
+- **Operator hazards and affordability:** UV exposure, grain dust, moving gates and shock require interlocks, dust control, electrical protection and isolated maintenance. The low factory-price target omits assays, installation and disposal; a pilot must demonstrate that real service cost and food loss are acceptable without weakening safety gates.
+
+## Vision for 2050
+
+A plausible 2050 outcome is a repairable mill-gate fitting, paired with routine lot sampling and enforceable reject custody, at mills where whole-grain sorting can reduce exposure before milling. Local technicians service the optics and gates; cooperatives can compare audited lot outcomes across harvests without collecting personal data. This is a conditional scenario, **not** a forecast of disease reduction or universal safe maize: adoption depends on independent toxin evidence, affordable testing, owner incentives and a lawful route for held grain.
+
 ## Sources
 
 [1] https://www.who.int/news-room/fact-sheets/detail/mycotoxins — WHO, *Mycotoxins* (2023), health risks and prevention.

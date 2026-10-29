@@ -775,3 +775,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$600 ex-factory per shuttle including one vessel at 10,000/year in 2038, excluding labor, transport, PPE and treatment
 - **Author:** jayis1
 - **Created:** 2026-10-29
+
+### 083 — Kiln Draft Balancing Retrofit
+- **Category:** Clean Air & Sustainable Manufacturing / Brick Kilns
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Pilot target of 20 matched kiln pairs over one season; ≥5% less fuel and ≥10% less stack PM₂.₅ per saleable brick versus training alone are unproven targets, conditional on no increase in CO, fan energy or worker exposure
+- **Key Material:** Removable high-alumina refractory guides, ceramic pressure taps, 316L cold-side fixtures, spring-return bypass damper
+- **Key Innovation:** Tests site-tuned, reversible flue-gas guidance with pressure-based maintenance diagnostics and a mechanically opening bypass against training-only induced-draft zigzag kilns; zigzag kilns and firing improvements are established prior art
+- **Target Cost:** US$1,500 ex-factory per eligible kiln at 10,000/year in 2038, plus estimated US$800–2,000 survey, installation, training and testing; excludes power, transport, taxes and recurring service
+- **Author:** jayis1
+- **Created:** 2026-10-29

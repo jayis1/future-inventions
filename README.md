@@ -100,6 +100,7 @@ Design and document technologies that:
 | [Snakebite Venom Triage Strip](./snakebite-venom-triage-strip/) | Concept | Snakebite Care & Universal Basic Services / Antivenom Selection Research |
 | [Silica Wetwork Recovery Bench](./silica-wetwork-recovery-bench/) | Concept | Occupational Health & Universal Basic Services / Stone-Work Dust Prevention |
 | [Sealed Pit-Emptying Shuttle](./sealed-pit-emptying-shuttle/) | Concept | Sanitation & Universal Basic Services / Safe On-Site Waste Transfer |
+| [Kiln Draft Balancing Retrofit](./kiln-draft-balancing-retrofit/) | Concept | Clean Air & Sustainable Manufacturing / Brick Kilns |
 
 ## Structure
 

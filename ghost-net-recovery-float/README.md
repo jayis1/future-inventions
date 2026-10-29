@@ -24,6 +24,52 @@ A 100-net paired field pilot should compare this module with standard legal mark
 
 **Safety and lifecycle:** A premature release can create a navigation hazard and loose line can entangle wildlife. Trial only with fisheries authorities, local fishers and vessel-safety review; specify conspicuous marking consistent with local rules, closed spool routing, snag-load limits, a protected manual disarm during hauling, and a plan to recover every surfaced float. A jammed timer or fouled spool must not detach a free-floating plastic module or impair normal net retrieval. Inspect before every set; retire cracked cages or frayed line. Recover polymers and metal springs at end of life, and record lost modules. No claim of biodegradable ocean disposal is made. If the pilot shows more entanglement or litter than recovery benefit, discontinue the design.
 
+## How It Works
+
+Before each legal set, the fisher inspects the sealed float, routed line and latch, engraves or checks the ownership mark, winds the mechanical timer, and records the set and expected haul time. The timer is a **time-out, not a loss sensor**: routine hauling disarms and resets it; a delayed haul may trigger an unwanted release. A site-approved 72-hour trial interval must therefore exceed the permitted soak and foreseeable retrieval window. At expiry the latch opens and the float pulls line from the enclosed spool; the cage stays on the headrope. A surfaced mark can then guide an authorized vessel back to the gear. There is no automated search, satellite report, inflation or net hoist.
+
+A first-pass **design calculation, not a tested rating**: a 1.5 L float displaces about 1.5 kg of seawater (using a conservative 1 kg/L); if the rising float and paid-out hardware weigh 0.6 kg, static reserve is only about 0.9 kgf (~9 N), before line friction, drag, biofouling and pressure effects. The 25 m spool gives only 5 m geometric surplus at 20 m depth, less after currents or snagging; depth and current limits must be established in a flume and sea trial. If the line parts, spool jams, or float remains below water, no visible position is delivered; normal legal marks and lost-gear reporting remain essential.
+
+## Technical Architecture
+
+- **Retained assembly:** reusable polypropylene cage fixed to an engineered headrope interface; protected, separately rated 25 m line spool; corrosion-resistant spring timer and captive latch. No exposed free loop in the stowed condition. Mechanical reset is logged by the operator.
+- **Surface assembly:** sealed cork/PE composite float, engraved ID and retroreflector; reserve buoyancy must survive rated pressure, cycling and fouling. Neither GNSS nor radio is present, so visibility and the vessel's search pattern set the detection range.
+- **Human data path:** set record and ID → elapsed-time release → visual sighting → permission/ownership check → site-specific recovery plan → recovered gear and module logged at port. The timer cannot infer ownership or safe pulling loads. A dead or jammed timer leaves ordinary marking intact; a lost line or an unsighted float is reported as failed recovery rather than counted as success.
+
+## Performance Benchmarks
+
+These are **unmeasured design targets**, not measured improvements over commercial gear. The current comparator is a legally marked fixed net with its ordinary surface marker; neither source [1] nor [2] supplies a directly comparable controlled recovery rate. Compare paired nets under identical soak, depth, current and vessel access; report confidence intervals and all unintended releases, not just successful sightings.
+
+| Metric | Current comparator | Proposed acceptance target | Test |
+| --- | --- | --- | --- |
+| Release/surfacing | No timed backup when ordinary marker is severed; recovery rate unknown | ≥90% surface within 15 min after a 72 h setting at 0–20 m | ≥100 instrumented wet trials across depth/current envelope; count all failures |
+| Spool payout | No retained backup line; snag frequency unknown | ≥95% tangle-free over 100 wet cycles | Cycle loaded spool in saltwater, fouling and abrasion tests |
+| Line/attachment integrity | Gear-specific; no universal safe pull rating | No line break or net displacement at a 0.5 kN static proof load | Shore fixture test; **not** permission to haul snagged gear |
+| Reserve buoyancy | Surface marker performance varies by installation | Positive reserve after 30 d immersion and 20 m pressure cycling | Measure submerged displacement and mass, including fouling |
+| Incremental retrieval | No controlled baseline yet | Positive additional fully recovered nets versus paired legal marks, without added entanglement | Authorized 100-net paired pilot over one season |
+
+A 0.5 kN force is roughly the weight of 51 kg under terrestrial gravity; the proposed ~9 N reserve buoyancy cannot provide that force. Proof testing the line is categorically different from lifting a net. The test methods above must be refined with fisheries and marine-safety authorities before use.
+
+## Deployment Scenarios
+
+1. **Nearshore fixed-gillnet cooperative:** fishers pre-fit numbered modules to nets normally worked at ≤20 m. A port registry records sets and overdue hauls; a weather delay triggers an intentional release review, never an automatic claim of gear loss. The crew searches its customary grounds and reports any unlocated module.
+2. **Storm-damaged marker recovery:** after an ordinary marker disappears, a licensed crew searches for the timed backup mark during safe weather and assesses the net's attachments before handling the line. A snagged net or protected habitat is referred to an approved specialist, not winched from the float.
+3. **Community pilot with port reception:** a fisheries authority and cooperative compare paired marked nets, collect surfaced modules, log complete recovered-net mass and sort contaminated gear through approved port waste channels. This requires permission, vessel time and a documented plan for devices that never surface.
+
+## Risks & Mitigations
+
+| Failure or harm | Control and stop rule |
+| --- | --- |
+| Timer expires during a legitimate set or line entangles wildlife/vessels | Set a lawful interval; shield spool and eliminate loose loops; log premature releases. Stop the pilot on any device-caused entanglement pending independent review. |
+| Current, pressure, fouling or broken headrope prevents surfacing | Bench-test pressure/abrasion and instrument pilot failures; restrict site/depth; retain conventional marks and lost-gear reports. Never infer recovery from a timer firing. |
+| Crew mistakes active gear for lost gear or pulls against a snag | Confirm ID, owner and authority; survey catch and habitat; use qualified vessel procedures and load monitoring. Abort on unknown ownership, unsafe weather, threatened wildlife or excessive tension. |
+| Module itself becomes persistent debris | Register each serial and custodian, inspect before every set, search for missing units, track recovery ratio and collect failed modules for polymer/metal recycling. No ocean-disposal claim. |
+| Cost and false alarms burden small fishers | Share units and maintenance through a cooperative; compare fully loaded recovery cost to existing marking in the pilot. Halt scale-up if incremental recovery cannot justify added gear and risk. |
+
+## Vision for 2050
+
+If controlled trials show a net ecological benefit, low-tech backup markers could become a standard, serviceable option for shallow fixed-net fleets: each deployment is recorded, a missed haul prompts a search, and port teams recover both net and device. This is a **conditional vision**, not a forecast or a promise that all lost nets can be surfaced. Broader adoption would depend on evidence that the extra line does not create a larger entanglement or litter problem than the gear it helps recover.
+
 ## Sources
 
 [1] FAO, *Voluntary Guidelines on the Marking of Fishing Gear* and risk-assessment background: https://openknowledge.fao.org/server/api/core/bitstreams/8e458922-9ebd-40c1-9e3d-6ced70700768/content — ghost-fishing risks, existing marking and reporting/recovery framework.

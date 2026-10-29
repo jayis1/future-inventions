@@ -45,6 +45,48 @@ The first measurable goal is better **concordance of clinician antivenom selecti
 
 The [photoacoustic anemia screener](../photoacoustic-anemia-screener/) tests a noninvasive blood-related signal for anemia; the [thermostable vaccine patch](../thermostable-vaccine-microarray-patch/) delivers an immunization. Neither identifies locally relevant snake venom antigens. This concept is new **to this catalogue**, not a claim of first-in-world venom detection.
 
+## How It Works
+
+The bite-site swab is mixed in a sealed, metered buffer vial and applied to two matched capillary lanes. In each lane, aqueous sample wicks through a cellulose conjugate pad into a nitrocellulose membrane: venom antigen, if present and recognized, binds dried VHH–latex reporter and is retained at a spatially coded capture line. A separate procedural line checks that liquid migrated; it cannot verify that venom was collected. The second lane receives a factory-defined dilution to challenge a potentially saturated sandwich assay. Disagreement between lanes is indeterminate, not a corrected diagnosis. The clinician reads the card at the specified time against a region- and lot-matched key; no line, faint line or valid-looking negative establishes a dry bite, species identity or clinical severity. Only an authorized local care pathway can connect a supported antigen group to an antivenom choice.
+
+## Technical Architecture
+
+- **Collection and enclosure:** sterile swab, sealed buffer vial and metered transfer; no wound manipulation or open venom handling. The intended specimen is bite-site material, not interchangeable with blood or urine without new validation.
+- **Signal path:** dried VHH–colored-latex conjugate on cellulose → capillary flow on nitrocellulose → two spatially distinct capture positions for the initial regional panel plus a flow-control position. Capture chemistry, antigen specificity, visual threshold and interference remain research questions; a color-blind-readable printed shape/position key is proposed.
+- **Quality and decision boundary:** parallel fixed-dilution lane, printed read-time window, lot/expiry and temperature-excursion markings, barrier pouch and local antivenom-coverage card. The trained worker records result category, lot and time in the existing clinical record; the clinician interprets it alongside symptoms and locally validated investigations. No default app, identifier upload or automated treatment recommendation.
+
+## Performance Benchmarks
+
+| Endpoint and conditions | Published comparator / current state | This card's unmeasured design gate |
+| --- | --- | --- |
+| Visual read time | A research multiplex assay differentiated *Bothrops*/*Lachesis* in **15 min** in spiked plasma and urine; not a clinical bedside benchmark.[3] | Readable by a trained worker in **15 min** after applying a bite-site sample; prospective timed-user study required. |
+| Analytical detection | That research assay reported **10–50 ng/mL** limits for selected venoms in spiked plasma/urine, and **50–500 ng/mL** in spiked serum; matrices and venoms differ from this swab concept.[3] | No justified swab limit of detection yet; establish a per-antigen, per-matrix threshold and high-dose performance before setting one. |
+| Clinical discrimination | No patient-study sensitivity or specificity for this card; spiked-matrix analytical limits do not measure patient performance.[3][4] | **≥95% sensitivity** per covered immunotype in the specified sampled-positive population, **≥98% specificity** against a predeclared regional off-target panel and **≤5% indeterminate/invalid** in trained-user studies; report denominators and confidence intervals, and separately quantify missed envenomings. |
+| Shelf life and delivered cost | No like-for-like published comparator established for this proposed swab-and-card package. | **18 months at 40 °C** after packaged stability testing; **US$1.50–2.50** ex-factory at one million units/year plus **US$0.50–1.50** for distribution/QA/disposal—planning goals, not quotes. |
+
+These endpoints cannot be traded off against clinical safety: a faster antigen result does not measure time to effective antivenom or improved survival. Usual-care clinical assessment remains the comparator for any later outcome trial.[2]
+
+## Deployment Scenarios
+
+1. **Regional primary-care clinic:** after a suspected bite, trained staff begin standard assessment and referral immediately; in a future approved study, a locally validated card could add an immunotype clue while the clinician checks which stocked antivenom covers it. An unavailable antivenom or a negative card never suspends transfer.
+2. **District receiving hospital:** a prospective observational pilot compares blinded strip categories with reference assays and independent clinician assessment without changing treatment. The value proposition is a measured reduction in inappropriate product selection *only if* a later controlled study shows it without additional delays or missed cases.
+3. **Regional supply programme:** de-identified, aggregate counts of *validated* immunotypes could inform panel redesign and antivenom stocking after privacy and sampling-bias review. A positive swab count is not a count of systemic envenomings.
+
+## Risks & Mitigations
+
+| Failure mode | Design or validation response |
+| --- | --- |
+| Early, washed, poorly sampled or post-treatment wound yields a false negative; antigen excess masks a sandwich line | No-clearance wording; dilution-path disagreement becomes indeterminate; test across sample timing and loads; clinical signs override every strip result. |
+| Related venoms cross-react or regional toxin composition shifts | Predeclare local coverage, test geographic isolates and sympatric off-targets; withdraw or redesign panels that cannot meet clinical safety gates. |
+| Heat, humidity, expired reagents or lot drift degrade a card | Barrier packaging, excursion marking, stability and lot-release testing; breached/out-of-range units are invalid and replaced, never read as negative. |
+| Faint lines, color-vision differences or timing errors cause disagreement | Positional/shape cues, timed pictograms and trained-user reader-agreement studies; ambiguous reads are indeterminate. |
+| A valid control gives false reassurance; test use delays transport or antivenom | Control establishes flow only; monitor treatment delay and missed envenoming as stopping endpoints; prohibit clinical guidance before ethics review, local authorization and demonstrated benefit. |
+| Correct antigen classification cannot fix antivenom stock-outs | Pair any deployment study with supply and referral audits; report access failures separately from assay accuracy. |
+
+## Vision for 2050
+
+If regional panels pass patient-level validation and health-system trials, a sealed card could become one modest piece of routine rural snakebite care: clinicians would see an additional, explicitly bounded antigen clue, while procurement teams would use privacy-preserving aggregate signals to adjust antivenom stocks. The aspirational outcome is fewer wrong-product decisions without delaying treatment—not a universal species detector, a replacement for clinical judgment, or a forecast of lives saved.
+
 ## Sources
 
 [1] https://www.who.int/news-room/questions-and-answers/item/snakebite-envenoming

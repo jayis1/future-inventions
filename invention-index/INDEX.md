@@ -845,3 +845,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unverified US$18 ex-factory at 100,000/year by 2038, plus US$20.20/year target consumables and parts before labor, delivery and disposal
 - **Author:** jayis1
 - **Created:** 2026-10-30
+
+### 090 — Alternating Recharge Terrace
+- **Category:** Groundwater Resilience & Universal Basic Services / Managed Aquifer Recharge
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Planning ceiling of 67.5 m³/site-year infiltrated at 15 qualified events; groundwater storage, water quality and downstream benefit require field validation
+- **Key Material:** Washed local sand, lined-earth or masonry settling forebay, HDPE/steel three-position sluice, armored overflow
+- **Key Innovation:** Tests a two-bed serviceable infiltration terrace with replaceable sand skin and positive bypass against a single-bed basin of equal footprint; surface recharge, settling and wet/dry cycling are prior art
+- **Target Cost:** Unverified US$1,300 installed at 1,000 sites/year in 2038, excluding survey, permits and land; US$100–200/site-year target maintenance and testing
+- **Author:** jayis1
+- **Created:** 2026-10-30

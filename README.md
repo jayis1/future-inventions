@@ -108,6 +108,7 @@ Design and document technologies that:
 | [Spectral-Guard Air Disinfector](./spectral-guard-air-disinfector/) | Concept | Airborne Disease Prevention & Universal Basic Services |
 | [Flood-Safe Egg Sink](./flood-safe-egg-sink/) | Concept | Public Health & Universal Basic Services / Mosquito Source Reduction |
 | [Alternating Recharge Terrace](./alternating-recharge-terrace/) | Concept | Groundwater Resilience & Universal Basic Services / Managed Aquifer Recharge |
+| [Mercury-Free Gold Concentrate Station](./mercury-free-gold-concentrate-station/) | Concept | Occupational Health & Environmental Protection / Artisanal Gold Mining |
 
 ## Structure
 

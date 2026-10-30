@@ -855,3 +855,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unverified US$1,300 installed at 1,000 sites/year in 2038, excluding survey, permits and land; US$100–200/site-year target maintenance and testing
 - **Author:** jayis1
 - **Created:** 2026-10-30
+
+### 091 — Mercury-Free Gold Concentrate Station
+- **Category:** Occupational Health & Environmental Protection / Artisanal Gold Mining
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Planning capacity of 20 tonnes eligible ore/station-year; reduction in mercury exposure and economic viability require paired field validation
+- **Key Material:** Guarded stainless-steel sizing screen and shaking table, recirculating settling/filter loop, bunded HDPE sealed output tubs
+- **Key Innovation:** Tests batch-segregated gravity processing with a captive-tag container-return gate and periodic independent recovery assays; mercury-free gravity concentration itself is established practice
+- **Target Cost:** Unverified US$3,800 ex-factory at 1,000/year in 2038; US$600/year service target, excluding milling, assays, labor, installation and safe tailings handling
+- **Author:** jayis1
+- **Created:** 2026-10-30

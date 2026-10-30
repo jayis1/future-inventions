@@ -835,3 +835,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unvalidated US$450 ex-factory at 10,000 units/year in 2038, plus US$150–300 installation and US$80–150/year service; excludes ventilation and certification
 - **Author:** jayis1
 - **Created:** 2026-10-30
+
+### 089 — Flood-Safe Egg Sink
+- **Category:** Public Health & Universal Basic Services / Mosquito Source Reduction
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Pilot target of 500 serviced units over 12 months; reduction in mosquito emergence or dengue incidence unproven
+- **Key Material:** UV-stabilized polypropylene, dual 0.4 mm stainless screens, cellulose egg strip, captive float and replaceable sticky liner
+- **Key Innovation:** Tests independently screened flood overflow and unpowered failure indicators against a standard screened ovitrap; ovitraps and emergence barriers are prior art
+- **Target Cost:** Unverified US$18 ex-factory at 100,000/year by 2038, plus US$20.20/year target consumables and parts before labor, delivery and disposal
+- **Author:** jayis1
+- **Created:** 2026-10-30

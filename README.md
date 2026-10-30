@@ -106,6 +106,7 @@ Design and document technologies that:
 | [Solar-Swing Humidity Vent](./solar-swing-humidity-vent/) | Concept | Healthy Housing & Universal Basic Services / Indoor Moisture Control |
 | [Slope-Head Sentinel](./slope-head-sentinel/) | Concept | Disaster Resilience & Universal Basic Services / Shallow-Landslide Risk Indication |
 | [Spectral-Guard Air Disinfector](./spectral-guard-air-disinfector/) | Concept | Airborne Disease Prevention & Universal Basic Services |
+| [Flood-Safe Egg Sink](./flood-safe-egg-sink/) | Concept | Public Health & Universal Basic Services / Mosquito Source Reduction |
 
 ## Structure
 

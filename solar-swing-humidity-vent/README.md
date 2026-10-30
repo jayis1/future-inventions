@@ -38,3 +38,46 @@ A **100-room paired pilot** would compare the retrofit against repaired-and-vent
 ## Sources
 
 [1] https://www.ncbi.nlm.nih.gov/books/NBK143942 — WHO Guidelines for Indoor Air Quality: Dampness and Mould, evaluation of human health risks (2009).
+[2] https://www.energystar.gov/products/dehumidifiers/key_efficiency_criteria — ENERGY STAR Dehumidifiers Key Efficiency Criteria, Version 6.0 (effective October 1, 2025).
+
+## How It Works
+
+1. A screened inlet and 12 V fan draw outdoor air through one cool, dry silica-gel-coated aluminum honeycomb bed. Water adsorbs onto the gel; the delivered air is warmer from adsorption heat, **not cooled**. At the provisional 20 m³/h for eight hours, removing 0.20 kg requires an average inlet-to-supply reduction of 1.25 g/m³ across 160 m³, assuming the supply flow is maintained.
+2. In a sealed, separate duct, the 1 m² glazed collector warms regeneration air through the *other* bed. The released vapor leaves through an exterior exhaust positioned to prevent re-entrainment. A damper seals supply from regeneration; the controller switches beds only after the regenerated bed has cooled, avoiding a hot, humid supply pulse. Compare humidity ratio calculated from paired temperature/RH probes on both sides of the supply bed; RH alone is misleading when temperatures differ.
+3. Log flow, inlet/supply humidity, bed temperatures and solar input. Count captured water by integrating airflow × (inlet − supply absolute humidity), then check against bed-mass change and regeneration exhaust. If sunlight, sorbent capacity or sensor agreement is inadequate, show **not drying**; preserve independently required ventilation via an approved bypass, not a claimed dehumidification mode. Without a dry regenerated bed the unit cannot continue removing moisture, including through a long humid night.
+
+## Technical Architecture
+
+The serviceable cassette separates four subsystems: (i) screened supply channel, fan and replaceable desiccant beds; (ii) glazed solar-air heater and isolated outdoor regeneration exhaust; (iii) sealed four-way damper with cool-down interlock; (iv) local 30 W PV, battery, temperature/RH/flow sensing and a plainly readable fault indicator. The 30 W nameplate is **not** a promise of eight hours at rated output. A 48 Wh/day electrical budget needs storage or grid backup when PV production falls short. Weather seals, drip edges and inspection hatches must keep rain, insects, dust and loose silica out of occupied air.
+
+This is not the repo's passive draft-balancing kiln retrofit or a generic window opening: its testable distinction is the **measured water transfer between two isolated air paths**. A room moisture balance must also account for infiltration, occupants, leaks and surface condensation; drying *incoming air* alone cannot prove that indoor air or walls dry. No cloud connectivity or remote telemetry is required.
+
+## Performance Benchmarks
+
+All device figures below are **unmeasured design targets at 30 °C/75% RH inlet, 20 m³/h for 8 h, and ≥4 h at 600 W/m² incident sunlight on 1 m²**. A measured rating needs supply and regeneration exhaust balances, fan power, and the actual collector efficiency.
+
+| Option / evidence | Moisture outcome at stated boundary | Energy boundary |
+| --- | --- | --- |
+| Open vent, equal 160 m³/day flow (calculated comparator) | 0 kg/day removed *from incoming air* relative to its outdoor inlet; room humidity still depends on indoor loads | No desiccant regeneration; fan energy depends on installed vent |
+| This two-bed vent (target, not demonstrated) | 0.20 kg/day from incoming air, i.e. 1.25 g/m³ mean reduction; reject if whole-day test misses target | ≤48 Wh/day electric **plus** ≥1.5 MJ/day useful solar heat; 8.64 MJ incident in the reference sun window implies ≥17% useful collection before all other losses |
+| ENERGY STAR certified portable compressor dehumidifier ≤25 pints/day (published certification threshold, not a matched test) | Integrated energy factor ≥1.70 L/kWh under standardized test conditions; dehumidifies *room air*, not supply air.[2] | Grid electricity; capacity, test duty and water-handling boundary differ from this vent |
+
+The vent's target ratio is ~4.17 L/kWh of **auxiliary electricity only** (0.20 L ÷ 0.048 kWh); counting solar heat, fabrication or storage changes that comparison. No claim of outperforming a certified dehumidifier follows. Even the 0.49 MJ/day latent-heat floor already stated above excludes sensible heating and thermal losses. No measured prototype or apples-to-apples state-of-art solar-desiccant comparator exists yet for this form factor.
+
+## Deployment Scenarios
+
+- **Intermittently powered, humid-room retrofit:** For a hypothetical 40 m³ room, 20 m³/h is 0.5 air changes/hour *while running*, before leakage and installation losses. An installer first repairs rain ingress and checks combustion appliances; the unit can temper a limited incoming-air stream on sunny wet days, not guarantee a whole-room RH threshold. A window opening must remain safe and code compliant.
+- **Clinic or community storeroom:** Use only for non-critical storage with logged inlet/supply humidity and an independent room hygrometer. Reject medicines requiring controlled humidity or temperature unless a separate qualified system meets those specifications; keep a powered backup if the required ventilation or dryness cannot pause overnight.
+- **Post-repair building drying study:** After leaks are fixed, compare this vent with an equal-flow ordinary vent in matched rooms over a wet season. Record surface temperature, indoor humidity and RH-threshold hours; do not treat water transferred from supply air as measured mold prevention. Flooded structures need professional remediation, not this cassette.
+
+## Risks & Mitigations
+
+- **Saturation, cloudy days or humid nights:** verify capacity and cool-down before switching; flag not drying and use independent compliant ventilation, not an untested night-time moisture claim.
+- **Heat, backdraft and smoke:** isolate hot regeneration ducts, prevent exhaust re-entry, and require installer review of combustion/pressure and fire-compartment rules. Stop forced operation on smoke ingress; never replace a required vent with a closed damper.
+- **Clogged screens, gel dust or microbial fouling:** washable prefilter, contained coated beds, monthly screen cleaning and annual bed inspection; stop use if coating sheds or the bed stays wet.
+- **Rain, freeze, insects and tampering:** screened labyrinth intake, drain and weather seal, accessible fixings and cold-weather rejection testing; do not promise universal climate suitability.
+- **Damper seizure, seal leakage, sensor drift or battery aging:** interlock and leak-test air paths, cross-check probes, display a fault and design the bypass to remain independent. Establish cycle life and replacement interval in trials, not by assertion.
+
+## Vision for 2050
+
+If independently replicated chamber and building trials establish real indoor benefit, safe installation and viable maintenance, local repair shops could fit small solar-regenerated air cassettes to suitable rooms without continuous grid power. Their visible **not drying** signal would be as important as their sunny-day capacity: owners could distinguish functioning moisture removal from mere airflow and still prioritize leak repair, safe ventilation and adequate building envelopes. This is a conditional adoption vision, not a forecast or a substitute for health evidence.

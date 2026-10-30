@@ -38,3 +38,49 @@ A geotechnical assessment must first establish whether shallow positive head at 
 
 [1] https://www.who.int/health-topics/landslides — WHO Landslides
 [2] https://nhess.copernicus.org/articles/23/1059/2023 — Wicki et al. 2023, NHESS
+[3] https://www.usgs.gov/programs/landslide-hazards/science/real-time-monitoring-potential-landslides — USGS, Real-Time Monitoring for Potential Landslides
+[4] https://www.geokon.com/content/datasheets/4500_Series_VW_Piezometers.pdf — GEOKON 4500 series vibrating-wire piezometer specifications (laboratory accuracy; not field-system performance)
+
+## How It Works
+
+During a storm, infiltrating water may accumulate above a less permeable layer. At the engineer-selected screened interval, a positive water column rises in the vented standpipe and connected external chamber. For water near room temperature, **1 m of head corresponds to roughly 9.8 kPa of gauge pressure** (ρgh, assuming ρ ≈ 1,000 kg/m³ and g ≈ 9.81 m/s²). That physical conversion is not a universal landslide threshold: depth, drainage, soil strength and the possible slip plane must be evaluated per site.[2][3]
+
+The float rises with the water surface and mechanically releases the orange **watch** flag at the lower locally calibrated mark; a designated resident or road steward checks official warnings, informs the named response lead and avoids the slope. At the higher mark, a separate pawl latches the red **leave/check official warning** flag and can release the optional wound striker; the designated lead follows the authority-approved action plan, including evacuation or closure where that plan calls for it. A flag is a persistent local indication, not an automatic evacuation order. When water drains, flags remain latched: only a trained maintainer may inspect the reference reading, test the mechanism and reset them under the local plan. A low water level, an untriggered flag or a passing trip test does not certify the slope safe.
+
+## Technical Architecture
+
+**Water path:** site-assessed screened HDPE standpipe → sealed connecting line → rain-shedding but atmospherically vented transparent chamber. The vent must stay open to air or trapped pressure can shift the apparent head. The screened interval and borehole seal are specified by a geotechnical professional to avoid short-circuiting water between layers; an isolated screen cannot see a separate perched pocket elsewhere.
+
+**Signal and action path:** water level → polypropylene float → two independent stainless pawls → latched UV-stable flags → human observer → named local authority/response plan. Springs store the flag-release energy; a manually wound striker stores the optional sound energy. There is no electrical power, remote sensing or automatic message delivery. The test port and etched marks support a controlled known-head challenge; monthly reference-standpipe comparisons and post-storm checks are needed because a moving float does not prove that the buried screen remains hydraulically coupled. The invalid flag is set after a failed check; a concealed blockage can remain undetected between checks, so loss of evidence must never be displayed as green/safe.
+
+## Performance Benchmarks
+
+These are **proposed acceptance tests, not achieved measurements**. A commercial vibrating-wire piezometer is a useful precision comparator but needs a readout and engineered site installation; rainfall-only thresholds cover wider areas but do not directly sample the local positive head.[3][4] A Sentinel flag is deliberately coarse and cannot claim equivalent pressure resolution or superior landslide prediction.
+
+| Metric and conditions | Existing comparator | Sentinel target and verification |
+| --- | --- | --- |
+| Head/pressure discrimination on a calibrated bench | GEOKON 4500-series piezometer: ±0.1% full-scale laboratory accuracy; e.g. ±0.07 kPa on a 70 kPa range, before installation effects.[4] | Agreement within **5 cm head** (≈0.49 kPa) against a manually read reference standpipe on monthly checks; test at both trip marks and across temperature/wet-dry cycles. |
+| Mechanical repeatability | Instrumented reference measures continuous head; flags do not. | At least **95% successful releases over 1,000 bench cycles per unit**, plus a separate blocked-screen fault trial; record both false releases and failures to release. |
+| Installed inspectability | USGS instrumented monitoring can collect readings every few minutes or seconds and transmit remotely.[3] | At least **90% of installed units pass monthly field checks** over two wet seasons; flag visibility assessed from an agreed safe viewing point. No unattended remote alert claim. |
+| Site warning quality | Rainfall-only and multi-sensor systems depend on local thresholds and evaluated event histories.[3] | **Unknown:** no defensible sensitivity, false-alarm rate or lead time yet. Pilot logs every flag, official alert, observed failure and near miss; independent reviewers set go/no-go bounds before alerts are relied upon. |
+| Cost boundary | A sensor datasheet does not supply a comparable installed-system price. | **US$65 ex-factory** at 10,000/year is an unverified 2038 target; **US$150–400/site** for services is an illustrative allowance, not a like-for-like installed cost comparison. Obtain quotes including investigation, multiple points and upkeep. |
+
+## Deployment Scenarios
+
+- **Hillside settlement:** a district geotechnician selects only shallow, rain-triggered slopes where positive head is informative. A community steward checks flags from a safe route, reports to the municipal warning lead and conducts drills with residents; the municipality budgets surveys and annual service. The pilot remains non-alerting until prospectively validated.
+- **Mountain-road cut:** the road authority installs an assessed instrument beside a vulnerable cut, with flags visible to a trained patrol outside the runout zone. The authority cross-checks rainfall and official warnings and alone decides closure/reopening; one sensor does not cover the whole cut.
+- **Footpath or school access slope:** a local works office places the reading station at a safe junction, assigns a daily observer in wet weather and identifies an alternate route. If no observer or maintained route exists, a flag-only device offers little operational value.
+
+## Risks & Mitigations
+
+| Failure or misuse | Mitigation and residual limitation |
+| --- | --- |
+| Missed failure from heterogeneous groundwater, blocked screen or dry sensor | Engineer-reviewed placement, reference standpipe and blocked-screen trials; still possible between checks. Do not infer safety from silence. |
+| False trips, vandalism or persistent red after drawdown | Protected mounting, incident log, human confirmation and documented reset following inspection; never reset merely to make the display look normal. |
+| Flooding, UV exposure, corrosion or float jamming | Sealed fittings, replaceable wetted parts, environmental cycling and monthly/post-storm tests; remove failed units from warning service. |
+| Unobserved flag or absent decision-maker | Safe sightline, named primary and backup observers, drills and official alert channel; do not deploy where the chain cannot be staffed. |
+| Unvalidated threshold mistaken for a safety certificate | Prospective non-alerting comparison, independent event review and authority-approved response criteria; stop the pilot after a dangerous failure without a trip pending investigation. |
+
+## Vision for 2050
+
+If multi-season field studies show that local head flags add useful warning information on selected slopes, public-works budgets could include a modest mechanical indicator alongside drainage maintenance, geotechnical inspections and official alerts. A resident would know whom to call when orange appears, a road patrol would know who can close a route when red appears, and an invalid flag would mean **check the instrument**, never **the slope is safe**. Slopes without a demonstrated head–hazard relationship would use other monitoring or stabilization instead.

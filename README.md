@@ -104,6 +104,7 @@ Design and document technologies that:
 | [Lead-Dust Capture Shroud](./lead-dust-capture-shroud/) | Concept | Healthy Housing & Occupational Health / Lead-Dust Prevention |
 | [Ghost-Net Recovery Float](./ghost-net-recovery-float/) | Concept | Ocean Restoration & Sustainable Fisheries / Lost-Gear Recovery |
 | [Solar-Swing Humidity Vent](./solar-swing-humidity-vent/) | Concept | Healthy Housing & Universal Basic Services / Indoor Moisture Control |
+| [Slope-Head Sentinel](./slope-head-sentinel/) | Concept | Disaster Resilience & Universal Basic Services / Shallow-Landslide Risk Indication |
 
 ## Structure
 

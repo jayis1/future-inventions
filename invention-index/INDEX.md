@@ -815,3 +815,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unvalidated US$95 ex-factory at 100,000/year in 2038, excluding US$35–80 estimated installation, distribution and service
 - **Author:** jayis1
 - **Created:** 2026-10-30
+
+### 087 — Slope-Head Sentinel
+- **Category:** Disaster Resilience & Universal Basic Services / Shallow-Landslide Risk Indication
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Pilot target of 40 assessed slopes serving about 10,000 residents; warning performance and lives saved unproven
+- **Key Material:** Screened HDPE standpipe, polypropylene float, stainless-steel spring pawls, UV-stable latched flags
+- **Key Innovation:** Tests two site-calibrated, mechanically latched positive-water-head flags with a separate invalid-check indication; piezometers are prior art and one reading cannot establish slope safety
+- **Target Cost:** Unverified US$65 ex-factory at 10,000/year in 2038, excluding site assessment, installation, drills and maintenance
+- **Author:** jayis1
+- **Created:** 2026-10-30

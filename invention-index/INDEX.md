@@ -825,3 +825,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unverified US$65 ex-factory at 10,000/year in 2038, excluding site assessment, installation, drills and maintenance
 - **Author:** jayis1
 - **Created:** 2026-10-30
+
+### 088 — Spectral-Guard Air Disinfector
+- **Category:** Airborne Disease Prevention & Universal Basic Services
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Pilot target ≥5 equivalent air changes/hour of additional airborne surrogate inactivation in a 50 m³ room, conditional on spectral-exposure and ozone/secondary-chemistry safety tests; infection benefit unproven
+- **Key Material:** Filtered 222 nm KrCl excimer source, dielectric bandpass filter, aluminium baffle, candidate manganese-oxide ozone catalyst, 12 V DC supply
+- **Key Innovation:** Tests a replaceable factory-mapped optical-and-ozone module with independent spectral qualification, offline worst-position dose budget and fail-closed installation/service gates; far-UVC air cleaning itself is prior art
+- **Target Cost:** Unvalidated US$450 ex-factory at 10,000 units/year in 2038, plus US$150–300 installation and US$80–150/year service; excludes ventilation and certification
+- **Author:** jayis1
+- **Created:** 2026-10-30

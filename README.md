@@ -105,6 +105,7 @@ Design and document technologies that:
 | [Ghost-Net Recovery Float](./ghost-net-recovery-float/) | Concept | Ocean Restoration & Sustainable Fisheries / Lost-Gear Recovery |
 | [Solar-Swing Humidity Vent](./solar-swing-humidity-vent/) | Concept | Healthy Housing & Universal Basic Services / Indoor Moisture Control |
 | [Slope-Head Sentinel](./slope-head-sentinel/) | Concept | Disaster Resilience & Universal Basic Services / Shallow-Landslide Risk Indication |
+| [Spectral-Guard Air Disinfector](./spectral-guard-air-disinfector/) | Concept | Airborne Disease Prevention & Universal Basic Services |
 
 ## Structure
 

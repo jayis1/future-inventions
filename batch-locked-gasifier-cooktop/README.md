@@ -34,6 +34,40 @@ For an **illustrative engineering budget**, 0.5 kg of qualified pellets at an *a
 
 **Failure and end of life:** Wet fuel, clogged secondary jets, cracked liner, jammed latch, depleted battery, an open gate or missing ventilation can worsen smoke or CO. A latch failure must be conspicuous on pre-use inspection; retire or repair the unit rather than defeat the gate. A hot chamber stays guarded until cool, but a latch cannot prevent leaks, CO poisoning or unsafe operation. Train local repairers to clean jets and inspect the fan, bimetal and battery monthly; measure replacement intervals in field trials. Recycle steel, segregate battery waste and manage ash according to fuel analysis and local rules. No microphone, camera, identity record, network connection, surveillance or control function is included. Product safety, indoor-air and electrical requirements need independent local approval before deployment.
 
+## How It Works
+
+The cook sizes a meal to one 0.5 kg basket of screened, characterized dry pellets. Ignition establishes a downward-moving conversion front; limited primary air releases combustible gases, while fan-fed secondary air mixes and burns them above the bed. Heat crosses the pot base, with the refractory liner limiting side losses. The gate prevents adding fuel mid-cycle, when disturbing a hot bed can produce a smoke pulse; this is a behavioral intervention, not an emissions filter. The basket remains inaccessible until a separate cooldown check permits release. One hour is a *test assumption*, not a guaranteed burn duration: a long simmer might need another cooled batch or another cooking method. Extinction in the view port is not proof of safe CO levels or cool char. Emergency interruption, char containment and restart require supervised hazard testing; closing all air on a hot bed could increase CO rather than make it safe.
+
+## Technical Architecture
+
+The fuel path is basket → primary-air char bed → upper gas/secondary-air mixing ring → pot/flue; the electrical path is fused battery → 12 V fan. No network or firmware controls a safety function. The separate mechanical path is basket seat → captive gate → spring latch → heat-responsive bimetal; a visible release state is proposed, but the latch must not be represented as a calibrated thermometer. The combustion chamber is *not* a pressure vessel: its exhaust must remain open and draft obstruction must be tested, not countered by sealing the gas path. Instrumented prototypes need thermocouples, airflow and CO/PM₂.₅ sampling for diagnosis; the production concept does not silently assume those sensors exist. A power-loss condition can leave smouldering fuel behind a locked gate, so fault handling must be validated with an external CO alarm and locally appropriate ventilation before any occupied-space trial.
+
+## Performance Benchmarks
+
+| Metric and boundary | Current evidence / comparator | Unverified design target |
+| --- | --- | --- |
+| Full-cycle fuel-to-pot efficiency, qualified pellets, startup through shutdown | No measurement for this design. An ISO 19867-1 laboratory study compared a pellet semi-gasifier, fan stove and three-stone fire across high/medium/low power; its results cannot be transferred to this geometry or household use.[4] | ≥25% at 0.5 kg/batch; measure with the same pot and fuel in gated, ungated and household-baseline arms. |
+| Delivered cooking heat | No prototype measurement; baseline varies by recipe and pot. | 1.875 MJ/batch (0.52 kWh) only if assumed 15 MJ/kg lower heating value and 25% efficiency hold; see engineering budget above. |
+| Electricity and mechanical life | Neither fan draw nor latch life has been measured here. | ≤3 Wh per nominal one-hour batch; ≥1,000 thermal latch cycles without stuck-open failure. |
+| ISO full-power-range CO tier (mg/MJ delivered basis) | In one published ISO 19867-1 lab comparison, a commercial pellet stove scored Tier 5 versus Tier 1 for a three-stone fire; tiers are device/fuel/protocol-specific, not household exposure.[4] | No tier assigned until replicated full-cycle testing; compare measured mg/MJ delivered to the relevant ISO 19867-3 thresholds. |
+| Exposure and cooking behavior | WHO does not classify an untested biomass device as clean; lab emissions alone do not establish household exposure.[1] | Pilot: ≥80% fewer hot refuellings, ≥30% lower personal PM₂.₅ versus household baseline, no CO increase, ≥90% meals without bypass. |
+
+ISO 19867-1 whole-cycle PM₂.₅ and CO in mg/MJ delivered and applicable voluntary tiers must be established with replicates, fuel moisture and pot recorded; **there is no measured emissions tier yet**. The published comparator includes startup and shutdown at each power level and reports protocol-dependent efficiency including char credit, a reminder not to equate a single high-power result with real-meal performance.[4]
+
+## Deployment Scenarios
+
+- **Rural pellet cooperative:** A trained cooperative screens and dries locally sourced, uncontaminated residues, distributes fuel in moisture-protected packaging, stocks fans and baskets, and installs only after a ventilation and CO-alarm assessment. Compare total delivered fuel cost and cooking time with existing methods.
+- **School or community kitchen research pilot:** Supervised cooks use multiple units for discrete tasks while a separate approved appliance handles long simmering. Log batch timing, smoke/CO around startup and cooldown, burns and food throughput; do not extrapolate household safety from an open-sided kitchen.
+- **Off-grid household evaluation:** In consenting homes with adequate ventilation, a replaceable battery charged from solar or grid runs the fan. Monitor stacking, skipped meals and unsafe relights against a matched ungated stove; withdraw the unit if exposure worsens. None of these scenarios is a recommendation for indoor use before independent approval.
+
+## Risks & Mitigations
+
+CO can peak during startup, smouldering, fan failure or shutdown even when the gate is locked; independently monitored exposure, ventilation review and a tested emergency response are prerequisites. A jammed-open or defeated latch permits dangerous refuelling, while a jammed-closed one can frustrate emergency response: use a captive guarded mechanism, observable inspection state and destructive-test-free service replacement, then cycle-test it with ash, heat and corrosion. Never make the exhaust airtight to compensate for a failed gate. Blocked jets, wet fuel and contaminated residues can increase PM₂.₅ and toxic ash; qualify local feedstocks and reject untested waste. Guard hot surfaces and pot stability, retain hot char until a validated cool state, and supply spare fans and batteries. Fuel logistics and stove stacking may erase modeled savings; track sustained use rather than sales. There is no certification, verified indoor-emission limit, carbon credit, or validated safe shutdown procedure yet.
+
+## Vision for 2050
+
+If independent testing establishes safe exposure and cooks prefer the batch workflow, locally repairable stoves could be one transitional option where clean electricity, biogas or LPG remains inaccessible. Cooperatives could standardize safe fuel preparation and spare parts without locking households into a proprietary cartridge. A 2050 success would mean measured sustained use and lower personal exposure—not merely millions of devices sold. Where truly clean options become affordable, this biomass concept should yield to them, not preserve a market by weakening the definition of clean cooking.
+
 ## Sources
 
 [1] WHO, *Household air pollution* (16 December 2025): https://www.who.int/news-room/fact-sheets/detail/household-air-pollution-and-health
@@ -41,3 +75,5 @@ For an **illustrative engineering budget**, 0.5 kg of qualified pellets at an *a
 [2] Published gasifier operating-condition study, NSF Public Access Repository: https://par.nsf.gov/servlets/purl/10391136 — prior-art evidence on refuelling variability, not a result for this design.
 
 [3] ISO 19869:2019, *Field testing methods for cookstoves*: https://www.iso.org/standard/66521.html
+
+[4] *Cookstove emissions and performance evaluation using a new ISO protocol and comparison of results with previous test protocols*, open-access laboratory study: https://pmc.ncbi.nlm.nih.gov/articles/PMC8855438/ — distinct appliances and fuels, not measurements of this concept.

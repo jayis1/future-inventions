@@ -865,3 +865,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unverified US$3,800 ex-factory at 1,000/year in 2038; US$600/year service target, excluding milling, assays, labor, installation and safe tailings handling
 - **Author:** jayis1
 - **Created:** 2026-10-30
+
+### 092 — Greywater Heat-Loop Cassette
+- **Category:** Building Energy & Universal Basic Services / Shower Heat Recovery
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Unverified target ≥3°C drain cooling at 9 L/min under specified inlet conditions; field energy and bill savings require matched tests
+- **Key Material:** Removable 316L drain-side insert, stationary copper/stainless double-wall exchanger, visible leak channel and gravity bypass
+- **Key Innovation:** Tests a drain-only serviceable heat-transfer interface with visible inter-wall leak indication and fail-open bypass against established vertical DWHR coils and shower-tray exchangers
+- **Target Cost:** Unvalidated US$180 ex-factory at 10,000/year in 2038, excluding US$150–500 estimated qualified installation, permits and maintenance
+- **Author:** jayis1
+- **Created:** 2026-10-30

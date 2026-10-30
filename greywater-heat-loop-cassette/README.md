@@ -28,6 +28,48 @@ A bounded energy example: 9 L/min over five minutes is 45 L. If the validated un
 
 Test 30 matched installations over a year against approved standard DWHR and no-exchanger baselines, recording inlet/outlet temperatures, flow, heater input, cleaning hours, blockages, leak indications and occupant complaints **without retaining household schedules or identities**. Stop deployment if a cross-connection occurs, a blocked drain floods, or measured net savings do not offset maintenance and installed cost. Inspect for biofilm, corrosion and cleaning-chemical compatibility; use locally approved potable materials, backflow protection, pressure testing and third-party plumbing-code certification before connection. Do not bypass safe water-heater temperature settings to chase efficiency: preheated-water hygiene and Legionella risks depend on plumbing configuration.[2] Recover metals and replace damaged seals at end of life. Prototype and approval work is plausible within 10–20 years, but broad adoption is contingent on independent safety and field-cost evidence.
 
+## How It Works
+
+During a shower, warm drain flow and cold heater feed overlap. Gravity spreads the drain stream across the removable 316L insert; heat crosses the stationary, pressure-rated double-wall exchanger into the cold feed, which then enters the water heater. The open inter-wall channel drains a barrier leak to a visible telltale rather than into either water stream. A hair screen and full-bore gravity bypass protect the drain when the insert fouls; the original trap and water seal remain in place. The cassette stores neither wastewater nor warmed potable water. For a delayed bath discharge, overlap approaches zero and so does recovery. Heat exchange does **not** disinfect or recycle greywater.
+
+## Technical Architecture
+
+- **Wet path:** shower trap → upstream strainer → accessible film cassette (or fail-open bypass) → sewer. Verify head loss and overflow clearance with hair/soap loading.
+- **Potable path:** cold supply → stationary, independently approved double-wall heat-transfer assembly → water-heater inlet. A plumber pressure-tests this sealed circuit; drain-side cleaning never opens it.
+- **Safety and observability:** vented telltale between walls, accessible hatch and bypass inspection point; no sensors, pump or wireless telemetry are necessary. A visible leak or failed barrier requires isolating the exchanger and professional repair, not sealing the telltale.
+- **Energy boundary:** for water density near 1 kg/L, recovered thermal energy is approximately `flow × time × 4.18 kJ/kg/K × drain cooling ÷ 3600`; actual heater-input savings also depend on overlap, heat loss and heater efficiency.
+
+## Performance Benchmarks
+
+| Metric at 9 L/min, drain 35°C, inlet 15°C | No recovery | Established vertical DWHR reference | Cassette concept target |
+| --- | --- | --- | --- |
+| Drain cooling over steady five minutes | 0°C | Measure a code-approved unit in the same rig; no comparable value claimed here | ≥3°C; **unmeasured** |
+| Thermal recovery over that interval | 0 kWh | To be measured on the same flows | ≥0.157 kWh from 45 kg × 4.18 × 3 / 3600; **calculated target** |
+| Added drain head; drain-side service | 0 mm; ordinary trap cleaning | Measure installed reference | <20 mm; cassette clean/reseat <10 min; **unmeasured** |
+| Cross-leak and cold-side pressure loss | Not applicable | Approval/test report for selected reference | Visible, vented leak path; loss subject to local approval; **unmeasured** |
+
+Vertical falling-film DWHR is the relevant commercial state of the art, not an invented prototype baseline.[2][3] The 3°C target represents 15% of the stated 20°C inlet temperature difference **only under equal 9 L/min streams**; it is not a certified effectiveness rating or a promise of annual savings. Run equal-flow calorimetry, pressure/leak tests and repeated fouling/cleaning cycles before comparing products. Current cassette state: paper concept, **zero validated bench results**.
+
+## Deployment Scenarios
+
+1. **Service-bay apartment retrofit:** a building owner with accessible shower drainage and a permitted potable-water connection can preheat the heater feed without a long vertical drain run; cramped slabs or inaccessible traps are disqualifiers.
+2. **Dormitory or hostel bathing block:** recurring showers give the exchanger more operating hours, but a caretaker must clear hair screens and record bypass events; meter energy and cleaning labor against a no-exchanger control.
+3. **Off-grid clinic shower:** lowering water-heater demand could reduce backup energy, provided the drain remains safe on power loss and a licensed plumber can inspect the leak path; never substitute this device for sanitation treatment.
+
+## Risks & Mitigations
+
+| Failure mode | Mitigation and validation gate |
+| --- | --- |
+| Hair, soap and biofilm clog the film path or cause odors | Strainer, removable smooth insert and full-bore bypass; test with loaded hair/soap and reject any floor overflow or trap-seal loss. |
+| Pressure-side breach contaminates drinking water | Approved double wall with open telltale, backflow controls and pressure/leak testing; isolate on indication and obtain local plumbing approval before use. |
+| Warm preheat stagnates or users alter heater settings | Direct feed to the heater, no warm buffer tank; verify stagnation and Legionella control against local hygiene guidance without lowering heater safety settings.[2] |
+| Low source temperature or noncoincident flows destroy the economics | Select sites with metered simultaneous showers; reject where measured net savings cannot cover cleaning and installed cost. |
+| Corrosion, cleaning chemicals or seal failure shorten life | Test 316L, potable-rated alloys and elastomers against actual chemistry; replace failed parts and recover metals at end of life. |
+
+## Vision for 2050
+
+If independent safety testing, code approval and field metering support the concept, shower-drain service bays could be designed with an inspectable heat-recovery slot as routinely as a trap cleanout. Buildings would buy less water-heating energy while retaining ordinary safe drainage and potable-water protections. This is a conditional adoption scenario, not a forecast: where maintenance access, temperature lift or economics fail, a conventional exchanger or no recovery remains the right choice.
+
 ## Sources
 
 [1] IEA, *Energy Efficiency 2025: Buildings*: https://www.iea.org/reports/energy-efficiency-2025/buildings — combined space- and water-heating context in advanced economies, not a claim about global shower savings.

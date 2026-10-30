@@ -875,3 +875,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unvalidated US$180 ex-factory at 10,000/year in 2038, excluding US$150–500 estimated qualified installation, permits and maintenance
 - **Author:** jayis1
 - **Created:** 2026-10-30
+
+### 093 — Batch-Locked Gasifier Cooktop
+- **Category:** Clean Cooking & Universal Basic Services / Household Air Pollution
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Unverified pilot target ≥80% fewer hot-refuelling events and ≥30% lower measured personal PM₂.₅ with no CO-exposure increase; health benefit unproven
+- **Key Material:** Perforated 304-stainless fuel basket, refractory clay liner, 12 V brushless fan, bimetal cooldown latch
+- **Key Innovation:** Tests a serviceable hot-refuelling lockout against an otherwise identical ungated gasifier; forced-draft biomass combustion and thermal latches are prior art
+- **Target Cost:** Unquoted US$85 ex-factory at 100,000/year in 2038, excluding battery, charger, distribution, CO alarm, ventilation and fuel
+- **Author:** jayis1
+- **Created:** 2026-10-30

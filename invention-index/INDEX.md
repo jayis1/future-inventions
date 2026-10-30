@@ -805,3 +805,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** US$45 ex-factory at 100,000/year in 2038, plus approximately US$10/year for inspection and refurbishment before vessel and recovery costs
 - **Author:** jayis1
 - **Created:** 2026-10-29
+
+### 086 — Solar-Swing Humidity Vent
+- **Category:** Healthy Housing & Universal Basic Services / Indoor Moisture Control
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Pilot target of 100 rooms over a wet season; 10,000 eligible installations at 0.20 kg/day for 120 sunny days could vent 240 tonnes of moisture, with room and health benefits unproven
+- **Key Material:** Silica-gel-coated aluminum honeycomb, solar-air collector, separated supply/exhaust ducts, 12 V fan and photovoltaic panel
+- **Key Innovation:** Tests a two-bed solar-regenerated window vent with independent exhaust and net moisture-removal verification; solar desiccant systems are prior art
+- **Target Cost:** Unvalidated US$95 ex-factory at 100,000/year in 2038, excluding US$35–80 estimated installation, distribution and service
+- **Author:** jayis1
+- **Created:** 2026-10-30

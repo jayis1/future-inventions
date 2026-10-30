@@ -103,6 +103,7 @@ Design and document technologies that:
 | [Kiln Draft Balancing Retrofit](./kiln-draft-balancing-retrofit/) | Concept | Clean Air & Sustainable Manufacturing / Brick Kilns |
 | [Lead-Dust Capture Shroud](./lead-dust-capture-shroud/) | Concept | Healthy Housing & Occupational Health / Lead-Dust Prevention |
 | [Ghost-Net Recovery Float](./ghost-net-recovery-float/) | Concept | Ocean Restoration & Sustainable Fisheries / Lost-Gear Recovery |
+| [Solar-Swing Humidity Vent](./solar-swing-humidity-vent/) | Concept | Healthy Housing & Universal Basic Services / Indoor Moisture Control |
 
 ## Structure
 

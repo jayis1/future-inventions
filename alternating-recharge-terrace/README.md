@@ -42,3 +42,38 @@ A 10–20-year development path uses existing earthworks and water-testing pract
 [2] ITRC, *Managed Aquifer Recharge: Infiltration Basin Fact Sheet*: https://mar-1.itrcweb.org/infiltration-basin-fact-sheet-fs-1/ — established basin practice, clogging, dry periods and scraping.
 
 [3] International Association of Hydrogeologists MAR Commission, *Clogging Issues Associated with Managed Aquifer Recharge Methods*: https://recharge.iah.org/files/2015/03/Clogging_Monograph.pdf — sediment, biological and chemical clogging; pretreatment and monitoring needs.
+
+## How It Works
+
+The novelty is not wet/dry MAR cycling—conventional infiltration basins already do that [2][3]—but a two-bed, replaceable surface coupled to a deliberate bypass state that lets a small crew service one bed while the other remains available. Survey native soil, groundwater depth and embankment stability first; neither a sand layer nor a terrace creates permeability where the subsoil is impermeable. During an approved storm, send first flush down the original channel, settle an eligible later fraction in the forebay, then direct no more than 0.25 L/s to bed A. Water ponds no deeper than 0.15 m and passes through sand and native unsaturated soil under gravity. Log inlet volume, water level and drawdown; infiltration at the surface is not proof that the same volume reaches a usable aquifer. When drawdown deteriorates, switch to bed B only after the same checks, let A drain and dry, then remove and replace its clogged upper sand skin. If no approved bed or operator is available, bypass. The original stream route remains available during a flood.
+
+## Technical Architecture
+
+`source/first-flush bypass → 1 m³ forebay → manual three-position sluice → bed A or B (25 m² each) → native vadose zone → surveyed aquifer`; the bypass and armored overflow return excess water to the original channel. A staff gauge, timed inflow measurement and maintenance log provide local operational data; observation wells and laboratory samples belong to a separately permitted monitoring plan. The sluice is manual, not remotely actuated: an operator verifies source eligibility, downstream allocation and bed condition at every event. A jammed gate, full forebay, blocked overflow or missing water-quality result means stop diversion and restore the protected bypass, subject to the site engineer's flood-safe procedure. The hydraulic design must not depend on the operator holding back a design flood.
+
+## Performance Benchmarks
+
+No terrace prototype has been measured. Conventional wet/dry infiltration basins, sediment control and scraping are the **current practice**, not an inferior numerical benchmark [2][3]. Comparable published rate and cost figures are not established for this specific soil, water source and 50 m² footprint; measure a same-footprint single-bed control rather than borrowing an unrelated MAR headline number.
+
+| Metric and conditions | Existing practice / evidence | Proposed target (unverified) |
+| --- | --- | --- |
+| Sustained surface infiltration, eligible six-hour event | Site-dependent; establish with paired field tests | ≥0.03 m/h on the active 25 m² bed, capped by inlet supply |
+| Qualified infiltrated volume per event | Measure single-bed comparator under matched inflow and soil | Up to 4.5 m³ at target flux, subject to 5.4 m³ inlet ceiling |
+| Cumulative qualified infiltration per 50 m² total bed footprint, two wet seasons | Matched single-bed basin; no measured result yet | ≥20% above control, without water-quality or downstream-flow deterioration |
+| Operating depth and maintenance | Site-specific engineered limits and measured crew hours | ≤0.15 m ponding; log labor, sand disposal and bypass time |
+
+A six-hour `25 × 0.03 × 6` calculation assumes sustained flux and sufficient eligible water; it is not a guaranteed event yield. Compare sampled source and observation-well chemistry, mounding, environmental flow and actual labor alongside volume. See [IMPACT_ANALYSIS.md](IMPACT_ANALYSIS.md) for explicit cost and adoption arithmetic.
+
+## Deployment Scenarios
+
+- **Seasonal smallholder watershed:** A cooperative with suitable permeable terrace subsoil and lawful late-storm diversion operates one two-bed site beside an existing drainage route. Without a trained operator and approved source testing, the device stays in bypass; it does not license additional pumping.
+- **Watershed trust pilot:** A district installs 20 approved terraces and 20 equal-footprint single-bed controls across matched subcatchments. Over two wet seasons it measures event flux, cleaning hours, observation-well response, chemistry and downstream flow before any claim of incremental recharge.
+- **Peri-urban runoff edge:** A utility may test a site outside contaminated catchments with monitored stormwater and adequate well setbacks. Known sewage, industrial runoff or pesticide pulses are excluded, not treated by the sand bed.
+
+## Risks & Mitigations
+
+The existing safety rules above are operating requirements, not proof of safety. Fine sediment and biofilm can clog **both** beds: measure declining drawdown, clean the resting surface and bypass if capacity is inadequate. Sand can pass contaminants, while recharge may mobilize native metals or salts: screen sources and geochemistry, sample monitoring wells and stop on permit exceedances; potable wells need independent testing. On slopes, piping, shallow groundwater mounding and overflow scour can damage neighbors: require geotechnical/hydrogeological design, freeboard, a protected flood path and site-specific stop levels. Standing water can breed mosquitoes: inspect and drain on the approved operating schedule; never hold water to meet a volume target. Maintenance, disposal, lab fees and land rights can outweigh a low hardware quote: budget paid labor, obtain permits and protect downstream allocations. Residual risk and unknown aquifer recovery remain even if the inlet meter shows good infiltration.
+
+## Vision for 2050
+
+If paired trials demonstrate safe net recharge, affordable maintenance and protected downstream flows, local watershed groups could deploy repairable dual-bed terraces at selected sites instead of losing every suitable storm pulse. A network of 10,000 sites operating at the stated 15-event planning assumption would have an upper bound of 675,000 m³/year **infiltrating at the surface**, not a promise of aquifer storage or drinking water. By 2050 the valuable infrastructure would be the verified water accounting, trained operators and enforceable bypass decisions as much as the earthworks. If those checks fail, the right future is fewer terraces, not wider deployment.

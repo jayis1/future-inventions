@@ -117,6 +117,7 @@ Design and document technologies that:
 | [Spray Contact Sentinel](./spray-contact-sentinel/) | Concept | Occupational Health & Universal Basic Services / Farmworker Pesticide Exposure |
 | [Paired-Reference Medicine Assay](./paired-reference-medicine-assay/) | Concept | Medicine Quality & Universal Basic Services / Pharmacy Screening |
 | [Coastal Lens Recharge Gate](./coastal-lens-recharge-gate/) | Concept | Groundwater Resilience & Universal Basic Services / Coastal Salinity |
+| [Refrigerant Service Recapture Coupler](./refrigerant-service-recapture-coupler/) | Concept | Climate & Universal Basic Services / Cooling Service Loss Prevention |
 
 ## Structure
 

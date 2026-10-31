@@ -945,3 +945,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$2,500 hardware/local assembly allowance at 1,000 sites/year by 2038, excluding surveys, permits, substantial civil works and laboratory tests; US$250–600/site-year target service plus lab fees
 - **Author:** jayis1
 - **Created:** 2026-10-31
+
+### 100 — Refrigerant Service Recapture Coupler
+- **Category:** Climate & Universal Basic Services / Cooling Service Loss Prevention
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Planning scenario of 10 million eligible connection cycles/year across 100,000 couplers; 2 tonnes/year incremental refrigerant avoided only if matched trials confirm 0.2 g less release per cycle than maintained conventional fittings
+- **Key Material:** Rated stainless/brass bodies, refrigerant-specific replaceable seals, captive sleeve, two normally closed poppets and an independently recoverable interstitial chamber
+- **Key Innovation:** Tests a pressure-verified, recoverable dead-space service-port interface against existing low-loss fittings; neither dry-break couplings nor refrigerant recovery is new
+- **Target Cost:** Unquoted US$45 ex-factory per matched pair at 100,000 pairs/year by 2038, excluding installation, certified recovery equipment, certification and technician labor
+- **Author:** jayis1
+- **Created:** 2026-10-31

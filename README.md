@@ -111,6 +111,7 @@ Design and document technologies that:
 | [Mercury-Free Gold Concentrate Station](./mercury-free-gold-concentrate-station/) | Concept | Occupational Health & Environmental Protection / Artisanal Gold Mining |
 | [Greywater Heat-Loop Cassette](./greywater-heat-loop-cassette/) | Concept | Building Energy & Universal Basic Services / Shower Heat Recovery |
 | [Batch-Locked Gasifier Cooktop](./batch-locked-gasifier-cooktop/) | Concept | Clean Cooking & Universal Basic Services / Household Air Pollution |
+| [Seasonal Pond Access Barrier](./seasonal-pond-access-barrier/) | Concept | Child Safety & Universal Basic Services / Drowning Prevention |
 
 ## Structure
 

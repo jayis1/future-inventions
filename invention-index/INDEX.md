@@ -885,3 +885,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$85 ex-factory at 100,000/year in 2038, excluding battery, charger, distribution, CO alarm, ventilation and fuel
 - **Author:** jayis1
 - **Created:** 2026-10-30
+
+### 094 — Seasonal Pond Access Barrier
+- **Category:** Child Safety & Universal Basic Services / Drowning Prevention
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Pilot target of 100 eligible play areas over one season; access reduction and drowning benefit unproven
+- **Key Material:** UV-stabilized recycled-HDPE slats, galvanized-steel rails and ground anchors, stainless pivots and mechanical latch flags
+- **Key Innovation:** Tests a site-surveyed, relocatable landward barrier with independent gate-closure flags and post-flood out-of-service inspection against existing barriers and supervised childcare
+- **Target Cost:** Unquoted US$180 ex-factory for six metres and one gate at 10,000 kits/year in 2038, excluding installation and service
+- **Author:** jayis1
+- **Created:** 2026-10-31

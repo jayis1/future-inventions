@@ -36,6 +36,50 @@ A planning deployment of 100,000 couplers at 100 eligible jobs per year is **10 
 - Test leak rate at temperature/pressure limits, connection-cycle wear, contamination and ice/moisture ingress, misconnection, reversed pressure, pull-off force, blocked recovery line, full cylinder, loss of electrical power and service-port damage. Use independent gravimetry and chamber-pressure traces, not only a vendor's recovered-mass reading. Benchmark against currently compliant low-loss fittings under the *same* refrigerant, operator protocol and conditions. Obtain applicable component, recovery-equipment and installer approvals before field use; follow jurisdiction-specific evacuation rules.[1]
 - Return spent seals and damaged metal parts for appropriate disposal/recycling. No radio, camera, customer ID collection or remote lockout; the device cannot track users or control access to cooling. Its interlock is a local pressure-safety feature only.
 
+## How It Works
+
+The technician first verifies the equipment's labeled refrigerant, port geometry, oil, and the coupler's approval envelope. A captive sleeve seats both seals around the service port while both poppets remain closed. After an approved leak check and air-removal procedure, the latched sleeve permits the poppets to open for normal manifold work. On completion, the system-side and hose-side valves close in sequence, trapping only the short interstitial volume; the main hose and any appliance charge still require conventional recovery practice. A rated transfer branch connects this chamber to compatible recovery equipment and its correctly identified cylinder. The technician transfers the trapped charge, checks chamber pressure and independent isolation indication, then unlocks. A blocked transfer, full cylinder, lost power, or pressure discrepancy prevents normal release and calls for a qualified manual recovery procedure—not venting or forcing the sleeve. The closed-chamber pressure is an interlock signal, not a mass measurement or proof that liquid is absent.
+
+## Technical Architecture
+
+- **Pressure boundary:** machined brass or stainless body, two normally closed poppets, keyed captive sleeve, replaceable refrigerant/oil-qualified seals, and a chamber designed for no more than the proposed 2 cm³ target. Relief for thermally expanding trapped liquid must lead to an approved recovery path; rating and geometry remain to be engineered and certified for the *specific* refrigerant family.
+- **Transfer and supervision:** an independently isolated branch routes chamber contents through appropriately rated recovery equipment to a segregated cylinder. A pressure transducer, valve-position indication, and mechanical fail-closed latch supervise the sequence; the technician retains positive control. A sensor or power failure cannot become permission to disconnect.
+- **Evidence flow:** record refrigerant ID, chamber pressure/temperature trace, cycle count, recovery-container mass change, and gravimetrically measured test release. Pressure × volume alone does not establish recovered mass in a two-phase chamber. Bench records can be exported without identifying customers or using a radio; field logging is optional, local, and not a compliance certification.
+
+This point-of-service device complements, rather than substitutes for, the [Refrigerant Reclamation Microcart](../refrigerant-reclamation-microcart/): the latter handles bulk recovery and downstream sorting, while this design tests the marginal connection loss against already-compliant low-loss fittings.
+
+## Performance Benchmarks
+
+**No prototype measurements exist.** Compare the proposed pair against a maintained, commercially available low-loss fitting used on the *same* approved system, by the same trained operators. Record manufacturer/model and purchase date of the comparator at test time. No universal state-of-art grams-per-disconnect figure is claimed: hose length, phase, pressure and technique change the result. US EPA's existing recovery and servicing requirements are the regulatory baseline, not evidence that this invention outperforms existing fittings.[1]
+
+| Metric and test boundary | Existing low-loss fitting | Proposed coupler: unverified gate |
+| --- | --- | --- |
+| Total release per complete connect/service/disconnect cycle (g), one specified nonflammable refrigerant, matched port/temperature/pressure | Measure by independent gravimetric mass balance, ≥500 paired cycles | ≤0.5 g/cycle *and* at least 0.2 g/cycle less than comparator; otherwise no assumed incremental impact |
+| Interstitial dead volume (cm³), geometrically measured | Measure comparator's trapped connection volume | ≤2 cm³ |
+| Connection-cycle durability, inspection after every test block | Test comparator to its manufacturer's service schedule | ≥5,000 cycles before qualified seal replacement, without leakage above the applicable certified limit |
+| Technician connection plus recovery time (s), including failed attempts | Time matched trials | Report median and 95th percentile; no speed claim until measured |
+| Pressure containment, blocked line, warm trapped liquid | Test to applicable approved equipment envelope | No unintended unlock or atmospheric pressure relief; rating set by formal hazard analysis |
+
+For scale only, ideal-gas arithmetic gives (1 MPa × 2 cm³ × 100 g/mol)/(8.314 J/mol/K × 300 K) ≈ 0.08 g of vapor, **not** a measured release: liquid would contain much more mass. Pressure/temperature, liquid fraction, leakage through either seal, and recovered-fluid disposition must all be measured. A ≤0.5 g release target alone does not prove improvement over the existing fitting.
+
+## Deployment Scenarios
+
+1. **Residential heat-pump service fleet:** a certified technician uses the approved variant on a compatible stationary unit, feeding chamber contents into the shop's existing rated recovery apparatus. At the planning assumption of 100 eligible cycles per pair-year and 0.2 g *incremental* avoidance per cycle, the benefit would be 20 g/year per pair; this is a hypothesis for matched trials, not a demonstrated saving.
+2. **Small-shop cooperative:** several licensed technicians share calibrated recovery equipment and segregated cylinders. They log eligible cycles, failed engagements, added time, and actual recovered-versus-released mass before deciding whether the accessory pays for itself. At an illustrative US$20/kg refrigerant replacement price, 20 g saves only US$0.40/year in material—far below the unquoted US$45 ex-factory goal plus US$4/year seal allowance. Climate benefit or operational advantage, not refrigerant resale, would need to justify adoption.
+3. **Commercial refrigeration maintenance:** a service company pilots only manufacturer-approved, nonflammable conventional-pressure circuits, isolating recovered fluid by refrigerant and condition. It does not connect the initial variant to ammonia, CO₂, A2L/A3 blends, unknown mixtures, or motor-vehicle A/C.
+
+## Risks & Mitigations
+
+- **Cross-contamination or wrong port:** keyed fittings and legible refrigerant-specific labeling; segregated recovery paths and identification before any return or reuse. A key does not replace technician checks.
+- **Thermal expansion, blocked return, or full cylinder:** engineer relief into a rated recovery vessel, validate under worst-case liquid fill and temperature, and inhibit unlocking on abnormal pressure. A qualified recovery procedure is required on fault; there is no routine vent route.
+- **Seal wear, debris, oil incompatibility, sensor drift:** material compatibility qualification, leak tests, scheduled replacement, independent indication, and calibrated gravimetric audits. Remove the unit from service on failed inspection.
+- **Operator time and interlock bypass pressure:** measure added service time and failed engagements in blinded matched trials; redesign or withdraw if the marginal benefit disappears. Never defeat the captive sleeve to expedite a job.
+- **Scope and certification:** pressure and refrigerant compatibility are unproven. First obtain a hazard review, relevant component/equipment approvals and jurisdiction-specific service authorization; the research concept is not deployable safety equipment. Future A2L/A3, R-744 and automotive variants require distinct engineering and validation.
+
+## Vision for 2050
+
+If certified variants prove measurable incremental savings over modern low-loss fittings, a service visit could end with a traceable mass-balance record: charge retained in the unit, charge returned to a segregated recovery stream, and any measured loss. Shops would treat small connection losses as a controllable material flow rather than an invisible allowance. That future depends on safe technician workflows, independent comparative data, and economic viability—not on an assertion of zero-emission servicing.
+
 ## Sources
 
 [1] https://www.epa.gov/section608/stationary-refrigeration-service-practice-requirements

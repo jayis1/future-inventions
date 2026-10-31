@@ -118,6 +118,7 @@ Design and document technologies that:
 | [Paired-Reference Medicine Assay](./paired-reference-medicine-assay/) | Concept | Medicine Quality & Universal Basic Services / Pharmacy Screening |
 | [Coastal Lens Recharge Gate](./coastal-lens-recharge-gate/) | Concept | Groundwater Resilience & Universal Basic Services / Coastal Salinity |
 | [Refrigerant Service Recapture Coupler](./refrigerant-service-recapture-coupler/) | Concept | Climate & Universal Basic Services / Cooling Service Loss Prevention |
+| [Rail Brake Dust Cassette](./rail-brake-dust-cassette/) | Concept | Clean Air & Accessible Transit / Rail Friction-Brake Emissions |
 
 ## Structure
 

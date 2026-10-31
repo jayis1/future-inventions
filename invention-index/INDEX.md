@@ -955,3 +955,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$45 ex-factory per matched pair at 100,000 pairs/year by 2038, excluding installation, certified recovery equipment, certification and technician labor
 - **Author:** jayis1
 - **Created:** 2026-10-31
+
+### 101 — Rail Brake Dust Cassette
+- **Category:** Clean Air & Accessible Transit / Rail Friction-Brake Emissions
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Unverified ≥50% brake-origin PM10 and ≥30% PM2.5 mass reduction targets at a controlled dynamometer sampling boundary, conditional on no brake-performance or cooling degradation; no exposure or health benefit assumed
+- **Key Material:** 316L stainless pickup and baffle, replaceable high-temperature glass/ceramic-fiber media, enclosed ferrite insert
+- **Key Innovation:** Tests a separately serviceable, fitment-specific rail brake particle-capture package against existing suction/filter art with fail-safe clearance and accountable cartridge handling
+- **Target Cost:** Unquoted US$180 ex-factory per assembly at 10,000/year by 2038; US$35 replacement cartridge, excluding qualification, downtime and regulated waste handling
+- **Author:** jayis1
+- **Created:** 2026-10-31

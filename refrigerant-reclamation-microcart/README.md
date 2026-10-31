@@ -35,8 +35,52 @@ A planning deployment of 10,000 carts performing 50 eligible jobs/year at 1 kg r
 - **Fail safely:** pressure relief installed and discharged as required by the certified design and local rules (emergency relief may release refrigerant); rated hoses and cylinder, grounded electrical fittings, ventilated work area, independent scale-based fill cutoff with operator verification, manual isolation on power loss. Never defeat cylinder fill limits or run a cylinder beyond its rated conditions. Any relief or overpressure incident is reportable and requires inspection, not an ordinary operating mode.
 - **Prove or reject the hypothesis:** compare matched service visits with a certified conventional kit; weigh sealed cylinders before/after on calibrated scales, independently measure residual appliance charge and hose holdup, and log actual recovery time and kWh/kg. Audit reclaimer acceptance and rejected/contaminated loads, identity errors and cylinder-misrouting rates; test deliberate sensor failure, power loss and full-cylinder conditions. A design is not deployable until a competent testing body certifies the integrated configuration for the intended refrigerants and technicians validate it in the relevant jurisdiction. Within 10–20 years, progress from bench mass-balance trials to safety certification and independent small-shop field trials; repair the cart and return spent media/oil through regulated waste channels.
 
+## How It Works
+
+The novelty is not a new compressor: it is a **physical identity gate and weighed chain of custody** wrapped around established recovery hardware. At an eligible service visit, a qualified technician checks the appliance label, cylinder pressure rating and remaining fill allowance, records the cylinder tare, and samples the charge through a sealed loop. A declared refrigerant that the analyzer cannot corroborate is quarantined for a separately approved collection path; the cart cannot certify a mixture by sensing alone. For a compatible charge, short low-loss hoses feed a rated recovery module. Its compressor raises vapor pressure so the discharge can condense in the receiving cylinder as heat leaves the system; an oil separator and replaceable drier protect the path but do not turn recovered gas into reclaimed product. The operator follows the equipment's applicable evacuation endpoint, isolates the valves, weighs the sealed cylinder and accounts for line holdup. A signed paper/offline receipt follows that cylinder to a reclaimer, whose independent analysis decides whether gas can be purified to specification or needs another lawful disposition.[1][2][5]
+
+## Technical Architecture
+
+The material path is **appliance → low-loss manifold → sealed sample/identity gate → certified recovery module → oil separation/drier → rated cylinder**. The information path is **appliance label + analyzer result + two scale readings + cylinder ID → job receipt → reclaimer acceptance record**. A mechanical valve arrangement should prevent an unknown-gas path from entering the clean cylinder; bench testing must demonstrate that an operator cannot defeat it inadvertently. The scale interlock checks cylinder mass against its marked safe fill limit, independently of a technician's visual check; relief hardware remains part of the certified pressure design. The chassis carries replaceable steel tubing, serviceable seals and isolated waste-oil containers rather than a proprietary refrigeration cycle. Gas composition, oil carryover, moisture, acidity and noncondensables require downstream laboratory testing; AHRI 700 is a product specification, not an onboard analyzer badge.[5]
+
+## Performance Benchmarks
+
+**No prototype measurements exist.** The comparator is a maintained, certified conventional recovery kit used on the *same refrigerant, charge, cylinder, ambient temperature and evacuation endpoint*. AHRI 740 defines standardized ratings for recovery speed, final vacuum, refrigerant loss and trapped refrigerant; manufacturer ratings under those conditions must be obtained before a numeric state-of-art comparison is defensible.[4] The cart's proposed advantages are workflow outcomes, not an invented pump-speed advantage.
+
+| Metric (eligible nonflammable small-appliance trial) | Current conventional-kit baseline | Microcart design target, unverified |
+| --- | --- | --- |
+| Initially present charge captured | Measure gravimetrically in matched tests | ≥95% where compatible with stricter applicable evacuation rules |
+| Connection/transfer/disconnection loss, 1 kg bench charge | Measure with calibrated mass balance | ≤10 g |
+| Extra mass accepted by reclaimer per job | Measure matched conventional-kit deliveries | +0.1 kg per eligible job as a *trial hypothesis*, not an expected result |
+| Recovery time and electricity | Record min/job and kWh/kg on same refrigerant | No worse than matched kit; quantify before marketing |
+| Identity errors / misrouted cylinders | Audit baseline receipts and lab samples | Zero known misroutes in a pilot; report sample size and confidence interval |
+
+Record pressure, initial charge, refrigerant type, ambient temperature, cylinder tare/gross readings, residual charge, line holdup and scale uncertainty for every trial. A passing capture percentage alone does not establish regulatory compliance or AHRI 700 purity.[1][4][5]
+
+## Deployment Scenarios
+
+- **Small licensed repair shop:** one configured kit serves a specific eligible refrigerant family, with a cylinder exchange partner collecting sealed, labeled loads. At 50 one-kilogram jobs/year, the existing US$17/kg hardware-and-service planning allocation excludes labor and reclaimer fees; shops need a service fee or deposit scheme, not presumed resale profit.
+- **Municipal appliance take-back site:** trained staff batch end-of-life units by declared refrigerant; uncertain or incompatible appliances wait for a qualified specialist with approved equipment. The city pays for audited collection and waste handling, not for a speculative carbon-credit receipt.
+- **Cold-chain service cooperative:** a shared cart and pooled cylinder logistics reduce equipment duplication across smaller operators. Dispatch is limited by the certified module's refrigerant envelope and the availability of a reclaimer willing to accept the segregated material.
+
+## Risks & Mitigations
+
+| Failure signal | Required safe response / validation gate |
+| --- | --- |
+| Analyzer disagreement or unknown gas | Keep clean cylinder closed; label and quarantine, then use an approved compatible collection route after technician assessment. Audit identity against laboratory samples. |
+| Rising cylinder mass/pressure or failed scale | Stop transfer, isolate valves and verify with independent calibrated weighing; pressure relief follows certified design, never a routine purge. Test full-cylinder and sensor-fault behavior. |
+| Leak, power loss or loss of cooling | Stop machine, isolate as the certified design permits and ventilate; inspect before restart. Test transfer interruption and measure retained hose mass. |
+| Oil/acid contamination or rejected shipment | Seal and track spent oil/media as regulated waste; segregate rejected cylinders and get the reclaimer's disposition record. No field purity claims. |
+| Flammable, toxic or high-pressure refrigerant arrives | Decline this initial kit configuration; route to separately qualified people and equipment. This concept does not extend its certification envelope by adding a warning sticker. |
+
+## Vision for 2050
+
+If independent trials establish a real increment over ordinary certified kits, small service shops could make the custody receipt as routine as the service invoice. Regional cylinder exchanges would route identifiable gas to qualified reclaimers, and rejected mixtures to lawful processing, with each handoff weighed instead of assumed. Wider use is conditional on certification, affordable offtake and technicians being paid for the extra time; the 2050 ambition is verifiable end-of-life refrigerant handling, not a claim that every collected kilogram would otherwise have escaped.
+
 ## Sources
 
 [1] https://www.epa.gov/section608/refrigerant-recovery-and-recycling-equipment-certification
 [2] https://www.epa.gov/section608/stationary-refrigeration-service-practice-requirements
 [3] https://doi.org/10.59117/20.500.11822/44243
+[4] https://www.ahrinet.org/system/files/2023-06/AHRI_Standard_740-2016_1.pdf
+[5] https://www.ahrinet.org/system/files/2025-03/AHRI%20Standard%20700-2024%20SI_0.pdf

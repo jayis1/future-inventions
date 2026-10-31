@@ -935,3 +935,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$1.20 per card at 100,000/year and US$180 per reader at 10,000/year by 2038, excluding labor, regulatory-grade reference supply, confirmation and certification
 - **Author:** jayis1
 - **Created:** 2026-10-31
+
+### 099 — Coastal Lens Recharge Gate
+- **Category:** Groundwater Resilience & Universal Basic Services / Coastal Salinity
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Planning ceiling of 100 m³/site-year leaving a 5 m³ tank at 20 eligible fills; aquifer storage and dry-season salinity benefit require matched field trials
+- **Key Material:** Covered HDPE rainwater tank, manually bypassable valve, shallow sand-and-gravel gallery, screened observation points
+- **Key Innovation:** Tests a reversible, source-isolated gravity roof-rain recharge interface with paired coast-to-inland head/salinity observation against conventional coastal MAR; neither rainwater recharge nor hydraulic barriers are new
+- **Target Cost:** Unquoted US$2,500 hardware/local assembly allowance at 1,000 sites/year by 2038, excluding surveys, permits, substantial civil works and laboratory tests; US$250–600/site-year target service plus lab fees
+- **Author:** jayis1
+- **Created:** 2026-10-31

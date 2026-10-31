@@ -116,6 +116,7 @@ Design and document technologies that:
 | [Tidal Marsh Sediment Ratchet](./tidal-marsh-sediment-ratchet/) | Concept | Coastal Restoration & Universal Basic Services / Salt-Marsh Elevation |
 | [Spray Contact Sentinel](./spray-contact-sentinel/) | Concept | Occupational Health & Universal Basic Services / Farmworker Pesticide Exposure |
 | [Paired-Reference Medicine Assay](./paired-reference-medicine-assay/) | Concept | Medicine Quality & Universal Basic Services / Pharmacy Screening |
+| [Coastal Lens Recharge Gate](./coastal-lens-recharge-gate/) | Concept | Groundwater Resilience & Universal Basic Services / Coastal Salinity |
 
 ## Structure
 

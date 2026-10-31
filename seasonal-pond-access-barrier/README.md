@@ -36,6 +36,48 @@ WHO already recommends barriers, playpens and supervised childcare; the gap test
 
 Within 10–20 years, develop site-specific anchor tests and child-resistant geometry in the lab, then supervised usability and weathering trials across wet/dry cycles, followed by independent comparison with locally available barriers and childcare. Release only after applicable safety and accessibility review. Reuse metal parts; segregate polymer panels for local recycling where collection exists. The future deployment vision is community-owned, locally repairable protection **alongside** supervision, not a replacement for it.
 
+## How It Works
+
+A site survey maps the entire path from the home to open water at dry-season, ordinary wet-season and recent flood levels. The installer selects a stable, landward play-area boundary, checks drainage and emergency routes, and rejects sites where a continuous boundary cannot be built without trapping people or routing children around a gate. One-metre slat modules bolt to rails held by soil-tested screw anchors; uneven ground is exposed for inspection rather than disguised by the removable spacer. The gate swings outward from the play area, closes on a replaceable torsion spring and seats two separate latch contacts. Each contact moves its own visible flag to white only when seated; a red flag is a reason to stop using the enclosure, not proof that all other parts are sound.
+
+Before each use, the caregiver checks the entire perimeter, gap, anchors, flags and climbable objects while maintaining supervision. Adults release the gate manually for ordinary water access and emergencies. At seasonal drawdown, a trained installer may move the modules only after a new site survey and anchor test; the barrier does not follow the shoreline automatically. Floodwater at any anchor, standing water inside, a loose module, or a suspect gate takes the installation out of service until repaired and re-inspected.
+
+## Technical Architecture
+
+The physical chain is **surveyed ground → tested screw anchors → galvanized rails → UV-stabilized recycled-HDPE slats → outward-swinging gate**. Stainless pivots and a replaceable spring supply closing torque; independent mechanical contacts drive red/white flags without electricity. The flags report only latch seating, not child presence, anchor integrity or whether the gate can be climbed. Operational information flows from a daily visual check to a household inspection card and from flood/damage observations to a trained repairer; no data network is assumed.
+
+Panel height (initial 1.2 m challenge), opening geometry (initial 80 mm probe challenge) and anchor loads (initial 300 N challenge) remain research parameters, **not** a compliant design. Installers must test each soil condition; wet clay, sand and eroding banks can defeat a generic screw-anchor specification. A site with inadequate anchor capacity requires engineered footings or rejection. Design review must include accessible adult operation and rescue egress, locally applicable barrier rules, safe edges, wildlife entanglement and drainage. Fabrication should favor bolted, individually replaceable modules rather than a sealed assembly.
+
+## Performance Benchmarks
+
+No prototype has been tested and no safety or drowning-reduction benchmark is measured. The relevant comparator is an existing locally compliant barrier plus supervised childcare where available, not an invented inferior fence. For each same-site comparison, record installed price, maintenance effort, gate-open time and child access attempts per 1,000 observed child-hours; compare equivalent seasons and supervision levels before asserting an advantage. WHO identifies barriers and supervised childcare among preventive approaches.[1]
+
+| Measure and method | Proposed challenge target (unverified) | Current comparison state |
+| --- | --- | --- |
+| Panel and ground openings: rigid probe at all locations after installation and rain | Reject any opening admitting an 80 mm probe; geometry subject to local safety review | Existing barrier measured on the same site; no value yet |
+| Anchor retention: 300 N lateral load for 60 s on each soil class, before/after saturation | No pullout or loss of boundary continuity | Existing compliant barrier tested identically; no value yet |
+| Gate closure: 1,000 cycles plus deliberate partial-latch events | Both flags red on every non-closure; record any missed indication | Existing gate tested identically; no value yet |
+| Operating availability: daily logs over a 120-day wet season | At least 90% of eligible days with intact perimeter and functional gate | Usual care and existing protections logged in parallel; no value yet |
+| Six-metre kit: supplier quotations at 10,000 kits/year | US$180 ex-factory in 2038, excluding site costs | Obtain local compliant-barrier and childcare quotations; no value yet |
+
+These are test conditions, not statutory child-barrier criteria. A failed challenge means redesign or site rejection, not a waiver. The 90% availability target and cost target are aspirations, not product claims; a pilot must separately test child behavior, egress and continued caregiver supervision.
+
+## Deployment Scenarios
+
+- **Homestead pond:** A trained local installer surveys a dry play area near the house before monsoon. The household owns the daily gate check; a village repairer handles post-flood anchor tests. Adults retain a usable route to draw water, and a flood-submerged anchor suspends use rather than prompting improvised relocation.
+- **Shared courtyard by an irrigation ditch:** A community committee agrees on a continuous boundary and an accessible adult gate without closing the work route. A named caretaker logs checks each day children use the space; a damaged shared gate closes the play area until repair. If ownership cannot be assigned, do not deploy.
+- **Seasonally shifted shoreline:** After drawdown, reusable modules may be removed and surveyed for the next dry-ground location. A trained crew tests new anchors; the old installation must not be treated as protective during the move. If the pond enters the play area or an evacuation corridor, a barrier is inappropriate and supervised childcare or another safe location takes priority.
+
+## Risks & Mitigations
+
+The largest field risk is **a barrier people cannot live with**: blocked washing or irrigation access invites propping open or removing the gate. Co-design the route with users and measure gate-open time and retention; reject layouts that make normal work impractical. Children may climb slats, adjacent furniture or vegetation, squeeze through eroded ground gaps, or open a degraded latch. Test with age-appropriate observers under ethical controls, clear climbable objects, inspect gaps daily and remove defective installations from service; never rely on a visible white flag alone.
+
+Wet soil can release anchors; floods and debris can topple panels into water or create entrapment. Test saturated soil, keep the boundary landward, halt use whenever floodwater reaches an anchor, and provide alternative supervised space until qualified inspection. UV exposure, corrosion, theft, broken springs and sticky flags need replaceable parts, scheduled annual service and a named repair budget. Wildlife snagging and disturbed drainage need site-level ecological review. A household or community must own inspection after programme funding ends. Most importantly, a barrier may create false reassurance: continue active supervision and emergency planning; measured access reduction would not by itself demonstrate fewer drownings.
+
+## Vision for 2050
+
+If independent safety review and long-term field trials establish benefit, local workshops could supply repairable modules as part of community water-safety programmes, with site checks and replacement parts funded alongside supervised childcare. The useful future is not an enclosure around every pond: it is a mapped set of suitable, maintained dry play areas, and clear decisions to use a different intervention where soil, flood behavior, ecology or household practice makes a barrier unsafe.
+
 ## Sources
 
 [1] https://www.who.int/news-room/fact-sheets/detail/drowning

@@ -32,6 +32,54 @@ A hypothetical 10,000 eligible brake assemblies would represent **10,000 control
 
 **Safety, lifecycle and validation:** On a brake dynamometer, compare stopping distance/deceleration, rotor/pad temperatures against manufacturer limits, wear, airflow and PM chemistry for routine, wet, high-energy and emergency stops, first with fresh media and then at maximum qualified loading, a blocked path and a detached or unpowered cassette. Reject any change outside the manufacturer's certified envelope, any loosening/debris shedding, unsafe heat accumulation or interference with inspection. Test vibration, water/salt ingress, thermal cycling and fire behavior to the operator's rolling-stock requirements. Only after manufacturer and rail-safety authority review may a supervised field trial begin. Maintenance staff seal used media before removal, characterize metal-rich dust and route it to locally compliant disposal or qualified recycling; no sweeping or uncontrolled magnet cleaning. Compare the captured mass and exposure benefit with manufacture, fan energy (if used), replacements, transport and disposal in a lifecycle assessment. If cooling or safety cannot be demonstrated without an impractical fan, abandon the retrofit. The design needs no camera, location tracking, passenger identity or network connection. A 10–20-year path is bench tests, independent fleet trials, then conditional procurement; a 2050 vision of quieter, cleaner transit is contingent on those measurements.
 
+## How It Works
+
+During a friction-brake stop, pad and disc wear can eject a mixture of metal-rich and nonmagnetic particles. A fitment-specific 316L pickup lip intercepts a sampled portion of the plume without enclosing the swept rotor or obstructing its cooling air. Train-induced flow might be sufficient at speed but cannot be assumed at low speed; an assisted-flow configuration is a separate electrical and brake-safety design. The bench rig must measure inlet flow during the full stop, including standstill, rather than infer it from vehicle speed.
+
+The short duct carries entrained air past a coarse baffle, an enclosed ferrite insert for a subset of ferrous particles, and guarded heat-resistant filter media for remaining captured mass. Ferrite is not a substitute for the filter: nonmagnetic pad constituents and fine particles can pass it. The outlet must not recirculate hot air toward the brake. At the depot, a technician checks differential pressure and retention, seals the used cartridge *before* opening its housing, weighs and logs it, and installs a fresh cartridge. Collected material is characterized for compliant recycling or disposal; retained mass is not automatically equal to avoided passenger exposure.
+
+## Technical Architecture
+
+- **Mechanical interface:** surveyed disc-brake clearance envelope, 316L pickup/duct, captive guard and redundant retention; qualification checks full suspension travel, thermal expansion and inspection access.
+- **Separation and containment:** metal baffle → guarded ferrite insert → heat-resistant cartridge → tested exhaust route. Seals and filter media must survive measured temperatures, water and vibration; no unguarded magnet or loose media may enter moving parts.
+- **Condition and service:** pressure ports and a local service indicator record clean/loaded pressure at a stated flow. A serialized cartridge can be weighed at the depot; mass gain is corrected for moisture and handling loss. No networked telemetry is required.
+- **Safety boundary:** the brake remains mechanically independent of the cassette. Blockage, missing cartridge, fan outage (if fitted), and detachment are separate fault-injection tests; none is presumed fail-safe until stopping, thermal and debris-retention tests pass.
+
+Data path: identified cartridge → recorded dry mass gain and pressure history → assembly-level service record → fleet maintenance planning. Size-resolved ambient sampling, not cartridge weight alone, establishes airborne-particle performance.
+
+## Performance Benchmarks
+
+No prototype measurements exist. The following are *proposed gates*, not achieved performance. Compare matched brake-dynamometer cycles with and without the cassette, at the same lining, energy, inlet flow and sampling boundary; include fresh and loaded media, wet and emergency stops. Existing railway suction and filter designs [3][4] establish prior art, **not** a numerically comparable capture benchmark; a published controlled brake-particle study [2] motivates measurement but does not validate this device.
+
+| Metric | Uncontrolled comparator | Proposed cassette gate / test |
+| --- | --- | --- |
+| Brake-origin PM10 mass at sampling boundary | Matched bare-brake mass = 100% | ≥50% lower, subject to unchanged certified braking |
+| Brake-origin PM2.5 mass | Matched bare-brake mass = 100% | ≥30% lower; report particle number separately |
+| Added assembly mass | 0 kg cassette | ≤2 kg per fitted brake |
+| Clean-filter pressure drop | No cassette path | ≤50 Pa at *measured, specified* inlet flow; loaded limit set by thermal tests |
+| Annual hardware + media | No cassette cost | US$106 per assembly-year illustrative target; excludes labor, waste, energy and certification |
+| Service cadence | Existing brake-maintenance schedule | Two cartridge changes/year is an **economic assumption**, not a qualified interval; test loading first |
+
+A 50% local PM10 reduction does not mean 50% lower station PM10: wheel–rail wear, ventilation, untreated vehicles, re-entrainment and exposure geometry remain. See [IMPACT_ANALYSIS.md](IMPACT_ANALYSIS.md) for a deliberately conditional fleet calculation.
+
+## Deployment Scenarios
+
+1. **Disc-brake metro pilot:** an operator and brake OEM fit a single approved geometry on a supervised test vehicle; the operator funds matched platform/vehicle PM sampling and depot technicians log cartridge mass and swap exposure. No passenger-service claim precedes the safety case.
+2. **New-build rolling stock:** a vehicle buyer specifies reserved clearance, service access and optional power only after dynamometer and field validation; the supplier bears type-qualification work, while the operator measures filter loading and depot time during scheduled maintenance.
+3. **Enclosed depot or tunnel duty:** a compatible fleet with significant friction-brake use tests worker-zone sampling alongside controlled brake measurements. This is not a transferable tread-brake or open-air freight retrofit; each brake and duty cycle needs its own fitment study.
+
+## Risks & Mitigations
+
+- **Brake heat and cooling:** the lip or loaded filter could raise rotor/pad temperature or alter stopping. Compare manufacturer limits across fresh, blocked, wet and emergency cycles; reject the fitment if any certified margin is lost. A fan cannot be used to rationalize a hazardous unpowered state.
+- **Release or mechanical interference:** shock, ballast, salt, icing, washdown or thermal cycling could loosen a duct or shed media. Prove captive retention and full-travel clearance with fault injection and operator-specific rolling-stock/fire requirements; remove the unit if safe clearance cannot be proved.
+- **Uncertain capture and filter life:** low-speed plume direction, leakage, moisture and ultrafines may defeat collection. Measure size-resolved inlet/outlet and whole-boundary emissions, pressure rise and re-entrainment; shorten service intervals or abandon the design if benefit is too small.
+- **Worker and waste exposure:** opening a dirty cassette can undo source gains. Seal in place, weigh in containment, sample dust chemistry, and use a permitted disposal/recovery route with documented chain of custody.
+- **Economics and fleet diversity:** qualification, downtime and labor may outweigh benefit, particularly with regenerative braking. Compare against low-emission pad materials and ventilation; there is no universal retrofit and no guaranteed business case.
+
+## Vision for 2050
+
+If independent trials demonstrate a net exposure benefit without brake-safety compromise, future disc-brake procurement could treat source capture and sealed cartridge return as ordinary service interfaces. Depot records might reveal which brake/duty combinations justify a cassette and which are better served by regenerative braking, different friction materials or ventilation. Cleaner enclosed stations and accountable recovery of iron-rich dust are a *conditional outcome*, not a forecast of outdoor-equivalent air or quantified health gains.
+
 ## Sources and closest external art
 
 [1] https://link.springer.com/article/10.1186/s12989-019-0296-2 — critical review of underground-rail particle exposure and health evidence.

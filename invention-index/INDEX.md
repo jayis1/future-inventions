@@ -925,3 +925,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$3.50 ex-factory per disposable set at 100,000/year by 2038, excluding calibration, PPE, training and disposal
 - **Author:** jayis1
 - **Created:** 2026-10-31
+
+### 098 — Paired-Reference Medicine Assay
+- **Category:** Medicine Quality & Universal Basic Services / Pharmacy Screening
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Planning capacity of 100,000 screened lots/year across 1,000 pharmacies; fewer substandard medicines dispensed is unproven and requires laboratory-confirmed field comparison
+- **Key Material:** Cellulose/silica microchromatography card with sealed 80% and 100% API references, measured extraction consumables and locally calibrated enclosed LED reader
+- **Key Innovation:** Tests paired on-card dose bracketing and mandatory inconclusive controls against established visual TLC and paper tests for under-strength solid-dose medicine triage; chromatography and optical reading are prior art
+- **Target Cost:** Unquoted US$1.20 per card at 100,000/year and US$180 per reader at 10,000/year by 2038, excluding labor, regulatory-grade reference supply, confirmation and certification
+- **Author:** jayis1
+- **Created:** 2026-10-31

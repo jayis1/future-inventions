@@ -113,6 +113,7 @@ Design and document technologies that:
 | [Batch-Locked Gasifier Cooktop](./batch-locked-gasifier-cooktop/) | Concept | Clean Cooking & Universal Basic Services / Household Air Pollution |
 | [Seasonal Pond Access Barrier](./seasonal-pond-access-barrier/) | Concept | Child Safety & Universal Basic Services / Drowning Prevention |
 | [Refrigerant Reclamation Microcart](./refrigerant-reclamation-microcart/) | Concept | Climate & Circular Cooling / Refrigerant Recovery |
+| [Tidal Marsh Sediment Ratchet](./tidal-marsh-sediment-ratchet/) | Concept | Coastal Restoration & Universal Basic Services / Salt-Marsh Elevation |
 
 ## Structure
 

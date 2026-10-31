@@ -905,3 +905,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$3,000 ex-factory at 10,000 units/year in 2038, excluding certification, cylinder logistics, calibration, training and reclaimer fees
 - **Author:** jayis1
 - **Created:** 2026-10-31
+
+### 096 — Tidal Marsh Sediment Ratchet
+- **Category:** Coastal Restoration & Universal Basic Services / Salt-Marsh Elevation
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Pilot target of 20 paired cells over two years, seeking 2 mm/year greater net surface-elevation gain than fixed-coir controls without adjacent scour or hydraulic/ecological harm; benefit unproven
+- **Key Material:** Removable woven-coir slats, locally cut timber or recycled-HDPE frame, stainless pivot pins, reusable anchors
+- **Key Innovation:** Tests a removable asymmetric-drag tidal baffle with permanent aquatic bypass against equal-mass fixed coir logs using whole-cell elevation and scour accounting; coir sediment traps are prior art
+- **Target Cost:** Unquoted US$57 ex-factory per 1 m module at 10,000/year in 2038, excluding survey, permits, installation and ecological monitoring
+- **Author:** jayis1
+- **Created:** 2026-10-31

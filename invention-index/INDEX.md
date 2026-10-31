@@ -895,3 +895,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$180 ex-factory for six metres and one gate at 10,000 kits/year in 2038, excluding installation and service
 - **Author:** jayis1
 - **Created:** 2026-10-31
+
+### 095 — Refrigerant Reclamation Microcart
+- **Category:** Climate & Circular Cooling / Refrigerant Recovery
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Planning capacity of 500 tonnes/year collected by 10,000 carts; 50 tonnes/year incremental to maintained conventional kits only if matched trials confirm 0.1 kg/job additional accepted recovery
+- **Key Material:** Certified recovery machine, compatible rated cylinder, calibrated scale, closed-loop sample path, refrigerant analyzer and replaceable filter-drier
+- **Key Innovation:** Tests identity-gated, physically segregated refrigerant collection with weighed custody through a certified off-site reclaimer; recovery equipment and gas identification are existing art
+- **Target Cost:** Unquoted US$3,000 ex-factory at 10,000 units/year in 2038, excluding certification, cylinder logistics, calibration, training and reclaimer fees
+- **Author:** jayis1
+- **Created:** 2026-10-31

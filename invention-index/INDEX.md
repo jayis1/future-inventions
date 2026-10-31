@@ -915,3 +915,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$57 ex-factory per 1 m module at 10,000/year in 2038, excluding survey, permits, installation and ecological monitoring
 - **Author:** jayis1
 - **Created:** 2026-10-31
+
+### 097 — Spray Contact Sentinel
+- **Category:** Occupational Health & Universal Basic Services / Farmworker Pesticide Exposure
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Planning ceiling of 1 million external-contamination checks per 1 million eligible handling shifts; reduction in poisoning unproven
+- **Key Material:** Defined-area cellulose/polyester coupon, polypropylene splash shield and cassette, sealed carboxylesterase and indoxyl-acetate reagent pouches
+- **Key Innovation:** Tests paired exposed/blank cuff collectors with deferred enzyme activation and a visible invalid state for formulation-specific worker-owned contamination prompts; passive wristbands and enzyme assays are prior art
+- **Target Cost:** Unquoted US$3.50 ex-factory per disposable set at 100,000/year by 2038, excluding calibration, PPE, training and disposal
+- **Author:** jayis1
+- **Created:** 2026-10-31

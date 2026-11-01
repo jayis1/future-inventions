@@ -28,6 +28,51 @@ A **40-luminaire paired pilot** along road-habitat boundaries would report bound
 
 Before opening a fixture, the authority confirms compatible mounting, ingress protection, thermal clearance, wind loading, electrical isolation and warranty/certification status. A bench goniophotometer measures beam distribution and glare; thermal cycling, UV aging, salt spray and vibration expose loosening, optical yellowing or water ingress. The field protocol compares like-for-like pole heights and spacing, time, weather and adjacent land use, and includes non-trap insect surveys to avoid mistaking trap placement for population change. The optical stop is a service aid, never proof of compliant lighting: an independent qualified photometric survey is the release gate. If a vane loosens, blocks required visibility, overheats the housing or the habitat boundary target cannot be met, isolate the luminaire for repair and restore an approved road-lighting configuration promptly. No reduced lighting is substituted for safe pedestrian crossings. Shielding is not harmless everywhere: reflected light, local fauna and human color recognition need site-specific checks. This is a reversible, non-surveillance infrastructure proposal with no military or coercive application.
 
+## How It Works
+
+At each approved pole, survey the road surface, pedestrian approach and the nearest mapped habitat boundary. Select silicone lens segments from a small catalog to bend more emitted light toward the required road footprint; the TIR surfaces redirect rays within the optic rather than absorbing them. Fit the black-anodized aluminum vane on the habitat-facing side to intercept remaining direct sightlines. Key the bracket to the surveyed azimuth and set the captive pitch stop before closing the fixture. This is a *spatial* intervention: it does not promise that changing lamp color alone protects every species, or that redirected light cannot bounce off pavement into habitat.
+
+The authority first checks that the modified assembly is permitted and thermally and electrically compatible. A qualified installer then measures the unchanged lamp and the retrofit at the same mapped boundary points, with a vertical sensor facing the luminaire, and repeats road-surface, pedestrian-face, uniformity and glare measurements under comparable operating and weather conditions. A failed road-safety or habitat test means adjust and retest, replace with an approved purpose-built fixture, or restore the original configuration. No sensor or network is needed to keep the optic working.
+
+## Technical Architecture
+
+- **Optical cartridge:** interchangeable UV-stable silicone TIR segments set the roadward intensity distribution; a replaceable aluminum vane blocks direct habitatward rays.
+- **Mechanical interface:** keyed, captive stainless mounting hardware and a pitch stop retain orientation through cleaning and service; every host housing needs its own fit, ingress and heat-clearance assessment.
+- **Existing electrical stack:** retain the approved LED module, driver and surge protection where modification is authorized; the shield itself adds no electronics or continuous load.
+- **Verification record:** the survey maps pole ID, mounting height, road geometry, boundary points, selected optic, aiming angle and before/after photometry. Data flow is survey → optical selection → authorized installation → independent photometry → accept or restore. Records can be stored by the road authority without collecting personal data.
+
+## Performance Benchmarks
+
+These are **unvalidated engineering targets**, not measured performance of this retrofit. The comparison is the *same compliant LED luminaire before modification*, at equal site geometry and equivalent compliant road lighting; purpose-built shielded fixtures are established prior art, not an inferior straw-man baseline.[1] No current market-wide state-of-the-art numerical comparison is claimed until matched fixture photometry is obtained.
+
+| Metric and test | Existing baseline | Proposed acceptance target |
+| --- | --- | --- |
+| Photopic vertical illuminance (lux), sensor facing lamp at pre-mapped habitat-boundary points and fixed height | Measure unchanged fixture at each site | ≥50% lower at the same points; also measure reflected light |
+| Road horizontal and pedestrian-face vertical illuminance, uniformity and glare | Applicable local authority requirements and unchanged compliant fixture | Continue to meet every applicable requirement; no trade for lower boundary lux |
+| Electrical input (W), at equivalent compliant road lighting | Meter unchanged LED installation | ≤110% of baseline input; no energy saving assumed |
+| Flying insects at boundary, taxon-specific paired seasonal surveys | Matched unchanged-lamp control | 30% fewer observed at boundary as a pilot hypothesis, not a population-recovery claim |
+| Optical requalification interval | Establish host-specific service history | Five years, conditional on UV, salt and vibration testing and field inspection |
+
+## Deployment Scenarios
+
+1. **Municipal road beside a hedgerow:** the road authority pays for a compatible retrofit at eligible poles, measures the hedge-facing vertical plane and road/pedestrian visibility, and retains original lighting at crossings where compliance is uncertain. Seasonal insect surveys test ecological value independently of photometry.
+2. **Port perimeter beside a wetland:** a port operator pilots approved heads on a limited, surveyed segment without weakening security or worker visibility. Salt-spray aging and wind-retention tests precede the installation; boundary light, task-area glare and maintenance time decide expansion.
+3. **Rural road bordering a stream corridor:** a highway agency budgets qualified installation and repeat surveys during relevant insect seasons. Poles with incompatible housings or excessive pavement-reflected spill are excluded rather than presented as successes.
+
+## Risks & Mitigations
+
+| Failure mode | Mitigation and residual risk |
+| --- | --- |
+| Road or pedestrian visibility worsens as habitatward light is cut | Independent, applicable-standard photometry before release; some sites cannot be retrofitted safely. |
+| Retrofit voids fixture certification, overheats LEDs or compromises ingress protection | Obtain manufacturer and authority approval; bench thermal, ingress and vibration qualification for each host family. Approval may be uneconomic. |
+| Mis-aiming, corrosion, UV yellowing or a loose vane shifts the beam | Keyed stop, captive fasteners and scheduled inspection; isolate and restore approved lighting on failure. Maintenance adds cost. |
+| Boundary lux falls while reflected skyglow or another taxon's exposure rises | Measure reflected contribution and survey taxa across seasons with matched controls; reduced direct spill alone cannot establish ecological benefit. |
+| Cost or ecological effect misses the pilot target | Publish the full denominator of eligible poles and negative results; discontinue rather than market a wildlife-safety guarantee. |
+
+## Vision for 2050
+
+If independent trials show both unchanged road safety and reduced habitat exposure, authorities could specify surveyed boundary photometry alongside ordinary road-light acceptance. A technician could replace a damaged vane rather than discard an otherwise serviceable head; site records would make that claim auditable. Some corridors would still require a new luminaire, seasonal operating rules or no change at all. Success in 2050 would mean repeatable, species-aware procurement and transparent monitoring—not a promise that lighting changes alone restore biodiversity.
+
 ## Sources
 
 [1] https://www.nature.com/articles/s42003-024-06304-4

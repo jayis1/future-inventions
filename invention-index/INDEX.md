@@ -975,3 +975,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$180 ex-workshop and US$220 delivered hardware target at 10,000/year by 2038, excluding individual fitting, training, transport subsidies and clinical service
 - **Author:** jayis1
 - **Created:** 2026-11-01
+
+### 103 — Postpartum Loss-Continuity Mat
+- **Category:** Maternal Health & Universal Basic Services / Postpartum Haemorrhage
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Unverified target of 10,000 instrumented handoffs across 10,000 eligible births in a pilot; fewer missed cumulative-loss readings or complications require controlled comparison
+- **Key Material:** Heat-sealed polyethylene collection drape and graduated pouches, polypropylene captive pinch closure, write-on cumulative-volume tabs
+- **Key Innovation:** Tests sealed cumulative blood-loss readings across pouch changes and clinical transfers against established calibrated drapes and reusable trays; haemorrhage diagnosis and treatment remain clinical decisions
+- **Target Cost:** Unquoted US$2.50 ex-factory per single-use mat at 100,000/year in 2038, excluding staff, delivery, validation and regulated disposal
+- **Author:** jayis1
+- **Created:** 2026-11-01

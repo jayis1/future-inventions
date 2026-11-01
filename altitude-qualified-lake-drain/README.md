@@ -35,3 +35,54 @@ A bench prototype target is a 100 mm internal-diameter HDPE line of at most 100 
 
 [1] https://www.nature.com/articles/s41467-023-36033-x — Taylor et al., *Nature Communications* (2023), global exposure estimate.
 [2] https://www.nchm.gov.bt/attachment/ckfinder/userfiles/files/Thorthormi_Siphonreport_2025.pdf — Bhutan National Centre for Hydrology and Meteorology (2025), Thorthormi siphon pilot and failure analysis.
+
+## How It Works
+
+The distinctive product is a **refusal decision**, not a clever pipe: qualify a surveyed lake/outlet geometry at the *lowest intended lake level*, with local barometric pressure and temperature, before anyone transports hardware. At 60 kPa, the ideal atmospheric column is about 6.1 m; vapor pressure and suction-line losses consume part of it. The 3 m crest-height screening target leaves margin to investigate, but neither it nor a 5 m net drop certifies a site. The Thorthormi trial is the counterexample: a built siphon could not sustain discharge after its initial crest lift exceeded the altitude-limited pressure head.[2]
+
+1. A licensed team first assesses the moraine, lake area-versus-level curve, inlet and outlet elevations, downstream routing and permissible discharge. Reject unstable or inaccessible routes and any profile lacking positive pressure margin under the design's low-pressure, warm-water and declining-lake-level cases.
+2. Secure a screened intake above bottom sediment and below the lowest intended waterline; lay supported, pressure-rated HDPE over a stable, surveyed alignment. Provide a restrained outlet and energy dissipation in a receiving channel independently rated for the discharge. No excavation into an unstable dam is assumed.
+3. With downstream access controlled, trained personnel prime and leak-test the isolated line; only then open it under a written, site-specific flow and drawdown limit. Gravity supplies operating energy. If gas collects at the apex, a blocked intake starves flow or the lake drops too low, the siphon can stop or lose prime; **it does not automatically recover**.
+4. Each operating day, compare staff-gauge lake level and surveyed storage change with measured outlet volume and independently estimated inflow. Record apex pressure, seepage, erosion and downstream stage; deviations prompt isolation and investigation, not remote attempts to increase flow. A field authority retains stop-work control and downstream warning/evacuation plans.
+
+## Technical Architecture
+
+| Subsystem | Flow or decision | Failure boundary |
+| --- | --- | --- |
+| Site qualification | Surveyed elevations, measured pressure, temperature, lake hypsometry and receiving-channel rating → signed go/no-go sheet | No single altimeter or generic elevation rating substitutes for a survey and hydraulic model. |
+| Water path | Guarded intake → segmented, restrained HDPE line → priming/apex pressure ports → manual isolation → protected energy-dissipating outlet | Keep pipe above damaging rock/ice movement; use tested joints and an accessible safe isolation point. |
+| Observation | Independent staff gauge plus calibrated outlet flow meter → daily volume balance; separate inspection of moraine seepage/scour | A dry line or missing reading is a fault. Manual monitoring and local records work without telemetry. |
+| Control and authority | Site-specific discharge/drawdown thresholds → human operator, civil/geotechnical reviewer and regulator | No unattended actuation or software-only interlock; power/communications failure stops remote visibility, so suspend operation if safe observation cannot continue. |
+
+The hydraulic design must include pipe friction, fittings, high points, negative apex pressure, vapor pressure and priming transients. At 5 L/s in a 100 mm bore, mean velocity is approximately 0.64 m/s; this is a calculation, not a demonstrated throughput. See [ROADMAP.md](ROADMAP.md) for gates and [IMPACT_ANALYSIS.md](IMPACT_ANALYSIS.md) for sensitivity to inflow and lake size.
+
+## Performance Benchmarks
+
+**No performance has been measured for this invention.** These are proposed acceptance targets under the *specified bench geometry*, not comparative superiority or field promises. The relevant published field comparator is the 2025 Thorthormi 125 mm siphon attempt: no sustained flow under its own, different high-lift/long-line conditions.[2] This is evidence of a failure mode, not an apples-to-apples flow-rate baseline. Excavated channels and engineered spillways remain alternatives; no comparable installed-cost or reliability dataset is claimed here.
+
+| Metric | Proposed module test / target | Comparator and validation |
+| --- | --- | --- |
+| Hydraulic eligibility | 100 mm bore, ≤100 m line, 5 m net drop; crest ≤3 m above lowest lake level, measured ambient pressure ≥60 kPa, **subject to full loss/cavitation analysis** | Thorthormi's approximately 9.8 m original lift exceeded its altitude pressure ceiling; survey profile and measure barometric pressure before any physical trial.[2] |
+| Bench discharge/continuity | ≥5 L/s over 72 h at altitude-equivalent pressure, with no unplanned loss of prime | Independent flow meter and apex-pressure logger; repeat under warm-water, air-leak and partial-obstruction tests. The 5 L/s figure is a design target, not achieved performance. |
+| Net lake response | 432 m³/day gross at 5 L/s; on a constant 1 ha lake with zero inflow, 4.32 cm/day modeled lowering | Field measure inflow and changing lake area; target is *not* achieved drawdown. At 3 L/s inflow, modeled net lowering falls to 1.73 cm/day. |
+| Installed cost/reliability | US$3,000 *unquoted 2038 hardware* target at 1,000 kits/year; field uptime undetermined | Compare all-in survey, access, labor, outlet, monitoring and maintenance costs with a permitted engineered channel on the **same** site; report all outage hours and reasons. |
+
+## Deployment Scenarios
+
+- **Remote Himalayan lake, conditional summer pilot:** A national hydromet/civil agency commissions surveys and permits a small, accessible moraine-dammed lake with a stable natural receiving channel. Trained local inspectors log daily operation; seasonal shutdown precedes freeze-up. This is **not** a prescription for Thorthormi, whose demonstrated layout failed.[2]
+- **Andean headwater lake above infrastructure:** A regional disaster office and hydropower operator jointly fund lake bathymetry, downstream flood routing and an independent geotechnical review. If permitted, a removable module tests a modest incremental lowering while warning systems remain active; a channel or no intervention may be safer or cheaper.
+- **Noncritical reservoir before either glacial setting:** A water authority permits a bounded trial in a controlled reservoir with known inflow and a protected outlet. This tests prime retention, air release, balance error and trained-operator workload without implying a flood-risk benefit.
+
+## Risks & Mitigations
+
+| Risk / observed warning | Response and residual limit |
+| --- | --- |
+| Rapid drawdown changes pore pressure or mobilizes moraine/bank sediment | Geotechnical review defines site-specific rate and seepage thresholds; stage drawdown and stop at new movement or turbidity. No generic safe cm/day limit exists. |
+| Low pressure, gas pockets, air leakage or internal weld beads break prime | Reject insufficient surveyed pressure margin; bench-test joints, pressure and priming at altitude-equivalent conditions. Thorthormi shows that redesign alone may not rescue an unsuitable profile.[2] |
+| Intake ice/debris, pipe movement, freeze-thaw or outlet scour | Seasonal operating window, screened/serviceable intake, restrained pipe and energy dissipation; isolate at fault and inspect only from safe access. A blocked or frozen line can still fail unpredictably. |
+| Uncontrolled discharge or a false sense of protection downstream | Site-specific permitted flow, independent downstream stage observation and incident plan; retain early warning, evacuation practice and regulatory oversight. Lower water does not remove avalanche-wave or dam-breach risk. |
+| Remote logistics, water rights and abandoned plastics | Consent, access plan and funded retrieval before deployment; compare full lifecycle against engineered alternatives. No deployment without jurisdictional approval. |
+
+## Vision for 2050
+
+If repeated controlled trials show a reproducible safe operating envelope, hazard agencies could keep an inventory of **qualified** lakes with surveyed profiles, seasonal lake/inflow records and preapproved response options. A compact siphon might serve a narrow subset; many lakes would fail the pressure, stability or downstream-capacity gate and instead need conventional works, monitoring or evacuation planning. Success in 2050 would mean better documented decisions and fewer unexamined interventions—not a claim that this kit can eliminate glacial-lake floods.

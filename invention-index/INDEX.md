@@ -985,3 +985,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$2.50 ex-factory per single-use mat at 100,000/year in 2038, excluding staff, delivery, validation and regulated disposal
 - **Author:** jayis1
 - **Created:** 2026-11-01
+
+### 104 — Habitat-Edge Light Shield
+- **Category:** Road Safety & Biodiversity / Low-Spill Street Lighting
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Pilot target of 40 paired luminaires; 10,000 compatible retrofits would address at most 10,000 light points, with insect-population and road-safety outcomes unproven
+- **Key Material:** UV-stable molded silicone TIR lens segments, recycled-aluminum cut-off vanes, stainless captive fasteners
+- **Key Innovation:** Tests a site-surveyed, indexed retrofit optical head and independent road-and-habitat photometric acceptance against existing purpose-built shielded luminaires; shielding itself is established prior art
+- **Target Cost:** Unquoted US$65 ex-factory per compatible luminaire at 10,000/year by 2038, excluding US$90–180 site survey, installation and acceptance testing
+- **Author:** jayis1
+- **Created:** 2026-11-01

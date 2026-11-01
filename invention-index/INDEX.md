@@ -995,3 +995,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$65 ex-factory per compatible luminaire at 10,000/year by 2038, excluding US$90–180 site survey, installation and acceptance testing
 - **Author:** jayis1
 - **Created:** 2026-11-01
+
+### 105 — Insulin Heat-Buffer Sleeve
+- **Category:** Diabetes Care & Universal Basic Services / Short-Journey Medicine Protection
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Unverified eight-hour shaded transport target at 40 °C; one million qualifying trips/day at one million daily users only if conditioning, product labeling and validated exposure limits are met
+- **Key Material:** Sealed 28 °C paraffin phase-change insert, aluminum heat spreader, closed-cell foam shell, polypropylene pen cradle
+- **Key Innovation:** Tests a conditionable, replaceable latent-heat travel insert with a pen-cavity excursion boundary against insulated pouches and evaporative wallets; neither phase-change buffering nor insulin cooling is claimed as new
+- **Target Cost:** Unquoted US$20 ex-factory at 100,000/year by 2038 and ≤US$35 retail target, excluding validation, distribution, replacement inserts and indicator refills
+- **Author:** jayis1
+- **Created:** 2026-11-01

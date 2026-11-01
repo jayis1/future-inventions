@@ -123,6 +123,7 @@ Design and document technologies that:
 | [Postpartum Loss-Continuity Mat](./postpartum-loss-continuity-mat/) | Concept | Maternal Health & Universal Basic Services / Postpartum Haemorrhage |
 | [Habitat-Edge Light Shield](./habitat-edge-light-shield/) | Concept | Road Safety & Biodiversity / Low-Spill Street Lighting |
 | [Insulin Heat-Buffer Sleeve](./insulin-heat-buffer-sleeve/) | Concept | Diabetes Care & Universal Basic Services / Short-Journey Medicine Protection |
+| [Passive Storm-Stow Solar Mount](./passive-storm-stow-solar-mount/) | Concept | Disaster Resilience & Distributed Energy / Roof PV |
 
 ## Structure
 

@@ -1005,3 +1005,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$20 ex-factory at 100,000/year by 2038 and ≤US$35 retail target, excluding validation, distribution, replacement inserts and indicator refills
 - **Author:** jayis1
 - **Created:** 2026-11-01
+
+### 106 — Passive Storm-Stow Solar Mount
+- **Category:** Disaster Resilience & Distributed Energy / Roof PV
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Unverified 1,000-module comparative pilot target; no avoided damage or outage reduction claimed before testing
+- **Key Material:** Galvanized or recycled-aluminum rail, stainless spring and pawls, sealed rotary damper, mechanical flag
+- **Key Innovation:** Tests an inspectable wind-triggered roof-PV retrofit with a site-specific load-path acceptance gate against engineered fixed mounts; passive utility-tracker stow is established prior art
+- **Target Cost:** Unquoted US$170 ex-workshop per module at 10,000/year by 2038, excluding structural survey, installation, permits and certification
+- **Author:** jayis1
+- **Created:** 2026-11-01

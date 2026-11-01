@@ -124,6 +124,7 @@ Design and document technologies that:
 | [Habitat-Edge Light Shield](./habitat-edge-light-shield/) | Concept | Road Safety & Biodiversity / Low-Spill Street Lighting |
 | [Insulin Heat-Buffer Sleeve](./insulin-heat-buffer-sleeve/) | Concept | Diabetes Care & Universal Basic Services / Short-Journey Medicine Protection |
 | [Passive Storm-Stow Solar Mount](./passive-storm-stow-solar-mount/) | Concept | Disaster Resilience & Distributed Energy / Roof PV |
+| [Altitude-Qualified Lake Drain](./altitude-qualified-lake-drain/) | Concept | Disaster Resilience & Universal Basic Services / Glacial-Lake Risk Reduction |
 
 ## Structure
 

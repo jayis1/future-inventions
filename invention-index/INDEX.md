@@ -1015,3 +1015,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$170 ex-workshop per module at 10,000/year by 2038, excluding structural survey, installation, permits and certification
 - **Author:** jayis1
 - **Created:** 2026-11-01
+
+### 107 — Altitude-Qualified Lake Drain
+- **Category:** Disaster Resilience & Universal Basic Services / Glacial-Lake Risk Reduction
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Ten-site monitored pilot target; net drawdown and downstream safety unproven, with no claim of lives saved
+- **Key Material:** Pressure-rated HDPE siphon pipe, guarded intake, mechanical valves and pressure taps, restrained energy-dissipating outlet
+- **Key Innovation:** Tests an altitude-aware siphon eligibility gate with independent lake-level/flow water balance and outlet-erosion stop criteria against existing siphon and engineered-drainage practice
+- **Target Cost:** Unquoted US$3,000 ex-factory hardware target per 100 m module at 1,000 kits/year in 2038; excludes surveys, transport, installation, downstream works and monitoring
+- **Author:** jayis1
+- **Created:** 2026-11-01

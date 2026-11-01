@@ -965,3 +965,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$180 ex-factory per assembly at 10,000/year by 2038; US$35 replacement cartridge, excluding qualification, downtime and regulated waste handling
 - **Author:** jayis1
 - **Created:** 2026-10-31
+
+### 102 — Locally Repairable Terrain Wheelchair
+- **Category:** Mobility & Universal Basic Services / Assistive Technology
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Planning capacity of 10,000 individually fitted chairs/year at 10,000 units/year; suitability, durability and participation gains require comparison trials
+- **Key Material:** 25 mm mild-steel frame, interchangeable bolted fork/axle interfaces, bicycle-compatible wheels, individually fitted cushion
+- **Key Innovation:** Tests published cross-workshop go/no-go gauges and interchangeable safety-critical wheelchair interfaces against existing locally produced indoor-outdoor chairs; rough-terrain wheelchairs and local manufacture are prior art
+- **Target Cost:** Unquoted US$180 ex-workshop and US$220 delivered hardware target at 10,000/year by 2038, excluding individual fitting, training, transport subsidies and clinical service
+- **Author:** jayis1
+- **Created:** 2026-11-01

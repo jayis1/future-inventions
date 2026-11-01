@@ -1025,3 +1025,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$3,000 ex-factory hardware target per 100 m module at 1,000 kits/year in 2038; excludes surveys, transport, installation, downstream works and monitoring
 - **Author:** jayis1
 - **Created:** 2026-11-01
+
+### 108 — Repairable Roadside Noise Baffle
+- **Category:** Healthy Urban Environments & Universal Basic Services / Traffic Noise
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Unvalidated 100 m pilot target of 2 dB(A) additional receiver-side reduction against an equally high/open slat screen; no health benefit asserted
+- **Key Material:** Folded recycled-aluminum panels, replaceable formed Helmholtz-cavity inserts and corrosion-compatible fasteners
+- **Key Innovation:** Tests site-spectrum-selected, replaceable acoustic inserts under outdoor clogging and weathering against equal-geometry ventilated slats; open resonators are prior art
+- **Target Cost:** Unquoted US$115/m² ex-factory panel target at 10,000 m²/year by 2038, excluding foundations, restraint, installation and field qualification
+- **Author:** jayis1
+- **Created:** 2026-11-01

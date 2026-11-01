@@ -40,6 +40,43 @@ If validated, the device could make cumulative loss easier to carry between team
 - **Misread graduation or wrong cumulative arithmetic:** high-contrast marks and a two-person verbal handoff in high-risk cases; train with deliberately contaminated and tilted simulations. The tab is a reminder, not an automatic calculator.
 - **Infection and plastics:** single-patient use only; sealed contaminated pouches go to locally approved clinical-waste handling. No washing, open decanting, composting, or claimed recycling of contaminated contents. Study film minimization and a life-cycle comparison with reusable trays.[2]
 
+## How It Works
+
+After the baby is delivered, an attendant positions the disposable drape beneath the patient only if it does not interrupt established care. Gravity guides collected liquid through a polypropylene outlet into a hanging, graduated polyethylene pouch. The attendant reads the meniscus with the pouch held upright, notes the time and volume, closes the inlet, and retains the sealed pouch and written cumulative tab before opening the next pouch. At transfer, the receiving clinician reads back the recorded total and adds subsequent collected volume; the first pouch is never silently reset to zero. This is a manual accounting chain, not a blood-specific sensor: urine, irrigation, residual amniotic fluid, clots, and blood outside the drape defeat a simple volume reading. If the chain breaks, mark the total incomplete and assess clinically rather than inferring safety from a low reading. Escalation follows local obstetric protocols, regardless of the indicated volume.[1]
+
+## Technical Architecture
+
+The fluid path is a heat-sealed low-density polyethylene drape → molded polypropylene outlet and captive closure → two serial transparent, graduated pouches. A water-resistant write-on tab carries pouch reading, time, prior total, and invalid-reading flag between beds or facilities; it need not carry a patient name. The dry exterior of the sealed pouch can accompany the handoff subject to local infection-control policy. No software, battery, wireless link, or automated alarm exists. Qualification must test seam integrity, outlet occlusion, tilt sensitivity, legibility after handling, shelf storage, skin-contact compatibility, and local clinical-waste disposal. If a seal leaks or graduations cannot be read, use an approved alternate collection/measurement method and clinical examination. A new mat inherits only a clearly documented prior total; a missing tab is a measurement failure, not a zero.
+
+## Performance Benchmarks
+
+These are **unverified design targets**, not measured device performance or clinical efficacy. The appropriate comparator is a calibrated drape **with a written handoff**, since calibrated drapes already have trial evidence when paired with a treatment bundle.[1][2]
+
+| Measure and test condition | Existing approach | Mat target (unvalidated) |
+| --- | --- | --- |
+| Volume reading, 100–1,500 mL on level bed | Calibrated drape: measure against the same gravimetric reference; no universal accuracy figure claimed | Within ±10% or ±50 mL, whichever is larger; test water and blood analogues across tilt angles |
+| Two-pouch cumulative total, simulated transfer | Ordinary drape plus written handoff: measure in randomized usability comparison | ≥95% of trained users within ±50 mL, with no emergency-response delay |
+| Drain flow at 0.3 m head, benchtop water | Comparator measured in identical fixture | ≥0.5 L/min without upstream pooling; repeat with clot analogues before clinical use |
+| Ex-factory unit cost at 100,000/year | Site-specific procurement price of drapes or reusable trays must be obtained | US$2.50 hypothetical target, excluding delivery, labor and disposal |
+
+## Deployment Scenarios
+
+- **Midwife-led clinic:** On a crowded ward, a sealed first pouch and its tab accompany the patient to observation. The next midwife reads back the carried total before recording new loss; symptoms trigger care even if the pouch remains nearly empty.
+- **District-hospital transfer:** During movement from delivery room to another bed, staff document whether spilled or absorbed blood makes the total incomplete. The receiving team uses the flagged reading alongside vitals and established haemorrhage protocol, rather than treating it as a diagnostic threshold.
+- **Referral transport:** Where transport and infection-control rules allow, a closed pouch and minimal handoff tab travel with the patient; if secure transport is impossible, staff copy the reading into the existing clinical record and dispose of the pouch locally. The device does not substitute for referral or treatment.
+
+## Risks & Mitigations
+
+- **False reassurance:** Concealed bleeding, absorbent pads, and bypass flow are invisible to the pouch. Use symptoms, examination, and local response protocols first; conspicuously label incomplete readings.
+- **Mixed fluid and posture:** Mark contaminated or tilted readings unreliable; compare against gravimetry and test placement, tilt, clots, and spill cases before any clinical claim.
+- **Handoff arithmetic and workload:** Read back each prior volume and final sum; test against the existing drape-plus-chart workflow, including low light and multiple languages. Reject the design if changeover slows treatment.
+- **Infection, privacy, and waste:** Single-patient disposable path; follow local handling and disposal rules. Record only the minimum needed for handoff, obtain consent under local practice, and avoid digitizing identifiable readings.
+- **Incumbent cost and regulation:** Existing calibrated drapes may be cheaper and already fit protocols.[1][2] Verify net workflow benefit and total delivered cost before procurement; determine applicable regulatory classification and obtain appropriate review before clinical use.
+
+## Vision for 2050
+
+A plausible 2050 scenario is a birth service where every transfer retains an explicit cumulative blood-loss record, whether carried by a tested pouch, chart, or better successor. Objective measurement is paired with trained teams, supplies, timely referral, and respectful patient care—not sold as a stand-alone mortality intervention. This mat earns a place only if independent trials show a safer or more reliable handoff than the ordinary calibrated drape and chart.[1]
+
 ## Sources
 
 [1] https://www.who.int/news/item/09-05-2023-lifesaving-solution-dramatically-reduces-severe-bleeding-after-childbirth

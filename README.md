@@ -126,6 +126,7 @@ Design and document technologies that:
 | [Passive Storm-Stow Solar Mount](./passive-storm-stow-solar-mount/) | Concept | Disaster Resilience & Distributed Energy / Roof PV |
 | [Altitude-Qualified Lake Drain](./altitude-qualified-lake-drain/) | Concept | Disaster Resilience & Universal Basic Services / Glacial-Lake Risk Reduction |
 | [Repairable Roadside Noise Baffle](./roadside-noise-baffle/) | Concept | Healthy Urban Environments & Universal Basic Services / Traffic Noise |
+| [Capillary Salt-Export Tile](./capillary-salt-export-tile/) | Concept | Food Security & Soil Stewardship / Localized Farm Salinity |
 
 ## Structure
 

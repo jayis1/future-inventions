@@ -1035,3 +1035,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$115/m² ex-factory panel target at 10,000 m²/year by 2038, excluding foundations, restraint, installation and field qualification
 - **Author:** jayis1
 - **Created:** 2026-11-01
+
+### 109 — Capillary Salt-Export Tile
+- **Category:** Food Security & Soil Stewardship / Localized Farm Salinity
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Unvalidated 30-pair strip trial target; no crop-yield or global reclamation claim
+- **Key Material:** Porous ceramic wick, covered HDPE evaporation cassette, removable polypropylene liner
+- **Key Innovation:** Tests passive subsurface capillary transport into a rain-isolated, removable salt collector against matched sham strips; wick evaporation is established prior art
+- **Target Cost:** Unquoted US$35 ex-workshop per 0.1 m² cassette at 10,000/year by 2038, plus US$15/10 m² installation allowance; excludes assays and regulated salt disposal
+- **Author:** jayis1
+- **Created:** 2026-11-04

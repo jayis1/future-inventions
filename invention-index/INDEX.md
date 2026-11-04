@@ -1045,3 +1045,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$35 ex-workshop per 0.1 m² cassette at 10,000/year by 2038, plus US$15/10 m² installation allowance; excludes assays and regulated salt disposal
 - **Author:** jayis1
 - **Created:** 2026-11-04
+
+### 110 — [Privacy-Vented Pad Dryer](../privacy-vented-pad-dryer/)
+- **Category:** Menstrual Health & Universal Basic Services / Private Reusable-Pad Drying
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Unvalidated 100-user seasonal pilot; 10,000 cabinets could hold at most 40,000 pads per batch under qualified conditions, with health and attendance outcomes unknown
+- **Key Material:** Recycled-aluminium solar air collector, opaque recycled-PP enclosure, stainless clips and screens, removable reference swatch
+- **Key Innovation:** Tests privacy-screened passive warm-air drying with a dry-reference/no-ready check against ventilated-line controls; solar air drying itself is established prior art
+- **Target Cost:** Unquoted US$18 ex-workshop per cabinet at 10,000/year in 2038, excluding installation, water, soap, pad supply and maintenance
+- **Author:** jayis1
+- **Created:** 2026-11-04

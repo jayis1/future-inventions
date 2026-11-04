@@ -127,6 +127,7 @@ Design and document technologies that:
 | [Altitude-Qualified Lake Drain](./altitude-qualified-lake-drain/) | Concept | Disaster Resilience & Universal Basic Services / Glacial-Lake Risk Reduction |
 | [Repairable Roadside Noise Baffle](./roadside-noise-baffle/) | Concept | Healthy Urban Environments & Universal Basic Services / Traffic Noise |
 | [Capillary Salt-Export Tile](./capillary-salt-export-tile/) | Concept | Food Security & Soil Stewardship / Localized Farm Salinity |
+| [Privacy-Vented Pad Dryer](./privacy-vented-pad-dryer/) | Concept | Menstrual Health & Universal Basic Services / Private Reusable-Pad Drying |
 
 ## Structure
 

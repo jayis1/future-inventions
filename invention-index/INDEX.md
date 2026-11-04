@@ -1065,3 +1065,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$450 ex-workshop per 100 L/day nominal module at 1,000/year by 2038, excluding installation, reagents, technician visits and assays
 - **Author:** jayis1
 - **Created:** 2026-11-04
+
+### 112 — [Incubation-Witness Water Kit](../incubation-witness-water-kit/)
+- **Category:** Drinking Water & Universal Basic Services / Microbial Test Validity
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Unvalidated 300-run fault-injection target and 20-site supervised pilot; no population reach or health benefit claimed
+- **Key Material:** Recycled-aluminium heat spreader, polypropylene shell, dual thermistors and sealed 100 mL commercial-assay vessel
+- **Key Innovation:** Tests a sample-adjacent incubation-history witness and latched invalid state against a standard incubator using the same commercial E. coli assay; culture chemistry is prior art
+- **Target Cost:** Unquoted US$160 ex-workshop per reusable incubator at 10,000/year by 2038, excluding assay, vessels, supply/battery, calibration, labour and disposal
+- **Author:** jayis1
+- **Created:** 2026-11-04

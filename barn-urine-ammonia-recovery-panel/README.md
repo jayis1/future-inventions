@@ -43,3 +43,32 @@ An eligible panel could retain nitrogen that would otherwise be lost while reduc
 [1] https://pmc.ncbi.nlm.nih.gov/articles/PMC9699080 — Soto-Herranz et al. membrane configuration study
 [2] https://www.who.int/teams/environment-climate-change-and-health/air-quality-and-health/sectoral-interventions/ambient-air-pollution/sectors-of-interventions — WHO air quality sector interventions
 [3] https://pmc.ncbi.nlm.nih.gov/articles/PMC8002686 — Membrane treatment of manure and digestate
+
+## How It Works
+
+The panel is a retrofit for a **urine-only channel that already drains safely**, not a device placed beneath mixed bedding. Urine flows under the covered cassette; a screen diverts solids without narrowing the independent overflow. Urease gradually converts urea to ammoniacal nitrogen. Only the free NH₃ fraction—not NH₄⁺ directly—can cross the ePTFE tube into recirculating acid. Protonation inside the tube keeps the NH₃ partial pressure low, while the sealed receiver accumulates ammonium sulfate. An acid-reserve check precedes each cartridge exchange; spent liquid stays contained until it passes product-quality testing. Remaining urine follows the existing drainage route. No caustic addition or forced aeration is assumed: if natural pH and residence time leave too little free NH₃, the cassette fails its performance gate rather than changing the barn's emissions profile to make recovery look better.[1]
+
+## Technical Architecture
+
+`Urine-only inlet → screened covered channel → existing drain/overflow`; in parallel, `channel NH₃ headspace → suspended ePTFE tubing → closed acid loop → sealed receiver`. Recycled polypropylene forms the removable cover and screen; the ePTFE cassette provides the gas-selective interface; acid-compatible tubing, a peristaltic pump and an HDPE secondary bund isolate the reagent from animals and runoff. A low-flow flag and leak strip stop circulation and call for trained service, while the passive drain stays open. Record inlet/outlet volume and TAN, receiver nitrogen, acid reserve, temperature, pH, power and service hours. The audit balance is **inlet total N = outlet total N + receiver N + measured gaseous N + other measured losses ± inventory change**, all in grams of N over the same interval; TAN alone omits urea and organic N. Size membrane area only after a measured NH₃-N flux (g N/m²/day) under representative cool and warm conditions. Literature slurry-chamber capture cannot be transplanted into this headspace geometry without a test.[1]
+
+## Performance Benchmarks
+
+These are **unmeasured acceptance targets**, not product specifications or claims of superiority. At the illustrative 100 L/day and 1 g TAN/L after hydrolysis (100 g TAN/day), a 30-day prototype should put at least 30 g N/day in its receiver on valid operating days, while its **time-integrated channel NH₃-N emissions are at least 30% lower than a matched, equally covered control**. Compare to an uncovered channel separately to isolate the cover's effect. Report recovery as receiver N / incoming TAN and emissions as g NH₃-N/channel/day with paired temperature, pH, flow and ventilation; do not equate the two percentages. Aim for ≥80% measured availability and a seven-day cartridge route, with **zero detectable acid-to-drain leaks** by pre-specified conductivity/sulfate tests; record kWh/kg recovered N, acid kg/kg N and technician minutes/kg N rather than inventing efficiency values. At the target point the stoichiometric acid floor is 3.50 kg pure H₂SO₄ per kg captured N, before excess or losses. Published pig-slurry laboratory configurations achieved 36–72% NH₃-N removal and reported 9.8–21.2 €/kg N recovered; those are **different feedstocks, boundary conditions and cost scopes**, not barn-channel baselines or validated targets for this module.[1]
+
+## Deployment Scenarios
+
+- **Single eligible barn:** One existing urine-separation line with about 100 L/day throughput hosts a panel alongside a covered-only control. A trained technician swaps the closed receiver weekly; the operator checks the overflow and leak flag daily. No installation where separation or safe cartridge handling is absent.
+- **Cooperative pilot:** Ten eligible channels across farms share a cartridge collection route and laboratory assays. Compare matched channels in warm and cold seasons before claiming lower emissions; at the continuous design point ten units would capture 109.5 kg N/year, but 80% availability would reduce that illustrative figure to 87.6 kg/year.
+- **New-build housing:** Specify accessible urine-only drains, a permanently clear bypass and external chemical-service access at design time. Integrate with local manure permits and fertilizer rules without changing required barn ventilation.
+
+## Risks & Mitigations
+
+- **Weak transfer or seasonal variation:** Urea conversion, pH, dilution and cold weather may keep free NH₃ low. Log feed composition and temperature, measure flux and reject sites below the paired-control gate rather than adding alkali or aeration.
+- **Fouling and blocked drainage:** Bedding and mineral deposits can clog the screen or wet the membrane. Provide a visible clear bypass, inspect at every exchange, and track flux decline and clean/replacement intervals; a blockage or leak stops the trial.
+- **Chemical exposure and contaminated product:** Isolate the acid circuit in a bund, stop pumping on leak or low flow, and restrict exchange to trained staff with site-approved handling procedures. Assay each receiver for free acid, N and locally regulated contaminants; unapproved batches go to lawful disposal, never a field.
+- **Economics and displaced harm:** The US$450 workshop target excludes service, acid and assays. A farm should compare total cost and life-cycle impacts against a simple cover and incumbent manure management; recovered N alone is not evidence of avoided NH₃ or net climate benefit.
+
+## Vision for 2050
+
+If independent trials demonstrate durable reductions *beyond a cover alone*, safe cartridge logistics and affordable recovery, urine-separating barns could treat source-side nitrogen as a measured nutrient stream rather than an invisible loss. Cooperatives might exchange standardized cassettes and return verified ammonium sulfate to local nutrient plans. This is a conditional future, not a prediction: unsuitable barns keep their existing drainage and ventilation, and the technology earns its place only where monitored air quality, worker safety and full-cycle costs justify it.

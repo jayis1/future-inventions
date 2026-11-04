@@ -32,6 +32,46 @@ The candidate addresses an agricultural problem affecting millions of livelihood
 
 A first disproof experiment is a 90-day column test with equal initial saline soil and moisture in paired columns: if the wick column does not show a measured decline in total soluble-salt inventory *and* recovered cassette ions account for that loss within analytical uncertainty, stop development. Shut or lift cassettes before storms; spills or broken lids mean isolate, recover salt and re-test the soil. Avoid saline runoff, dust exposure during dry-salt handling and attracting salt to vulnerable crop roots. If trials succeed, limit deployment to surveyed, consented strips with funded maintenance and a legal salt-disposal route; larger landscape benefits remain conditional, not forecast.
 
+## How It Works
+
+A 10–20 cm-deep pore-water contact feeds the replaceable ceramic wick. Evaporation from its porous spreader establishes a water-potential gradient; dissolved ions travel with that water and crystallize on the spreader or fall onto a removable liner inside the covered HDPE cassette. The cassette is a collector, not a salt sink: brush or replace the spreader over the liner, assay and weigh recovered solids, seal them for an approved waste route, and keep a transfer log. No measurable export occurs until salts actually leave the site. The effective capillary lift depends on pore radius, wetting and hydraulic conductivity: a fine pore may lift water but deliver too little flux, while a coarse pore may not reach the spreader. Bench testing must select a pore-size/flow compromise, not infer performance from dimensions alone.
+
+On each service cycle, record pore-water volume and ion concentration, collected dry salt and ion composition, ceramic-retained salt, leakage, rain entry and soil-water change. `incoming dissolved salt = recovered + ceramic-retained + leaked + unaccounted` is the cassette boundary; compare treated and sham 0–20 cm soil inventories to test whether the recovered mass originated in the target strip rather than neighboring soil, airborne dust or saline groundwater. Rain can redissolve crust and reverse the flow, so shut the cassette before storms and treat a flooded unit as a failed cycle. Conventional leaching also requires a route that carries salty drainage out of the treatment area; collection, not evaporation alone, is the differentiator here.[2]
+
+## Technical Architecture
+
+**Soil interface → ceramic wick → porous spreader → lidded HDPE cassette → removable polypropylene liner → characterized waste.** The buried wick and spreader are replaceable; the screened vent passes water vapor but is not a guaranteed rainproof or dustproof seal. An inspection tag records installation depth, liner exchange, seal condition and waste transfer; field instruments for the *trial* (soil-moisture probes, rainfall gauge, sampled porewater and depth-resolved laboratory soil assays) are not part of the proposed passive product. The data flow links paired-strip soil inventories, water flux and recovered ion mass by cassette ID and date. A removable splash lip and secondary containment are design candidates to test against wind-driven rain, not proven safeguards. HDPE, polypropylene and candidate ceramic must pass salt-exposure, UV and wet–dry durability tests before procurement.
+
+## Performance Benchmarks
+
+| Measure, boundary | Unverified tile target / test | Established comparator |
+| --- | --- | --- |
+| Salt recovered at the cassette | At least 0.5 g dry soluble ions per working day; hypothetical 0.2 L/day × 5 g/L = **1 g/day upper-bound input**, before retention and losses. Weigh and assay each service batch. | No comparable published rate for this device; report matched soil-column and sham-strip results rather than claiming superiority. |
+| Net 0–20 cm soil-salt change | Positive treated-minus-sham inventory decline over two dry seasons, with ion-balance closure within analytical uncertainty; EC alone is insufficient. | FAO's leaching-and-drainage approach moves salt below the root zone and must discharge salty drainage outside the reclaimed area; site-specific flux, water and cost must be measured before comparing.[2] |
+| Water, power and maintenance | At 0.2 L/day, **24 L per 120 working days** lost per cassette; zero operating electricity is a design target. Measure moisture loss and days to blockage or liner exchange. | Leaching needs water and effective drainage, but this is *not* a matched water-saving claim; the tile may compete with crop moisture.[2] |
+| Season cost | US$50 initial installed and US$8/year allowance per 10 m² strip, excluding assays, transport and disposal; compute full US$/g of *verified root-zone removal*. | Obtain local drainage, irrigation-management and salt-tolerant-crop quotes on the same site and time horizon. |
+
+The 0.5 g/day threshold is a research gate, not an observed benchmark. Report climate, soil texture, porewater salinity, groundwater depth, run hours, rain exclusions and service labor alongside any result; stop if maintenance or safe disposal makes net removal uneconomic.
+
+## Deployment Scenarios
+
+1. **Fallow farm margin:** a dry-season 10 m² saline strip next to a field, only where moisture and sampling access permit paired sham controls; avoid crop roots and check neighboring crop water stress.
+2. **Saline greenhouse walkway:** a non-food-production edge with managed irrigation and accessible cassette exchange; reject sites with contaminated salts or runoff to drains until waste characterization and containment are approved.
+3. **Community demonstration plot:** a surveyed, non-flooded plot used for a supervised soil-column-to-field comparison, with a named operator and prearranged legal salt disposal; educational value is not evidence of agronomic recovery.
+
+## Risks & Mitigations
+
+- **Pore clogging and crystallization:** record daily flux and exchange the ceramic/spreader at a pre-registered decline threshold; test wet–dry, freeze–thaw and abrasion cycles rather than assuming a service life.
+- **Water stress and salt redistribution:** compare depth-resolved soil inventory and moisture with sham strips and adjacent crop plots; stop if salt is merely concentrated at the surface or crop moisture falls materially.
+- **Rain intrusion, dust and back-diffusion:** inspect lids after storms, close vents, collect spills under containment and assay soil after each breach; invalidate any cycle without a defensible salt balance.
+- **Waste and material failure:** characterize co-concentrated contaminants, provide sealed handling and approved disposal, and assay ceramic/polymer leachate; refuse deployment where take-back, worker protection or disposal capacity is absent.
+
+## Vision for 2050
+
+If independent paired trials show durable net root-zone export at an acceptable full lifecycle cost, surveyed fallow strips could use repairable cassettes as one *small-area* option alongside drainage, water management and salt-tolerant planting. Operators would track collected ions to permitted destinations rather than count visible crust as progress. This is a conditional design vision, not a forecast of global reclamation, crop-yield gains or adoption.
+
 ## Source
 
 [1] FAO, *Global status of salt-affected soils — Main report* (2024), executive summary, https://doi.org/10.4060/cd3044en . Global estimates are uncertain and include land where intervention is inappropriate; the report does not validate this device.
+
+[2] FAO, *Management of Salt Affected Soils*, https://www.fao.org/soils-portal/soil-management/management-of-some-problem-soils/salt-affected-soils/en/ . Describes leaching and discharge of saline drainage; does not benchmark this tile.

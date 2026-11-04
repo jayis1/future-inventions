@@ -32,6 +32,43 @@ A recycled-aluminium heat spreader, insulated recycled-polypropylene shell, low-
 - **Biological containment:** Never reopen a cultured vessel in a household. Train staff in spill response, keep inoculated materials sealed, and use a locally approved disinfection and disposal route; never dump cultured liquid into drinking-water storage. Do not distribute live positive-control cultures to untrained users.
 - **Accessibility:** Use high-contrast text plus a tactile invalid flag; colour and fluorescence interpretation requires a trained reader and reference comparators under the assay instructions. Provide local-language guidance and an affordable confirmation/referral route. Where reliable power, reagents, qualified staff or disposal are absent, this concept is not ready to deploy.
 
+## How It Works
+
+The operator logs a sample ID, reagent lot and collection time, then loads the sealed assay vessel and a separate 100 mL water-filled surrogate into matching sockets. The controller checks probe continuity, lid closure and reference calibration before beginning a new session. Its low-voltage heater and fan circulate air across the aluminium spreader; the chamber probe regulates heat while the surrogate probe records whether a water-equivalent thermal mass actually follows the set point. Both readings, elapsed time, power continuity and lid events are retained locally. The surrogate is a witness to *conditions*, not a substitute for sampling or a microbial sensor.
+
+At the manufacturer-specified reading window, the station offers shielded viewing, but permits a *valid negative* to be recorded only if the history passes a validated thermal envelope. A trained reader compares the sealed assay with the method's reference: colourless = target not detected, yellow = total coliform detected, yellow plus fluorescence = *E. coli* detected under the cited reference method.[1] An interrupted, incomplete or ambiguous run is **invalid**, never a valid negative; a positive observation remains reportable even if the electronics fail. Locally required confirmation and protective action follow any positive, doubtful or invalid result.
+
+## Technical Architecture
+
+- **Wet path:** sterile sample vessel → unchanged commercial reagent → sealed incubation → guarded manual read → locally approved disposal. The surrogate never contacts the sample.
+- **Thermal/control path:** 12 V supply → fused heater and fan → aluminium spreader → chamber and surrogate thermistors → watchdog controller → append-only session record and latched invalid indicator. The logger should retain fault history across a brownout; loss of trustworthy history defaults to invalid.
+- **Human path:** sample ID and lot entry → start/stop interlock → high-contrast and tactile validity display → trained colour/fluorescence interpretation → referral log. The validity display is not an automated water-safety verdict.
+
+## Performance Benchmarks
+
+| Metric | Existing reference or comparator | Proposed engineering target (not measured) |
+| --- | --- | --- |
+| Assay reading | IDEXX Colilert-18 presence/absence: 35 ± 0.5 °C for 18 h; manufacturer reports single viable target detection per sample under its method.[1] | Use the *same* assay, volume and reading window; demonstrate equivalent analytical agreement with qualified laboratory testing rather than claim improved detection. |
+| Temperature validity | Standard controlled incubator with independent calibrated thermometry, using the same assay; no measured comparison yet. | Under mapped ambient/load conditions, independently verify surrogate and chamber remain within the assay's specified envelope during the required incubation; otherwise latch invalid. |
+| Fault recognition | Ordinary incubator and manual run log in a paired, blinded study; baseline invalid/misread rate unknown. | In a planned 300-run fault-injection challenge, identify every injected invalid run and report a confidence interval, missed faults and false-invalids separately. |
+| Energy | No prototype measurement; the existing 10 W × 18 h = 0.18 kWh estimate excludes warm-up and UV read. | Meter total energy and peak draw under hot/cold ambient and outage conditions before specifying a battery or operating cost. |
+
+These are *test plans and design targets*, not prototype results. A perfect score on a finite fault set would not prove zero false negatives in the field; microbiological sensitivity, sampled-water variability and process-validity detection are different quantities.
+
+## Deployment Scenarios
+
+1. **Rural water cooperative:** a trained operator checks a storage outlet on a defined schedule and sends positive or invalid samples for accredited confirmation, while local authorities direct interim protective measures.
+2. **Flood-recovery service point:** a temporary supervised station screens sampled supplies after damage to distribution infrastructure; results do not replace chemical tests or a boil-water decision from the responsible authority.
+3. **Small-clinic water program:** staff maintain assay lots, calibration and disposal records at a clinic with reliable backup power, rather than handing culture vessels to households.
+
+## Risks & Mitigations
+
+A drifting surrogate probe or uneven heat could falsely validate a cold sample: qualify thermal mapping at different fill levels and ambients, use independently calibrated reference checks and fail closed on probe disagreement. Brownouts, full memory and late reads must latch invalid; backup power is not a substitute for an auditable uninterrupted trace. Disinfectant carryover, poor sample selection, aged reagent and handling contamination can defeat assay interpretation even with ideal incubation: follow the manufacturer and local sampling rules, document lots and controls, and refer doubtful results. UV exposure and cultured-liquid leakage require a keyed opaque hood, electrical/photobiological review, sealed handling and approved waste treatment. Procurement and deployment require jurisdiction-specific method acceptance and trained operators; this concept has neither approval nor field validation.
+
+## Vision for 2050
+
+If independent validation shows a real reduction in invalid negatives at acceptable total cost, a repairable offline witness could become routine equipment at small water-service points. Local technicians would replace probes instead of discarding incubators; public-health teams would receive a traceable *validity record* alongside each microbiology result. This is a conditional scenario, not a forecast of adoption or of diseases prevented: safe water still depends on treatment, infrastructure, chemical surveillance and accountable public-health decisions.
+
 ## Sources
 
 [1] https://www.idexx.com/en/water/water-products-services/colilert-18

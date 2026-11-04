@@ -128,6 +128,7 @@ Design and document technologies that:
 | [Repairable Roadside Noise Baffle](./roadside-noise-baffle/) | Concept | Healthy Urban Environments & Universal Basic Services / Traffic Noise |
 | [Capillary Salt-Export Tile](./capillary-salt-export-tile/) | Concept | Food Security & Soil Stewardship / Localized Farm Salinity |
 | [Privacy-Vented Pad Dryer](./privacy-vented-pad-dryer/) | Concept | Menstrual Health & Universal Basic Services / Private Reusable-Pad Drying |
+| [Barn Urine Ammonia Recovery Panel](./barn-urine-ammonia-recovery-panel/) | Concept | Clean Air & Sustainable Agriculture / Source-Side Nutrient Recovery |
 
 ## Structure
 

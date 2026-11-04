@@ -1055,3 +1055,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$18 ex-workshop per cabinet at 10,000/year in 2038, excluding installation, water, soap, pad supply and maintenance
 - **Author:** jayis1
 - **Created:** 2026-11-04
+
+### 111 — [Barn Urine Ammonia Recovery Panel](../barn-urine-ammonia-recovery-panel/)
+- **Category:** Clean Air & Sustainable Agriculture / Source-Side Nutrient Recovery
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Unvalidated 10-panel pilot target; at the illustrative 30 g N/day/unit point, at most 109.5 kg N/year across ten continuously operating units; avoided emissions require matched covered-channel trials
+- **Key Material:** Replaceable ePTFE gas-permeable tubing, recycled-PP urine-channel cover, sealed acid-compatible HDPE receiver and secondary containment
+- **Key Innovation:** Tests a service-exchangeable urine-source membrane cassette with independent covered-control emissions accounting and fail-open hydraulic overflow; membrane ammonia recovery is existing art
+- **Target Cost:** Unquoted US$450 ex-workshop per 100 L/day nominal module at 1,000/year by 2038, excluding installation, reagents, technician visits and assays
+- **Author:** jayis1
+- **Created:** 2026-11-04

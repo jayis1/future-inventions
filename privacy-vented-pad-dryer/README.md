@@ -32,6 +32,45 @@ A pilot of 100 consenting users could compare drying completion, user preference
 - **Hygiene and end-of-life:** Clean tray and clips after each batch; inspect for visible mold or corrosion monthly, and replace damaged parts locally. Do not reuse a pad that is damp, visibly soiled, odorous, or beyond its manufacturer's care instructions. Recycle aluminium and PP separately where available; retain cards/screens out of waterways. A shared cabinet needs individual labeled clips and user-approved privacy arrangements, without names logged electronically.
 - **Validation gate:** Test 30 units against shaded ventilated-line controls across two seasons, logging pad dry/wet mass, ambient and pad-contact temperature/RH, airflow and weather at 30-minute intervals. Require ≥90% of qualified test batches to reach the above moisture target within six hours, zero pad-contact excursions above 45 °C, no rainwater ingress, and no statistically worse user-reported privacy than controls before a larger pilot. Independent hygiene review is required before any claim of reduced infections; no such claim is made here.
 
+## How It Works
+
+After washing with soap and clean water according to the pad maker's instructions, the user squeezes out excess water and hangs up to four pads by their edges, with both faces exposed and the absorbent cores separated. Sun heats the black aluminium collector *outside* the opaque cabinet. Incoming air passes a screened, baffled lower opening, warms in the collector, rises past the pads as water evaporates, and exits through a high, sightline-baffled screen. The roof sheds rain while leaving the exhaust open. The dry-reference swatch and humidity card are prompts to inspect—not automatic completion sensors. For validation, weigh each pad against its own clean, fully dry reference mass; at the proposed 30 g dry mass, ≤1.5 g residual added water corresponds to ≤31.5 g measured mass. A household user without a scale must not treat a card color or six-hour timer as proof of that threshold: if the thickest layer remains damp, dry it longer or use a clean alternative. Neither heat nor airflow disinfects the fabric.
+
+## Technical Architecture
+
+The passive stack has four serviceable assemblies: (1) a black-coated, shallow recycled-aluminium solar air collector, with no pad contact; (2) an opaque recycled-polypropylene shell with light-baffled intake/exhaust, insect screens, latch, and rain roof; (3) stainless clips and a removable slatted drip tray, accessible for cleaning; and (4) a replaceable reference swatch and exhaust humidity card. The only optional electrical subsystem is a separately serviceable 5 W PV-powered fan on the air path; it cannot be needed for door release or ventilation. The physical data flow is ambient air → collector → spaced, washed pads → exhaust, with wash drips into the tray. The human decision flow is reference check → inspect the thickest pad → keep drying or remove it; no camera, wireless telemetry, user registry, or automated sterility verdict. Prototype drawings must size vents and baffles by measured flow under full loading, and isolate any fan wiring from condensate and wet hands.
+
+## Performance Benchmarks
+
+No prototype measurements or verified market-best comparator figures exist. The following are **test specifications**, not demonstrated improvements; compare all devices with the same four 30 g dry-mass pads, 30 g retained water per pad, 25–35 °C ambient, 50–70% RH, and measured irradiance. Weigh each pad before wetting, after wetting, and after each interval; run matched shaded ventilated-line and opaque screened-rack controls at the same site across two seasons. Report median, 90th percentile, failures and sample counts, including 90% RH and cloudy-day results separately.
+
+| Metric | Proposed cabinet target (unvalidated) | Current comparator state |
+| --- | --- | --- |
+| Residual added water | ≤1.5 g per pad (≤5% of 30 g dry mass) in ≥90% of qualified batches | Unknown until matched line/rack trials; use the same mass endpoint |
+| Cycle time | ≤6 h in qualified sunny conditions; no promise in wet/cloudy weather | Measure time to the same mass endpoint, not merely dry-feeling surfaces |
+| Pad-contact air | <45 °C and below any lower fabric-care limit | Log the same temperature on controls; reject damaged fabric |
+| Fan electricity | 0 Wh passive; ≤30 Wh per six-hour cycle if the optional 5 W fan runs continuously | Measure plug-in alternatives at the same moisture endpoint; PV output is weather-dependent |
+| Privacy and maintenance | No direct pad sightline at ordinary approach angles; screens cleanable weekly | Test silhouettes, noise, access, and cleaning time against screened-rack controls |
+
+The nominal batch removes 114 g of water to reach the target; using an *illustrative* latent heat of 2.4 MJ/kg gives about 76 Wh of evaporation heat before collector and ventilation losses. A hypothetical 0.25 m² collector exposed to 500 W/m² for six hours intercepts 750 Wh of sunlight, **not** 750 Wh of usable heat; shading, losses, humidity, airflow, and variable irradiance can erase the margin. These values are sizing arithmetic, not performance evidence. Validate the collector area and temperature with instrumented prototypes before specifying it for manufacture.
+
+## Deployment Scenarios
+
+- **Private household courtyard:** Mount the collector in sun and the opaque cabinet near a private washing point, with exhaust directed outdoors and the latch accessible to the pad owner. No fan is required; users need a clean backup pad for rainy days.
+- **Shared school washroom:** Place several cabinets behind a consent-based privacy screen, separate labeled clips without recording names, and assign tray/screen cleaning. Staff should not infer health or attendance benefits from use counts; privacy, wash water, soap, and product choice come first.
+- **Humid clinic or community laundry:** Trial the optional isolated PV fan only if intake and exhaust can remain unobstructed and electrical splash protection is verified. Log failed wet-weather cycles and provide conventional ventilated drying as a fallback rather than increasing heat indiscriminately.
+
+## Risks & Mitigations
+
+- **Hidden moisture or contamination:** A dry surface, swatch, or card cannot certify a pad core or microbial safety. Require pad-specific mass checks in trials, user inspection in ordinary use, validated washing instructions, and explicit no-ready guidance in damp weather. Clean clips and tray between users.
+- **Heat, rain, and blocked vents:** Test at full load, blocked-screen and fan-failure conditions; add a passive overtemperature vent/shade path, inspect rain ingress, and set the pad-contact limit below both 45 °C and the manufacturer's lower care limit. A closed privacy box must never seal the air path.
+- **Electrical, access, and privacy failure:** Keep the passive version wholly unpowered. For the optional PV fan, independently assess insulation, strain relief, splash/condensation exposure, and safe unplugging; do not imply certification. Test silhouettes, shadows, sound, lock accessibility and cleaning burden with consenting users, including users with limited dexterity.
+- **Cost and end-of-life:** The US$18 estimate excludes installation, soap, water, replacement parts and labor. Obtain supplier quotes and local repair/recycling pathways before projecting savings or uptake. This design is only for compatible reusable external pads, never disposables.
+
+## Vision for 2050
+
+If seasonal trials demonstrate reliable core drying, safety, meaningful privacy, and affordability, repairable cabinets could sit beside washing facilities as one optional piece of menstrual infrastructure. A 2050 network would be locally made and maintained, with public test protocols and weather-specific no-ready guidance—not a universal replacement for other products or a substitute for water, soap, and private facilities. Uptake, avoided waste, and health outcomes remain conditional on measured behavior and independent evaluation.
+
 ## Sources
 
 [1] https://www.unicef.org/supply/menstrual-hygiene-products — UNICEF menstrual hygiene products

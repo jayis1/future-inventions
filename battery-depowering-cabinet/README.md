@@ -37,6 +37,59 @@ A pilot goal is **10 supervised sites × 100 eligible packs/site/month for 12 mo
 - Prototype fault-injection must test reversed polarity, wrong chemistry/voltage, open or shorted sensor, blocked ventilation, contactor weld, mains loss, runaway heating simulation, and mislabeled packs. An independent third party must compare it with collection-only practice before field operation.
 - The enclosure, carriers and replaceable parts should be repairable; failed electronics enter e-waste recycling. Spent packs never become general waste.
 
+## How It Works
+
+**Intake is the first safety gate.** A trained operator reads the manufacturer label and recall information, inspects casing and terminals, and checks the pack against a recycler-approved profile and keyed carrier. Unknown or suspect packs never connect to the load; the site's separate damaged/defective/recalled procedure takes over. For an accepted pack, the carrier encloses exposed contacts and the bay verifies fit, measured voltage and polarity, both temperature channels and airflow before the contactor may close.
+
+With the door interlocked, a fused, current-limited DC path converts extractable electrical energy to heat in a resistor; an external heat sink rejects normal operating heat. The controller integrates measured voltage × current over time and compares the run with that pack's validated profile. The contactor opens on the profile's stop condition or any disagreement, timeout, overheating or ventilation fault. A second electrical check and trained operator review precede terminal insulation and documented handoff. A pack that rebounds, cannot be characterized or has an interrupted cycle remains in controlled custody for specialist assessment—not a “safe” output. No fixed voltage or discharge time applies to every pack; even a completed cycle leaves chemical and thermal hazards.
+
+## Technical Architecture
+
+```text
+operator + label/condition gate -> keyed carrier + interlocked single-pack bay
+                                    | voltage, current, dual temperature, airflow
+                                    v
+                              supervised controller + independent trip logic
+                                    |                    |
+                            fused DC load -> resistor -> heat sink
+                                    |
+                        contactor / upstream isolation -> fault hold
+                                    v
+                      audit record -> operator -> approved recycler
+```
+
+The proposed powder-coated steel shell, mineral-insulated bay and removable polypropylene carrier separate people from live contacts; they are not a fireproof containment claim. Hardware current limiting, a fuse and normally open contactor are distinct from software supervision. Independent post-stop current sensing must detect a welded contactor; a qualified responder uses upstream isolation, not an unlock command. Power loss drops the contactor, while a latched fault prevents restart until reviewed. The per-pack record should capture intake category, profile ID, measured V/I/temperature trace, trip reason, operator signoff and recycler handoff without consumer identifiers. Design verification must establish sensor independence, heat rejection, off-gas response and whether a single-bay event can affect the surrounding site; a production safety case does not yet exist. See [research specification](SPECIFICATION.md).
+
+## Performance Benchmarks
+
+**No prototype measurements or certified performance exist.** The figures below are modeled engineering bounds or research targets, not measured advantages over commercial equipment. Existing battery cyclers can discharge packs; the relevant comparator for this collection-site workflow is a staffed station that insulates terminals and sends eligible batteries directly to an authorized recycler, without onsite discharge. Its labor, incident and cost baselines must be measured in the same pilot; no like-for-like quantitative state-of-art figure is available here.
+
+| Metric | Modeled cabinet target / test | Current comparator or status |
+|---|---|---|
+| Accepted pack envelope | Labelled rechargeable Li-ion, 3.6–14.8 V nominal, ≤50 Wh, approved external contacts | Collection-only can accept a broader range subject to its recycler; this cabinet rejects anything outside its narrower envelope. |
+| Energy/thermal design case | 50 Wh = 180 kJ; ideal 25 W mean load requires at least 2 h and rejects ~180 kJ as normal heat, before taper and ancillary loads | Electrical calculation, not observed throughput or a fire-containment rating. |
+| Intake-to-handoff throughput | Planning assumption: 100 eligible packs/site/month with staffed operation | Actual eligible feed, staffing, cycle time and collection-only operator minutes must be logged. |
+| Detection and endpoint | Test 100% of scripted electrical/thermal interlocks in surrogate fault injection; log voltage rebound and false releases in trials | No field evidence yet; zero detected failures in a small sample would not prove zero risk. |
+| Comparative value | Only proceed if independently reviewed trial shows an acceptable safety case and a material benefit over collection-only handling | Collection-only is the default, not an inferior technology by assertion. |
+
+## Deployment Scenarios
+
+1. **Staffed municipal drop-off:** trained waste personnel screen loose, intact small packs behind the public counter; suspect packs follow the site's DDR protocol. The cabinet is optional only after the fire authority and receiving recycler approve the workflow.
+2. **Electronics-repair intake:** a technician handling a known removable pack uses a matching carrier and documented profile; embedded, unidentified or damaged device batteries go directly to a specialist, not to improvised leads.
+3. **Recycler-operated sorting depot:** a licensed facility can compare a supervised one-bay discharge lane against its existing terminal-isolation lane under common intake criteria, measuring added labor and faults before any multi-bay expansion.
+
+## Risks & Mitigations
+
+- **Misidentification and hidden cell damage:** keyed carriers, label/profile checks and visual rejects reduce exposure but cannot detect every internal fault; uncertain packs are never energized and go to specialist handling.
+- **Electrical faults:** reversed polarity, a short or welded contactor call for physical keying, fusing, independent current measurement and upstream isolation. Fault injection with surrogate loads comes before real-pack trials.
+- **Thermal event and off-gassing:** normal 25 W heat management does not qualify the enclosure for thermal runaway. A site-specific fire engineer must assess separation, detection, ventilation, responder access and evacuation; opening a faulted bay is not an automatic response.
+- **Bad telemetry, power or airflow loss:** two independently checked temperature channels, plausibility checks, airflow proving and a de-energizing contactor put the bay into a latched, operator-reviewed state. A stopped circuit cannot stop an ongoing internal cell event.
+- **Uncertain benefit and cost:** collection-only shipment may be safer and cheaper; a controlled pilot must measure total operator time, accepted/rejected counts, near misses and downstream recycler acceptance. Stop the program if the discharge stage fails to improve the assessed workflow.
+
+## Vision for 2050
+
+If independent trials establish a benefit, regulators accept the design and authorized recyclers actually want pre-discharge, repairable cabinets could become a specialist tool at staffed collection sites. Every accepted pack would have a traceable intake-to-recycler record, while damaged and unknown packs bypass the load entirely. Equally credible is a future in which better collection-only logistics make the discharge cabinet unnecessary; the vision is conditional, not a forecast of adoption or hazard elimination.
+
 ## Sources
 
 [1] https://www.epa.gov/hw/lithium-ion-battery-recycling-frequently-asked-questions

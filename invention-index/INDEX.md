@@ -1085,3 +1085,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$140 ex-workshop per kiosk at 10,000/year by 2038, excluding consumables, instruments, staffing, source tests and certification
 - **Author:** jayis1
 - **Created:** 2026-11-05
+
+### 114 — [Verified Abandoned-Well Seal](../verified-abandoned-well-seal/)
+- **Category:** Climate & Groundwater Protection / Orphaned-Well Remediation
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Unvalidated 10-well comparative pilot; no extrapolated methane or groundwater benefit
+- **Key Material:** Retrievable steel test string and elastomer packer, qualified auxiliary swelling seal and Class G oil-well cement
+- **Key Innovation:** Tests interval-addressed diagnosis plus independent subsurface pressure-integrity and surface methane-flux acceptance; packers and cement plugs are established art
+- **Target Cost:** Unquoted US$960 incremental kit/material allowance per screened shallow well by 2038; rig, labor, permits, restoration and monitoring excluded
+- **Author:** jayis1
+- **Created:** 2026-11-05

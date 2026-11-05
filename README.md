@@ -131,6 +131,7 @@ Design and document technologies that:
 | [Barn Urine Ammonia Recovery Panel](./barn-urine-ammonia-recovery-panel/) | Concept | Clean Air & Sustainable Agriculture / Source-Side Nutrient Recovery |
 | [Incubation-Witness Water Kit](./incubation-witness-water-kit/) | Concept | Drinking Water & Universal Basic Services / Microbial Test Validity |
 | [Batch-Witness Chlorination Kiosk](./batch-witness-chlorination-kiosk/) | Concept | Drinking Water & Universal Basic Services / Emergency Microbial Treatment |
+| [Verified Abandoned-Well Seal](./verified-abandoned-well-seal/) | Concept | Climate & Groundwater Protection / Orphaned-Well Remediation |
 
 ## Structure
 

@@ -1075,3 +1075,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$160 ex-workshop per reusable incubator at 10,000/year by 2038, excluding assay, vessels, supply/battery, calibration, labour and disposal
 - **Author:** jayis1
 - **Created:** 2026-11-04
+
+### 113 — [Batch-Witness Chlorination Kiosk](../batch-witness-chlorination-kiosk/)
+- **Category:** Drinking Water & Universal Basic Services / Emergency Microbial Treatment
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Unvalidated 200-batch paired trial; up to 29,200 L/year per kiosk at two 40 L batches/day and perfect availability, not a health outcome
+- **Key Material:** Food-contact HDPE batch tank, replaceable particulate cartridge, mechanical outlet interlock and DPD free-chlorine test
+- **Key Innovation:** Tests a batch-history outlet interlock requiring filtered-water qualification, dosing/mixing, elapsed contact and post-contact free-residual verification against an ordinary batch chlorinator; chlorination is established art
+- **Target Cost:** Unquoted US$140 ex-workshop per kiosk at 10,000/year by 2038, excluding consumables, instruments, staffing, source tests and certification
+- **Author:** jayis1
+- **Created:** 2026-11-05

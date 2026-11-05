@@ -1,0 +1,43 @@
+# Batch-Witness Chlorination Kiosk
+
+**Author: jayis1**
+**Category:** Drinking Water & Universal Basic Services / Emergency Microbial Treatment
+**Status:** TRL 2 research concept; not certified for drinking-water production
+
+## Problem
+
+WHO/UNICEF estimate that 2.1 billion people lacked safely managed drinking water in 2024; that figure does **not** describe the population this kiosk could serve.[1] At small emergency distribution points, a clear-looking water source can be microbiologically unsafe. Chlorine effectiveness depends on source-water demand, turbidity, pH, temperature, free residual and contact time. A flow-through tap can dispense newly dosed water before it has had enough contact; a timer alone cannot establish that enough free chlorine remained.[2][3]
+
+## Solution
+
+A staffed, offline **40 L batch kiosk** separates clarification, dosing, contact and dispensing. A covered settling vessel and washable coarse screen precede a replaceable fine particulate cartridge. A trained operator tests filtered-water turbidity and pH with maintained instruments, checks the source against local chemical-hazard screening, and closes the transfer valve if outside the *site-validated* treatment envelope. The 40 L food-contact HDPE batch tank receives a locally approved, measured sodium-hypochlorite dose through a keyed dosing port. A sealed recirculation paddle or manual mixing action must be verified before starting a captive, resettable elapsed-time witness. The outlet is mechanically held closed through the validated contact period; a separate operator key can release it only after a calibrated **DPD free-chlorine** measurement from a protected batch sample port passes the locally approved release band. The tap is downstream of the contact tank, with no connection to the raw-water inlet. A high-contrast/tactile **HOLD—DO NOT DISPENSE** flag stays visible until both release steps are completed.
+
+**Design envelope to validate, not a field instruction or performance claim:** filtered water ideally <1 NTU, with <5 NTU as a conditional upper trial gate; pH below 8, water at least 20 °C, and a minimum 30-minute post-mixing contact interval. The trial release criterion is **at least 0.5 mg/L free chlorine after contact**, with a locally specified upper limit and consumer-point target (typically 0.2–0.5 mg/L), all to be confirmed against applicable public-health rules.[2][3] Neither a filter rating nor a timer proves pathogen removal. Colder, higher-pH, more turbid or higher-demand water needs an independently qualified treatment protocol or a different safe supply, not automatic release. There is no automated claim of potability.
+
+## Key Innovation
+
+Chlorination, batch contact tanks, baffled continuous tanks and gravity-fed hypochlorite dosing are established art.[2][4] The proposed distinction is a **batch-history outlet interlock**: filtration qualification, measured dosing/mixing, elapsed contact and independent *post-contact free-residual testing* all precede a single release operation, so a newly filled batch cannot physically reach the tap by ordinary operation. The existing `incubation-witness-water-kit` checks *E. coli* assay incubation validity, not water treatment; `fluoride-exchange-water-kiosk` targets dissolved fluoride by adsorption, not microbial disinfection. The interlock could still be bypassed or defeated by a false residual reading; its incremental reliability over a well-run ordinary batch chlorinator must be demonstrated, not assumed. No global novelty or patent claim is made.
+
+## Target Cost
+
+**Unquoted 2038 ex-workshop target at 10,000 units/year: US$140 per kiosk:** US$35 two food-contact HDPE vessels and lid; US$25 washable screen and replaceable cartridge housing; US$20 keyed dose/sample fittings and mixing parts; US$20 captive timer, valve and flag; US$18 tap, seals and frame; US$22 assembly and wet-path inspection. This excludes filter cartridges, chlorine stock, DPD reagents and calibrated instruments, operator pay, source assays, washing water, transport, shipping, taxes, certification, installation and a safe alternative-water supply during lockout. A target five-year life and quarterly valve/seal inspection require actual cycling tests. Replace cartridges on measured differential pressure or a locally validated service schedule; test each batch and replenish reagents by expiry. Keep hypochlorite in its labeled original container away from heat, sunlight, acids and children, under trained chemical-handling procedures. Collect settled solids and used cartridges for locally appropriate characterization and disposal; recycle separated HDPE/metal only where accepted. The full cost per compliant litre is unknown until a pilot accounts for failed batches and staffing.
+
+## Impact
+
+Two hypothetical completed 40 L batches per day yield **80 L/day, or 29,200 L/year at perfect availability**, equivalent to 40 people's drinking allowance at 2 L/person/day only; cooking water, outages, failed batches and local consumption needs reduce actual reach. This is throughput arithmetic, not prevented illness. A blinded, supervised trial should compare at least 200 batches against an ordinary operator-run batch chlorinator on the **same characterized source water**. Inject premature-draw, low-dose, expired reagent, clogged filter, timer-reset, failed mixing and valve-bypass faults; independently assay turbidity, pH, free residual, contact-time distribution, microbial indicators, disinfection byproducts and delivered cost. Report missed unsafe releases and false lockouts separately, with confidence intervals; do not equate passing a few batches with pathogen safety. Deployment requires qualified water engineers, independent laboratory validation, local drinking-water approval, operator training and a reliable backup safe supply. If the lock can be bypassed easily, source hazards exceed the qualified envelope, or the kiosk delays access without improving verified compliance versus existing practice, stop the program.
+
+## Safety boundaries and development path
+
+- **No universal disinfection:** Chlorine at practical doses does not reliably inactivate *Cryptosporidium*; the coarse/fine particulate stages are **not** certified oocyst-removal barriers. Suspected protozoal contamination requires a validated removal step or another approved treatment.[5] Fuel, pesticides, arsenic, fluoride and other chemical hazards are not made safe by chlorination; use an alternative source if suspected.[6]
+- **Fail closed:** Missing/expired reagent, absent turbidity or pH checks, failed DPD blank/standard, unknown chlorine demand, contact-time reset, valve leakage, disrupted mixing or positive microbial verification means HOLD and an independently safe alternative supply. A passing DPD test measures free residual, not the entire contact history or absence of organisms. Maintain batch logs without personal information; no cloud or customer tracking.
+- **Chemistry and use:** Excess hypochlorite and organic precursors can cause unacceptable taste and disinfection byproducts. Determine dose by supervised site testing; do not use the cost estimate or trial envelope as operating instructions. Test at actual minimum temperature and maximum source demand. Wash tank and dispensing path to prevent post-treatment recontamination. Never mix hypochlorite with acids or ammonia.
+- **10–20-year gate:** Prototype mechanical leak/bypass and cycle tests, then supervised paired water-quality trials across seasons, followed by independent certification and service training only if results justify it. Stop or redesign if a validated conventional chlorinator and protected storage is simpler, cheaper or more reliable.
+
+## Sources
+
+[1] WHO/UNICEF, 2025 JMP update: https://www.who.int/news/item/26-08-2025-1-in-4-people-globally-still-lack-access-to-safe-drinking-water---who--unicef
+[2] WHO, *Measuring chlorine levels in water supplies*, Technical Note 11: https://www.who.int/docs/default-source/wash-documents/wash-in-emergencies/technical-notes-on-wash-in-emergencies/who-tn-11-measuring-chlorine-levels-in-water-supplies.pdf
+[3] WHO, *Principles and Practices of Drinking-water Chlorination*: https://iris.who.int/server/api/core/bitstreams/74a59934-fe26-440b-b2ec-2ca98dd3f7af/content
+[4] UK Drinking Water Inspectorate, *Chlorine disinfection*: https://www.dwi.gov.uk/private-water-supplies/pws-installations/treatment-guide-2/chlorine-disinfection
+[5] CDC, *Water Disinfection for Travelers*: https://www.cdc.gov/yellow-book/hcp/preparing-international-travelers/water-disinfection-for-travelers.html
+[6] CDC, *How to Make Water Safe in an Emergency*: https://www.cdc.gov/water-emergency/about/

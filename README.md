@@ -130,6 +130,7 @@ Design and document technologies that:
 | [Privacy-Vented Pad Dryer](./privacy-vented-pad-dryer/) | Concept | Menstrual Health & Universal Basic Services / Private Reusable-Pad Drying |
 | [Barn Urine Ammonia Recovery Panel](./barn-urine-ammonia-recovery-panel/) | Concept | Clean Air & Sustainable Agriculture / Source-Side Nutrient Recovery |
 | [Incubation-Witness Water Kit](./incubation-witness-water-kit/) | Concept | Drinking Water & Universal Basic Services / Microbial Test Validity |
+| [Batch-Witness Chlorination Kiosk](./batch-witness-chlorination-kiosk/) | Concept | Drinking Water & Universal Basic Services / Emergency Microbial Treatment |
 
 ## Structure
 

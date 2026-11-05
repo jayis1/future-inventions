@@ -36,6 +36,47 @@ A 100 m² paired pilot could test source-specific dust reduction and material us
 4. **Maintenance:** inspect after storms and at least quarterly during the first year; isolate any lifted modules, wet-clean under dust-control procedures, and replace damaged sections. Workers require site-specific dust and contaminant protection. No public access is enabled by the armor.
 5. **Falsification:** compare identical slope/wind exposure plots for at least a season, including bare and standard rock-armor controls; report dust flux by wind bin, water chemistry, displaced tiles, imported mass/m², installed and lifecycle cost. Abandon the design if it increases instability or contaminated runoff, or cannot outperform a conventional cover on a justified material/cost basis.
 
+## How It Works
+
+1. **Qualify the ground:** survey the inactive embankment's stability, seepage, cover thickness, prevailing wind sectors and dust hot spots. A licensed tailings/geotechnical engineer approves a test area, anchor load path, setbacks and runoff destination; the module is never anchored into unknown tailings or used to stabilize a dam.
+2. **Interrupt erosion:** set the 0.25 m² textured tiles over a graded mineral drain and filter fabric on the approved cover. Overlapped, captive mesh-retained edges limit bare-soil exposure; roughness may reduce near-surface shear at the protected patch. The armor does not filter ambient PM10 or guarantee lower concentrations beyond the site; its claim is reduced *generation* at the source.
+3. **Pass water without hiding failure:** the filter retains fines while the mineral bed routes rain to a permitted, sampled collection channel. Maintain clear inspection corridors, drains and overflow; witness strips show joint movement. A lifted tile is isolated and replaced under dust-control procedures rather than buried under more material.
+4. **Prove or reject the hypothesis:** pair treated plots with uncovered and conventional rock-armored plots of comparable slope and wind exposure; sample source flux, meteorology, runoff chemistry, module displacement and maintenance through a dry/wet season. Withdraw the treatment if stability, drainage or contaminant thresholds fail.
+
+## Technical Architecture
+
+**Physical path:** local wind → exposed upper-slope surface → rough ceramic/glass tile and overlapped mesh edges → residual dust crossing the test boundary. Rain → permeable joints → graded mineral bed → filter fabric → engineered collection point. These are passive components; no pump, binder, wireless controller or chemical dosing is assumed. The retention system takes uplift and downslope loads into the *independently engineered cover*, not into the dam body by default. A qualified designer sizes anchors for local gusts, terrain acceleration, slope geometry, substrate capacity and corrosive leachate; stainless steel grade and recycled feedstock require site-specific corrosion and leach tests.
+
+**Evidence path:** independent upwind/downwind PM10 instruments, wind speed/direction, rainfall, deposition collectors, plot-scale erosion/flux sampling, runoff analytes and visual witness-mark inspections feed an auditable seasonal dataset. PM2.5 may be measured where warranted, but ambient PM alone cannot isolate this source. Record tile failures and gaps as zero-effective coverage, not as successful operating time. Sensor outages trigger manual inspection, not an unsupported automatic safety claim.
+
+## Performance Benchmarks
+
+| Measure / test | Present comparator | Unverified acceptance target |
+| --- | --- | --- |
+| Area-normalized emitted dust mass (kg/m² per wind bin), same dry/wet exposure and slope | Paired bare plot **and** locally built rock-armor plot; no universal rock-armor efficacy is assumed [1][3] | ≥50% below **each** comparator over one measured season; report uncertainty and wind distribution, not just a favorable average. |
+| Module retention after gusts and seasonal cycling | 100 m² test strip (400 nominal tiles), inspected after storms | ≥95% remain without uplift or displacement; any escaped module is a safety failure requiring review. |
+| Runoff quality / drainage | Pretreatment and adjacent reference samples under comparable rain | Meet the site's actual permit limits for dissolved metals, pH and conductivity; no increased pore pressure or blocked drainage. |
+| Installed material and cost | Site-specific rock-armoring bill of quantities and lifecycle maintenance | Publish kg/m² and US$/m² for both; **no demonstrated advantage yet**. Tile price US$140/m² plus US$40/m² installation is only an unquoted target, excluding civil works. |
+
+Wind loading is not a certified rating: the illustrative free-stream dynamic pressure `½ρv²` at air density 1.2 kg/m³ and 30 m/s is **540 Pa**, or **135 N** on a 0.25 m² projected face before uplift coefficients, gust amplification, slope forces and safety factors. The engineer must use site code loads and pullout tests, not this example, for design. Published work establishes that exposed tailings can erode and that covers/rock armor exist [1][3]; it does **not** validate the proposed comparative 50% target.
+
+## Deployment Scenarios
+
+- **Arid retired mine near a settlement:** after a wind and exposure survey, armor only the independently approved upper windward strip; keep community dust and water sampling in place and compare against existing controls rather than promising health outcomes.
+- **Remote dry closure site with scarce water:** test whether passive, repairable coverage reduces maintenance visits relative to repeated wetting, while still retaining established closure drainage and required environmental monitoring. Access and anchor quality may dominate cost.
+- **Post-closure erosion hotspot beside an existing cap:** trial a removable 100 m² patch where inspections show a stable cover, preserving cracks/seepage visibility and emergency access. Reject deployment if the cap's intended hydraulic function changes.
+
+## Risks & Mitigations
+
+- **Dam integrity and hidden seepage:** added mass, anchors, surface water and obscured movement can worsen a hazardous facility. Require site-owner consent, independent geotechnical sign-off, drainage verification and unobstructed inspection routes before any field work; no active, unstable or saturated dam is eligible.
+- **Gust uplift, projectiles and redirected erosion:** test captive edges and anchors in wind/rain cycling; inspect after storms, cordon displaced tiles and re-map adjacent dust. A detached module is not a benign failure.
+- **Contaminant runoff and material degradation:** sample outflow and leachates, screen recycled-glass feedstock, verify UV/freeze–thaw/abrasion and corrosion life; stop and remove affected modules if permit or stability limits are exceeded. Contaminated end-of-life tiles need licensed disposal.
+- **Misleading monitors and worker exposure:** matched plots, calibrated instruments, wind-bin stratification and independent review limit confounding; use site-specific PPE, dust suppression during removal, and documented repair windows. Residual dust from untreated slopes remains.
+
+## Vision for 2050
+
+**Conditional scenario, not a forecast:** if multi-season trials demonstrate dam safety, contaminant control and a lifecycle advantage over standard covers, certified repairable panels could be one option in site-specific mine-closure plans. Local crews could replace damaged patches while public dashboards show measured source flux and runoff alongside conventional monitoring. Places without a stable cover, safe access or a cost advantage would continue using engineered alternatives; no panel can substitute for tailings stewardship.
+
 ## Sources
 
 [1] https://www.saimm.co.za/Journal/v107n02p099.pdf

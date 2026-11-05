@@ -132,6 +132,7 @@ Design and document technologies that:
 | [Incubation-Witness Water Kit](./incubation-witness-water-kit/) | Concept | Drinking Water & Universal Basic Services / Microbial Test Validity |
 | [Batch-Witness Chlorination Kiosk](./batch-witness-chlorination-kiosk/) | Concept | Drinking Water & Universal Basic Services / Emergency Microbial Treatment |
 | [Verified Abandoned-Well Seal](./verified-abandoned-well-seal/) | Concept | Climate & Groundwater Protection / Orphaned-Well Remediation |
+| [Fish-Safe Intake Gate](./fish-safe-intake-gate/) | Concept | Freshwater Restoration & Smallholder Irrigation / Fish-Safe Water Diversion |
 
 ## Structure
 

@@ -1095,3 +1095,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$960 incremental kit/material allowance per screened shallow well by 2038; rig, labor, permits, restoration and monitoring excluded
 - **Author:** jayis1
 - **Created:** 2026-11-05
+
+### 115 — [Fish-Safe Intake Gate](../fish-safe-intake-gate/)
+- **Category:** Freshwater Restoration & Smallholder Irrigation / Fish-Safe Water Diversion
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Unvalidated ten-diversion paired pilot; 10,000 modules at 10 L/s each would offer at most 100 m³/s nominal screened capacity, with fish survival and food-security benefits unknown
+- **Key Material:** Replaceable 316L stainless wedge-wire screen, recycled-HDPE manifold, guarded mechanical brush, spring-and-float outlet gate
+- **Key Innovation:** Tests a low-head, self-cleaning river intake whose mechanically limited withdrawal follows a site-tested safe envelope for river level and screen head loss, failing closed outside that envelope; fish screens and float gates are existing art
+- **Target Cost:** Unquoted US$250 ex-workshop per 10 L/s module at 10,000/year by 2038, excluding surveys, civil works, permits, installation, replacement parts and annual service
+- **Author:** jayis1
+- **Created:** 2026-11-05

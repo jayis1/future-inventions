@@ -1115,3 +1115,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$35 per 0.25 m² module ex-factory at 50,000/year by 2038; survey, cover, drainage, installation and stewardship excluded
 - **Author:** jayis1
 - **Created:** 2026-11-05
+
+### 117 — [Battery Depowering Cabinet](../battery-depowering-cabinet/)
+- **Category:** Battery Collection & Circular Materials / Worker Safety
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Unvalidated 10-site pilot of 12,000 eligible pack encounters in 12 months; no fire reduction or recovery claim without comparative trials
+- **Key Material:** Powder-coated steel enclosure, nonconductive polypropylene pack carrier, fused resistive load, independent voltage/thermal monitors and normally open contactor
+- **Key Innovation:** Tests fail-closed, supervised intake-to-recycler custody for positively identified intact small lithium-ion packs against collection-only controls; discharging and battery collection are existing art
+- **Target Cost:** Unvalidated US$1,200–1,800 ex-factory at 1,000/year by 2038; US$2,000–3,500 installed excluding fire protection and permits, plus US$250–500/year service excluding staff and shipping
+- **Author:** jayis1
+- **Created:** 2026-11-05

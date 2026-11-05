@@ -37,6 +37,55 @@ A first paired pilot would compare ten eligible diversions with maintained, regu
 - **Lifecycle:** replace worn brush and screen without discarding the HDPE manifold; collect removed debris away from the channel, return compatible metal parts to recycling, and check for polymer shedding. Avoid in-stream installation where protected habitat, sediment transport or flood conveyance would be damaged. No claim of zero environmental footprint or guaranteed fish survival.
 - **Path to use:** bench hydraulic mapping and fault injection, then a permitted single-site trial against an approved screen, then multi-season paired trials and local certification within 10–20 years. Abandon or redesign if conventional screens do as well with less ecological or maintenance cost.
 
+## How It Works
+
+At a surveyed, permitted river reach, the installer aligns the screen nearly with the current so the river sweeps animals and loose debris downstream while only the approved withdrawal crosses the screen. A fisheries specialist selects the wedge-wire aperture for the local species and smallest protected life stage; eggs or larvae that can cross it remain an unresolved limitation. At the minimum operating river level, the submerged *effective* panel area—not the outer frame area—must support the demanded flow. For the 10 L/s concept, 0.20 m² is only the theoretical area at 0.05 m/s; margins for frame blockage, nonuniform flow and fouling increase the installed area.[1]
+
+Screened water enters the recycled-HDPE manifold and passes through a normally closing, mechanically limited outlet into the existing irrigation branch. River stage moves a float that throttles withdrawal at low water; pressure taps across the screen actuate a separately calibrated fouling trip. When adequate head exists, a guarded, water-driven impeller turns the brush; a stalled brush or an out-of-envelope head/stage condition latches the outlet closed. The operator inspects the gauge, taps and latch, isolates the branch, removes debris and checks the panel before manually resetting. The design must be tested against *patchy* blockage: a low aggregate pressure loss does not prove every point on the face is safe. No unscreened bypass is permitted, and closure requires a lawful irrigation contingency.
+
+## Technical Architecture
+
+| Subsystem | Proposed components | Interface and validation point |
+| --- | --- | --- |
+| River interface | Flush, site-anchored 316L wedge-wire panels and guarded brush standoff | Map local approach/sweep velocities and flood/scour loads at minimum stage and maximum diversion. |
+| Wet path | Removable panels → HDPE manifold → limited outlet → existing branch | Measure delivered flow and head loss; verify no unfiltered maintenance path. |
+| Passive control | Stage float, spring return, differential-head trip and screen-presence latch | Inject low stage, clogging, broken linkage and removed-panel faults; verify closure without power. |
+| Service/observability | Staff gauge, paired pressure taps, manual isolation and visible reset latch | Log inspections, closure events, brush wear, fish observations and maintenance hours. |
+
+This is a proposed mechanical architecture, not a built or tested assembly. A differential-head threshold is a proxy for fouling, not a direct measurement of free area; flume velocity maps must establish whether any robust setting exists across realistic debris patterns. There is no software, radio or electrical backup. Brush drive consumes available hydraulic head only when flowing, so a low-head site may be ineligible.
+
+## Performance Benchmarks
+
+The comparator is a **maintained, regulator-accepted small-diversion fish screen at the same reach and flow**, not an unscreened ditch. Reclamation's small-screen guide defines normal approach velocity and parallel sweep, sizes by minimum wetted screen area, and describes a **≤0.4 ft/s (~0.122 m/s)** NOAA salmonid-fry example for actively cleaned screens; this is a species-specific design example, not proof of comparable biological outcomes.[1] The proposed **≤0.05 m/s local approach** target is lower numerically, but its biological advantage, screen aperture and cleaning burden are unmeasured.
+
+| Metric (10 L/s design point) | Research target, not measured | Paired-test comparator / method |
+| --- | --- | --- |
+| Local normal approach / sweep | ≤0.05 m/s at every specified sampling point; ≥0.3 m/s parallel at surveyed stages | Map both velocity components on both screens at equal diversion and water level; apply local fishery criteria. |
+| Effective wetted area | ≥0.20 m² *unblocked* at full flow, plus frame/fouling margin | Measure submerged open area at low stage and under staged nonuniform blockage. |
+| Clean-screen added head loss | ≤0.10 m at 10 L/s | Differential pressure at equal flow, including manifold and brush-drive demand; compare both installations. |
+| Delivery / reliability | 10 L/s only within approved envelope; zero unscreened operation after a trip | Log volume delivered, unplanned closures, hours down and maintenance labor through a full season. |
+| Biological safety | No numerical survival claim until approved trials | Count entrainment, impingement, contact injury and delayed mortality per unit diverted volume, stratified by species and life stage. |
+
+A low average velocity cannot substitute for edge hot-spot measurements. Pre-register stop thresholds with the fishery authority; suspend trials if injuries, screen failure or protected-stage entrainment exceed the agreed limit. No measured benchmark, survival rate or certification exists yet.
+
+## Deployment Scenarios
+
+1. **Gravity-fed farm branch:** Replace an unsafe or aging 10 L/s river offtake where low-stage wetted area and a reliable sweeping current have been surveyed. The irrigation cooperative services the brush and screen after debris events; a legal storage or rotation plan covers automatic shutoff.
+2. **Seasonal community irrigation canal headworks:** Install several independently isolated modules only if each has a measured velocity field and approved habitat footprint. Operators record paired volume and fish-contact data across migration season; flood and sediment behavior determine whether the site is eligible.
+3. **Research diversion:** A conservation district runs a single instrumented gate beside an approved reference screen, matching water levels and target flow. Independent biologists and irrigators jointly assess both fish outcomes and lost delivery before any commercial rollout.
+
+## Risks & Mitigations
+
+- **Invisible biological harm:** eggs, larvae, weak swimmers and delayed injuries may escape simple counts. Select aperture and sampling methods with local specialists; use ethical, permitted monitoring and reject unsuitable sites rather than claim universal protection.
+- **Fouling, ice and patchy flow:** leaves or silt can cause a high-velocity hotspot even when overall head loss looks normal. Flume-test asymmetric blockages, set a conservative trip, inspect after storms and stop operation where ice or sediment overwhelms cleaning.
+- **Mechanical failure and delivery loss:** a jammed brush, seized float or corroded latch can defeat the envelope or halt irrigation. Use serviceable parts and independent manual isolation, prove closure by fault injection and plan lawful alternate water delivery. Never bypass the screen to rescue uptime.
+- **River and human safety:** anchors may scour habitat or obstruct flood conveyance; service exposes operators to current and moving parts. Require site permits and flood review, guarded parts, lockout and bank-safe access. If safe closure would itself create an unacceptable upstream hazard, reject the site.
+- **Economics and verification:** US$250 workshop cost excludes the largest potential expenses. Audit installed and lifecycle costs against existing accepted screens; do not scale if fish protection is no better or maintenance is worse.
+
+## Vision for 2050
+
+In a *conditional scenario*, eligible small irrigators buy repairable screened intakes alongside pumps and pipes, with site-specific fish criteria and performance logs as routine as flow meters. The gate's most valuable behavior may be refusing withdrawal when a safe hydraulic envelope cannot be demonstrated. Widespread adoption depends on independent multi-season evidence, affordable installation, local approval and viable alternatives at sites where this geometry cannot work; it is not a forecast of fish populations saved.
+
 ## Sources
 
 [1] https://www.usbr.gov/tsc/techreferences/hydraulics_lab/pubs/manuals/Small%20Screen%20Design%20Manual%20USBR.pdf

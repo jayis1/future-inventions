@@ -133,6 +133,7 @@ Design and document technologies that:
 | [Batch-Witness Chlorination Kiosk](./batch-witness-chlorination-kiosk/) | Concept | Drinking Water & Universal Basic Services / Emergency Microbial Treatment |
 | [Verified Abandoned-Well Seal](./verified-abandoned-well-seal/) | Concept | Climate & Groundwater Protection / Orphaned-Well Remediation |
 | [Fish-Safe Intake Gate](./fish-safe-intake-gate/) | Concept | Freshwater Restoration & Smallholder Irrigation / Fish-Safe Water Diversion |
+| [Tailings Crest Dust Shield](./tailings-crest-dust-shield/) | Concept | Clean Air & Mine-Site Restoration / Windblown Tailings Dust |
 
 ## Structure
 

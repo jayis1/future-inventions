@@ -1105,3 +1105,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$250 ex-workshop per 10 L/s module at 10,000/year by 2038, excluding surveys, civil works, permits, installation, replacement parts and annual service
 - **Author:** jayis1
 - **Created:** 2026-11-05
+
+### 116 — [Tailings Crest Dust Shield](../tailings-crest-dust-shield/)
+- **Category:** Clean Air & Mine-Site Restoration / Windblown Tailings Dust
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Unvalidated 100 m² paired pilot; emissions and health benefits unknown until site-specific monitoring
+- **Key Material:** Textured recycled-glass/ceramic tile, graded mineral drain, filter fabric, stainless-steel captive edge and anchors
+- **Key Innovation:** Tests selectively placed replaceable upper-windward-slope armor with a visible displacement witness and controlled runoff against conventional rock armor; covers and armoring are prior art
+- **Target Cost:** Unquoted US$35 per 0.25 m² module ex-factory at 50,000/year by 2038; survey, cover, drainage, installation and stewardship excluded
+- **Author:** jayis1
+- **Created:** 2026-11-05

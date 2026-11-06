@@ -30,6 +30,40 @@ With an illustrative milk density of 1.03 kg/L and heat capacity of 3.9 kJ/(kg·
 
 The kit **does not pasteurize milk**. Standard continuous-flow pasteurization requires a controlled hold and diversion of underheated milk; a Canadian regulator lists 72°C for 15 seconds for ordinary fluid milk, subject to product-specific requirements.[2] Cooling or a reassuring arrival temperature cannot undo prior microbial growth, contamination or toxins. Reject visibly spoiled milk, clean and sanitize the food-contact can and thermowell between batches, and test according to local rules; do not mix suspect milk into a sound lot. Power loss at the freezer, ice leakage, missing logs, a broken thermowell, logger drift, or missed cleaning must show as a quarantine/inspection state, never as an automatic safe verdict. Validate condensation control outside the can, drop resistance, cleanability, battery disposal, and food-contact materials before use; maintain a non-electronic intake-temperature check if the logger fails.
 
+## How It Works
+
+At the collection dock, freeze and weigh the 12 kg sealed water packs; a pack that is partly thawed is not dispatched. Clamp the dry aluminum spreader against the closed 304-stainless can, close the insulated shell, and record a fresh batch identifier and the first milk temperature. The spreader conducts heat from the milk through the can wall into the ice, while the shell slows heat entering from 35°C air. No coolant touches the milk. At delivery, read the complete trace and independently check the thermowell against a calibrated thermometer; segregate a batch with a missing trace, excursion, broken seal, or failed pack for locally required testing or rejection. Wash and sanitize the can and thermowell separately from the removable jacket; return packs to the cooperative freezer. This is a cooling-and-evidence service, not pasteurization or a substitute for milk-quality testing.
+
+## Technical Architecture
+
+The thermal path is milk → stainless wall → removable aluminum spreader → sealed ice packs; the parasitic path is ambient air → jacket seams and insulation → can. A closed-cell, washable polymer shell with replaceable gaskets is a **candidate**, not a certified food-contact assembly. The lid and thermowell require hygienic, inspectable seals; the spreader and ice housings stay outside the food boundary. A battery-powered offline logger samples the milk thermowell (prototype target: once per minute), stores a batch-linked trace locally, and latches a fault on a gap, calibration failure or over-limit reading. A separate dock records pack mass, charge temperature and metered freezer electricity; operators reconcile those records with the batch tag without collecting a farmer identity. The temperature sensor needs mixing/stratification tests: a single thermowell may miss the warmest pocket. The 20 L milk alone weighs about 20.6 kg under the stated density assumption; adding 12 kg ice, can and shell makes one-person lifting hazardous, so fit handles for two-person lifts or a trolley and weigh the finished assembly.
+
+## Performance Benchmarks
+
+These are **unmeasured prototype gates**, not comparative field results. For the stated 20 L, 30°C start and 35°C ambient, the 1.77 MJ milk cooling load implies an average **245 W extracted over two hours**, before losses. A hypothetical jacket with overall heat-leak conductance of 1 W/K and a constant 27 K gradient admits **0.49 MJ over five hours**; this is an illustrative upper-bound-style design calculation, not a measured U-value or an exact transient model. Nominal ice latent heat is 12 × 334 kJ/kg = 4.01 MJ, but adequate energy *capacity* does not establish the required heat-transfer *rate*. Instrument the wall, warmest milk point and ice core to test both.
+
+| Matched test at 35°C ambient | Ordinary insulated can (current local-practice comparator) | Shuttle gate | Evidence needed |
+| --- | --- | --- | --- |
+| 30°C → ≤8°C, 20 L | Not capable of active cooling without external ice; actual trace to be measured | Within 2 h | Three milk probes, calibrated reference, repeat runs |
+| Hold after cooling | Measure same route and starting conditions; no assumed duration | ≤8°C for a further 3 h | Warmest-probe time series and seal inspections |
+| Recharge and energy | Record baseline equipment energy, if any | ≤12 kg ice; meter kWh per cycle, no preset savings claim | Freezer meter, freeze/thaw mass and transport logs |
+
+Compare rejection rates and microbial counts only in randomized or matched routes with identical incoming milk, handling, available ice and intake rules. Failure to reach a locally required legal temperature/time criterion overrides these engineering gates.
+
+## Deployment Scenarios
+
+- **Village collection route:** a cooperative freezes packs overnight, swaps them before a roughly five-hour collection-and-delivery window, and checks logs at intake; no service if freezer uptime or pack inventory cannot be assured.
+- **Remote morning pickup:** a two-person team or trolley moves sealed cans from farms to a staffed collection hub; log gaps or late arrivals trigger lot segregation, not a retrospective safe label.
+- **Seasonal heat surge:** extra charged packs and shaded waiting space can be staged at a hub, but any changed ice mass or route length needs a new validated protocol rather than silently extending the five-hour target.
+
+## Risks & Mitigations
+
+Slow wall transfer, a warm center, partially charged ice or an open jacket can consume the thermal margin: test multiple milk locations, weigh and inspect packs, and latch excursions. Residue in a lid or thermowell and coolant leaks pose contamination risks: use cleanable removable food-contact parts, pressure/leak inspections and replacement seals, with documented sanitation and lot isolation. A freezer outage, dead battery, clock drift or lost tag can erase custody evidence: require a visible fault state, independent intake thermometer and periodic calibration; hold or reject uncertain lots under local rules. The >32.6 kg milk-plus-ice load, before hardware, needs ergonomic trials, two-person handling or a trolley. Insulation damage, condensate and worn hinges require field repair and end-of-life collection. None of these mitigations proves microbiological safety without trials and regulatory review.
+
+## Vision for 2050
+
+If comparative trials demonstrate safe handling, affordable refrigeration and repairable operation, a cooperative could issue charged modules like returnable crates and accept milk with a locally readable temperature history rather than an opaque app verdict. The 2050 vision is a network of accountable smallholder collection points where a failed seal or trace is visible and resolved before mixing lots. Widespread use remains conditional on local power, sanitation, dairy rules and total lifecycle costs; the technology should never turn uncertain milk into an apparently certified product.
+
 ## Sources
 
 [1] FAO, *Milk collection and transport*: https://www.fao.org/dairy-production-products/processing/collection-and-transport/en — milk-can transport conditions and perishability.

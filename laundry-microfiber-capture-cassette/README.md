@@ -30,6 +30,57 @@ A laboratory study reported a mean **0.44 ± 0.04 g fibers per mixed wash** unde
 
 A blinded, multi-home comparative trial should weigh incoming and discharged fibers by polymer and length band, log overflow and pressure, audit sealed-waste handling, and compare matched unfiltered washes and an existing commercial filter. Report intention-to-treat capture including missed cleanings and relief cycles, not just fresh-screen efficiency. Reject or revise the concept if it increases pump failures/floods, users rinse retained lint into drains, the relief routinely opens, or lifecycle assessment shows net harm. See [Specification](SPECIFICATION.md) for test gates and failure controls.
 
+## How It Works
+
+The washer's own pump sends effluent through its original discharge hose to a qualified external cassette, then onward to the existing compliant standpipe; the air gap and drain geometry are not replaced. A 500 µm screen catches larger lint before the 60 µm folded stainless mesh intercepts smaller fibers. The approximately 0.12 m² unfolded mesh area spreads flow, but its effective open area shrinks as lint accumulates. No capture cutoff follows directly from the pore dimension: flexible fibers can align with openings, while larger debris forms a restrictive mat.
+
+A differential-head flag warns of restriction without a battery. If a fine screen blinds, the proposed 200 µm screened relief route may keep discharge moving, but its latched red witness means the wash is counted as a capture failure. Relief is not certified flood protection; the user stops the washer, and an installer rejects any pairing whose pump or drain cannot tolerate the worst credible restriction. For service, the removable screen opens in a lidded tray; lint is scraped into a sealed pouch for locally permitted residual-waste disposal. No rinse-to-drain cleaning, plastic destruction, or greywater reuse is implied.
+
+## Technical Architecture
+
+| Subsystem | Material / role | Verification boundary |
+|---|---|---|
+| Hydraulic interface | Washer hose → polypropylene housing → original standpipe; EPDM seals | Measure peak flow, allowed head, hose retention, leak rate and drain capacity per machine |
+| Separation stack | 500 µm stainless pre-screen → 60 µm folded stainless mesh (0.12 m² nominal) | Count and weigh polymer-identified fibers in total effluent, including loaded screens |
+| Safety witness | Passive differential-head flag and proposed 200 µm relief screen with red latch | Inject lint and partial blockage; record every relief event as failed capture |
+| Service loop | Captive closure, lidded tray, spatula, sealed pouch; individually replaceable seals and screens | Audit whether all collected lint reaches managed solid waste |
+
+At 20 L/min, flow is 0.000333 m³/s and gross nominal mesh flux is about 0.00278 m/s; neither number predicts actual head loss. The provisional 5 kPa clean-condition ceiling is about 0.51 m of water head and **never** supersedes a stricter washer-maker limit. Actual pleat open area, detergent foam, temperature and end-of-interval lint loading require bench measurement. See [Specification](SPECIFICATION.md) for rejection gates.
+
+## Performance Benchmarks
+
+These are **targets, not measured cassette results**. Test paired mixed polyester, acrylic and blended loads with detergent, predeclared cycles and temperature, both clean and at the end of the service interval; log total discharge volume/flow, pressure, drain time and relief events. Use downstream reference filtration with contamination blanks and polymer-identification; report dry mass for synthetic fibers ≥100 µm long separately from particle counts and smaller length bands. Set the service interval only after loaded-screen testing, not by assuming an arbitrary number of washes.
+
+| Metric | Proposed pass criterion | Published comparator / limitation |
+|---|---|---|
+| Discharged synthetic-fiber mass ≥100 µm long | ≥70% reduction vs matched unfiltered wash, intention-to-treat across ≥30 paired washes | Napper et al. [1] reported 21–78% reduction in **total microfiber release** for six devices under a different detergent-free protocol; not a like-for-like size-selected result |
+| Peak discharge and clean restriction | Qualify up to 20 L/min; <5 kPa **and** below the appliance's stricter limit | No published pressure baseline is asserted; test loaded restriction and pump temperature too |
+| Reliability | Relief in <1% of serviced washes; no attributable pump damage or significant flooding in 100-home, 12-month pilot | Proposed gate, not a certified probability or safety guarantee |
+| Maintenance / resource burden | Report actual cleaning time, screen longevity, waste mass, added water and electricity | No measured device values; passive design targets zero added electrical load, not zero lifecycle burden |
+
+The 78 ± 5% XFiltra result [1] used a powered centrifugal separator and 60 µm mesh; the proposed passive cassette has **not** matched or exceeded it. The 0.44 ± 0.04 g per wash control figure [1] is for that study's mixed load, not the mass of synthetic ≥100 µm fibers in ordinary homes.
+
+## Deployment Scenarios
+
+- **Eligible household washer:** A qualified installer measures the discharge envelope and standpipe capacity, documents compatibility, and trains the occupant to inspect the flag and seal lint in a pouch. Renters or incompatible pumps should not improvise an in-line fit.
+- **Shared apartment laundry:** A building operator selects compatible models, keeps spare seals/screens, logs each red-latch event and supplies a closed residual-waste bin; recurring missed service ends the trial rather than being counted as successful capture.
+- **Small commercial laundry pilot:** Facilities staff monitor loaded-screen head loss, detergent chemistry and wash throughput on a single instrumented line before any expansion. High flow or continuous duty may require a different certified device, not parallel unvalidated cassettes.
+
+## Risks & Mitigations
+
+| Risk | Mitigation and falsifiable check |
+|---|---|
+| Clogging, pump overload, standpipe overflow | Qualify each washer/drain pair; stage maximum lint and partial blockage in 50-cycle bench tests, monitor head, discharge time, leaks and pump temperature; reject unsafe pairs |
+| Relief or housing leak quietly defeats capture | Latch visible red on relief; inspect seals after service and sample downstream effluent; count relief and leakage cycles as failures |
+| Variable fiber geometry, detergent or fabric | Paired randomized loads across polymers and wash programs; publish both mass and count by length band with blanks and uncertainty |
+| Incorrect reassembly, missed service or lint rinsed away | Captive fasteners, oriented seals and lidded dry-cleaning tray; audit handling in the 12-month home pilot and credit only retained fibers |
+| Corrosion, seal aging or filter shedding | Cycle stainless mesh, polypropylene and EPDM with detergent, bleach and hot discharge; inspect wear and polymer background before approving lifetime |
+| Landfill leakage, packaging and labor burden | Seal pouches, follow local rules, assess cradle-to-disposal materials and maintenance; redesign if net burden exceeds avoided release |
+
+## Vision for 2050
+
+If pump-safe compatibility, low-effort dry servicing, durable parts and independently measured net environmental benefit survive years of field trials, source-side capture could become a routine option wherever laundry effluent is otherwise released. Repair shops could stock interchangeable screens and seals, while building operators track bypass events rather than treating a filter's presence as proof of success. Better textile design, wastewater treatment and responsible solid-waste handling would still matter: this cassette transfers some fibers to a managed stream, not out of existence. See the [Roadmap](ROADMAP.md) and [Impact Analysis](IMPACT_ANALYSIS.md) for the gates and conditional arithmetic behind that vision.
+
 ## References
 
 1. Napper et al., “The efficiency of devices intended to reduce microfibre release during clothes washing,” *Science of the Total Environment* (2020). https://doi.org/10.1016/j.scitotenv.2020.140412

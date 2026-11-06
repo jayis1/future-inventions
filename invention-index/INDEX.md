@@ -1125,3 +1125,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unvalidated US$1,200–1,800 ex-factory at 1,000/year by 2038; US$2,000–3,500 installed excluding fire protection and permits, plus US$250–500/year service excluding staff and shipping
 - **Author:** jayis1
 - **Created:** 2026-11-05
+
+### 118 — [Laundry Microfiber Capture Cassette](../laundry-microfiber-capture-cassette/)
+- **Category:** Clean Water & Circular Textiles / Source-Side Pollution Prevention
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Unvalidated 100-home yearlong pilot; illustrative 61.6 g synthetic fibers diverted per household-year under explicitly stated wash and capture assumptions
+- **Key Material:** Reusable folded 60 µm stainless-steel mesh, polypropylene housing, EPDM seals and mechanical restriction witness
+- **Key Innovation:** Tests repairable source-side laundry capture with dry, sealed fiber handling and a latched indication of relief-path activation; screens and external laundry filters are established art
+- **Target Cost:** Unquoted US$80 ex-factory at 50,000/year by 2038, plus US$30–70 installation allowance and US$10/year consumables target; certification, distribution and disposal excluded
+- **Author:** jayis1
+- **Created:** 2026-11-06

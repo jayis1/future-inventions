@@ -135,6 +135,7 @@ Design and document technologies that:
 | [Fish-Safe Intake Gate](./fish-safe-intake-gate/) | Concept | Freshwater Restoration & Smallholder Irrigation / Fish-Safe Water Diversion |
 | [Tailings Crest Dust Shield](./tailings-crest-dust-shield/) | Concept | Clean Air & Mine-Site Restoration / Windblown Tailings Dust |
 | [Battery Depowering Cabinet](./battery-depowering-cabinet/) | Concept | Battery Collection & Circular Materials / Worker Safety |
+| [Laundry Microfiber Capture Cassette](./laundry-microfiber-capture-cassette/) | Concept | Clean Water & Circular Textiles / Source-Side Pollution Prevention |
 
 ## Structure
 

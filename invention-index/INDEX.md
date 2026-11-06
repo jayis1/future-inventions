@@ -1145,3 +1145,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$24 ex-factory at 100,000/year by 2038, plus US$5–10 fitting and US$3/year replacement parts; vessel, tap, labor and water treatment excluded
 - **Author:** jayis1
 - **Created:** 2026-11-06
+
+### 120 — [Milk-Can Thermal Shuttle](../milk-can-thermal-shuttle/)
+- **Category:** Food Safety & Universal Basic Services / Smallholder Dairy Collection
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Unvalidated 100-farm, 60-day paired pilot; 20 L per can per trip, with reduction in spoilage and exposure unknown
+- **Key Material:** Food-grade 304 stainless can, removable aluminum spreader, sealed reusable water/ice modules, insulated split shell and offline thermowell logger
+- **Key Innovation:** Tests exchangeable cooperatively frozen ice jackets and batch-temperature history against ordinary insulated milk cans; neither ice cooling nor temperature logging is new
+- **Target Cost:** Unquoted US$140 per jacket kit at 10,000/year by 2038, excluding US$45 can, freezing service, cleaning, calibration and certification
+- **Author:** jayis1
+- **Created:** 2026-11-06

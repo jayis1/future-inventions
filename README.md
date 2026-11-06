@@ -137,6 +137,7 @@ Design and document technologies that:
 | [Battery Depowering Cabinet](./battery-depowering-cabinet/) | Concept | Battery Collection & Circular Materials / Worker Safety |
 | [Laundry Microfiber Capture Cassette](./laundry-microfiber-capture-cassette/) | Concept | Clean Water & Circular Textiles / Source-Side Pollution Prevention |
 | [Vector-Sealed Water Lid](./vector-sealed-water-lid/) | Concept | Drinking Water & Public Health / Household Mosquito Source Prevention |
+| [Milk-Can Thermal Shuttle](./milk-can-thermal-shuttle/) | Concept | Food Safety & Universal Basic Services / Smallholder Dairy Collection |
 
 ## Structure
 

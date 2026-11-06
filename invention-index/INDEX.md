@@ -1135,3 +1135,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$80 ex-factory at 50,000/year by 2038, plus US$30–70 installation allowance and US$10/year consumables target; certification, distribution and disposal excluded
 - **Author:** jayis1
 - **Created:** 2026-11-06
+
+### 119 — [Vector-Sealed Water Lid](../vector-sealed-water-lid/)
+- **Category:** Drinking Water & Public Health / Household Mosquito Source Prevention
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Unvalidated 600-vessel seasonal comparison; 100,000 eligible installations could cover at most 100,000 storage sites, with infection reduction unproven
+- **Key Material:** Food-contact polypropylene compression ring, EPDM gasket, silicone flap, 316L stainless-steel screened fill/vent/overflow paths
+- **Key Innovation:** Tests a sequenced normally closed refill boundary with captive insect-screened funnel and separately inspectable vent/overflow barriers against a conventional tight lid; exclusion rather than mosquito trapping
+- **Target Cost:** Unquoted US$24 ex-factory at 100,000/year by 2038, plus US$5–10 fitting and US$3/year replacement parts; vessel, tap, labor and water treatment excluded
+- **Author:** jayis1
+- **Created:** 2026-11-06

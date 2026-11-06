@@ -136,6 +136,7 @@ Design and document technologies that:
 | [Tailings Crest Dust Shield](./tailings-crest-dust-shield/) | Concept | Clean Air & Mine-Site Restoration / Windblown Tailings Dust |
 | [Battery Depowering Cabinet](./battery-depowering-cabinet/) | Concept | Battery Collection & Circular Materials / Worker Safety |
 | [Laundry Microfiber Capture Cassette](./laundry-microfiber-capture-cassette/) | Concept | Clean Water & Circular Textiles / Source-Side Pollution Prevention |
+| [Vector-Sealed Water Lid](./vector-sealed-water-lid/) | Concept | Drinking Water & Public Health / Household Mosquito Source Prevention |
 
 ## Structure
 

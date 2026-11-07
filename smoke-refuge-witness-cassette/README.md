@@ -35,6 +35,49 @@ At most, 10,000 deployed units could provision 10,000 *suitable* rooms, not 10,0
 - **What it cannot do:** particle filters do **not** establish protection from carbon monoxide, carbon dioxide, all smoke gases, heat or oxygen depletion. Avoid indoor combustion, retain working CO/smoke alarms where required, and do not use the device to justify sealing a room indefinitely or staying near an active fire. A flagged or unverified unit is *out of service*; relocate or use a proven alternative rather than bypassing the interlock.[1][2]
 - **Lifecycle:** choose screwed, rather than glued, steel/polypropylene parts; offer locally replaceable standard-size filters and a separately recoverable LiFePO₄ battery. Treat smoke-loaded filters as locally regulated solid waste, not as compost; verify recycling routes rather than promise zero waste.
 
+## How It Works
+
+Before a smoke event, a household selects a room that can remain cool and has a clear exit, checks local alerts, seats both filters, and confirms the service flag resets. At full speed, room air enters two pleated MERV 13 filters, crosses their gaskets, passes through a 24 V blower and returns to the *same* room; no outdoor air is introduced. Filter seating closes a mechanical interlock. A differential-pressure indicator tracks resistance across the media, while a separate flap tracks delivered airflow. If loading raises pressure, flow falls below the calibrated mark, or power is exhausted, a red service state persists until inspected; an apparently normal flap cannot detect a gasket leak. After replacement, a user must check the seal and recheck the indicators. None of these steps measures room PM₂.₅ or establishes breathable air. Follow evacuation orders, retain required ventilation and CO/smoke alarms, and relocate if heat or smoke makes the room unsuitable.[1][2]
+
+## Technical Architecture
+
+- **Air path:** two keyed, gasketed steel/polypropylene filter frames → guarded centrifugal blower → outlet diffuser. A pilot must measure bypass around the frame and avoid short-circuiting outlet air straight back to the inlet. Physical airflow (m³/h) and smoke-particle CADR (m³/h) are different quantities; the latter includes assembled-unit capture losses.
+- **Witness path:** spring latch gates blower power; pressure taps straddle the filters; an outlet flap exposes low flow. A mechanical red flag should remain visible on failed power, blocked sensing ports or a failed self-check. Port blockage and bypass can escape these indicators, so post-service leak/CADR tests are required; never label the display “safe.”
+- **Power and service:** fused 24 V mains supply and protected, separately replaceable 160 Wh nominal LiFePO₄ pack feed the blower. Verify charger isolation, fault indication during a mains-to-battery transition, pack ageing and thermal protection. No battery capacity is reserved for cooling, CO detection or telecommunications. User instructions must remain legible without electricity or a phone.
+
+## Performance Benchmarks
+
+All cassette figures below are **unvalidated engineering targets**, not test results. EPA's current sizing guidance is a smoke CADR in cfm of at least two-thirds the room's floor area in ft²; it is a sizing rule, not a measured comparator product.[2] For the 16 m² (~172 ft²) reference room that means ~115 cfm; the proposed 200 m³/h is ~118 cfm. Existing commercial and DIY cleaners are established alternatives, but this cassette has no fair matched-device superiority result.[1][2]
+
+| Measure | External baseline / state of practice | Cassette target and test condition | Evidence status |
+| --- | --- | --- | --- |
+| Smoke-particle CADR | EPA sizing: ≥~115 cfm for ~172 ft² room[2] | ≥200 m³/h (~118 cfm) with fresh filters at full speed; independent standardized chamber test, then loaded/reseated trials | Target only |
+| Physical flow / fault flag | Ordinary flow indication alone cannot prove filtration | ~300 m³/h fresh; red below 240 m³/h physical flow at rated speed; measure with calibrated flow rig and injected faults | Target only; threshold may change |
+| Power and outage reserve | Grid-powered cleaners lose operation on outage | ≤35 W at rated clean-filter flow; ≥4 h at aged-pack condition on 160 Wh nominal pack; log draw and timed discharge | Target only; 140 Wh usable needed at 35 W |
+| Noise and containment | Comparable product measurements require the same protocol | ≤55 dBA at 1 m in 40 m³ room; measure noise, post-reassembly seal leakage and particle bypass | Target only; leak criterion pending testing |
+
+These are coupled constraints: at ~300 m³/h physical flow and an *assumed* 100 Pa pressure rise, air power is ~8.3 W, requiring at least ~24% installed electrical-to-air efficiency to stay within 35 W. Loaded filters may invalidate the assumptions. A 240 m³/h flow threshold cannot guarantee 160 m³/h CADR without a separately validated worst-case capture fraction. Reject or redesign the system if independent testing cannot meet the combined targets.
+
+## Deployment Scenarios
+
+1. **Smoke-prone home:** a household prepositions the unit in a suitable bedroom, keeps exits clear, checks flags daily during an event and replaces loaded filters. Working cooling, lawful ventilation, alerts and an evacuation plan remain independent requirements.[1]
+2. **Community lending library:** a clinic or municipal library lends a serviced cassette to households without a commercial cleaner. Staff log filter seating, pack health and a calibrated airflow check before each loan; no one treats a returned green indication as proof of a safe dwelling.
+3. **Temporary school room:** facilities staff size multiple units to a classroom rather than extrapolating the single-room target, measure room particle levels and keep HVAC/CO monitoring, occupancy and egress rules in force. No use during an active structural fire or evacuation order.
+
+## Risks & Mitigations
+
+| Failure | Detection and response | Validation gate |
+| --- | --- | --- |
+| Loaded/wet media, blocked grille or weak blower | Pressure/flow witness flags out of service; replace media or relocate rather than bypassing interlock | Dust-load, wet-filter and stall injection across speeds |
+| Leaking gasket or wrong replacement filter | May still show normal flow: keyed frame, manual seal inspection and independent particle-leak checks; reject undetectable bypass | Reassembly and deliberate gap trials measuring CADR |
+| Blocked pressure tap, stuck flap or flag | Treat inconsistent, stale or failed self-check as unknown/out of service, not green | Port occlusion and mechanical cycling tests |
+| Flat/aged pack, charger fault or overheating | Latching visible fault and automatic shutdown on electrical hazard; use an alternate safer location | Aged-pack discharge, transfer and electrical/fire qualification |
+| False reassurance about gases, heat or evacuation | Prominent particle-only label; keep ventilation/CO alarms and cooling; follow officials and leave unsafe rooms | Comprehension and supervised scenario testing with accessible warnings |
+
+## Vision for 2050
+
+If independent testing confirms performance and safety, local repair shops could service standardized filter frames and replaceable packs while libraries lend units before smoke season. Public buildings could publish verified cleaner-room capacity without claiming that filtration replaces ventilation, cooling or evacuation. The measure of success would be fewer *measured particle exposures in suitable rooms*, not the number of cassettes sold or an invented lives-saved figure.
+
 ## Sources
 
 [1] https://www.epa.gov/emergencies-iaq/create-clean-room-protect-indoor-air-quality-during-wildfire — EPA clean room wildfire guidance

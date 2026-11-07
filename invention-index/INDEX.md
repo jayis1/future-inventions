@@ -1155,3 +1155,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$140 per jacket kit at 10,000/year by 2038, excluding US$45 can, freezing service, cleaning, calibration and certification
 - **Author:** jayis1
 - **Created:** 2026-11-06
+
+### 121 — [Smoke-Refuge Witness Cassette](../smoke-refuge-witness-cassette/)
+- **Category:** Disaster Resilience & Clean Air / Wildfire Smoke Refuge
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Unvalidated 40 m³ room trial targeting ≥200 m³/h smoke CADR; indoor PM₂.₅ and health benefits unknown
+- **Key Material:** Replaceable MERV 13 pleated filters, gasketed polypropylene/steel frames, 24 V centrifugal blower and serviceable LiFePO₄ pack
+- **Key Innovation:** Tests paired filter-seating, pressure and airflow fault witnesses plus outage reserve against ordinary low-cost portable cleaners; mechanical filtration is existing art
+- **Target Cost:** Unquoted US$210 ex-factory at 50,000/year by 2038; distribution, setup, consumables, battery service and certification extra
+- **Author:** jayis1
+- **Created:** 2026-11-07

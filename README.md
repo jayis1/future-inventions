@@ -138,6 +138,7 @@ Design and document technologies that:
 | [Laundry Microfiber Capture Cassette](./laundry-microfiber-capture-cassette/) | Concept | Clean Water & Circular Textiles / Source-Side Pollution Prevention |
 | [Vector-Sealed Water Lid](./vector-sealed-water-lid/) | Concept | Drinking Water & Public Health / Household Mosquito Source Prevention |
 | [Milk-Can Thermal Shuttle](./milk-can-thermal-shuttle/) | Concept | Food Safety & Universal Basic Services / Smallholder Dairy Collection |
+| [Smoke-Refuge Witness Cassette](./smoke-refuge-witness-cassette/) | Concept | Disaster Resilience & Clean Air / Wildfire Smoke Refuge |
 
 ## Structure
 

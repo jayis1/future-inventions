@@ -30,6 +30,47 @@ If validated, shared pods at housing cooperatives and reuse centers could reduce
 
 **Safety boundary:** This is not a DIY heater. No mattresses or furnishings with batteries, aerosol cans, medicines, adhesives/finishes of unknown temperature tolerance, live pets or people. A door latch, independent thermal cutout and noncombustible hot-zone structure require third-party electrical/fire testing. Power loss or sensor drift yields an incomplete cycle; cool and inspect before opening. Heat has no residual protection: bag/transfer treated items separately and investigate the source of infestation.[3] Material compatibility, hot-surface exposure, smoke/fire behavior and escape containment need independent testing before use.
 
+## How It Works
+
+1. A trained operator screens an item against the exclusion card, photographs accessible refuges, checks probe calibration and door seal, and loads one loose item with clear air paths. The mesh liner contains escapees during transfer; it is not proof against all leakage.
+2. A grounded resistive element warms recirculated air through a perforated steel plenum. Forced convection transfers heat to the surface; conduction through seams, wood and upholstery is slower, so air temperature is deliberately *not* the treatment clock. The four removable contact probes sample plausible slow points, not every hidden cavity.
+3. The controller records each probe, air temperature, fan status and door state. The proposed 90-minute dwell starts only after all required contact sensors read at least 50 °C; any sample below threshold pauses or resets the dwell according to a validated protocol. A missing, implausible or displaced probe, stalled fan, open door, power interruption or independent overtemperature trip forces an **incomplete/unverified** record, never a completed treatment.
+4. The heater stops; the operator waits for a measured safe handling temperature, inspects for damage and insects, and transfers the article into a clean containment path. Follow-up monitoring remains essential because heat has no residual effect.[3]
+
+## Technical Architecture
+
+**Power and heat:** a region-rated 230 V, ≤1.5 kW grounded heater behind a guarded steel plenum, mineral-wool-insulated steel shell, replaceable recirculation fan and separately fused controls. At rated draw the heater current is about 6.5 A (1,500 W / 230 V), before inrush and local code allowances; a qualified electrician must size the circuit. The 60 °C upper *air* limit is a proposed process setpoint, **not** a safe-touch or fire certification. Materials, adhesives and finishes require individual compatibility screening; a steel enclosure alone cannot make an unknown load safe.
+
+**Sensing and data flow:** four replaceable calibrated contact probes plus independent air-limit sensing → plausibility/open-circuit checks and logged minimum-contact-temperature dwell → heater relay; a separate, manual-reset thermal cutout removes heater power even if the software or relay fails. A door interlock and fan/airflow verification inhibit heat. A battery-backed log is optional, but backup power must never keep the heater running through a mains failure. Records include the load ID, placement card, calibration date, traces, faults and operator decision. No remote-control or unattended-cycle claim is made.
+
+**Validation boundary:** thermal mapping must challenge seams, deep joints and worst-case eligible loads with extra independent reference probes and concealed egg/adult sentinels. Compare logged probe temperatures to reference sensors and subsequent insect survival; if the 50 °C/90-minute threshold fails, revise eligibility or protocol rather than raising the 60 °C air limit by assumption. Kells and Goblirsch report egg survival for 71.5 minutes at 48 °C under their test conditions, illustrating why exposure history and placement matter.[2]
+
+## Performance Benchmarks
+
+| Metric and test boundary | Published/current reference | Pod target (not measured) |
+| --- | --- | --- |
+| Article exposure rule | EPA advises heating infested articles to ≥120 °F (~49 °C) for 90 minutes; this is guidance, not a comparative device trial.[1] | All required *item-contact* points ≥50 °C for 90 minutes, with independent air upper limit 60 °C; validate on each eligible load class. |
+| Egg heat response | Kells and Goblirsch found eggs survived 71.5 minutes at 48 °C in their laboratory protocol; chamber conditions differ from furniture.[2] | No surviving concealed sentinel eggs after a supervised treatment and two-week hatch observation; report sample size and confidence bounds, not a kill guarantee. |
+| Throughput / draw | No like-for-like measured benchmark for the proposed load mix; commercial chambers vary in size, loading and instrumentation.[1][3] | ≥95% of *eligible* test loads complete verified dwell within 6 h at ≤1.5 kW; ≤9 kWh/cycle at continuous rated power (1.5 × 6), measured at the wall. |
+| Fault detection | Air-only timers do not directly measure furniture cold spots; no published comparative false-pass rate is asserted.[2] | Zero false-completed records in 200 deliberately disconnected/displaced-probe fault cycles; then compare survival, damage, kWh and operator time against an air-timed chamber on matched loads. |
+
+## Deployment Scenarios
+
+- **Housing cooperative:** a trained pest-management partner books eligible chairs or luggage for an on-site supervised cycle; residents receive an *item* record, while the building separately inspects and treats the infestation. Requires pest-containment transfer, dedicated electrical supply and a validated local safety procedure.
+- **Furniture reuse center:** a segregated intake station screens solid-wood or compatible upholstered items before resale; failed or incompatible items follow a separate disposal/treatment route. Track damage and insect survival, not just resale throughput.
+- **Municipal shared service:** a mobile or fixed facility serves multiple neighborhoods with documented chain of custody and calibration. Transport costs, local electrical/fire approvals and trained operators may dominate pod hardware cost.
+
+## Risks & Mitigations
+
+- **Cold spots or displaced sensors:** four surface probes cannot certify concealed voids. Use placement cards, independent thermal mapping and sentinel challenges; reject thick, sealed or unknown constructions. Treat any doubtful trace as incomplete.
+- **Fire, burns and electrical faults:** unknown foam, adhesives, batteries and sprays may fail before a nominal air cutoff. Enforce exclusions, grounded/fused construction, independent manual-reset cutoff, door and airflow interlocks, monitored cooldown, emergency stop and third-party electrical/fire testing; these are **proposed safeguards**, not implemented protections.
+- **Power loss, sensor drift, spill or cleaning damage:** fail to incomplete, never resume a dwell automatically; recalibrate probes, inspect seals and wiring, clean only after isolation and cooldown, and log maintenance. Validate fault injection and moisture ingress before deployment.
+- **Misuse and reinfestation:** prevent occupancy by people or pets, keep access supervised, and use a clean transfer zone plus follow-up integrated pest management.[1][3] Do not claim sterilization, guaranteed eradication or unattended safety.
+
+## Vision for 2050
+
+If independent trials establish efficacy and material safety, repairable shared pods could become a routine station at reuse depots and housing services: a chair is screened, processed with an auditable *item-level* trace, and kept in circulation rather than discarded reflexively. The limiting innovation is trust in the coldest refuge—not simply more heat. Universal adoption, infestation reduction and avoided waste remain scenarios contingent on clinical-field evidence, affordable staffing and safe transfer practice, not forecasts.
+
 ## Sources
 
 [1] https://www.epa.gov/bedbugs/controlling-bed-bugs-using-integrated-pest-management-ipm — EPA: Controlling Bed Bugs Using IPM

@@ -139,6 +139,7 @@ Design and document technologies that:
 | [Vector-Sealed Water Lid](./vector-sealed-water-lid/) | Concept | Drinking Water & Public Health / Household Mosquito Source Prevention |
 | [Milk-Can Thermal Shuttle](./milk-can-thermal-shuttle/) | Concept | Food Safety & Universal Basic Services / Smallholder Dairy Collection |
 | [Smoke-Refuge Witness Cassette](./smoke-refuge-witness-cassette/) | Concept | Disaster Resilience & Clean Air / Wildfire Smoke Refuge |
+| [Biogas Breakthrough Guard](./biogas-breakthrough-guard/) | Concept | Clean Energy & Public Health / Community Biogas Safety |
 
 ## Structure
 

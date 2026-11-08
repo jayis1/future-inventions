@@ -1165,3 +1165,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$210 ex-factory at 50,000/year by 2038; distribution, setup, consumables, battery service and certification extra
 - **Author:** jayis1
 - **Created:** 2026-11-07
+
+### 122 — [Biogas Breakthrough Guard](../biogas-breakthrough-guard/)
+- **Category:** Clean Energy & Public Health / Community Biogas Safety
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Unvalidated ten-site pilot of H₂S outlet breakthrough and service safety; population benefit unknown
+- **Key Material:** Hydrated iron oxide on qualified biochar/mineral support, sealed lead/lag beds and corrosion-compatible keyed manifold
+- **Key Innovation:** Tests two-point H₂S breakthrough evidence and fault-to-closed gas-use outlet during keyed cartridge exchange; iron-sponge desulfurization itself is existing art
+- **Target Cost:** Unquoted US$220 ex-workshop at 10,000/year by 2038 plus US$25 per replacement cartridge; site safety infrastructure, installation and service excluded
+- **Author:** jayis1
+- **Created:** 2026-11-08

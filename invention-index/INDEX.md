@@ -1185,3 +1185,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted ≤US$20 incremental tread-cap cost at 100,000 compatible retreads/year in 2038, excluding casing, retread labor, certification and logistics
 - **Author:** jayis1
 - **Created:** 2026-11-08
+
+### 124 — [Heat-Dose Furniture Pod](../heat-dose-furniture-pod/)
+- **Category:** Healthy Housing & Circular Reuse / Bed-Bug Control
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Unvalidated 200-cycle fault trial and supervised article-treatment comparison; infestation and waste effects unknown
+- **Key Material:** Grounded resistive heater, mineral-wool-insulated steel enclosure, recirculation plenum and four replaceable contact-temperature probes
+- **Key Innovation:** Tests a load-specific minimum-contact-temperature dwell and fault-to-unverified unload record against a chamber-air timer; heat chambers and probes are established art
+- **Target Cost:** Unquoted US$900 ex-workshop per pod at 1,000/year by 2038; wiring, labor, validation, calibration and certification excluded
+- **Author:** jayis1
+- **Created:** 2026-11-08

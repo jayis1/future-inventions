@@ -141,6 +141,7 @@ Design and document technologies that:
 | [Smoke-Refuge Witness Cassette](./smoke-refuge-witness-cassette/) | Concept | Disaster Resilience & Clean Air / Wildfire Smoke Refuge |
 | [Biogas Breakthrough Guard](./biogas-breakthrough-guard/) | Concept | Clean Energy & Public Health / Community Biogas Safety |
 | [PPD-Free Tread Laminate](./ppd-free-tread-laminate/) | Concept | Aquatic Restoration & Sustainable Transportation / Source-Side Tire Pollution Prevention |
+| [Heat-Dose Furniture Pod](./heat-dose-furniture-pod/) | Concept | Healthy Housing & Circular Reuse / Bed-Bug Control |
 
 ## Structure
 

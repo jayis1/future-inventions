@@ -1175,3 +1175,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$220 ex-workshop at 10,000/year by 2038 plus US$25 per replacement cartridge; site safety infrastructure, installation and service excluded
 - **Author:** jayis1
 - **Created:** 2026-11-08
+
+### 123 — [PPD-Free Tread Laminate](../ppd-free-tread-laminate/)
+- **Category:** Aquatic Restoration & Sustainable Transportation / Source-Side Tire Pollution Prevention
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Unvalidated 1,000-retread pilot; reduced tire-wide pollutant emissions and aquatic benefit require comparative testing
+- **Key Material:** EPDM-rich surface blend with solution-SBR/polybutadiene, silica/silane filler, non-PPD antioxidant and retread-compatible bonding layer
+- **Key Innovation:** Tests a renewing ozone-resistant tread surface without PPD antiozonants against matched wet-grip, abrasion, dynamic-aging and whole-tire runoff-toxicity gates; EPDM blends and retreading are existing art
+- **Target Cost:** Unquoted ≤US$20 incremental tread-cap cost at 100,000 compatible retreads/year in 2038, excluding casing, retread labor, certification and logistics
+- **Author:** jayis1
+- **Created:** 2026-11-08

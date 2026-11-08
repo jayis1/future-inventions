@@ -140,6 +140,7 @@ Design and document technologies that:
 | [Milk-Can Thermal Shuttle](./milk-can-thermal-shuttle/) | Concept | Food Safety & Universal Basic Services / Smallholder Dairy Collection |
 | [Smoke-Refuge Witness Cassette](./smoke-refuge-witness-cassette/) | Concept | Disaster Resilience & Clean Air / Wildfire Smoke Refuge |
 | [Biogas Breakthrough Guard](./biogas-breakthrough-guard/) | Concept | Clean Energy & Public Health / Community Biogas Safety |
+| [PPD-Free Tread Laminate](./ppd-free-tread-laminate/) | Concept | Aquatic Restoration & Sustainable Transportation / Source-Side Tire Pollution Prevention |
 
 ## Structure
 

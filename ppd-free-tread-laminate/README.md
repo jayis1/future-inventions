@@ -32,6 +32,52 @@ If a formulation passes both road-safety and aquatic-toxicity gates, source subs
 
 **Safety and falsification:** the hardest unknown is whether an EPDM-rich surface can preserve wet traction, abrasion life, interlayer adhesion and dynamic ozone resistance simultaneously. First run small, contained compound-screening tests; reject candidates that crack, delaminate, lose grip, or shed more particles, regardless of 6PPD-quinone reduction. Analyze ozonated wear particles and leachate by targeted 6PPD/6PPD-quinone assays **and** non-target screening for new transformation products; compare toxicity in independently approved aquatic assays, not chemistry alone. Evaluate cure emissions and production energy, ingredient provenance and recyclability. Progress through benchtop, closed-track, independent road-safety, then paired catchment studies over 10–20 years; no public-road use before tire-maker and regulatory approval. No sensors, identity collection or military application are needed.
 
+## How It Works
+
+1. **Screen the ingredients.** Specify a PPD exclusion rule for the *new cap and bonding stock*: no intentionally added p-phenylenediamine antidegradants (including 6PPD), with batch assays and recorded detection limits. This is not a claim that a reused casing or whole tire is PPD-free.
+2. **Build a renewing cap.** Trial EPDM-rich, silica-reinforced rubber with dispersed solution-SBR/polybutadiene for traction. EPDM's comparatively ozone-resistant backbone is the hypothesis; microscopy must confirm the ozone-resistant phase remains accessible at the worn surface and groove edges, rather than only at the factory-new face. Tune silane and cure chemistry in small coupons first, because phase separation and incompatible cure rates could defeat both wear and adhesion.
+3. **Bond and wear.** Retread specialists laminate the cap onto a screened, buffed casing through an SBR/BR-compatible underlayer, then cure to the approved casing process. At each wear depth, measure whether exposed cut edges, flexed grooves or interlayer cracks allow ozone ingress; capture abrasion debris and runoff for chemistry and aquatic bioassays. A PPD-free *cap* can still collect 6PPD-derived compounds from adjacent tire components or background road dust.
+4. **Retire or retread safely.** Reject caps that delaminate, overheat, lose wet grip or shed excess particles; track material mass through retreading and disposal. This is a research workflow for qualified tire manufacturers, not a do-it-yourself recipe or permission for road use.
+
+## Technical Architecture
+
+**Material path:** traceable EPDM/SBR/BR and silica/silane lots → compound-screening mixer → profiled cap → compatible bonding underlayer → inspected casing → qualified cure → bench/track testing → supervised fleet trial → audited retread or end-of-life stream. The architecture is proposed, not built. A cross-section has a full-depth ozone-resistant wear cap, a thin transition/bond layer and a pre-existing carcass; the transition must carry shear without making the cap peel at shoulder edges. Avoid treating the carcass as chemically inert.
+
+**Evidence path:** lot-specific formulation and PPD assay → cure/rheology record → microscopy and peel/fatigue results → matched wet-braking, rolling and wear records → tire-wide wear/runoff 6PPD and 6PPD-quinone mass with blanks and detection limits → non-target chemical screen and independent aquatic toxicity. Compare each candidate to an otherwise matched, currently approved 6PPD-containing retread on the same casing class, load, inflation, weather and mileage. No sensing or personal data is required. Regional tire approvals and retread production rules still govern deployment; UN Regulation 117 covers wet adhesion, rolling resistance and sound for the tire classes in its scope, not proof that this retread is approved.[4]
+
+## Performance Benchmarks
+
+**Current state:** no prototype results, baseline measurements, or validated service-life data exist for this formulation. Existing approved retreads are the practical state-of-art comparator; numerical baseline must be measured on the *chosen* product and test cycle rather than borrowed from a different tire. These are provisional design gates, not regulatory thresholds or achieved performance.
+
+| Metric | Proposed gate vs matched approved retread | Comparison method / qualification |
+| --- | --- | --- |
+| Ozone cracking | No earlier crack initiation | ISO 1431-1:2024 static and dynamic ozone/strain coupons; also test worn shoulders and tire flex.[2] |
+| Abrasion and particle mass | ≤10% greater mass lost per tire-km | ISO 4649:2024 drum coupons plus captured tire wear in matched road trials; the drum result alone does not predict road service.[3] |
+| Wet braking | ≤5% longer stopping distance; also meet applicable approval criteria | Repeated same-vehicle new/worn tire tests on wet surfaces; UN R117 wet-adhesion method applies where relevant.[4] |
+| Rolling resistance | No more than 5% above comparator (additional research gate) | Matched loaded drum/approved procedure; report N/kN and uncertainty, plus heat buildup.[4] |
+| Bond and fatigue | No earlier separation or structural failure | Peel/fatigue after heat, water and ozone cycling; quantify crack growth and inspect edges. |
+| Tire-wide 6PPD-quinone | ≥90% less mass per tire-km | Captured debris plus standardized runoff, blank-corrected LC-MS/MS; include casing and sidewall contributions. |
+| Aggregate aquatic hazard | No worse than comparator | Independent, blinded bioassays on aged leachate and particles; non-target scan for substitutes and transformation products. |
+
+The ≤5% rolling-resistance gate is an added planning target, not an existing certification limit. Record absolute baseline values, test conditions, confidence intervals and any failures before publishing comparisons; a lower 6PPD-quinone assay cannot offset worse braking or total toxicity.
+
+## Deployment Scenarios
+
+- **Contained commercial-retread bench and track programme:** one casing and load class, manufacturer-controlled production, several wear depths; establish cure compatibility and failure modes before public roads.
+- **Qualified municipal fleet pilot:** after approvals, pair candidate and conventional tires on comparable routes over a planned 1,000-retread pilot; measure wet braking, tire-km, wear and tire-wide chemical releases while logging replacements and casing failures. A pilot is not a watershed outcome study.
+- **Rainfall-exposed watershed trial:** only after road-safety gates, monitor matched fleet runoff with upstream/background controls, stormwater infrastructure and seasonal replicates; use this to test exposure pathways, not to infer fish-population recovery automatically.
+
+## Risks & Mitigations
+
+EPDM-rich chemistry may sacrifice wet/cold grip, abrasion or rolling efficiency: reject any candidate that misses safety and durability gates, even if its target pollutant falls. Cure mismatch, shoulder peeling and heat cycling can expose the bond layer: test peel, flex and worn edges after hot/wet aging and track failures by casing lot. Substitute antioxidants and silica-processing aids could create other toxic products: demand non-target screens, leachate bioassays and full ingredient traceability, not a one-analyte declaration. Sidewalls, recycled feedstocks and road contamination can defeat a whole-tire PPD claim: assay complete tires and include blanks, detection limits and environmental background. Extra energy, shortened life, poor retreadability or costly scrap could erase benefits: perform a measured lifecycle comparison and halt scale-up when cost per km, wear or safety worsens. No public-road or environmental-benefit claim precedes independent qualification.
+
+## Vision for 2050
+
+If decades of independently replicated grip, fatigue and exposure results support it, new and retreaded tires could be specified by *whole-life chemical release per tire-kilometre* alongside traction, energy and wear. Fleets could buy audited low-release treads and stormwater operators could verify actual catchment changes. This is a conditional ambition, not a forecast: the formulation may fail its safety, cost or ecological gates and a different source-control approach may win.
+
 ## Sources
 
 [1] https://www.epa.gov/chemical-research/6ppd-quinone
+[2] https://www.iso.org/standard/86601.html
+[3] https://www.iso.org/standard/86603.html
+[4] https://unece.org/sites/default/files/2025-09/R117r5e.pdf

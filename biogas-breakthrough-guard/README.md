@@ -32,6 +32,38 @@ A first controlled bench campaign would compare this two-bed interface with a co
 
 Condensate can flood beds; particulates can choke them; a sensor can drift; a seal can leak; a shutoff can stick; and saturated iron-sulfide media can create handling and reoxidation hazards. Treat any abnormal reading as **unknown or unsafe**, not as a clean-gas certificate. No operator should open a charged vessel, breathe gas to test it, regenerate spent media with air in place, or defeat the shutoff. Qualified crews must isolate, purge and gas-test under an approved site procedure, use suitable protection, and send spent cartridges through a locally approved waste or controlled regeneration route after characterization. The module does not remove CO₂, siloxanes, pathogens or all other biogas contaminants and cannot replace ventilation, leak alarms or certified combustion systems. Within 10–20 years the integration could be validated and manufactured locally if independent safety and lifecycle studies show lower breakthrough risk than existing units; measured benefit, not units shipped, determines impact.
 
+## How It Works
+
+In normal operation, the site's condensate trap drains water before gas enters the lead cartridge. Hydrated iron oxide reacts with H₂S to form iron sulfide; gas then passes through the lag cartridge and a monitored outlet. A rising H₂S reading between beds means the lead bed is losing capacity, **not** that the outlet has already failed. A trained operator schedules a sealed-cartridge exchange while the lag bed still protects the appliance; only verified gas quality permits restart. The proposal needs a defined sampling interval and independently checked outlet measurement, not just an occasional handheld reading: the monitoring design must prove that a short breakthrough cannot pass between checks. No regeneration with air occurs inside a charged gas line.[1][2]
+
+## Technical Architecture
+
+Gas path: digester → site pressure/vacuum protection and approved diversion path → condensate trap → keyed lead bed → intermediate H₂S sample → lag bed → outlet H₂S sample → qualified use shutoff → approved appliance. Instrument path: representative conditioned sample, flow/temperature and differential-pressure checks → calibrated controller → local fault indication and shutoff demand; a separate independent safety review must establish whether any of these components can serve a protective function. Sample conditioning must not scrub H₂S before measurement; verify sample-line adsorption and transport delay in a bench rig. The pressure protection and methane-leak detection remain site systems outside this module. On lost power, blocked sample flow, invalid calibration or outlet alarm, withhold the claim of qualified gas and isolate *use* only where the site's independent relief/diversion design makes that safe.
+
+## Performance Benchmarks
+
+| Metric at proposed 0.5–1.0 m³/h, 15–35 °C, 200–1,000 ppmv inlet H₂S | Current reference | Proposed target (unmeasured) | Verification |
+| --- | --- | --- | --- |
+| Outlet H₂S | EPA describes solid-media removal for low-flow biogas but provides no universal outlet limit [1] | <10 ppmv until service at the measured outlet; appliance-specific limit takes precedence | Calibrated inlet/interstage/outlet log across complete bed life |
+| Pressure loss at 1.0 m³/h | Single-bed iron sponge with the **same media mass and inlet humidity**; no comparable result yet | ≤1 kPa clean-to-service across guard | Differential pressure, dry and wet challenge, compared at matched flow |
+| Inspection and fault response | Manual single-bed sampling at a site-specific interval; no like-for-like latency baseline yet | 30-day inspection goal; alarm latency to be set only after transport-delay tests | Timestamped challenge injections and false-trip/missed-event tally |
+
+These are engineering targets rather than state-of-the-art measurements. A two-bed cartridge costs extra pressure head and hardware relative to one bed; the pilot must establish whether earlier warning offsets that burden. Never infer sensor response from the inspection interval.
+
+## Deployment Scenarios
+
+- A professionally operated farm digester supplying a certified engine can use interstage trend data to schedule media replacement before outlet quality degrades; engine maker fuel specifications govern the trip limit.
+- A cooperative kitchen served by a professionally engineered outdoor digester can maintain a service log and qualified cartridge return route; the guard cannot certify indoor air or replace kitchen ventilation and independent gas alarms.
+- A small wastewater digester with variable feed can compare bed-life distributions across seasons; high siloxane or peak H₂S loads may instead demand a different treatment train.[1]
+
+## Risks & Mitigations
+
+Condensation, channeling and particulate plugging can defeat contact or block a sample line: upstream drainage, monitored differential pressure and flow-validity checks must be tested under wet peak-load conditions. Drift, H₂S poisoning, cross-sensitivity or a failed valve can mask breakthrough: independent calibration challenges, proof-of-closure tests and a site-specific failure analysis are prerequisites, not guarantees. Gas leaks, ignition, H₂S exposure and oxygen displacement remain serious hazards; certified fittings, hazardous-location review, leak testing and trained isolation/purge procedures are mandatory for any eventual field trial. Isolating use while production continues can overpressure a digester, so an independently engineered relief and approved diversion path must be verified before connecting a shutoff.[1] Spent iron-sulfide media requires characterization and controlled handling; spontaneous heating on air exposure is a possible hazard. No safety certification or field-ready installation procedure is claimed.
+
+## Vision for 2050
+
+If independently validated, locally repairable guards could make gas-quality evidence as routine as a pressure gauge in professionally managed community biogas plants. Technicians would exchange traceable cartridges before breakthrough, while operators compare measured outlet quality, downtime and spent-media burdens—not simply devices sold. This is a conditional 2050 scenario: where maintenance, safe gas diversion or trained staff are absent, the appropriate answer may be a different system, not deployment of this guard.
+
 ## Sources
 
 [1] US EPA, *Anaerobic Digester/Biogas System Operator Guidebook* (2020), §§2.6, 7.1–7.9: https://www.epa.gov/sites/default/files/2020-11/documents/agstar-operator-guidebook.pdf

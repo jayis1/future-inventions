@@ -1195,3 +1195,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$900 ex-workshop per pod at 1,000/year by 2038; wiring, labor, validation, calibration and certification excluded
 - **Author:** jayis1
 - **Created:** 2026-11-08
+
+### 125 — [Continuous-Load-Path Roof Tie](../continuous-load-path-roof-tie/)
+- **Category:** Disaster Resilience & Accessible Housing / Wind Retrofit
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Unvalidated 100-building eligible-site comparison; whole-building wind protection and population benefit unknown
+- **Key Material:** Galvanized steel connectors, rated fasteners and foundation hold-down, replaceable joint-displacement witness
+- **Key Innovation:** Tests an inspectable roof-to-stud-to-foundation retrofit and joint-by-joint acceptance against conventional engineered connections; hurricane straps and continuous load paths are existing art
+- **Target Cost:** Unquoted US$85 ex-workshop per path at 50,000/year by 2038; foundation anchoring, engineering, installation, repairs and permits excluded
+- **Author:** jayis1
+- **Created:** 2026-11-09

@@ -1215,3 +1215,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted installed target below US$150 per tonne/year of qualified clinker capacity at ten plants by 2040; energy, storage, grid upgrades and shutdown costs extra
 - **Author:** jayis1
 - **Created:** 2026-11-09
+
+### 127 — [Steam-Penetration Witness Pack](../steam-penetration-witness-pack/)
+- **Category:** Clinical Reprocessing & Universal Basic Services / Steam-Sterilization Monitoring
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Unvalidated small-clinic fault trials; nominal 1,000 supplemental traces/year per pack at 20 cycles/week and 50 weeks, not sterile loads or avoided infections
+- **Key Material:** 316L stainless challenge cassette, Pt100 probe, steam-compatible reference load and cycle-appropriate chemical indicator
+- **Key Innovation:** Tests a qualified pack-core time-history witness and offline fault-to-unverified review against existing sterilizer monitoring; not a substitute for biological tests or package indicators
+- **Target Cost:** Unquoted US$140 ex-workshop reader/pack set at 10,000/year by 2038; chemical indicators and clinical validation extra
+- **Author:** jayis1
+- **Created:** 2026-11-09

@@ -144,6 +144,7 @@ Design and document technologies that:
 | [Heat-Dose Furniture Pod](./heat-dose-furniture-pod/) | Concept | Healthy Housing & Circular Reuse / Bed-Bug Control |
 | [Continuous-Load-Path Roof Tie](./continuous-load-path-roof-tie/) | Concept | Disaster Resilience & Accessible Housing / Wind Retrofit |
 | [Electrified Calciner Carbon Cassette](./electrified-calciner-carbon-cassette/) | Concept | Climate & Sustainable Manufacturing / Cement Process Emissions |
+| [Steam-Penetration Witness Pack](./steam-penetration-witness-pack/) | Concept | Clinical Reprocessing & Universal Basic Services / Steam-Sterilization Monitoring |
 
 ## Structure
 

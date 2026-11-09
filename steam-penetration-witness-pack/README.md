@@ -37,6 +37,54 @@ At a hypothetical 20 eligible cycles per week for 50 weeks, one pack can produce
 - **Validation:** Compare core readings with traceable reference probes across gravity and prevacuum models, load densities, wrapped and unwrapped configurations, deliberate air pockets, high-altitude ambient pressure, wet packs and worn seals. Do not pool unlike cycles. Challenge representative actual packs with appropriate internal chemical indicators and *Geobacillus stearothermophilus* biological indicators under the applicable local standard; obtain independent infection-control and sterilizer-manufacturer approval before clinical use.[1][2][3]
 - **Maintenance:** Recheck probe calibration and cable insulation at the qualified interval, inspect cassette path and packing reproducibility each use, replace damaged parts, and recycle stainless steel/electronics separately after approved decontamination. A failed reader must not obstruct the clinic's standard validated monitoring route.
 
+## How It Works
+
+1. A qualified team fixes the cassette's reference-load recipe, probe position, steam-entry geometry, eligible sterilizer/cycle and placement within the load. The clinic uses only that documented configuration; an arbitrary instrument bundle is not an equivalent challenge.
+2. Through a manufacturer-approved port, the Pt100 and insulated lead report core temperature to the external reader. The reader records a timestamped trace at ≥1 Hz (target), identifies missing samples and compares it with the *separate* chamber record. Condensation releases latent heat into the steel/textile core, but a rising core temperature alone cannot identify the steam fraction or prove saturated-steam contact at every surface.
+3. Only after the qualified core threshold is reached does the proposed algorithm accumulate continuous exposure time for the *specific validated cycle*. The operator reads the cycle-appropriate chemical indicator independently. A failed indicator, interrupted trace, wrong program or wet packaging means **unverified**; the operator follows the facility's established investigation/quarantine procedure. Even a complete trace is evidence for review, never automatic load release or proof of sterility.[1][2]
+
+## Technical Architecture
+
+| Layer | Proposed subsystem and data flow |
+| --- | --- |
+| Challenge interface | Perforated 316L cassette + reproducible textile/metal reference load + replaceable indicator; a documented steam path and fixed Pt100 position couple the local exposure to a measured core history. |
+| Acquisition | Heat-rated, insulated removable probe/cable through an *approved* port → isolated 12 V offline logger; calibration ID, probe continuity and timestamp/sequence checks travel with every trace. No electrical penetration is assumed safe without sterilizer-manufacturer approval. |
+| Interpretation | Cycle ID + qualified configuration + core trace + separately obtained chamber record → continuity/threshold checks → `trace complete for review` or `unverified`; pressure–temperature disagreement is a fault flag, not a steam-quality assay. |
+| Human control | Operator checks chemical indicator, dryness, cycle record and biological-monitoring obligations; retains cycle ID and calibration/version metadata under local policy. No patient identifiers are required. |
+
+Configuration is locked per sterilizer model and load family. Calibration drift, unreadable indicators, clock disagreement, or a missing chamber log must fail to **unverified**, not silently infer a pass. The reader never controls the pressure vessel.
+
+## Performance Benchmarks
+
+No prototype measurements or comparative clinical results exist. These are **published process comparators**, not evidence that this device meets them: CDC describes 30 minutes at 121 °C for wrapped supplies in a gravity-displacement sterilizer and 4 minutes at 132 °C in a prevacuum sterilizer; actual exposure depends on the item and validated process.[1] The proposed pack is not interchangeable with established Bowie–Dick, chemical or biological tests.[1][2]
+
+| Metric / conditions | Current evidence or comparator | Proposed acceptance target (untested) |
+| --- | --- | --- |
+| Core readout, approved port, 110–140 °C | No device data; compare against a traceable reference thermometer in the same qualified challenge | ≥1 sample/s; calibrated error within ±0.5 °C; report maximum error over multiple cycles, models and probe replacements |
+| Fault recognition, bench-injected open probe, lost log, interrupted power and wrong-cycle ID | No device data; normal chamber logs and indicators provide different, complementary evidence | 200 blinded injected events; all 200 classified `unverified`, with fault-class counts and confidence bounds reported; also report false-unverified rate on valid cycles |
+| Penetration discrimination, matched loads and cycle type | Existing Bowie–Dick/process-challenge and package-indicator workflows remain the comparison, not a numerical sensitivity claim[1][2] | Map cold spots with independent probes and matched chemical/biological indicators; predefine true-failure criterion, sample size, sensitivity and false-pass bound *before* trials |
+
+Pressure is **absolute** if compared with saturation temperature; no fixed 121 °C threshold is programmed across cycles or altitudes. None of these targets authorizes clinical use. Manufacturing, device/regulatory classification, indicator suitability and any relevant ISO 17665/ISO 11140 applicability need independent assessment; compliance is not claimed.
+
+## Deployment Scenarios
+
+- **Dental outpatient clinic:** A compatible small sterilizer with an approved instrument port uses a locally qualified cassette on eligible wrapped loads. The staff member associates its trace with the sterilizer record and still performs required package and biological monitoring; without that port, the proposed wired version is not deployed.[2][3]
+- **Rural surgical service:** An offline recorder and serviceable probe preserve cycle evidence during connectivity outages. A service technician verifies calibration and the site validates its own load geometry; loss of power or a wet pack routes to the existing reprocessing workflow, not to a software override.
+- **Central sterile processing pilot:** An infection-control team tests matched, instrumented loads under controlled air-removal faults alongside approved monitoring, then evaluates operator time and false-pass risk before any production use. Different sterilizer models and cycle families are analyzed separately.
+
+## Risks & Mitigations
+
+| Risk | Design response and unresolved test |
+| --- | --- |
+| Residual air, non-condensable gases or a blocked lumen can leave a misleading hot core | Use independent challenge indicators and representative load mapping; test deliberately introduced faults and do not equate the core trace with microbial kill. |
+| Misplacement, overloaded packs, aged indicators or a damaged port cable can create a false pass | Lock the qualified configuration, inspect consumables/lead each run, check trace continuity and reject ambiguous results; manufacturer approval for the pressure boundary is mandatory. |
+| Wet pack or false-unverified alarms can disrupt care | Preserve existing quarantine/reprocessing rules, quantify false alarms and rework in blinded pilots, and retain the facility's approved monitoring pathway. |
+| Calibration drift, mixed-up records, disposal and cost overruns | Use traceable periodic calibration, cycle IDs and versioned settings; replace failed probes, handle spent indicators per facility policy, and publish full installed/labor costs before procurement. |
+
+## Vision for 2050
+
+If controlled trials demonstrate added detection without unacceptable false alarms, compatible clinics could treat a repairable offline core trace as a routine *supplemental* audit trail, accessible even where connectivity is unreliable. A shared library of separately qualified challenge recipes could make training and failure investigation easier; it would not turn one cassette into a universal certificate. Widespread use remains conditional on sterilizer compatibility, independent validation, regulatory clearance where required, and affordable maintenance—not a forecast of infections prevented.
+
 ## Sources
 
 [1] https://www.cdc.gov/infection-control/hcp/disinfection-sterilization/steam-sterilization.html — CDC Steam Sterilization

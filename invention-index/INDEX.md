@@ -1205,3 +1205,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$85 ex-workshop per path at 50,000/year by 2038; foundation anchoring, engineering, installation, repairs and permits excluded
 - **Author:** jayis1
 - **Created:** 2026-11-09
+
+### 126 — [Electrified Calciner Carbon Cassette](../electrified-calciner-carbon-cassette/)
+- **Category:** Climate & Sustainable Manufacturing / Cement Process Emissions
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Unvalidated site pilot; net lifecycle CO₂e avoided per tonne of saleable clinker to be independently measured
+- **Key Material:** FeCrAl resistance elements, replaceable high-alumina refractory liners, mineral gas seals and serviceable ceramic dust filters
+- **Key Innovation:** Tests swappable indirect-heating calciner channels with reconciled solids/CO₂/electricity accounting against existing direct-separation systems; ≥90% process-CO₂ collection is a design target, not a result
+- **Target Cost:** Unquoted installed target below US$150 per tonne/year of qualified clinker capacity at ten plants by 2040; energy, storage, grid upgrades and shutdown costs extra
+- **Author:** jayis1
+- **Created:** 2026-11-09

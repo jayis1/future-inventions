@@ -1235,3 +1235,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$1,800 ex-workshop at 1,000 carts/year by 2038, plus US$250/year calibration and service target; certification, site interfaces and engineer labour excluded
 - **Author:** jayis1
 - **Created:** 2026-11-15
+
+### 129 — [Dry-Reset Rain Diverter](../dry-reset-rain-diverter/)
+- **Category:** Clean Water & Universal Basic Services / Rainwater Collection
+- **TRL:** 2 (Research concept)
+- **Impact Potential:** Unvalidated 100-roof, two-rainy-season comparison; any water-quality or health benefit remains unknown
+- **Key Material:** Food-contact-qualified polypropylene 25 L chamber and flap, mechanical float/pawl, stainless springs and replaceable seals
+- **Key Innovation:** Tests a normally-to-waste, dry-state-armed first-flush interlock against maintained conventional diverters; a new storm cannot reach the untreated tank inlet until the chamber has emptied and refilled
+- **Target Cost:** Unquoted US$42 ex-workshop at 10,000 units/year by 2038, plus US$8/year service parts goal; tank, installation, testing, treatment and certification excluded
+- **Author:** jayis1
+- **Created:** 2026-11-15

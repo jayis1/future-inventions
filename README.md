@@ -146,6 +146,7 @@ Design and document technologies that:
 | [Electrified Calciner Carbon Cassette](./electrified-calciner-carbon-cassette/) | Concept | Climate & Sustainable Manufacturing / Cement Process Emissions |
 | [Steam-Penetration Witness Pack](./steam-penetration-witness-pack/) | Concept | Clinical Reprocessing & Universal Basic Services / Steam-Sterilization Monitoring |
 | [Maternity Gas-Loss Witness](./maternity-gas-loss-witness/) | Concept | Climate & Health Infrastructure / Maternity Nitrous-Oxide Loss Prevention |
+| [Dry-Reset Rain Diverter](./dry-reset-rain-diverter/) | Concept | Clean Water & Universal Basic Services / Rainwater Collection |
 
 ## Structure
 

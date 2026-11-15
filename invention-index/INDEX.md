@@ -1245,3 +1245,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$42 ex-workshop at 10,000 units/year by 2038, plus US$8/year service parts goal; tank, installation, testing, treatment and certification excluded
 - **Author:** jayis1
 - **Created:** 2026-11-15
+
+### 130 — [Flood-Isolating DC Spur](../flood-isolating-dc-spur/)
+- **Category:** Disaster Resilience & Universal Basic Services / Low-Voltage Electrical Safety
+- **TRL:** 2 (Research concept)
+- **Impact Potential:** Unvalidated 50-site isolated-DC comparison; flood-risk population is not a device-benefit estimate
+- **Key Material:** Dry-side DC-rated two-pole disconnects, independently protected 24 V spurs, replaceable wetting trace and irreversible exposure strip
+- **Key Innovation:** Tests continuity-checked low-spur wetting detection, dry-side lockout and inspection-only restart against elevated fused DC distribution; sealed connectors and branch protection are existing art
+- **Target Cost:** Unquoted US$110 ex-workshop per two-spur module at 10,000/year by 2038, plus US$8 per replacement cartridge; supply, wiring, installation, inspection and certification excluded
+- **Author:** jayis1
+- **Created:** 2026-11-15

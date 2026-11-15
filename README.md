@@ -147,6 +147,7 @@ Design and document technologies that:
 | [Steam-Penetration Witness Pack](./steam-penetration-witness-pack/) | Concept | Clinical Reprocessing & Universal Basic Services / Steam-Sterilization Monitoring |
 | [Maternity Gas-Loss Witness](./maternity-gas-loss-witness/) | Concept | Climate & Health Infrastructure / Maternity Nitrous-Oxide Loss Prevention |
 | [Dry-Reset Rain Diverter](./dry-reset-rain-diverter/) | Concept | Clean Water & Universal Basic Services / Rainwater Collection |
+| [Flood-Isolating DC Spur](./flood-isolating-dc-spur/) | Concept | Disaster Resilience & Universal Basic Services / Low-Voltage Electrical Safety |
 
 ## Structure
 

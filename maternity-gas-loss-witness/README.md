@@ -38,6 +38,52 @@ A planning trial of 50 facilities will compare inventory-reconciled nitrous oxid
 - **Proof before procurement:** bench-test 0, 0.05, 0.1 and 0.2 standard L/min reference leaks over relevant volumes and temperature swings, then run blinded comparisons with qualified engineer-led leak audits at several hospitals. Count correct section localization, missed leaks, false positives, test time, interruption incidents and verified cylinder-mass savings over at least one annual supply cycle. Proceed to installation only after site-specific engineering approval, applicable product qualification and clinical governance; compare against simply using point-of-care cylinders or established maintenance. A 10–20-year pathway is bench metrology, supervised multi-site trials, certification, then locally serviceable production—not a present deployment claim.
 - **End of life:** replace calibrated sensors, standard battery and seals separately; return gas-compatible wetted parts through medical-equipment service channels and recycle the steel enclosure and electronics appropriately. No subscription or cloud connection is required.
 
+## How It Works
+
+1. **Reconcile the inventory.** An authorised engineer records incoming and returned cylinder masses, fill specifications, exchanges and the measurement window. The cart keeps gross gas turnover separate from estimated clinical draw; missing or uncertain logs make the result **unverified**, not a leak estimate. A high discrepancy is a reason to investigate, not proof of a particular pipe defect.
+2. **Prepare a safe test boundary.** After clinical approval, backup-supply verification and independent isolation, the engineer identifies an out-of-service section from the current schematic. Only a site-approved test medium, pressure, keyed port and qualified oxygen-compatible assembly may be used. The cart never opens a valve or connects to a live patient circuit.
+3. **Run controls, then measure.** Zero and span-check both pressure channels with traceable calibration, measure a sealed blank for test-head leakage and challenge the setup with a known reference leak. Record absolute pressure and surface temperature throughout the section and adjacent-reference traces; reject data if the blank, reference, temperature stability or approved boundary fails.
+4. **Correct and review.** For a fixed-volume section, compare pressure normalised by absolute temperature, since ideal-gas behaviour gives gas amount proportional to `p_abs × V / T_abs`. Propagate sensor, temperature, volume and seal uncertainties before comparing the trace to the blank and reference. The display offers **unverified**, **investigate** or **eligible for engineer review**; none means safe for patient use. A qualified engineer independently confirms any repair candidate and controls return to service.
+
+## Technical Architecture
+
+`Cylinder scale + exchange log → inventory reconciliation → discrepancy with uncertainty` and `approved test port → 316L test head → dual pressure channels + temperature probes → timestamped, temperature-corrected trace → blank/reference checks → engineer-facing report` are separate paths joined only in the offline decision record. The battery-backed logger stores section IDs, instrument serials, calibration validity and test-medium identity, not patient identifiers; a signed paper or local export is retained under the site's engineering policy. Software interlocks make missing approvals, invalid calibration, sensor disagreement, out-of-range pressure, lost power or a failing control invalidate the result. They do **not** replace physical isolation, mechanical pressure protection or authorised medical-gas commissioning. Pressure transducers and seals need qualification for the actual service; a 0–10 bar sensor rating alone does not establish installation compatibility.
+
+## Performance Benchmarks
+
+**Current-state comparator:** a qualified engineer's ordinary cylinder-accounting and isolated-section leak investigation, including approved leak-testing equipment, is the baseline—not an uninstrumented hospital and not a claim of a new sensing principle.[1] There are no prototype measurements, no universal hospital loss rate and no validated advantage over this baseline. The following are **proposed acceptance targets**, tested with an engineer-blinded standard across site-relevant section volumes and temperatures:
+
+| Measure | Proposed target (not observed) | Comparison and gate |
+| --- | --- | --- |
+| Reference leak resolution | Repeatedly distinguish 0.1 standard L/min from sealed blank in a 100 L section during 20 min | Challenge with 0, 0.05, 0.1, 0.2 standard L/min; report sensitivity, misses and false calls versus existing approved method |
+| Test-head blank | Equivalent leakage below 0.01 standard L/min | Measure before and after each section trace; otherwise mark unverified |
+| Section test duration | Under 45 min after authorised isolation, excluding shutdown and recommissioning | Time both workflows on the same section; report the full clinical interruption separately |
+| Localization and reconciliation | No assumed improvement | Blind candidate section, count confirmed repairs and compare annual cylinder-mass reconciliation with engineer-only audits |
+
+A sanity check at roughly standard temperature and pressure: 0.1 standard L/min for 20 min removes 2 standard L; in a 100 L fixed volume this corresponds to about 0.020 bar pressure change if temperature is steady. At 4 bar absolute and about 293 K, a 1 K thermal shift alone changes pressure by about 0.014 bar. These are ideal-gas *illustrations*, not field thresholds: actual section volume, test medium, pressure, temperature gradients, compressibility and uncertainty determine whether the target is achievable. No alarm threshold or clinical clearance can be inferred from them.
+
+## Deployment Scenarios
+
+- **Maternity wing with a piped 50:50 gas supply:** during an approved maintenance shutdown, compare bank reconciliation with staged, isolated-branch tests. Engineering and clinical leads review the findings and choose repair, branch retirement or no change. Occupational exposure still requires separate room-level controls and competent monitoring.[2]
+- **Hospital considering portable cylinders:** document actual pre-use losses and maintenance burden before deciding whether a shorter distribution path is preferable. Oxford University Hospitals reported a site-specific move from a nitrous-oxide manifold to portable cylinders after an audit; it is a precedent for evaluating options, not evidence that this cart works.[4]
+- **Regional maintenance service:** a shared cart could visit several facilities with separate keyed adapters and local calibration records. Transport, approved fittings and trained staff must be funded; if a site cannot safely isolate a section, use ordinary audit methods instead.
+
+## Risks & Mitigations
+
+| Risk | Required control / evidence before use |
+| --- | --- |
+| False reassurance from missed leak or mislogged consumption | Blank and known-leak challenges, uncertainty bound and independent engineer confirmation; **unverified** when evidence is incomplete; never certify patient safety |
+| False repair call from temperature, regulator creep or bad seal | Temperature-normalised paired traces, stable boundary and blinded comparison with incumbent approved tests; log false-positive rate |
+| Oxygen-service ignition, contamination or connector mismatch | Qualified clean wetted materials and keyed fittings, site-approved medium and pressure, mechanical protection and authorised isolation/commissioning; no improvised live connection |
+| Power loss, drift, broken probe or corrupted export | Battery and calibration checks at each session, dual-channel disagreement test, offline signed report and fail-to-unverified behaviour; maintenance interval established by pilot evidence |
+| Alarm fatigue, privacy or unequal access | Engineer-only non-urgent review state, no patient records or cloud dependency, accessible paper output, shared servicing and training; measure usability and total site cost |
+
+## Vision for 2050
+
+If field trials justify it, maternity estates could treat pre-use nitrous-oxide losses like an auditable utility: periodic reconciliation would show where gas disappears *before* treatment, and a trained engineer would verify repair or a simpler supply design. Standardised local reports could make climate accounting credible without extracting patient data or dictating analgesia choices. This is a possible infrastructure practice, not a forecast of adoption, avoided emissions or clinical benefit.
+
+See [ROADMAP.md](ROADMAP.md) for validation gates and [IMPACT_ANALYSIS.md](IMPACT_ANALYSIS.md) for bounded scenarios.
+
 ## Sources and prior art
 
 1. Association-led consensus on piped nitrous-oxide decommissioning and premixed-gas loss: https://eprints.lancs.ac.uk/id/eprint/223580/1/Consensus_on_decommissioning_piped_nitrous_oxide_from_UK_and_Ireland_operating_theatre_suites-_Accepted_Version.pdf

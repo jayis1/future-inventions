@@ -1225,3 +1225,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$140 ex-workshop reader/pack set at 10,000/year by 2038; chemical indicators and clinical validation extra
 - **Author:** jayis1
 - **Created:** 2026-11-09
+
+### 128 — [Maternity Gas-Loss Witness](../maternity-gas-loss-witness/)
+- **Category:** Climate & Health Infrastructure / Maternity Nitrous-Oxide Loss Prevention
+- **TRL:** 2 (Concept)
+- **Impact Potential:** Unvalidated 50-facility comparative trial; illustrative 100 kg N₂O/year of verified pre-use loss avoided per eligible facility, not a measured saving
+- **Key Material:** Qualified 316L test-port interface, two calibrated pressure channels, cylinder scale, temperature probes and offline battery-backed logger
+- **Key Innovation:** Tests paired cylinder-inventory and isolated-section pressure-decay witnesses with blank/reference checks and explicit uncertainty; does not interrupt treatment or replace authorised medical-gas engineering
+- **Target Cost:** Unquoted US$1,800 ex-workshop at 1,000 carts/year by 2038, plus US$250/year calibration and service target; certification, site interfaces and engineer labour excluded
+- **Author:** jayis1
+- **Created:** 2026-11-15

@@ -1255,3 +1255,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$110 ex-workshop per two-spur module at 10,000/year by 2038, plus US$8 per replacement cartridge; supply, wiring, installation, inspection and certification excluded
 - **Author:** jayis1
 - **Created:** 2026-11-15
+
+### 131 — [Brick-Kiln Flue Sulfur Cassette](../brick-kiln-flue-sulfur-cassette/)
+- **Category:** Clean Air & Sustainable Manufacturing / Brick Kilns
+- **TRL:** 2 (Research concept)
+- **Impact Potential:** Unvalidated five-kiln pilot against five comparator sites; exposure and health benefits unknown
+- **Key Material:** Limestone slurry, FRP or polypropylene vessel, washable mist eliminator, bunded HDPE sump and serviceable solids bag
+- **Key Innovation:** Tests a removable SO₂-contact and contained-residue module with mechanically verified exhaust relief against maintained existing kiln scrubbing; wet limestone scrubbing is established art
+- **Target Cost:** Unquoted US$8,000 ex-workshop per 2,000-actual-m³/h module at 1,000/year by 2038; site engineering, power, water and waste handling extra
+- **Author:** jayis1
+- **Created:** 2026-11-16

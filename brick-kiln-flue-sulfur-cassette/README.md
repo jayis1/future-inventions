@@ -37,6 +37,45 @@ Wet limestone scrubbing and water-duct brick-kiln scrubbers are existing art.[1]
 - **Fault-to-maintenance:** spray clogging, scaling, frozen lines, failed pump, high differential pressure, mist carryover, leak or exhausted alkalinity trigger a local alarm and bypass/stop according to the engineered kiln procedure. Survey the existing fan/stack for wet-acid corrosion and condensate; add a permitted corrosion-resistant downstream liner or reject the site rather than exporting damage past the cassette.[2] A pH reading alone is **not** proof of SO₂ control. Never let a bypass silently satisfy an emissions permit; log and notify the operator for any permitted exception.
 - **Go/no-go:** independent engineer confirms intact original draft and safe combustion across startup, full fire and dirty-cassette tests. Stop and investigate on positive pressure, CO alarm, unsafe residue leakage or permit exceedance. Reject the design if the measured whole-season benefit is erased by bypass, energy, waste handling or maintenance burden. No unsupervised field deployment or implied regulatory certification.
 
+## How It Works
+
+A site-specific sampling campaign first logs actual gas flow, SO₂ mass rate, dust, oxygen, moisture, temperature and draft across a complete firing cycle. Only a site with an approved wet-exhaust route and spare fan headroom proceeds. The existing dust stage protects the spray zone; flue gas then meets recirculated limestone slurry, passes a washable demister, and returns through a corrosion-qualified outlet to the stack. Dissolved SO₂ reacts with CaCO₃ to form calcium sulfite and CO₂ (net: CaCO₃ + SO₂ → CaSO₃ + CO₂); with sufficient oxygen, calcium sulfite can oxidize to calcium sulfate. Hydrated gypsum is possible but not guaranteed: ash, unreacted limestone and metals may remain in the solids.[2] A contained purge removes accumulated salts and captured dust for assay and permitted disposal; this is *consumable sorbent*, not a self-regenerating cartridge.
+
+Operators verify slurry flow and pH, but use paired stack measurements and gas-flow data to calculate captured SO₂ mass. Differential pressure and draft are trended from clean commissioning to dirty operation; an alarm invokes the site-approved bypass/stop procedure, with every untreated hour recorded. Isolate and cool the module before opening it. No preset cassette replacement interval or universal temperature rating is justified before instrumented trials.
+
+## Technical Architecture
+
+**Gas path:** kiln → existing particulate control → surveyed cool duct → removable open spray/contact module → demister → corrosion-compatible stack. **Liquid/solid path:** bunded HDPE reservoir → metered pump → spray nozzles → drained contact zone → settling/dewatering bag → labeled waste receiver; purge and makeup water are metered separately. **Evidence path:** calibrated inlet/outlet SO₂ and gas-flow measurements, draft and differential-pressure taps, sump pH/flow, bypass-position flag and firing-hour log → auditable sulfur, water and energy balances. The bypass is engineered for adequate draft but is not credited as emissions control. Specify the vessel, seals and liner only after testing actual wet and transient flue temperatures; no polymer is assumed safe in a hot upset. The system is locally operated, without automatic firing control or personal-data collection.
+
+## Performance Benchmarks
+
+**Status: no cassette field measurements.** EPA reports 92–99% SO₂ control for utility-scale wet limestone FGD systems in its comparison table; those large, continuously controlled power-plant systems are a chemistry comparator, **not** a kiln-performance prediction or cost baseline.[2] An existing water-duct kiln scrubber is the *local* comparator, measured at the same site under matched fuel and firing conditions.[1]
+
+| Metric | Proposed gate, not demonstrated | Verification |
+|---|---|---|
+| Treated-stream SO₂ | ≥60% seasonal mass-flow-weighted removal | Paired calibrated inlet/outlet SO₂ concentrations × measured dry-normalized gas flows; report O₂ basis, reference conditions and bypass separately |
+| Control availability | Scenario gate: ≥95% of firing hours treated; account for **all** firing, bypass and outage hours | Independent firing and bypass-position logs; publish whole-season emitted mass, not just on-stream efficiency |
+| Cassette resistance | ≤400 Pa **clean** at specified actual flow of 1,000–3,000 m³/h; dirty limit site-engineered | Pressure taps, fan curve and worker-area CO/draft tests at startup, steady firing and end-of-service |
+| Media use and service life | No claimed interval; theoretical minimum 1.56 kg pure CaCO₃ per kg SO₂ bound | Weigh fresh limestone, solids and purge; assay sulfite/sulfate and contaminants, record maintenance hours |
+| Energy and cost | Existing US$8,000 ex-workshop target only; installed and operating costs unverified | Meter fan/pump kWh and water; quote installed costs and calculate $/t SO₂ including waste treatment |
+
+## Deployment Scenarios
+
+1. **Induced-draft zigzag kiln with a serviced dust stage:** a local engineer measures sulfur burden and fan capacity, then pilots a contained module beside the existing control. If duct losses or waste-disposal costs exceed the benefit, retain or upgrade existing controls instead.
+2. **Cluster of small coal-fired kilns:** a shared service team swaps washed contact internals and collects labeled residues at scheduled stops, while each kiln retains its own calibrated emissions and bypass log. Shared disposal is viable only with a licensed receiver.
+3. **Seasonal kiln near a sensitive settlement:** compare clean-fuel substitution and kiln replacement first; use the cassette only if site-specific monitoring shows residual SO₂ warrants capture without increasing CO, PM or fuel consumption.
+
+## Risks & Mitigations
+
+- **Backpressure or failed pump:** dust, scaling and a collapsed demister can defeat draft and raise CO exposure. Interlock alarms to a *site-approved* operator response, test the bypass flow path, and stop firing on unsafe draft/CO; never use bypass as a compliance fiction.
+- **Condensation, corrosion and hot excursions:** wet acid gas can damage downstream metalwork; inspect start/stop transients, specify temperature-compatible materials and drainage, or reject the retrofit.
+- **Exposure and waste transfer:** hot alkaline slurry and contaminated residue require cooldown, isolation, contained PPE-assisted service, leachability assays and a permitted receiving route. No automatic gypsum reuse claim.
+- **False confidence or weak economics:** pH and a clean-day test cannot prove whole-season control. Calibrate gas analyzers, report invalid data and bypass hours, and compare lifecycle costs and brick quality with maintaining the current scrubber.
+
+## Vision for 2050
+
+**Conditional scenario, not a forecast:** if site-qualified kilns can maintain draft, independently demonstrate whole-season sulfur reduction, and finance lawful residue collection, interchangeable service modules could make SO₂ accounting routine at small industrial stacks. The better outcome may instead be clean fuel or replacement kilns; the cassette has succeeded only when measured air quality improves without moving the burden into water, worker exposure or unregulated waste.
+
 ## Sources
 
 [1] https://documents1.worldbank.org/curated/en/770271468212375012/pdf/601550ESW0P1110e00201100Color0FINAL.pdf — World Bank, *Introducing Energy-efficient Clean Technologies in the Brick Sector of Bangladesh*.

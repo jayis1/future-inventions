@@ -1265,3 +1265,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$8,000 ex-workshop per 2,000-actual-m³/h module at 1,000/year by 2038; site engineering, power, water and waste handling extra
 - **Author:** jayis1
 - **Created:** 2026-11-16
+
+### 132 — [Intermittent-Pressure Joint Seal](../intermittent-pressure-joint-seal/)
+- **Category:** Drinking Water & Universal Basic Services / Distribution-Pipe Repair
+- **TRL:** 2 (Research concept)
+- **Impact Potential:** Unvalidated 100-joint paired pilot; illustrative upper bound 58,400 m³/year retained at 1,000 verified repairs under explicit 20 L/hour, eight-hour/day assumptions
+- **Key Material:** Reusable 316L stainless clamp and pipe-specific potable-water-qualified EPDM sealing sleeve
+- **Key Innovation:** Tests zero-pressure mechanical preload and a two-land test annulus for bidirectional leakage against an approved conventional repair clamp under intermittent pressure
+- **Target Cost:** Unquoted US$95 ex-factory at 10,000 kits/year by 2038; installation, testing, disinfection and certification extra
+- **Author:** jayis1
+- **Created:** 2026-11-16

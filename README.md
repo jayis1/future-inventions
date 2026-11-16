@@ -149,6 +149,7 @@ Design and document technologies that:
 | [Dry-Reset Rain Diverter](./dry-reset-rain-diverter/) | Concept | Clean Water & Universal Basic Services / Rainwater Collection |
 | [Flood-Isolating DC Spur](./flood-isolating-dc-spur/) | Concept | Disaster Resilience & Universal Basic Services / Low-Voltage Electrical Safety |
 | [Brick-Kiln Flue Sulfur Cassette](./brick-kiln-flue-sulfur-cassette/) | Concept | Clean Air & Sustainable Manufacturing / Brick Kilns |
+| [Intermittent-Pressure Joint Seal](./intermittent-pressure-joint-seal/) | Concept | Drinking Water & Universal Basic Services / Distribution-Pipe Repair |
 
 ## Structure
 

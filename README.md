@@ -151,6 +151,7 @@ Design and document technologies that:
 | [Brick-Kiln Flue Sulfur Cassette](./brick-kiln-flue-sulfur-cassette/) | Concept | Clean Air & Sustainable Manufacturing / Brick Kilns |
 | [Intermittent-Pressure Joint Seal](./intermittent-pressure-joint-seal/) | Concept | Drinking Water & Universal Basic Services / Distribution-Pipe Repair |
 | [Ember-Airflow Eave Cassette](./ember-airflow-eave-cassette/) | Concept | Disaster Resilience & Healthy Housing / Wildfire Retrofit |
+| [Lead-Line Release Profiler](./lead-line-release-profiler/) | Concept | Drinking Water & Universal Basic Services / Lead-Exposure Assessment |
 
 ## Structure
 

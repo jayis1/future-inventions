@@ -1285,3 +1285,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$32 ex-workshop per 300 × 100 mm cassette at 50,000/year by 2038; survey, installation, code review and soffit conversion excluded
 - **Author:** jayis1
 - **Created:** 2026-11-22
+
+### 134 — [Lead-Line Release Profiler](../lead-line-release-profiler/)
+- **Category:** Drinking Water & Universal Basic Services / Lead-Exposure Assessment
+- **TRL:** 2 (Research concept)
+- **Impact Potential:** Unvalidated 50-site comparison and 500-session order-error trial; exposure and health benefits unknown
+- **Key Material:** Food-contact-qualified polypropylene chute and index plate, stainless detent, five laboratory-approved 1 L bottles
+- **Key Innovation:** Tests a passive one-way fraction-order and changeover-loss witness against numbered loose bottles and existing kits; sequential lead sampling is established art
+- **Target Cost:** Unquoted US$38 ex-workshop at 10,000 racks/year by 2038, plus US$10–25 bottles per event; lab analysis and field labor excluded
+- **Author:** jayis1
+- **Created:** 2026-11-22

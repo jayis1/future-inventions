@@ -152,6 +152,7 @@ Design and document technologies that:
 | [Intermittent-Pressure Joint Seal](./intermittent-pressure-joint-seal/) | Concept | Drinking Water & Universal Basic Services / Distribution-Pipe Repair |
 | [Ember-Airflow Eave Cassette](./ember-airflow-eave-cassette/) | Concept | Disaster Resilience & Healthy Housing / Wildfire Retrofit |
 | [Lead-Line Release Profiler](./lead-line-release-profiler/) | Concept | Drinking Water & Universal Basic Services / Lead-Exposure Assessment |
+| [Binder-Mapped Sand Reclaimer](./binder-mapped-sand-reclaimer/) | Concept | Sustainable Materials & Circular Manufacturing / Foundry Sand |
 
 ## Structure
 

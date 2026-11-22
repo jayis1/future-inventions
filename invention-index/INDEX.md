@@ -1295,3 +1295,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$38 ex-workshop at 10,000 racks/year by 2038, plus US$10–25 bottles per event; lab analysis and field labor excluded
 - **Author:** jayis1
 - **Created:** 2026-11-22
+
+### 135 — [Binder-Mapped Sand Reclaimer](../binder-mapped-sand-reclaimer/)
+- **Category:** Sustainable Materials & Circular Manufacturing / Foundry Sand
+- **TRL:** 2 (Research concept)
+- **Impact Potential:** Unvalidated ten-module scenario of up to 18,000 t/year qualified reused sand; actual displaced extraction and net emissions unknown
+- **Key Material:** Segregated silica sand, electric moving-bed heater, steel heat exchanger, enclosed exhaust filter
+- **Key Innovation:** Tests binder-specific, quality-gated attrition and selective thermal treatment with measured heat recovery and contained exhaust against conventional foundry reclamation
+- **Target Cost:** Unquoted US$250,000 ex-works per 1 t/h module at ten units/year by 2038; energy, installation, testing and residue disposal extra
+- **Author:** jayis1
+- **Created:** 2026-11-22

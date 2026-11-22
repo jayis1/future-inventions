@@ -1275,3 +1275,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$95 ex-factory at 10,000 kits/year by 2038; installation, testing, disinfection and certification extra
 - **Author:** jayis1
 - **Created:** 2026-11-16
+
+### 133 — [Ember-Airflow Eave Cassette](../ember-airflow-eave-cassette/)
+- **Category:** Disaster Resilience & Healthy Housing / Wildfire Retrofit
+- **TRL:** 2 (Research concept)
+- **Impact Potential:** Unvalidated paired ember-entry, loaded-airflow and rain trials; home-loss reduction unknown
+- **Key Material:** 304 stainless mesh and retained inner metal barrier, formed-steel baffle, serviceable test port
+- **Key Innovation:** Tests a dual-barrier, cleanable soffit retrofit with measured loaded net free vent area against approved maintained ember-resistant vents; mesh and baffles are established art
+- **Target Cost:** Unquoted US$32 ex-workshop per 300 × 100 mm cassette at 50,000/year by 2038; survey, installation, code review and soffit conversion excluded
+- **Author:** jayis1
+- **Created:** 2026-11-22

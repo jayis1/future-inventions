@@ -31,6 +31,50 @@ For an eligible silica/organic-binder feed, proposed pilot acceptance targets ar
 
 A ten-unit pilot running 2,000 hours/year at 1 t/h and meeting the 90% reuse goal would provide up to **18,000 t/year of qualified reused sand**, not 18,000 t of proven avoided extraction: displacement depends on actual substitution, transport and rejects. Evaluate avoided virgin-sand purchases and landfill shipments with invoices, and net CO₂e with the actual grid mix and transport routes. No population or climate benefit is asserted before that comparison. Development path: 2027–2030 binder and emissions characterization; 2031–2035 independently monitored 500-hour pilot; 2036–2040 multi-foundry replication and permitting where measured benefit is positive.
 
+## How It Works
+
+The “map” is a **lot-level process record**, not an unproven real-time chemical scanner: the foundry declares the silica sand and organic binder formulation, and the operator attaches a traceable sample ID, feed mass, moisture, loss-on-ignition (LOI), sieve distribution and laboratory binder characterization. A recipe is enabled only for that documented binder family. Unknown or mixed feed is quarantined for analysis, not assigned a guessed thermal setting.
+
+A metered hopper feeds screening, magnetic separation and gentle mechanical attrition. A representative post-attrition sample is compared with the receiving foundry's pre-agreed limits; qualifying material can bypass heating. Otherwise an eligible lot enters the enclosed electric moving bed on a laboratory-qualified temperature/residence-time recipe. Insulated heat exchange recovers sensible heat from clean-side product while keeping contaminated exhaust separate. After cooling, classification removes fines; a final composite sample must pass LOI, sieve and trial-casting tests before release. Product and each residual stream are weighed to close the mass balance. Treatment does not repair cracked grains or make an excluded binder safe.
+
+## Technical Architecture
+
+**Material path:** identified lots → screened/metal-removed feed → attrition → sampled bypass or thermal bed → cooling/heat recovery → classifier → quarantined product bin → laboratory release. Separate sealed bins hold scrap, fines and filter dust for characterization. **Control path:** lot record and lab results select an approved recipe; scales, thermocouples, power meters, fan status, filter pressure drop and stack oxygen/temperature write a time-stamped batch record. The controller cannot authorize product reuse by itself: the foundry's independent acceptance test is the release gate. Calibrations and chain of custody must be documented at pilot scale.
+
+The heater and oxidizer use a permissive interlock: loss of draft, failed exhaust treatment, overtemperature or an out-of-limit stack reading halts feed and heat, isolates the lot and initiates a controlled shutdown under the site's engineered safety case. A contained local exhaust path, dust-rated filtration and occupational silica monitoring are essential; the exact air-pollution-control design and permit limits depend on binder chemistry and jurisdiction. Power and emissions reporting include fans and abatement, not just the hot bed.
+
+## Performance Benchmarks
+
+All project figures below are **proposed pilot gates, not measured results**. A same-feed comparison is required because binder, grain size, moisture and product acceptance criteria change the answer.
+
+| Metric and boundary | Proposed gate | Published context / validation |
+| --- | --- | --- |
+| Nominal eligible feed throughput | 1 metric tonne/hour while running | Design capacity; weigh inlet and record uptime during a 500-hour pilot. |
+| Foundry-qualified output / inlet mass | ≥90% for eligible silica/organic-binder lots | Unverified target; weigh *accepted* output, not all recovered solids; trial castings and lab tests determine acceptance. |
+| Purchased electricity / inlet mass, full module and exhaust controls | ≤180 kWh/t | One study's equipment-specific examples are ~11 kWh/t mechanical and ~242 kWh/t thermal [2]. They are **not** equivalent quality or feed baselines; meter both alternatives on identical lots and record thermal-bypass share. |
+| Planned cleaning downtime / scheduled pilot hours | ≤10% over 500 scheduled hours | Design goal; log start/stop causes. Unplanned stoppages reported separately, not hidden in this metric. |
+| Product and emissions quality | Foundry-set LOI, sieve and trial-casting limits; permit-set stack limits | No universal threshold asserted. Establish numerical site-specific limits *before* a pilot, then independently sample every lot and test the stack. |
+
+Record consumables (filter replacements), captured dust, metals, rejected sand and any wastewater per tonne. A thermal route is not “better” merely because it beats the cited thermal energy example: it must meet equal casting quality and show a favorable full-system material, cost and emissions balance.
+
+## Deployment Scenarios
+
+1. **Shared small-foundry service:** nearby foundries segregate and label compatible organic-binder silica lots; a permitted hub returns tested sand to its originating foundry. Rejected or unknown lots stay segregated, and transport is included in the business case.
+2. **On-site closed-loop line:** a foundry with one stable binder recipe places the module between shakeout and mould preparation, with an independent lab sampling point and quarantine bin. Operators can bypass heating only after the attrition sample passes the local reuse specification.
+3. **Regional pilot consortium:** several foundries compare matched lots with an existing mechanical/thermal reclaimer and jointly fund independent air monitoring and casting-reject audits. This is a research deployment, not a claim of commercial readiness.
+
+## Risks & Mitigations
+
+- **Binder error or contaminated feed:** paperwork and samples can disagree. Require supplier declaration plus periodic laboratory confirmation; lock out unknown, mixed-mineral, metal-contaminated or previously unqualified binder lots.
+- **Weak sand or excess fines:** abrasion and heat may damage grain surfaces. Compare sieve distribution, LOI and casting defects with virgin and conventionally reclaimed controls; quarantine failed output rather than blending it away.
+- **Silica exposure, dust/fire and hot equipment:** enclose transfers, use local exhaust and appropriate filtration, monitor respirable crystalline silica, guard moving/hot parts and evaluate combustible-dust hazards before commissioning. Stop on ventilation or filter failure.
+- **Off-gas and secondary waste:** binder decomposition can generate hazardous compounds; test recipe-specific exhaust, independently measure emissions, and characterize dust and rejected solids for permitted disposal. Never bypass abatement to maintain throughput.
+- **Economics and carbon rebound:** drying, abatement, testing, transport and grid electricity may erase savings. Meter the complete boundary, price residues and compare matched-site alternatives before scaling.
+
+## Vision for 2050
+
+**Scenario, not forecast:** if binder traceability, clean energy and independently verified quality become routine, a foundry could treat spent sand as a graded local feedstock rather than a default waste. Shared hubs might exchange *tested* sand under material passports while casting rejects, dust exposure and stack emissions remain visible on every batch. Where those gates cannot be met, conventional treatment or safe disposal remains the right choice; circularity is earned by measurement, not a label.
+
 ## Sources
 
 [1] UNEP, *Sand and Sustainability: 10 Strategic Recommendations to Avert a Crisis* (2022), https://unepgrid.ch/storage/app/media/Publications/2022sandandsustainabilityreportfinal.pdf .

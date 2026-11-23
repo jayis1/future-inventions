@@ -33,6 +33,51 @@ All figures are **unvalidated targets** for a specific 100 kg batch, 18% → 14%
 
 For a pilot cooperative processing 100 qualifying batches/year, this design handles **10 tonnes of wet paddy per year**, not 10 tonnes of avoided loss. A matched two-season trial across humid and sunny days should report the fraction of accepted batches actually reaching 14% on time, marketable yield, drying cost, and mycotoxin rejection against existing dryers. Food saved and emissions avoided remain unknown until independently measured against those comparators; collector manufacture, backup heat, bead replacement, and land use belong in lifecycle accounting. A 10–20 year development horizon allows prototype energy balance, independent food-contact and dust testing, cooperative field trials, repair training, and local approvals. Stainless trays and metal ducts are repairable/recyclable; contain and reclaim degraded beads and dispose of contaminated filters according to local rules. No military, surveillance, or coercive use is needed.
 
+## How It Works
+
+At intake, reject visibly spoiled or dirty grain, weigh a representative 100 kg lot, and measure wet-basis moisture at several positions with a calibrated meter. For the design case, 82 kg dry matter stays in the tray: removing 4.65 kg water yields 95.35 kg at 14% moisture. That is a mass balance, not evidence that the machine can finish the batch. Spread the grain shallowly on the stainless perforated tray; record the initial time and temperature.
+
+The 24 V blower draws ambient air through the sealed zeolite cassette and two downstream particle barriers, across the tray, and out of the building. Water vapor adsorbs onto the beads; dry air picks up moisture from the grain. Log inlet and exhaust temperature/RH, volumetric flow, filter pressure drop, and cassette mass. Humid exhaust goes outdoors, not back to the inlet. Switch to a dry cassette when outlet humidity rises toward inlet humidity or the measured usable uptake is exhausted; low fan flow, an open cassette seal, or missing filters prohibit operation. During a rainy night, a pre-regenerated sealed cassette can bridge only its measured remaining capacity, not an unlimited harvest.
+
+The spent cassette moves to an isolated solar-thermal dock. Solar heat or metered backup drives water off the beads at a validated regeneration temperature, and vapor vents outdoors; the cassette must cool, be weighed against its dry reference, and remain capped until reuse. Adsorption releases heat into process air, while regeneration consumes heat: record collector-delivered and backup energy over the *whole* cycle. At unloading, independently sample the top, center and edges; send any persistently wet lot to a qualified dryer rather than averaging away wet pockets. Drying does not destroy toxins that formed before intake.
+
+## Technical Architecture
+
+- **Grain circuit:** screened intake → shallow food-contact tray → multi-point moisture sampling → sealed dry-grain container. A removable tray and accessible plenum permit cleaning and pest inspection between lots.
+- **Air circuit:** guarded fan → cassette → two inspected particulate barriers → measured plenum → grain → outdoor exhaust. Place differential-pressure taps across filters; verify that seals cannot bypass them. Grain-side ducts remain physically separate from the hot regeneration exhaust.
+- **Heat/sorbent circuit:** two tagged 18 kg zeolite beds alternate between food-air service and a guarded 150–180 °C design-option dock. A temperature-limited collector loop heats only the dock; measure delivered thermal energy, sorbent mass and seal integrity after each regeneration. Qualification must establish actual usable capacity and cycle life rather than assume 0.30 kg/kg indefinitely.
+- **Controls and power:** offline 24 V controller, fan-speed/flow check, calibrated temperature/RH probes, grain meter and event log. A cutout stops added heat at the proposed 42 °C grain limit; blower failure or sensor disagreement blocks new intake and triggers prompt transfer of wet grain, not unattended warm storage. The fan's 0.24 kWh per 12-hour batch excludes control power and any backup heat.
+
+## Performance Benchmarks
+
+**No prototype results exist.** The following is a test protocol, not a claim of superiority. Use matched 100 kg lots starting at 18% wet-basis moisture, 25–35 °C ambient and up to 85% RH, with identical loading and storage conditions. Report elapsed time from harvest, batch acceptance fraction, water removed by conserved dry matter, energy delivered to the regeneration dock and fan/controls, moisture spread across tray positions, head-rice yield, and laboratory safety results. Also repeat with wetter harvest grain after resizing the bed; do not extrapolate this small-batch result to 24–26% intake.
+
+| Metric | Proposed target (unverified) | Current comparator / evidence gap |
+| --- | --- | --- |
+| Storage endpoint | Every sampled location ≤14% wet basis within 24 hours of harvest | IRRI's ≤14% storage guidance is an endpoint, not a measured dryer throughput.[1] |
+| Humid-hour operation | 4.65 kg water removed from the design batch; ~100 m³/h for ≤12 active hours | IRRI describes a 0.5–1 tonne solar bubble dryer; its capacity and weather window differ, so run paired humid-hour trials instead of claiming a speedup.[2] |
+| Electricity | ~0.24 kWh fan per 100 kg batch, plus measured controls and backup | Compare metered whole-system kWh and fuel with a maintained bubble dryer and heated-air dryer; no matched data yet. |
+| Regeneration | Aim for 30–36 MJ delivered heat per complete bed reset | The published 4.86 MJ/kg water is from a small-sample bead study, not a full field dock; ~22.6 MJ for 4.65 kg is only a study-derived reference before system losses.[3] |
+
+Log solar irradiance, collector outlet heat, backup input, cycle duration and ambient humidity. Blindly cross-check meter readings against a reference moisture method and record calibration uncertainty; a mean of 14% is not acceptance if an individual pocket remains wet. Benchmarks fail if safe dried output costs more per tonne than the maintained alternatives without a defensible humid-hour benefit.
+
+## Deployment Scenarios
+
+1. **Village cooperative during a humid harvest:** members queue only qualifying 100 kg lots; the operator alternates tagged cassettes and reserves dock capacity, then diverts overflow or delayed loads to an established dryer. Shared equipment and a trained attendant matter more than off-grid branding.
+2. **Rain-prone seed producer:** a segregated tray and logbook preserve lot identity; germination and varietal temperature validation are separate gates. Reject the proposed 42 °C limit if seed tests show damage at that exposure.
+3. **Remote aggregation point with unreliable power:** a sized 24 V battery keeps the fan and alarms running for an agreed short outage window; if it cannot, stop intake and hand off wet grain before unsafe dwell time. Cloudy-day regeneration needs a measured clean-heat source.
+
+## Risks & Mitigations
+
+- **Humidity breakthrough and uneven drying:** track cassette mass, inlet/outlet RH and flow; sample grain across the bed, exchange cassettes early, and reject wet pockets. An average sensor reading cannot certify storage safety.
+- **Desiccant dust, hot surfaces and corrosion:** retain beads behind two inspected barriers and sealed connectors; test food-side particulate carryover, keep the 150–180 °C dock guarded and isolated, and replace damaged seals or filters before reuse.
+- **Cloud, sensor drift and power loss:** maintain a dated dry-bed inventory and metered backup; cross-check probes and moisture meters against reference instruments. Any failed fan, blocked filter, overtemperature or invalid reading locks out new intake and requires supervised transfer or safe disposal of wet grain.
+- **Economics and lifecycle:** the 5 m² collector and 30–36 MJ heat budget may fail in real weather; instrument thermal losses, bead attrition, labor, backup energy and head-rice yield. A trial that cannot beat existing practice on full cost and safe output should stop, not scale. Desiccation alone cannot render moldy grain safe.
+
+## Vision for 2050
+
+If independent trials establish food safety and a lower full-cycle cost, cooperatives could share swappable, tagged sorbent beds and a measured solar dock rather than leaving small harvests exposed while waiting for sun. Local repair shops would service stainless trays, fans and filters; buyers would pay for verified moisture and lot records, not a solar label. Universal deployment is neither assumed nor desirable where an existing dryer is cheaper and safer.
+
 ## Sources
 
 [1] http://www.knowledgebank.irri.org/step-by-step-production/postharvest/drying — IRRI drying guidance

@@ -1305,3 +1305,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$250,000 ex-works per 1 t/h module at ten units/year by 2038; energy, installation, testing and residue disposal extra
 - **Author:** jayis1
 - **Created:** 2026-11-22
+
+### 136 — [Solar-Desiccant Paddy Dryer](../solar-desiccant-paddy-dryer/)
+- **Category:** Food Security & Sustainable Agriculture / Humid-Weather Post-Harvest Drying
+- **TRL:** 2 (Research concept)
+- **Impact Potential:** Unvalidated 10 t/year wet-paddy throughput at 100 batches per cooperative; avoided food loss and emissions unknown
+- **Key Material:** Reusable zeolite drying beads, stainless grain trays, guarded solar-thermal regeneration dock
+- **Key Innovation:** Tests alternating, mass-accounted bead beds for continuing fresh-harvest drying during humid hours against a maintained solar bubble dryer; solar regeneration and commercial advantage remain unproven
+- **Target Cost:** Unquoted US$1,900 ex-workshop per 100 kg batch unit at 10,000/year by 2038; installation, power, meter, labor and backup heat extra
+- **Author:** jayis1
+- **Created:** 2026-11-23

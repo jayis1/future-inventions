@@ -153,6 +153,7 @@ Design and document technologies that:
 | [Ember-Airflow Eave Cassette](./ember-airflow-eave-cassette/) | Concept | Disaster Resilience & Healthy Housing / Wildfire Retrofit |
 | [Lead-Line Release Profiler](./lead-line-release-profiler/) | Concept | Drinking Water & Universal Basic Services / Lead-Exposure Assessment |
 | [Binder-Mapped Sand Reclaimer](./binder-mapped-sand-reclaimer/) | Concept | Sustainable Materials & Circular Manufacturing / Foundry Sand |
+| [Solar-Desiccant Paddy Dryer](./solar-desiccant-paddy-dryer/) | Concept | Food Security & Sustainable Agriculture / Humid-Weather Post-Harvest Drying |
 
 ## Structure
 

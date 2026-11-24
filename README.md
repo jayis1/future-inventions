@@ -157,6 +157,7 @@ Design and document technologies that:
 | [Scavenge-Exhaust Catalyst Pod](./scavenge-exhaust-catalyst-pod/) | Concept | Climate & Health Infrastructure / Post-Use Nitrous-Oxide Exhaust |
 | [Crop-Gated Boron Blender](./crop-gated-boron-blender/) | Concept | Sustainable Agriculture & Water Stewardship / Boron-Limited Irrigation |
 | [Biooxidative Manganese Well Filter](./biooxidative-manganese-well-filter/) | Concept | Drinking Water & Universal Basic Services / Manganese-Exposed Wells |
+| [Repairable Iron-Air Outage Bank](./repairable-iron-air-outage-bank/) | Concept | Disaster Resilience & Distributed Energy / Stationary Community Storage |
 
 ## Structure
 

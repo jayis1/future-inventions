@@ -1345,3 +1345,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$225 ex-workshop per unit at 10,000/year by 2038; assays, staffing, installation, backup supply and managed residues extra
 - **Author:** jayis1
 - **Created:** 2026-11-24
+
+### 140 — [Repairable Iron-Air Outage Bank](../repairable-iron-air-outage-bank/)
+- **Category:** Disaster Resilience & Distributed Energy / Stationary Community Storage
+- **TRL:** 2 (Research concept)
+- **Impact Potential:** Unvalidated 5 kWh usable, 1 kW for five hours per module; outage-service and health outcomes require comparative field trials
+- **Key Material:** Replaceable iron electrodes, contained aqueous alkaline electrolyte, carbon/PTFE air electrode, nickel/iron-oxide charging electrode and polypropylene enclosure
+- **Key Innovation:** Tests a separately serviceable iron/air/charging-electrode cassette with guarded charge path and fail-disconnected output against maintained existing storage; iron–air chemistry itself is prior art
+- **Target Cost:** Unquoted US$1,500 ex-factory and US$2,400 installed per 5 kWh usable module at 10,000/year by 2038; solar, inverter, certified backup and recurrent service extra
+- **Author:** jayis1
+- **Created:** 2026-11-24

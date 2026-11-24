@@ -32,6 +32,52 @@ Five *passing* 20 L batches per day would offer at most **100 L/day** or **36,50
 
 No treated water is called potable without a local water-safety plan, independent pathogen/chemical testing, approval and protected storage. Backwashing sends washwater to a contained waste tank, never the clean-water tank. High iron/organic loading, low oxygen, clogged media or failed regeneration trigger a service visit and alternative supply; cold-weather sites must be independently qualified. The engineering goal is fewer silent manganese breakthroughs, with actual exposure reduction contingent on verified performance, equitable staffing and affordable safe backup water.
 
+## How It Works
+
+1. Screen raw well water and test the source before enrollment. A splash aerator raises dissolved oxygen; measure it after filtration rather than assuming aeration alone oxidizes dissolved Mn(II) quickly at near-neutral pH. Keep disinfectants out of the biological beds and assess upstream iron, ammonium, sulfide and organic loading before admitting a site.[4]
+2. Pass water through the separately sampleable iron/particle bed, then the ≥7.5 L working manganese bed at no more than 0.5 L/min. Dissolved Mn(II) binds to existing manganese-oxide surfaces; oxygen-dependent surface regeneration and site-specific microbial oxidation can replenish active sites. These pathways coexist, and their contributions must be established experimentally rather than inferred from a clean outlet.[4][5]
+3. Retain oxide fines downstream and collect up to 20 L in a covered quarantine tank. Identify the batch, sample its *total* Mn (dissolved plus particulate) with a validated method, and check the laboratory cross-check is current. The attendant releases only that passing batch through the normally closed valve; absent or failed data means HOLD and independent safe water. Pathogen control and other dissolved contaminants need separate barriers and testing.[1]
+4. Record flow, differential pressure, pH, oxygen and bed-stage concentrations. When pressure loss or Mn breakthrough rises, stop releases; backwash each bed to a contained residuals vessel without feeding washwater to the clean tank. Requalify the bed and invalidate previous batch passes after cleaning, media replacement, stagnation or a source-water change. Maturation can take weeks or months; a full-scale inoculated-filter study required about 17–25 weeks for complete Mn removal under its particular groundwater conditions.[6]
+
+## Technical Architecture
+
+**Wet path:** screened inlet → aerator → removable iron/particle bed → intermediate sample tap → oxide-coated silica sand/biofilm bed → fine-particle retainer → outlet sample tap → covered 20 L quarantine tank → keyed normally closed draw valve. The beds have isolated backwash-to-waste ports; source and clean tank cannot share a bypass. HDPE/polypropylene wet-contact parts and standard replaceable seals are proposed, subject to material suitability checks.
+
+**Evidence/control path:** raw-water sample, inter-bed sample and final batch sample feed a batch-ID record; pH, dissolved oxygen, flow and differential-pressure readings diagnose operating conditions but cannot stand in for a total-Mn assay. The mechanical release witness accepts a current valid batch assay and cross-check record, otherwise fails closed. A prototype must demonstrate tamper resistance, unique batch binding and safe response to lost power, bad reagents, an open sample port or missed shifts before unattended use is considered. There is no cloud dependency or automated claim of potability.
+
+## Performance Benchmarks
+
+No device prototype or field results exist. The figures below are **engineering gates**, not measured performance; test them against a maintained, locally appropriate oxidation/filtration or reverse-osmosis comparator on matched source water. WHO reports that several established treatment methods can lower Mn below 0.05 mg/L, but that statement is not a controlled head-to-head test of this design.[1]
+
+| Measure | Proposed gate and method | External reference / interpretation |
+| --- | --- | --- |
+| Feed envelope | Total Mn 0.08–0.5 mg/L; Fe ≤0.3 mg/L; NH₄⁺ ≤0.2 mg/L; pH 6.5–8.0; 10–30 °C; lab source characterization | Trial inclusion limits, not an established operating envelope |
+| Treated batch | Total Mn <0.05 mg/L with validated assay reporting limit ≤0.02 mg/L, confirmed by scheduled independent laboratory testing | WHO provisional total-Mn guideline 0.08 mg/L; established technologies can reach <0.05 mg/L.[1] |
+| Hydraulics | ≤0.5 L/min through ≥7.5 L working Mn bed gives nominal ≥15 min empty-bed contact; test tracer residence and pressure loss | Design calculation, not a measured residence-time distribution |
+| Daily delivery | ≤5 passing 20 L batches = ≤100 L/day; log holds, waste volume and actual delivered litres | Perfect-availability ceiling, not a guaranteed yield |
+| Startup and reliability | Log time to sustained compliant batches, false releases/holds, post-backwash recovery and service hours across a seasonal cycle | Full-scale inoculated rapid sand filters in one study needed ~17–25 weeks for complete removal; different feed and scale, not a forecast for this unit.[6] |
+
+## Deployment Scenarios
+
+- **Community well kiosk:** A trained attendant processes five or fewer 20 L batches daily where independent raw-water testing identifies manganese as a priority. The community must fund routine assays and safe backup water; a failed batch is not sold or distributed.
+- **School or clinic auxiliary station:** Use only as a controlled research pilot alongside an independently safe supply, with logged batch chain of custody and a locally approved water-safety plan. It cannot replace disinfection or testing for arsenic, fluoride and microbial hazards.
+- **Seasonal remote well:** A maintenance team can trial a removable-bed station during the occupied season, but must recommission after downtime and qualify cold-water performance independently. No operation outside the characterized chemistry envelope without a new trial.
+
+## Risks & Mitigations
+
+| Failure mode | Required mitigation / stop rule |
+| --- | --- |
+| Startup adsorption masks biological immaturity; later Mn breakthrough | Assay each batch, trend both bed taps, keep valve closed on failure; only claim sustained removal after longitudinal independent measurements.[6] |
+| Iron, ammonium, sulfide, organic matter, low pH/oxygen or cold feed disrupt oxidation | Characterize source seasonally, measure oxygen and pH, reject out-of-envelope sites and use a separately safe supply.[4] |
+| Clogging, channeling, fines release or failed backwash | Track pressure *and* total Mn/turbidity; isolate the clean tank, service the bed, contain washwater and retest before release. |
+| Biofilm sloughing, pathogens, or contaminants other than Mn | Independent microbiological and chemical testing and site-approved treatment barriers; Mn compliance alone never means potable water.[1] |
+| Reused result, missing operator, valve tampering or power loss | One keyed batch ID and assay per release, normally closed outlet, auditable logs and simulated fault tests; no silent bypass. |
+| Mn-bearing waste contains co-adsorbed metals | Characterize backwash and spent media, then handle under local waste rules rather than spreading or returning to the well. |
+
+## Vision for 2050
+
+If comparative pilots show fewer silent breakthroughs *and* a defensible all-in cost, local shops could manufacture repairable beds while water services provide assay logistics, trained operators and accountable release records. A network of small wells would publish verified delivered litres and failure rates rather than installed-unit counts. Even at scale, the filter remains one manganese-control step within a broader water-safety plan; locations lacking testing, maintenance or a safe fallback should choose a different supply or treatment system.
+
 ## Sources
 
 [1] https://cdn.who.int/media/docs/default-source/wash-documents/water-safety-and-quality/chemical-fact-sheets-2022/manganese-fact-sheet-2022.pdf

@@ -1325,3 +1325,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$5,000 ex-factory per pod at 1,000/year by 2038 plus US$600/year service target; site installation, certification and catalyst recycling extra
 - **Author:** jayis1
 - **Created:** 2026-11-24
+
+### 138 — [Crop-Gated Boron Blender](../crop-gated-boron-blender/)
+- **Category:** Sustainable Agriculture & Water Stewardship / Boron-Limited Irrigation
+- **TRL:** 2 (Research concept)
+- **Impact Potential:** Unvalidated 1 m³/day pilot; crop yield, water savings and environmental benefit unknown
+- **Key Material:** N-methyl-D-glucamine resin, HDPE housing, sampleable batch tank and normally closed crop gate
+- **Key Innovation:** Tests batch-verified selective boron treatment and crop-specific blending with EC/SAR qualification against maintained full-flow boron-resin treatment; boron resin and blending are established art
+- **Target Cost:** Unquoted US$850 ex-workshop per unit at 10,000/year by 2038; service, assays, installation, power and regulated residue handling extra
+- **Author:** jayis1
+- **Created:** 2026-11-24

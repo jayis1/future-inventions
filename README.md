@@ -154,6 +154,7 @@ Design and document technologies that:
 | [Lead-Line Release Profiler](./lead-line-release-profiler/) | Concept | Drinking Water & Universal Basic Services / Lead-Exposure Assessment |
 | [Binder-Mapped Sand Reclaimer](./binder-mapped-sand-reclaimer/) | Concept | Sustainable Materials & Circular Manufacturing / Foundry Sand |
 | [Solar-Desiccant Paddy Dryer](./solar-desiccant-paddy-dryer/) | Concept | Food Security & Sustainable Agriculture / Humid-Weather Post-Harvest Drying |
+| [Scavenge-Exhaust Catalyst Pod](./scavenge-exhaust-catalyst-pod/) | Concept | Climate & Health Infrastructure / Post-Use Nitrous-Oxide Exhaust |
 
 ## Structure
 

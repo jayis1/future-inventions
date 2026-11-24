@@ -1315,3 +1315,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$1,900 ex-workshop per 100 kg batch unit at 10,000/year by 2038; installation, power, meter, labor and backup heat extra
 - **Author:** jayis1
 - **Created:** 2026-11-23
+
+### 137 — [Scavenge-Exhaust Catalyst Pod](../scavenge-exhaust-catalyst-pod/)
+- **Category:** Climate & Health Infrastructure / Post-Use Nitrous-Oxide Exhaust
+- **TRL:** 2 (Research concept)
+- **Impact Potential:** Unvalidated 10-site comparison; net greenhouse and occupational benefits unknown until whole-site mass and energy balances are measured
+- **Key Material:** Stainless recuperator and enclosure, insulated heater, cordierite/alumina catalyst monolith, independent mechanical exhaust bypass
+- **Key Innovation:** Tests a field-replaceable, load-qualified N₂O-only scavenging exhaust pod with measured whole-site losses and fail-open flow protection against an existing destruction system; catalytic splitting is established art
+- **Target Cost:** Unquoted US$5,000 ex-factory per pod at 1,000/year by 2038 plus US$600/year service target; site installation, certification and catalyst recycling extra
+- **Author:** jayis1
+- **Created:** 2026-11-24

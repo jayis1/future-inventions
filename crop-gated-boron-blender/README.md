@@ -34,6 +34,39 @@ At 1 m³/day and 200 operating days/year, one fully qualified module could route
 - **Waste:** Exchange sealed exhausted cartridges at a trained regional hub. Acid elution and alkaline reconditioning of NMDG resin are existing practice but require containment, PPE, rinse verification and lawful treatment/disposal of boron-rich regenerant and spent resin; do not regenerate or dump at the farm.[2] If no licensed residue route exists, do not deploy. Compare net water, chemicals, energy and lifecycle impacts against alternative crops, source blending and established treatment.
 - **Falsification:** Reject the design if batch assays miss breakthrough, EC/SAR or boron remain unsuitable, the gate can be bypassed in ordinary use, seasonal operation exceeds the cost goal, or the comparator achieves equal crop-qualified delivery with less waste and lower total cost. No health, yield or environmental performance is claimed before trials.
 
+## How It Works
+
+The cooperative first maps each field to an agronomist-approved irrigation specification: crop and growth stage, soil boron trend, allowable mixed-water boron and separate EC/SAR limits. Source water is screened and split between a sealed NMDG-resin column and an untreated line. Operators measure each stream and choose a treated fraction using the planning balance `C_mix = f × C_treated + (1 − f) × C_feed`, with concentrations in mg of elemental B/L and `f` by measured volume. For the illustrative 1.5/0.6 mg-B/L streams, a 1.0 mg-B/L ceiling requires `f ≥ 0.556`; the 56% setting is only a starting point, not a release certificate. Mix a labeled batch, take a representative sample after mixing, and release it through the keyed gate only on a current passing laboratory result and an intact batch seal. Log total applied volume as well as concentration: at 1 mg-B/L, each cubic metre carries 1 g of boron into the field. A failed or untested batch remains isolated; stopping boron treatment does not make untreated water safe.
+
+## Technical Architecture
+
+The hydraulic path is `source → screen → split → resin / bypass → covered mixing tank → sample point → normally closed crop gate → assigned field`; a separate hold tank receives rejected batches. HDPE/polypropylene wetted parts, replaceable sealed resin cartridges, flow meters on both legs, a level gauge and lockable manual valves keep the research pilot serviceable without network access. The ledger binds sample IDs, source and cartridge IDs, field assignment, volumes, lab results, seal check and gate release signature. Laboratory boron analysis is the measurement of record; EC, pH and SAR qualification need their own sampling and interpretation, not a claimed online boron sensor. A crop switch, changed feed, lost record, suspect flow meter or missing residue route requires a new qualification. An operator cannot convert a failed result into a pass by changing a setpoint; independent audit must test whether the physical bypass can be misused.
+
+## Performance Benchmarks
+
+| Metric | Existing reference or baseline | Proposed pilot acceptance target (unverified) |
+| --- | --- | --- |
+| Boron suitability | FAO's general irrigation guidance: <0.7 mg/L no restriction; 0.7–3 mg/L slight/moderate; >3 mg/L severe, subject to crop and soil context.[1] | Every released batch passes its *local crop-specific* limit on the mixed sample; no universal 1.0 mg/L promise. |
+| Batch accounting | Existing full-flow commercial boron-resin treatment of the same source is the trial comparator; its performance is not specified here.[2] | Reconcile inlet, treated and bypass volumes to within 5% in controlled trials; investigate every deviation. |
+| Gate reliability | No measured prototype or field baseline exists for this integration. | Zero releases of deliberately failed, stale or unmatched test batches in a supervised fault-injection trial; record number of attempted faults and any bypass. |
+| Cost and resources | Existing resin chemistry is established, but comparable delivered cost depends on local assays and waste handling.[2] | Lower audited cost and regenerant use per m³ of *crop-qualified* delivery than a maintained full-flow control on matched water; reject if neither advantage holds. |
+
+These are test criteria, not achieved results. Record laboratory uncertainty, flow calibration, rejected batches, downtime and residue volumes alongside passing results; a low boron reading alone cannot establish irrigation suitability.
+
+## Deployment Scenarios
+
+- **Cooperative vegetable beds:** Allocate separately sampled batches to sensitive crop plots only after local agronomic approval; other crops may use a different approved specification, never a silently shared gate.
+- **Brackish groundwater edge case:** Trial boron reduction only where separate EC/SAR, chloride and soil assessments already permit irrigation; otherwise use a different source or treatment train, not this cartridge as a desalination substitute.
+- **Seasonal drought reserve:** A monitored cooperative can evaluate marginal water in a contained pilot when the primary source is unavailable, while holding failed batches and budgeting for laboratory turnaround and lawful cartridge return.
+
+## Risks & Mitigations
+
+The hardest failure is a plausible-looking certificate for the wrong batch or field. Require numbered sealed batches, independent duplicate sampling, a custodian-held key and periodic blind audit; none prevents collusion or deliberate plumbing bypass, so inspect the manifold before every release. Resin breakthrough, meter drift and variable feed chemistry can invalidate the calculated blend: sample all three points, calibrate meters and requalify after source or cartridge changes. Limited low-boron output may make a target mathematically unreachable; do not release a near-miss. Mixed crops, cumulative boron loading and poor drainage require soil monitoring and field-specific allocation, even when water passes. Pump failure, freeze damage, leaks or power loss leave the gate closed and the batch in containment. Acid/alkaline regeneration and boron-rich waste belong only at a permitted regional facility; no disposal route means no deployment. Laboratory delays and operating costs may erase the proposed advantage entirely.
+
+## Vision for 2050
+
+Conditional on successful independent field trials, locally governed water cooperatives could use batch-verified boron blending as one option in a broader irrigation-quality toolkit. Repairable cartridges and transparent batch ledgers might make small marginal sources usable for selected fields without treating every litre to the strictest crop limit. This is not a forecast: soil monitoring, crop-specific decisions, affordable assays, secure custody and lawful waste management remain necessary at any scale. Where those prerequisites fail, the right 2050 outcome is to choose another source or crop, not to deploy this machine.
+
 ## Sources
 
 [1] https://www.fao.org/4/x5871e/x5871e07.htm — FAO Water quality and crop production

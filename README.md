@@ -156,6 +156,7 @@ Design and document technologies that:
 | [Solar-Desiccant Paddy Dryer](./solar-desiccant-paddy-dryer/) | Concept | Food Security & Sustainable Agriculture / Humid-Weather Post-Harvest Drying |
 | [Scavenge-Exhaust Catalyst Pod](./scavenge-exhaust-catalyst-pod/) | Concept | Climate & Health Infrastructure / Post-Use Nitrous-Oxide Exhaust |
 | [Crop-Gated Boron Blender](./crop-gated-boron-blender/) | Concept | Sustainable Agriculture & Water Stewardship / Boron-Limited Irrigation |
+| [Biooxidative Manganese Well Filter](./biooxidative-manganese-well-filter/) | Concept | Drinking Water & Universal Basic Services / Manganese-Exposed Wells |
 
 ## Structure
 

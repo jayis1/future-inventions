@@ -1335,3 +1335,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$850 ex-workshop per unit at 10,000/year by 2038; service, assays, installation, power and regulated residue handling extra
 - **Author:** jayis1
 - **Created:** 2026-11-24
+
+### 139 — [Biooxidative Manganese Well Filter](../biooxidative-manganese-well-filter/)
+- **Category:** Drinking Water & Universal Basic Services / Manganese-Exposed Wells
+- **TRL:** 2 (Research concept)
+- **Impact Potential:** Unvalidated 50-well seasonal pilot; at most 100 L/day per fully utilized unit, with exposure and health benefits unknown
+- **Key Material:** Manganese-oxide-coated silica sand, replaceable HDPE beds, aerator, sampleable batch tank and normally closed draw valve
+- **Key Innovation:** Tests independently sampled iron/Mn beds and batch-ID-gated total-manganese release against maintained conventional treatment; biofiltration and oxide adsorption are established art
+- **Target Cost:** Unquoted US$225 ex-workshop per unit at 10,000/year by 2038; assays, staffing, installation, backup supply and managed residues extra
+- **Author:** jayis1
+- **Created:** 2026-11-24

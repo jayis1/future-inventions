@@ -1365,3 +1365,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$2,800–4,500 ex-workshop at 1,000 gates/year by 2038; US$1,500–4,000/site tie-in on an already lined and permitted yard; assay, operator, treatment and disposal extra
 - **Author:** jayis1
 - **Created:** 2026-11-25
+
+### 142 — [Cotton–Polyester Fiber Refinery](../cotton-polyester-fiber-refinery/)
+- **Category:** Circular Textiles & Waste Elimination / Blended-Fiber Recovery
+- **TRL:** 2 (Research concept)
+- **Impact Potential:** Unvalidated 0.5-dry-tonne/day pilot on qualified cotton/PET blends; avoided waste and lifecycle benefit unknown until compared with mechanical recycling
+- **Key Material:** Replaceable PET hydrolase, insulated aqueous reactor, filter and contained effluent tanks
+- **Key Innovation:** Tests feed-qualified, cellulose-preserving PET hydrolysis with independently assayed pulp and monomer outputs and a full residue balance; enzymatic textile hydrolysis is established prior art
+- **Target Cost:** Unquoted ≤US$250,000 installed at 100 modules/year by 2040; ≤US$500 per accepted dry tonne operating target, excluding collection and freight
+- **Author:** jayis1
+- **Created:** 2026-11-25

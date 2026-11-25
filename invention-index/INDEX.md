@@ -1355,3 +1355,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$1,500 ex-factory and US$2,400 installed per 5 kWh usable module at 10,000/year by 2038; solar, inverter, certified backup and recurrent service extra
 - **Author:** jayis1
 - **Created:** 2026-11-24
+
+### 141 — [Snowmelt Brine Accounting Gate](../snowmelt-brine-accounting-gate/)
+- **Category:** Freshwater Protection & Circular Winter Maintenance / Snow-Yard Runoff
+- **TRL:** 2 (Research concept)
+- **Impact Potential:** Unvalidated two-season snow-yard pilot; target ≥60% of chloride mass reaching the controlled inlet, not catchment-wide removal or proven ecological benefit
+- **Key Material:** Bunded HDPE brine tank, 316L strainer/valve, calibrated flow and conductivity instruments, battery-backed 24 V controller
+- **Key Innovation:** Tests fail-to-containment diversion with audited chloride mass balance and contaminant-vetoed reuse against existing snowmelt detention and brine-recycling practice
+- **Target Cost:** Unquoted US$2,800–4,500 ex-workshop at 1,000 gates/year by 2038; US$1,500–4,000/site tie-in on an already lined and permitted yard; assay, operator, treatment and disposal extra
+- **Author:** jayis1
+- **Created:** 2026-11-25

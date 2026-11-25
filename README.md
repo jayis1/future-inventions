@@ -158,6 +158,7 @@ Design and document technologies that:
 | [Crop-Gated Boron Blender](./crop-gated-boron-blender/) | Concept | Sustainable Agriculture & Water Stewardship / Boron-Limited Irrigation |
 | [Biooxidative Manganese Well Filter](./biooxidative-manganese-well-filter/) | Concept | Drinking Water & Universal Basic Services / Manganese-Exposed Wells |
 | [Repairable Iron-Air Outage Bank](./repairable-iron-air-outage-bank/) | Concept | Disaster Resilience & Distributed Energy / Stationary Community Storage |
+| [Snowmelt Brine Accounting Gate](./snowmelt-brine-accounting-gate/) | Concept | Freshwater Protection & Circular Winter Maintenance / Snow-Yard Runoff |
 
 ## Structure
 

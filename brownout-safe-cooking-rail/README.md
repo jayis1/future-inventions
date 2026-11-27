@@ -1,0 +1,38 @@
+# Brownout-Safe Cooking Rail
+
+**Author: jayis1**
+**Status: research concept (TRL 2); not a certified appliance or electrical installation.**
+
+## Problem
+
+WHO estimates that about 2.1 billion people still cook with polluting fuels; household air pollution was associated with an estimated 2.9 million premature deaths in 2021.[1] Solar mini-grids can support electric cooking, but evening peak loads and weak supply can interrupt meals. A Tanzania DC-cooking pilot reported battery depletion during cloudy periods and damaged connectors following repeated shutdown/reconnection.[2] An unfinished meal can push a household back to a smoky stove. This proposal targets shared kitchens and already-electrified mini-grid communities, not homes without an affordable electricity supply.
+
+## Solution
+
+A **three-port, 48 V nominal DC cooking rail** accepts up to three purpose-built, low-voltage **250 W resistive insulated pots**, fed through a locally isolated 1 kW-rated supply with a verified 48 V battery input. A fused, current-limited distribution board measures bus voltage and each port current; simple local controllers coordinate heating in short time slots. An independent hardware undervoltage cutoff disconnects all heating before the battery's protection system trips. The cook selects a locally labeled *heat-now* or *hold-warm* setting; during scarcity, the system allocates a minimum heating quota fairly across occupied pots, never silently marks food cooked, and visibly announces insufficient power. There is no remote shutoff, identity record, camera, or internet requirement.
+
+Each pot uses a replaceable food-contact stainless inner liner, mineral-wool insulated outer sleeve, resistive element bonded beneath the liner, mechanical temperature limiter, lid vent, and detachable keyed connector. The rail is an appliance for a supervised shared kitchen, not a substitute for licensed wiring, safe food handling or a battery-management system. It has **no new energy source**: users must have adequate solar-plus-storage or clean grid capacity. An underpowered evening session must be stopped, not assumed safe because the pot feels warm.
+
+## Key Innovation
+
+Electric cooking, DC power hubs, demand management and appliance load limiting are established art.[2][3] The proposed, testable integration is **meal-aware graceful degradation without networked control**: a replaceable port module gives each pot a bounded, auditable heat allocation while a separate hardwired undervoltage trip avoids damaging repeated deep discharges. Local lamps show heating, paused and insufficient-energy states; the controls do **not** infer microbial food safety from elapsed time. A head-to-head test must establish whether this arrangement completes more meals without connector failures than a conventional protected multi-pot electric kitchen on the *same* constrained supply. Unlike the repository's [Solar Heat Cassette Cooker](../solar-heat-cassette-cooker/), this supplies simultaneous live electric heat rather than transporting a charged thermal cartridge; unlike the [Batch-Locked Gasifier Cooktop](../batch-locked-gasifier-cooktop/), it burns no biomass at point of use.
+
+**Proposed operating targets, not measured results:** three 250 W ports on a regulated 48 V bus; total heat draw ≤750 W, excluding converter losses; each port allocated at least 100 W *when* 300 W of usable electrical power is available and all three are active; automatic heater disconnection before the qualified battery undervoltage limit; ≥1,000 connector mating cycles after splash and dust testing. On a 250 W port, two hours at rated draw consumes 0.5 kWh electrical before supply losses. Neither the thermal energy delivered to food nor adequacy for a particular recipe is established by that number. A 2 L water load heated from 20°C to 95°C needs roughly 0.174 kWh ideally (2 kg × 4.186 kJ/kg/K × 75 K ÷ 3,600); vessel losses, cooking ingredients and holding time increase actual demand.
+
+## Target Cost
+
+**Unquoted 2038 goal at 10,000 kitchen rails/year:** US$300 ex-workshop for a three-port rail (US$70 isolated power interface and protection, US$80 bus and three replaceable port modules, US$60 enclosure/connectors, US$90 assembly and safety test), plus **US$65 per insulated pot**. Thus US$495 for one rail and three pots *before* the battery, PV, electrical installation, freight, taxes and certification. Budget separately for an already-qualified mini-grid supply, spare connectors, yearly inspection and recycled electronics; do not present US$495 as a complete installed clean-cooking system. At 30 households sharing one rail, the equipment-only goal is US$16.50/household before capacity, scheduling, service and financing; uptake and cooking throughput may make that sharing ratio impractical. Quote real local alternatives (LPG, standard electric pressure cookers and mini-grid upgrades) before funding a pilot.
+
+## Impact
+
+The potential benefit is fewer abandoned electric meals and fewer returns to polluting fuel, **conditional on measured displacement**, not a forecast of lives saved. A 10-kitchen randomized crossover pilot would compare completed meals, fallback fuel use, personal/kitchen PM₂.₅ and CO, bus brownouts, connector temperatures, electricity used per fully cooked meal, safety incidents and cook satisfaction against a standard protected electric-cooking setup on equal supply. An engineering target is ≥90% of planned qualifying meals completed without an unsafe shutdown when the power budget is met; test under clouds, simultaneous starts and high-demand recipes. A 10–20-year route to deployment is power-electronics qualification, recipe trials with local cooks, electrical/food-contact certification, and service training, not an assumed breakthrough in battery chemistry. Later community adoption could reduce smoke exposure, but cannot be credited until sustained polluting-stove displacement is observed.
+
+**Safety and limits:** A low bus voltage is not intrinsically safe at high current. Each port needs independent fusing, short-circuit and earth-fault protection appropriate to the installation, insulation checks, keyed dry-break connectors, strain relief and accessible hot-surface warnings. A stuck relay, absent pot, sensor disagreement, overtemperature, reversed wiring, wet connector, or controller failure must de-energize the affected heater; independent thermal cutouts protect against a software fault. Loss of power leaves food partially cooked: the display defaults to *not complete* and users follow local food-temperature guidance or discard unsafe food. A cooked-state claim must never be generated from heating time alone. Test faults with qualified electricians before occupied-space trials. Replace liner and port modules locally; recycle copper, steel and electronics and manage spent batteries under local rules. Avoid proprietary cookware lock-in. The concept does not authorize appliance deployment or prove health benefit.
+
+## Sources
+
+[1] WHO, *Household air pollution* (2025): https://www.who.int/news-room/fact-sheets/detail/household-air-pollution-and-health
+
+[2] TaTEDO-SESO, *Final Report for Managing Testing and Piloting the DC-CREST Powerhubs in Tanzania* (2024): https://mecs.org.uk/wp-content/uploads/2024/12/TaTEDO-DC-Power-Hub-Study-Final-Report.pdf
+
+[3] Clements et al., *Cooking Support on Mini-Grids (COSMO): Synthesis Report* (2024): https://mecs.org.uk/wp-content/uploads/2024/04/Cooking-Support-on-Mini-Grids-COSMO-Phase-1-Synthesis-Report.pdf

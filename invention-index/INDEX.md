@@ -1385,3 +1385,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$2,400 ex-workshop at 1,000/year by 2038; ≤US$5,000 installed target where existing drain and nearby toilet loop qualify, laboratory and plumbing costs extra
 - **Author:** jayis1
 - **Created:** 2026-11-27
+
+### 144 — [Brownout-Safe Cooking Rail](../brownout-safe-cooking-rail/)
+- **Category:** Clean Cooking & Universal Basic Services / Mini-Grid Resilience
+- **TRL:** 2 (Research concept)
+- **Impact Potential:** Unvalidated 10-kitchen pilot; completed meals and polluting-fuel displacement must be measured against a protected electric-cooking comparator
+- **Key Material:** Replaceable 48 V port modules, fused copper bus, stainless insulated resistive pots and independent thermal cutouts
+- **Key Innovation:** Tests fair local heat allocation with hardware undervoltage disconnect and conspicuous incomplete-meal state; electric cooking and load management are prior art
+- **Target Cost:** Unquoted US$495 ex-workshop for one three-port rail and three pots at 10,000 rails/year by 2038; battery, PV, installation, certification, service and end-of-life extra
+- **Author:** jayis1
+- **Created:** 2026-11-27

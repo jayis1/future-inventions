@@ -1375,3 +1375,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted ≤US$250,000 installed at 100 modules/year by 2040; ≤US$500 per accepted dry tonne operating target, excluding collection and freight
 - **Author:** jayis1
 - **Created:** 2026-11-25
+
+### 143 — [Dialysis Reject Isolation Dock](../dialysis-reject-isolation-dock/)
+- **Category:** Water Stewardship & Health Infrastructure / Nonpotable Dialysis-RO Reject Reuse
+- **TRL:** 2 (Research concept)
+- **Impact Potential:** Unvalidated 10-site, one-year pilot; target ≥50% capture of eligible reject, with actual mains-water displacement measured at nonpotable endpoints
+- **Key Material:** Visible stainless air-gap funnel, spring-return drain diverter, independent tank-inlet cutoff and labeled HDPE nonpotable tank
+- **Key Innovation:** Tests a physically separated reject-only boundary and fault-to-drain batch accounting against established dialysis-RO reuse retrofits; reuse itself is prior art
+- **Target Cost:** Unquoted US$2,400 ex-workshop at 1,000/year by 2038; ≤US$5,000 installed target where existing drain and nearby toilet loop qualify, laboratory and plumbing costs extra
+- **Author:** jayis1
+- **Created:** 2026-11-27

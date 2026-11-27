@@ -160,6 +160,7 @@ Design and document technologies that:
 | [Repairable Iron-Air Outage Bank](./repairable-iron-air-outage-bank/) | Concept | Disaster Resilience & Distributed Energy / Stationary Community Storage |
 | [Snowmelt Brine Accounting Gate](./snowmelt-brine-accounting-gate/) | Concept | Freshwater Protection & Circular Winter Maintenance / Snow-Yard Runoff |
 | [Cotton–Polyester Fiber Refinery](./cotton-polyester-fiber-refinery/) | Concept | Circular Textiles & Waste Elimination / Blended-Fiber Recovery |
+| [Dialysis Reject Isolation Dock](./dialysis-reject-isolation-dock/) | Concept | Water Stewardship & Health Infrastructure / Nonpotable Dialysis-RO Reject Reuse |
 
 ## Structure
 

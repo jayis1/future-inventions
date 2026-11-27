@@ -1405,3 +1405,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$5,000 ex-workshop at 1,000 units/year by 2038, plus US$400 per complete replacement-media set; installation, assays and disposal extra
 - **Author:** jayis1
 - **Created:** 2026-11-27
+
+### 146 — [Heat-Safe Transit Shelter](../heat-safe-transit-shelter/)
+- **Category:** Urban Heat Resilience & Accessible Transit / Passive Radiant Shade
+- **TRL:** 2 (Research concept)
+- **Impact Potential:** Unvalidated ten-paired-stop hot-season trial; heat illness and ridership benefits unknown
+- **Key Material:** High-reflectance coated aluminum roof, ventilated cavity, fire-rated matte liner and replaceable perforated fins
+- **Key Innovation:** Tests site-indexed low-sun shading, a ventilated roof radiant shield and shaded accessible seating against a matched open conventional shelter, without water or power; all component mechanisms are established art
+- **Target Cost:** Unquoted US$1,800 ex-workshop at 1,000 kits/year by 2038; US$3,500–5,500 installed target on an eligible existing pad, with extraordinary civil works extra
+- **Author:** jayis1
+- **Created:** 2026-11-27

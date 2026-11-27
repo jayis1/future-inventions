@@ -163,6 +163,7 @@ Design and document technologies that:
 | [Dialysis Reject Isolation Dock](./dialysis-reject-isolation-dock/) | Concept | Water Stewardship & Health Infrastructure / Nonpotable Dialysis-RO Reject Reuse |
 | [Brownout-Safe Cooking Rail](./brownout-safe-cooking-rail/) | Concept | Clean Cooking & Universal Basic Services / Mini-Grid Resilience |
 | [Post-Fire Runoff Cassette](./post-fire-runoff-cassette/) | Concept | Freshwater Restoration & Disaster Resilience / Post-Fire Runoff |
+| [Heat-Safe Transit Shelter](./heat-safe-transit-shelter/) | Concept | Urban Heat Resilience & Accessible Transit / Passive Radiant Shade |
 
 ## Structure
 

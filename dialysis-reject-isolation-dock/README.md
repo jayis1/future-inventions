@@ -32,3 +32,43 @@ At a qualifying site, the outcome is **metered mains-water displacement at a non
 3. [Water conservation and circular water reuse in clinical haemodialysis facilities: a scoping review](https://link.springer.com/article/10.1007/s11255-026-05378-9), *International Urology and Nephrology* (2026): reuse evidence is heterogeneous; historical reject fractions cannot be assumed for modern plants.
 
 All performance and cost figures for this dock are unvalidated design targets, not measurements or certification.
+
+## How It Works
+
+The input is **RO reject**, not spent dialysate or the clinical product-water stream. A licensed installer identifies the reject-side tie-in and proves that the RO manufacturer's venting and drainage limits remain intact. Reject falls through a guarded, inspectable, code-sized open air gap into a 316 stainless funnel: no downstream tank pressure or siphon can hydraulically return across that break. The funnel and its full-flow overflow drain must pass the measured peak flush flow, not just the daily average.
+
+On startup and whenever evidence is missing, the 24 V spring-return diverter points to the permitted drain and the independently powered tank-inlet valve stays closed. After site assays, inspection and a valid RO operating-state signal, a qualified batch may pass both valves into a labeled 1 m³ HDPE nonpotable tank. A separate low-level-protected pump feeds only approved toilet cisterns. Flow meters distinguish admitted reject, tank overflow, drain flow and water actually delivered; conductivity and temperature screen excursions but never certify microbial or chemical safety. On a lost signal, full tank or stale assay, capture stops and flow goes to drain. If the diverter jams toward the tank, the independent inlet valve closes; if the drain itself blocks, personnel follow the hospital's RO contingency plan rather than throttling the clinical reject outlet. Neither controller nor alarm is the physical isolation barrier.
+
+## Technical Architecture
+
+`RO reject outlet → approved vented tie-in → visible air gap → catch funnel → spring diverter → permitted drain OR normally closed inlet valve → nonpotable tank → segregated pump → approved cisterns`. Funnel and tank overflows return independently to the full-capacity permitted drain. The clinical feed, RO product and dialysate plumbing have **no downstream connection** to this path. A separately approved air-gapped potable makeup route, if needed, cannot be a pressurized tank connection.
+
+The control layer records RO run/clean state, valve-position feedback, tank level, calibrated conductivity/temperature, flow and batch identity. Its interlock requires current laboratory qualification and all positive permissives; contradictory feedback, sensor drift or power loss removes permission. Onsite facilities staff own inspections, assays, alarms and tank quarantine; records support a reject-to-drain-to-delivery mass balance. Installation requires code review, non-interchangeable fittings, electrical isolation and supervised single-fault tests under the conditions in [SPECIFICATION.md](./SPECIFICATION.md).
+
+## Performance Benchmarks
+
+| Metric and comparison | Proposed acceptance target; not a measured result |
+|---|---|
+| Physical isolation vs ordinary direct-to-drain RO reject | No detectable tracer or pressure return across the inspected air gap during site-peak-flow, blocked-outlet and reverse-pressure bench challenges; verify gap dimensions against local code. Direct-to-drain is the safety reference, **not** an inferior reuse technology. |
+| Fault response vs continuous drain baseline | Tank inlet closes and drain routing is confirmed within 5 s of power/signal loss or injected sensor fault at the site's measured maximum instantaneous reject flow; test a mechanically jammed diverter separately. A blocked drain needs the clinical contingency procedure, not a promise of uninterrupted capture. |
+| Capture vs zero recovery from a site with no existing reuse | ≥50% of *eligible, site-qualified* reject reaches tank during a 10-site, one-year pilot; report eligible hours and all excluded flushing, cleaning and out-of-range volume. Compare an existing approved reuse system on equal boundaries where one exists. |
+| Useful displacement vs captured volume | Meter delivered toilet water and matched-period mains makeup separately; report both, tank overflow, extra kWh, cleaning water, assays and nuisance alarms (design goal ≤1 false alarm per 100 operating hours, to be tested). |
+
+A published 11-machine US hospital estimated **927,000 L/year** of RO reject in 2023, not a measured dock result or a transferable clinic baseline.[1] The paper's online date is 2024; the “2025” year in the existing reference above should not be used as the study's publication date. No head-to-head state-of-art advantage is established: conventional approved RO-reject reuse already exists.[2][3] Every target above requires reproducible tests and independent clinical, plumbing and infection-prevention approval before use.
+
+## Deployment Scenarios
+
+1. **Hospital dialysis wing:** A facility with an accessible RO reject outlet, full-flow drain and nearby permitted toilet loop runs drain-only shadow monitoring, then trials approved batches with licensed plumbing and clinical engineering sign-off. Treatment settings are unchanged.
+2. **Water-stressed regional clinic:** If local nonpotable rules, assay results and staffing permit, an inspected tank can shift qualified reject to a segregated cistern loop; absent reliable testing or demand, it remains drain-only.
+3. **Multi-site health system:** Standardized logs reveal which facilities actually displace mains water and which have poor reject quality, insufficient demand or excess maintenance cost. Only qualified sites proceed beyond observation.
+
+## Risks & Mitigations
+
+- **Wrong stream or chemical carryover:** Non-interchangeable labeled tie-ins, RO cleaning-state veto and site-specific assay panels; quarantine the tank on uncertainty. A missed cleaning signal remains a residual risk until independently challenged.
+- **Backflow, leak or blockage:** Inspectable air gap, independent tank cutoff and overflow, full-flow drain sizing and spill containment; pressure/tracer and jammed-valve tests precede installation. A blocked *site drain* still threatens RO operation and invokes the manufacturer's contingency, never a bypass.
+- **Microbial growth and drifting sensors:** Limit storage age to a site-validated interval, sample at the point of use, clean and calibrate on a documented schedule. Conductivity cannot establish pathogen absence; failed samples mean no reuse.
+- **Economics and operations:** Dedicated plumbing, assays, labor and pump energy may exceed water value; measure actual delivery and stop or retain drain-only operation where net benefit is absent. No zero-risk claim follows from a pilot with zero observed events.
+
+## Vision for 2050
+
+In a conditional 2050 scenario, qualified dialysis facilities treat reject as an auditable, separately plumbed nonpotable resource rather than an automatically disposable stream. A technician can see the physical break, trace every delivered litre and safely revert to the original drain in one fault. Better RO efficiency may reduce available reject, and many sites will not qualify; success means verified water stewardship without compromising patient water, not universal installation. See [ROADMAP.md](./ROADMAP.md) and [IMPACT_ANALYSIS.md](./IMPACT_ANALYSIS.md) for gates and transparent projections.

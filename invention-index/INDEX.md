@@ -1395,3 +1395,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$495 ex-workshop for one three-port rail and three pots at 10,000 rails/year by 2038; battery, PV, installation, certification, service and end-of-life extra
 - **Author:** jayis1
 - **Created:** 2026-11-27
+
+### 145 — [Post-Fire Runoff Cassette](../post-fire-runoff-cassette/)
+- **Category:** Freshwater Restoration & Disaster Resilience / Post-Fire Runoff
+- **TRL:** 2 (Research concept)
+- **Impact Potential:** Unvalidated 1 L/s routed-flow pilot; whole-storm suspended-solids and phosphorus removal and ecological benefit require paired field trials including bypass
+- **Key Material:** HDPE settling chamber, separable lined trays of washed iron-oxide-coated sand, galvanized support and gravity bypass
+- **Key Innovation:** Tests a temporary, off-line ash-settling and dissolved-phosphorus treatment side-cell at burned-catchment outfalls without constricting the original culvert; sedimentation and iron sorption are prior art
+- **Target Cost:** Unquoted US$5,000 ex-workshop at 1,000 units/year by 2038, plus US$400 per complete replacement-media set; installation, assays and disposal extra
+- **Author:** jayis1
+- **Created:** 2026-11-27

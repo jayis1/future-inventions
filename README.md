@@ -162,6 +162,7 @@ Design and document technologies that:
 | [Cotton–Polyester Fiber Refinery](./cotton-polyester-fiber-refinery/) | Concept | Circular Textiles & Waste Elimination / Blended-Fiber Recovery |
 | [Dialysis Reject Isolation Dock](./dialysis-reject-isolation-dock/) | Concept | Water Stewardship & Health Infrastructure / Nonpotable Dialysis-RO Reject Reuse |
 | [Brownout-Safe Cooking Rail](./brownout-safe-cooking-rail/) | Concept | Clean Cooking & Universal Basic Services / Mini-Grid Resilience |
+| [Post-Fire Runoff Cassette](./post-fire-runoff-cassette/) | Concept | Freshwater Restoration & Disaster Resilience / Post-Fire Runoff |
 
 ## Structure
 

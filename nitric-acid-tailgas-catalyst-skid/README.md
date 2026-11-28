@@ -29,9 +29,45 @@ The proposed distinction is a standard replaceable, low-pressure-drop catalyst m
 
 A single illustrative qualified line could prevent roughly 77 tonnes N₂O/year under the stated assumptions. This is not a claim about the average nitric-acid plant, and verified net benefit must subtract additional power/heating emissions and account for any production or NOₓ changes. The 10–20-year development path is bench exposure to representative wet/NOₓ gas, pilot skid on a consenting industrial site, independently calibrated inlet/outlet and stack measurements through seasonal operation, then pressure-vessel certification and site-specific permits. The core claim fails if a 12-month pilot cannot maintain ≥90% mass-weighted destruction without breaching NOₓ limits or pressure/energy constraints, or if installed cost and outage time are not competitive with existing abatement. Avoiding harm depends on trained plant operators and regulated installation—not consumer deployment. No military, surveillance or coercive use is proposed.
 
+## How It Works
+
+The candidate location is **after the absorption tower and before the tail-gas expander**, only where the plant's measured pressure/temperature profile leaves a qualified hot window and the expander can tolerate the added loss. A downstream-of-expander installation may be easier to isolate but can require substantial reheating; neither configuration is assumed interchangeable. At the proposed inlet, a particulate screen protects removable Fe-zeolite monoliths while thermocouples and differential-pressure taps track temperature and fouling. The desired N₂O decomposition is 2 N₂O → 2 N₂ + O₂; selectivity, conversion and residence time in moist, oxygen-rich, NOₓ-bearing gas must be measured, not inferred from a dry laboratory test. The cited Fe/BEA field study used **NH₃ as reductant for simultaneous N₂O/NOₓ treatment**; its >90% result does not establish that this proposed reductant-free module reaches the same conversion.[2] A site could instead need a separately engineered reductant/NOₓ stage, with slip monitoring and its own permit review.
+
+## Technical Architecture
+
+**Flow:** absorber outlet → approved isolation/thermal interface → screen → sealed catalyst modules → existing NOₓ train (in its site-approved order) → expander/stack. Actual order may differ; an independent process-hazard and energy-balance review must fix it before hardware design. **Evidence path:** calibrated dry-basis inlet/outlet N₂O and flow measurements, matched sampling periods, temperature and pressure logs, and final stack checks → mass-weighted removal report. Report concentration at declared normal conditions (0 °C, 1 atm), and document moisture and any oxygen correction; do not infer removal from concentration alone. The control system inhibits any optional reagent on invalid flow or temperature, alarms on sensor disagreement or rising pressure drop, and invokes the plant-approved rate-reduction/shutdown procedure. Any maintenance bypass protects equipment only: untreated emissions must be measured or conservatively estimated and reported, never credited as abated. Qualification must establish corrosion resistance, safe isolation, catalyst life, and thermal limits for each plant.
+
+## Performance Benchmarks
+
+| Comparable metric | Published reference | Skid development target / evidence gap |
+| --- | --- | --- |
+| N₂O reduction | EPA's 2010 review lists 88–98% for 11 monitored tertiary-control projects (mean 94%); technologies and inlet conditions vary.[5] | ≥90% annual **mass-weighted** removal while online at a qualified 350–400 °C inlet; no prototype data yet. |
+| NOₓ and NH₃ | Fe/BEA field study reported >95% NOₓ and >90% N₂O conversion at 350–380 °C **with NH₃**.[2] | Preserve site NOₓ permit compliance; no NOₓ-removal or slip claim for the proposed reductant-free module. |
+| Hydraulic and service cost | Plant-specific comparison required; historical EPA cost figures are not a current turnkey quote.[5] | ≤300 Pa added pressure drop at design **actual** volumetric flow; 3–5-year catalyst life and US$0.5–1.5m ex-works are unverified targets. |
+
+The comparison is not like-for-like until inlet N₂O/NOₓ, wet/dry basis, temperature, pressure, space velocity, availability and downstream emissions are measured on the same train. A 12-month pilot should disclose outlet mass, energy and downtime, not just best-hour conversion.
+
+## Deployment Scenarios
+
+1. **Existing un-abated line:** Retrofit during a scheduled turnaround if the post-absorber hot window, expander margin and emissions permit all qualify; otherwise reject the site.
+2. **New nitric-acid train:** Design a removable bay and paired sampling ports into the gas train from day one; benchmark against an established secondary or tertiary abatement bid rather than claiming a universal retrofit saving.
+3. **Already partially abated line:** Test only the remaining N₂O mass for incremental benefit; do not credit emissions already destroyed by an upstream catalyst.
+
+## Risks & Mitigations
+
+- **Hot, pressurized NOₓ gas and condensate:** Licensed mechanical/corrosion design, monitored metal temperatures, isolation and purge procedures, confined-access controls, and independent hazard review; shutdown itself may create a process upset.
+- **Cold start, temperature excursions, poisoning or blocked media:** Validate the feed envelope and catalyst exposure, monitor axial temperatures and differential pressure, establish replacement criteria, and reduce production or shut down under an approved procedure. NOₓ, water and any reagent can change chemistry or form deposits; no fixed interval guarantees activity.
+- **Analyzer drift, power loss or bypass:** Calibrate paired analyzers against stack tests, flag missing data, fail reagent dosing closed where applicable, and predefine operator actions for loss of power or instrument air. A bypass can preserve equipment while increasing emissions, so log its duration and comply with site reporting/permit rules.[3]
+- **Commercial and environmental trade-offs:** Compare installed cost, lost expander work, heating fuel and spent-catalyst handling against qualified incumbent abators; retire a concept that cannot demonstrate net benefit without NOₓ noncompliance.
+
+## Vision for 2050
+
+If pilots prove durable performance and regulators accept independently measured savings, future nitric-acid trains could ship with catalyst bays and standardized mass-balance logs as routine equipment. Operators would swap certified modules during turnarounds and publish verified N₂O tonnes avoided alongside remaining stack emissions. That is a contingent industrial adoption scenario—not a forecast that every plant can use this skid.
+
 ## Sources
 
 [1] https://ozone.unep.org/sites/default/files/2025-04/Global%20Nitrous%20Oxide%20Assessment.pdf
 [2] https://aiche.onlinelibrary.wiley.com/doi/10.1002/ep.12979
 [3] https://www.epa.gov/system/files/documents/2024-04/v_nitricacid_infosheet_2024.pdf
 [4] https://doi.org/10.1038/s41558-023-01723-3
+[5] https://www.epa.gov/sites/default/files/2015-12/documents/nitricacid.pdf

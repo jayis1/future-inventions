@@ -164,6 +164,7 @@ Design and document technologies that:
 | [Brownout-Safe Cooking Rail](./brownout-safe-cooking-rail/) | Concept | Clean Cooking & Universal Basic Services / Mini-Grid Resilience |
 | [Post-Fire Runoff Cassette](./post-fire-runoff-cassette/) | Concept | Freshwater Restoration & Disaster Resilience / Post-Fire Runoff |
 | [Heat-Safe Transit Shelter](./heat-safe-transit-shelter/) | Concept | Urban Heat Resilience & Accessible Transit / Passive Radiant Shade |
+| [Nitric-Acid Tailgas Catalyst Skid](./nitric-acid-tailgas-catalyst-skid/) | Concept | Climate & Sustainable Manufacturing / Industrial Nitrous-Oxide Abatement |
 
 ## Structure
 

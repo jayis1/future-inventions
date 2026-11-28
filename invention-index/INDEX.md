@@ -1415,3 +1415,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$1,800 ex-workshop at 1,000 kits/year by 2038; US$3,500–5,500 installed target on an eligible existing pad, with extraordinary civil works extra
 - **Author:** jayis1
 - **Created:** 2026-11-27
+
+### 147 — [Nitric-Acid Tailgas Catalyst Skid](../nitric-acid-tailgas-catalyst-skid/)
+- **Category:** Climate & Sustainable Manufacturing / Industrial Nitrous-Oxide Abatement
+- **TRL:** 2 (Research concept)
+- **Impact Potential:** Unvalidated site-specific 12-month pilot; illustrative 10,000 Nm³/h, 500 ppmv line at 90% removal could avoid about 77 tonnes N₂O/year
+- **Key Material:** Fe-exchanged zeolite/alumina monolith, corrosion-qualified steel housing and paired N₂O sampling ports
+- **Key Innovation:** Tests a replaceable, low-pressure-drop industrial tail-gas module with independent mass-weighted abatement accounting against existing bespoke catalytic retrofits; N₂O decomposition is prior art
+- **Target Cost:** Unquoted US$0.5–1.5 million ex-works at 100 skids/year by 2040; site integration, permits, certification and service extra
+- **Author:** jayis1
+- **Created:** 2026-11-28

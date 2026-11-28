@@ -165,6 +165,7 @@ Design and document technologies that:
 | [Post-Fire Runoff Cassette](./post-fire-runoff-cassette/) | Concept | Freshwater Restoration & Disaster Resilience / Post-Fire Runoff |
 | [Heat-Safe Transit Shelter](./heat-safe-transit-shelter/) | Concept | Urban Heat Resilience & Accessible Transit / Passive Radiant Shade |
 | [Nitric-Acid Tailgas Catalyst Skid](./nitric-acid-tailgas-catalyst-skid/) | Concept | Climate & Sustainable Manufacturing / Industrial Nitrous-Oxide Abatement |
+| [Arsenic-Separating Rice Cooker](./arsenic-separating-rice-cooker/) | Concept | Food Safety & Universal Basic Services / Rice Preparation |
 
 ## Structure
 

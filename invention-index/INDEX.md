@@ -1425,3 +1425,13 @@ This file tracks all inventions in the repository with key metadata.
 - **Target Cost:** Unquoted US$0.5–1.5 million ex-works at 100 skids/year by 2040; site integration, permits, certification and service extra
 - **Author:** jayis1
 - **Created:** 2026-11-28
+
+### 148 — [Arsenic-Separating Rice Cooker](../arsenic-separating-rice-cooker/)
+- **Category:** Food Safety & Universal Basic Services / Rice Preparation
+- **TRL:** 2 (Research concept)
+- **Impact Potential:** Unvalidated 100-household trial; 150 kg dry rice/year per unit at one passing batch on 300 days, with actual exposure and health benefit unknown
+- **Key Material:** 304-stainless grain basket and inner pot, removable sealed blanch-liquor vessel, mechanically interlocked gravity gate
+- **Key Innovation:** Tests a physically separated, inspectable blanch-liquor capture and fresh-water handoff against established parboil-and-absorb cooking; arsenic removal by cooking is prior art
+- **Target Cost:** Unquoted US$45 ex-workshop at 10,000 units/year by 2038; safe water, fuel, assays, service and permitted effluent handling extra
+- **Author:** jayis1
+- **Created:** 2026-11-28
